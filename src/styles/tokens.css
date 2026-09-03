@@ -1,0 +1,90 @@
+/*
+ * FairShare design tokens — the playful, student-y system.
+ * Everything visual derives from these custom properties: change a token
+ * here and it ripples through the whole app. No hardcoded colors elsewhere.
+ */
+
+:root {
+  /* ---- Palette (oklch: lightness, chroma, hue) --------------------------- */
+  /* Primary: a confident grape-violet — the brand anchor. */
+  --grape-700: oklch(46% 0.20 288);
+  --grape-600: oklch(55% 0.22 288);
+  --grape-500: oklch(62% 0.21 288);
+  --grape-200: oklch(90% 0.06 288);
+  --grape-100: oklch(95% 0.03 288);
+
+  /* Support 1: warm coral — energy, calls to action, "your turn". */
+  --coral-500: oklch(70% 0.17 30);
+  --coral-200: oklch(92% 0.06 30);
+
+  /* Support 2: fresh mint — verified / done / success. */
+  --mint-500: oklch(78% 0.15 158);
+  --mint-200: oklch(93% 0.07 158);
+
+  /* Highlight: sunny yellow — small accents, stars, sparkle. */
+  --sun-400: oklch(87% 0.15 92);
+
+  /* Neutrals: warm paper, not clinical gray. */
+  --paper: oklch(98.5% 0.008 92);
+  --cloud: oklch(96% 0.012 92);
+  --ink-900: oklch(28% 0.03 288);
+  --ink-600: oklch(48% 0.02 288);
+  --ink-400: oklch(66% 0.015 288);
+  --line: oklch(89% 0.012 288);
+
+  /* ---- Semantic aliases -------------------------------------------------- */
+  --color-bg: var(--paper);
+  --color-surface: #ffffff;
+  --color-text: var(--ink-900);
+  --color-text-soft: var(--ink-600);
+  --color-text-faint: var(--ink-400);
+  --color-primary: var(--grape-600);
+  --color-primary-strong: var(--grape-700);
+  --color-accent: var(--coral-500);
+  --color-success: var(--mint-500);
+  --color-border: var(--line);
+
+  /* ---- Typography -------------------------------------------------------- */
+  --font-display: 'Fredoka', ui-rounded, 'Segoe UI', sans-serif;
+  --font-body: 'Nunito', system-ui, -apple-system, sans-serif;
+
+  /* Fluid type scale — friendly and generous at the top end. */
+  --text-xs: 0.78rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-lg: clamp(1.1rem, 1.02rem + 0.4vw, 1.25rem);
+  --text-xl: clamp(1.35rem, 1.2rem + 0.7vw, 1.6rem);
+  --text-2xl: clamp(1.8rem, 1.5rem + 1.4vw, 2.4rem);
+  --text-hero: clamp(2.6rem, 1.6rem + 4.4vw, 4.8rem);
+
+  /* ---- Spacing scale ----------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-section: clamp(3rem, 2rem + 5vw, 6.5rem);
+
+  /* ---- Rounded shapes ---------------------------------------------------- */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* ---- Depth: soft, toy-like shadows tinted toward the brand ------------- */
+  --shadow-sm: 0 2px 6px oklch(46% 0.20 288 / 0.10);
+  --shadow-md: 0 10px 24px -8px oklch(46% 0.20 288 / 0.22);
+  --shadow-lg: 0 26px 50px -18px oklch(46% 0.20 288 / 0.34);
+  --shadow-pop: 0 4px 0 0 var(--grape-700);
+
+  /* ---- Motion ------------------------------------------------------------ */
+  --duration-fast: 140ms;
+  --duration-normal: 260ms;
+  --duration-slow: 620ms;
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}

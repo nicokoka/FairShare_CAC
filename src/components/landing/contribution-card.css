@@ -1,0 +1,114 @@
+.contrib-card {
+  width: min(100%, 24rem);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-5);
+  transform: rotate(-2deg);
+}
+
+.contrib-head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: var(--space-4);
+}
+
+.contrib-kicker {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--grape-600);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.contrib-project {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-lg);
+  color: var(--color-text);
+}
+
+.contrib-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contrib-row {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.contrib-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-pill);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: #fff;
+  font-size: var(--text-sm);
+}
+
+.contrib-avatar--grape { background: var(--grape-500); }
+.contrib-avatar--coral { background: var(--coral-500); }
+.contrib-avatar--mint  { background: var(--mint-500); }
+
+.contrib-name {
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}
+
+.contrib-track {
+  height: 0.65rem;
+  border-radius: var(--radius-pill);
+  background: var(--cloud);
+  overflow: hidden;
+}
+
+.contrib-fill {
+  display: block;
+  height: 100%;
+  border-radius: var(--radius-pill);
+  transform-origin: left center;
+  animation: contrib-grow var(--duration-slow) var(--ease-out-soft) both;
+}
+
+.contrib-fill--grape { background: var(--grape-500); }
+.contrib-fill--coral { background: var(--coral-500); }
+.contrib-fill--mint  { background: var(--mint-500); }
+
+.contrib-pct {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--color-text-soft);
+  min-width: 2.4ch;
+  text-align: right;
+}
+
+.contrib-foot {
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--color-border);
+}
+
+.contrib-check {
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--grape-700);
+}
+
+@keyframes contrib-grow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}

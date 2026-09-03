@@ -1,0 +1,71 @@
+Project Proposal
+
+
+
+Introduction	1
+
+Project Proposal	2
+
+Project Description	2
+
+Project Research	2
+
+Design Constraints	2
+
+AI Incorporation	2
+
+Schedule of Milestones	2
+
+
+CLAUDE PROMPT:
+Read PLAN.md, find the first feature without a ✅, and build only that feature following the Rules for the Executing Model.
+
+
+
+
+
+
+
+
+
+Introduction
+FairShare is my Super AP project. It's a web app that helps make group projects fair by keeping track of who actually does the work. Everyone can see what's getting done, work has to be backed up with proof, and at the end the app spits out a report the teacher can look at when grading. The idea came from the same thing everyone deals with: one or two people carrying the whole group. I'm planning to enter it in the Congressional App Challenge, which allows web apps.
+
+Project Proposal
+
+Project Description
+FairShare fixes the problem where group grades don't match who actually did the work. One person starts a project and gets a join code, and their teammates use it to join. During the project everyone works off a task board (To Do / Doing / Done). To mark something done, you have to attach a link as proof and a teammate has to verify it, so nobody can just claim they did stuff. At the end, everyone privately rates their teammates. The app takes the verified tasks plus those ratings and makes a simple fairness report the group hands to the teacher. The goal isn't to get anyone in trouble, it's just to make effort visible and grades fair.
+
+Project Research
+This is a real, studied problem. It's called "social loafing," basically people put in less effort in a group than on their own. The classic study on it is Latané, Williams & Harkins (1979), and it builds on the older "Ringelmann effect" showing that the bigger the group, the less each person does. So the whole "someone always slacks" thing is actually backed by research.
+
+The fix FairShare uses is also backed up. Peer review (teammates rating each other) has been shown to be fair and accurate. Falchikov & Goldfinch (2000) looked at a bunch of studies and found students' ratings line up well with what teachers would give. There's even a real tool called CATME (catme.org) that colleges use to do exactly this, but it's built for professors and needs an official sign-up. FairShare takes that same idea and makes it simple and free for students, no teacher account needed.
+
+I also looked through the 2025 Congressional App Challenge winners. Lots of recycling, health, and civics apps, but nothing that tracks fairness in group work, so the idea isn't taken.
+
+Sources:
+- Latané, B., Williams, K., & Harkins, S. (1979). Many hands make light the work: The causes and consequences of social loafing. Journal of Personality and Social Psychology, 37(6), 822-832.
+- Falchikov, N., & Goldfinch, J. (2000). Student peer assessment in higher education: A meta-analysis comparing peer and teacher marks. Review of Educational Research, 70(3), 287-322. (Free copy: https://eric.ed.gov/?id=EJ630369)
+- CATME - Smarter Teamwork. https://info.catme.org
+- Congressional App Challenge, 2025 Winners. https://www.congressionalappchallenge.us/2025-winners/
+
+Design Constraints
+Scale: built for small groups (about 2-6 people) at classroom size. It has to stay inside Firebase's free tier for now; if it needs to get bigger later, I can upgrade the plan without changing code.
+
+Technologies: React for the front end and Firebase for the back end (database, Google sign-in, and hosting a live link).
+
+Languages: JavaScript, HTML, and CSS, which I already know. React and Firebase are the new part I'll be learning.
+
+Data: names/emails from Google sign-in, project info, tasks with their proof links, and the private peer ratings. I'm only collecting what I need and nothing sensitive.
+
+Tradeoffs: I'm using proof links instead of file uploads to keep it simple (uploads can come later). Requiring a teammate to verify work adds a step but makes it way harder to fake. Peer reviews are private so people are honest.
+
+AI Incorporation
+I'll mainly use AI as a helper while building, since React and Firebase are new to me. It'll help me understand stuff, write boring boilerplate, and fix bugs. The rule I'm setting for myself: I won't use any code I can't explain, and I'll write the important part (how contributions and the fairness score are figured out) myself so I actually understand my own app. If I have extra time, I might add an AI feature inside the app that writes a quick plain-English summary of the report, but only after everything else works.
+
+Schedule of Milestones
+Milestone 1 (Sept 18): Get the base working. Firebase set up, Google sign-in, creating and joining a project with a code, and a working task board that updates live. Demo: two accounts join the same project and see tasks update in real time.
+
+Milestone 2 (Oct 9): Add the fairness parts. Proof links on tasks, teammate verification, and the private peer-review form, plus the app adding up everyone's contributions. Demo: verify a task with proof and submit peer reviews from a couple accounts.
+
+End of Project (Oct 26): Finish it. Generate the exportable fairness report, clean up the design, fix bugs, put it online, and record the demo video for the challenge. Demo: full run-through that ends with the finished report.

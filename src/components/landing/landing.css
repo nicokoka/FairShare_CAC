@@ -1,0 +1,262 @@
+.landing {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-5) var(--space-7);
+  min-height: 100vh;
+}
+
+/* ---- Header ------------------------------------------------------------- */
+.landing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-section);
+}
+
+.ghost-btn {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--color-text-soft);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  transition: background var(--duration-fast) ease, color var(--duration-fast) ease;
+}
+
+.ghost-btn:hover {
+  background: var(--grape-100);
+  color: var(--grape-700);
+}
+
+/* ---- Hero --------------------------------------------------------------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: var(--space-7);
+  margin-bottom: var(--space-section);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--coral-500);
+  background: var(--coral-200);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  margin-bottom: var(--space-4);
+}
+
+.hero-title {
+  font-size: var(--text-hero);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+}
+
+/* The key phrase gets a hand-drawn highlight swipe behind it. */
+.hero-mark {
+  color: var(--grape-700);
+  background: linear-gradient(
+    100deg,
+    transparent 4%,
+    var(--sun-400) 4%,
+    var(--sun-400) 96%,
+    transparent 96%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 42%;
+  background-position: 0 82%;
+  padding: 0 0.1em;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.hero-tagline {
+  font-size: var(--text-lg);
+  color: var(--color-text-soft);
+  max-width: 34rem;
+  margin-bottom: var(--space-5);
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* Chunky, tactile primary button with a "pop" edge that presses down. */
+.google-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-base);
+  padding: var(--space-3) var(--space-5);
+  border: 2px solid var(--grape-700);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-pop);
+  transition: transform var(--duration-fast) var(--ease-out-back),
+    box-shadow var(--duration-fast) ease;
+}
+
+.google-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 0 var(--grape-700);
+}
+
+.google-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 0 var(--grape-700);
+}
+
+.google-glyph {
+  flex: none;
+}
+
+.hero-hint {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-faint);
+}
+
+.hero-visual {
+  display: grid;
+  place-items: center;
+}
+
+/* ---- How it works ------------------------------------------------------- */
+.how {
+  margin-bottom: var(--space-section);
+}
+
+.how-title {
+  font-size: var(--text-2xl);
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.step {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-normal) var(--ease-out-back),
+    box-shadow var(--duration-normal) ease;
+}
+
+.step:hover {
+  transform: translateY(-4px) rotate(-0.6deg);
+  box-shadow: var(--shadow-md);
+}
+
+.step-badge {
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  color: #fff;
+  margin-bottom: var(--space-3);
+}
+
+.step-badge--claim  { background: var(--grape-500); transform: rotate(-4deg); }
+.step-badge--verify { background: var(--coral-500); transform: rotate(3deg); }
+.step-badge--report { background: var(--mint-500); transform: rotate(-2deg); }
+
+.step-head {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-2);
+}
+
+.step-text {
+  color: var(--color-text-soft);
+  font-size: var(--text-sm);
+}
+
+/* ---- Footer ------------------------------------------------------------- */
+.landing-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  padding-top: var(--space-5);
+  border-top: 1px dashed var(--color-border);
+}
+
+.foot-note {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-faint);
+}
+
+.peek {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  font-size: var(--text-sm);
+}
+
+.peek-label {
+  font-weight: 700;
+  color: var(--color-text-faint);
+}
+
+.peek a {
+  font-weight: 700;
+  color: var(--grape-600);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: background var(--duration-fast) ease;
+}
+
+.peek a:hover {
+  background: var(--grape-100);
+}
+
+/* ---- Responsive --------------------------------------------------------- */
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing {
+    padding: var(--space-4) var(--space-4) var(--space-6);
+  }
+
+  .landing-header {
+    margin-bottom: var(--space-6);
+  }
+}
