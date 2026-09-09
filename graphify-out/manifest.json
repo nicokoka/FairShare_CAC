@@ -1,0 +1,87 @@
+{
+  "FairShareKnowlegeVault/.obsidian/app.json": {
+    "mtime": 1788455938.700549,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  "FairShareKnowlegeVault/.obsidian/appearance.json": {
+    "mtime": 1788455938.701311,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  "FairShareKnowlegeVault/.obsidian/core-plugins.json": {
+    "mtime": 1788455938.2601678,
+    "ast_hash": "7c877bea49eaeabb100563bd157b9051",
+    "semantic_hash": "7c877bea49eaeabb100563bd157b9051"
+  },
+  "FairShareKnowlegeVault/.obsidian/graph.json": {
+    "mtime": 1788455947.917,
+    "ast_hash": "d02c81153ab5233d3e1ad99934d6c814",
+    "semantic_hash": "d02c81153ab5233d3e1ad99934d6c814"
+  },
+  "FairShareKnowlegeVault/.obsidian/workspace.json": {
+    "mtime": 1788455950.0056598,
+    "ast_hash": "9941c809b2b7c5a122152a12ab23a072",
+    "semantic_hash": "9941c809b2b7c5a122152a12ab23a072"
+  },
+  "package.json": {
+    "mtime": 1788455584.9329576,
+    "ast_hash": "c1634aae598e8a87d4449b8899fa4ae1",
+    "semantic_hash": "c1634aae598e8a87d4449b8899fa4ae1"
+  },
+  "src/App.jsx": {
+    "mtime": 1788455635.5783577,
+    "ast_hash": "51c252896611c754be93e0b3d718388b",
+    "semantic_hash": "51c252896611c754be93e0b3d718388b"
+  },
+  "src/components/landing/ContributionCard.jsx": {
+    "mtime": 1788455674.586272,
+    "ast_hash": "cdb1f78bb65adc26c99446c0d6222764",
+    "semantic_hash": "cdb1f78bb65adc26c99446c0d6222764"
+  },
+  "src/components/landing/Landing.jsx": {
+    "mtime": 1788455656.0081542,
+    "ast_hash": "65af2f5c7456043d4a72f37277db875b",
+    "semantic_hash": "65af2f5c7456043d4a72f37277db875b"
+  },
+  "src/components/landing/Wordmark.jsx": {
+    "mtime": 1788455660.5556922,
+    "ast_hash": "eb5a8f760c652ca062946cd4844ee215",
+    "semantic_hash": "eb5a8f760c652ca062946cd4844ee215"
+  },
+  "src/components/placeholders/PlaceholderPage.jsx": {
+    "mtime": 1788455716.5649538,
+    "ast_hash": "b99dc85c9d21bc40901830f93bdca8e3",
+    "semantic_hash": "b99dc85c9d21bc40901830f93bdca8e3"
+  },
+  "src/main.jsx": {
+    "mtime": 1788455624.5825691,
+    "ast_hash": "dc7d7b71639f447abd7c17b7c277da3e",
+    "semantic_hash": "dc7d7b71639f447abd7c17b7c277da3e"
+  },
+  "vite.config.js": {
+    "mtime": 1788455587.8616152,
+    "ast_hash": "e2328ed303dd893213a89bb6215c5408",
+    "semantic_hash": "e2328ed303dd893213a89bb6215c5408"
+  },
+  "FairShareKnowlegeVault/Welcome.md": {
+    "mtime": 1788455937.8048575,
+    "ast_hash": "5dce4937496ad2d20178a7578f1a1368",
+    "semantic_hash": "5dce4937496ad2d20178a7578f1a1368"
+  },
+  "PLAN.md": {
+    "mtime": 1788455806.0008993,
+    "ast_hash": "07f79fe3661c18ed71c547776ef07f22",
+    "semantic_hash": "07f79fe3661c18ed71c547776ef07f22"
+  },
+  "index.html": {
+    "mtime": 1788455592.8619406,
+    "ast_hash": "ba0e6029a55d568672f3868dde00957e",
+    "semantic_hash": "ba0e6029a55d568672f3868dde00957e"
+  },
+  "instructions.txt": {
+    "mtime": 1788455405.587753,
+    "ast_hash": "5f2bcd7accdd1bdbd2ee185ab14ac293",
+    "semantic_hash": "5f2bcd7accdd1bdbd2ee185ab14ac293"
+  }
+}

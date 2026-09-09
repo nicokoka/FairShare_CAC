@@ -1,0 +1,911 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Build Config & Tooling",
+      "x": 0,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_package_devdependencies_vitejs_plugin_react",
+      "type": "file",
+      "file": "@vitejsplugin-react.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies",
+      "type": "file",
+      "file": "devDependencies.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_name",
+      "type": "file",
+      "file": "name.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package",
+      "type": "file",
+      "file": "package.json.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_private",
+      "type": "file",
+      "file": "private.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_type",
+      "type": "file",
+      "file": "type.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_version",
+      "type": "file",
+      "file": "version.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_vite",
+      "type": "file",
+      "file": "vite.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Fairness Math & Contribution View",
+      "x": 740,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_src_components_landing_contributioncard_contributioncard",
+      "type": "file",
+      "file": "ContributionCard().md",
+      "x": 760,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_landing_contributioncard",
+      "type": "file",
+      "file": "ContributionCard.jsx.md",
+      "x": 960,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_fairness_report",
+      "type": "file",
+      "file": "Fairness Report.md",
+      "x": 1160,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_landing_contributioncard_teammates",
+      "type": "file",
+      "file": "TEAMMATES.md",
+      "x": 760,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_contribution_shares",
+      "type": "file",
+      "file": "contributionShares().md",
+      "x": 960,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_rating_averages",
+      "type": "file",
+      "file": "ratingAverages().md",
+      "x": 1160,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_task_points",
+      "type": "file",
+      "file": "taskPoints().md",
+      "x": 760,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Core Data Model & Features",
+      "x": 1480,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "n_plan_firestore_model",
+      "type": "file",
+      "file": "Firestore Data Model.md",
+      "x": 1500,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_google_signin",
+      "type": "file",
+      "file": "Google Sign-in.md",
+      "x": 1700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_join_code",
+      "type": "file",
+      "file": "Join Code.md",
+      "x": 1900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_proof_link",
+      "type": "file",
+      "file": "Proof Link.md",
+      "x": 1500,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_realtime_sync",
+      "type": "file",
+      "file": "Real-time onSnapshot Sync.md",
+      "x": 1700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_task_board",
+      "type": "file",
+      "file": "Task Board (To Do  Doing  Done).md",
+      "x": 1900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_teammate_verification",
+      "type": "file",
+      "file": "Teammate Verification.md",
+      "x": 1500,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Playful Landing & Branding",
+      "x": 2220,
+      "y": 0,
+      "width": 660,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_src_components_landing_landing_googleglyph",
+      "type": "file",
+      "file": "GoogleGlyph().md",
+      "x": 2240,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_landing_landing_landing",
+      "type": "file",
+      "file": "Landing().md",
+      "x": 2440,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_landing_landing",
+      "type": "file",
+      "file": "Landing.jsx.md",
+      "x": 2640,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_design_system",
+      "type": "file",
+      "file": "Playful Design System.md",
+      "x": 2240,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_landing_wordmark_wordmark",
+      "type": "file",
+      "file": "Wordmark().md",
+      "x": 2440,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_landing_wordmark",
+      "type": "file",
+      "file": "Wordmark.jsx.md",
+      "x": 2640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "App Shell & Routing",
+      "x": 0,
+      "y": 500,
+      "width": 660,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_src_app_app",
+      "type": "file",
+      "file": "App().md",
+      "x": 20,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_app",
+      "type": "file",
+      "file": "App.jsx.md",
+      "x": 220,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_placeholders_placeholderpage_placeholderpage",
+      "type": "file",
+      "file": "PlaceholderPage().md",
+      "x": 420,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_components_placeholders_placeholderpage",
+      "type": "file",
+      "file": "PlaceholderPage.jsx.md",
+      "x": 20,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_main",
+      "type": "file",
+      "file": "main.jsx.md",
+      "x": 220,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Peer Assessment Research",
+      "x": 740,
+      "y": 500,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_instructions_catme",
+      "type": "file",
+      "file": "CATME.md",
+      "x": 760,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_instructions_falchikov_goldfinch_2000",
+      "type": "file",
+      "file": "Falchikov & Goldfinch (2000).md",
+      "x": 960,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_instructions_peer_assessment",
+      "type": "file",
+      "file": "Peer Assessment.md",
+      "x": 760,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plan_peer_review",
+      "type": "file",
+      "file": "Peer Review (Effort  Quality  Teamwork).md",
+      "x": 960,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "Social Loafing Research Foundation",
+      "x": 1480,
+      "y": 500,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_instructions_fairshare",
+      "type": "file",
+      "file": "FairShare.md",
+      "x": 1500,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_instructions_latane_1979",
+      "type": "file",
+      "file": "Latane, Williams & Harkins (1979).md",
+      "x": 1700,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_instructions_ringelmann_effect",
+      "type": "file",
+      "file": "Ringelmann Effect.md",
+      "x": 1500,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_instructions_social_loafing",
+      "type": "file",
+      "file": "Social Loafing.md",
+      "x": 1700,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "React Dependencies",
+      "x": 2220,
+      "y": 500,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_package_dependencies",
+      "type": "file",
+      "file": "dependencies.md",
+      "x": 2240,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react",
+      "type": "file",
+      "file": "react.md",
+      "x": 2440,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react_dom",
+      "type": "file",
+      "file": "react-dom.md",
+      "x": 2240,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react_router_dom",
+      "type": "file",
+      "file": "react-router-dom.md",
+      "x": 2440,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "NPM Scripts",
+      "x": 0,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_package_scripts_build",
+      "type": "file",
+      "file": "build.md",
+      "x": 20,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_dev",
+      "type": "file",
+      "file": "dev.md",
+      "x": 220,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_preview",
+      "type": "file",
+      "file": "preview.md",
+      "x": 20,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts",
+      "type": "file",
+      "file": "scripts.md",
+      "x": 220,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Obsidian Vault Config",
+      "x": 740,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_fairshareknowlegevault_obsidian_app",
+      "type": "file",
+      "file": "app.json.md",
+      "x": 760,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Vite Config",
+      "x": 1480,
+      "y": 980,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_vite_config",
+      "type": "file",
+      "file": "vite.config.js.md",
+      "x": 1500,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_package_package_dependencies",
+      "fromNode": "n_package",
+      "toNode": "n_package_dependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_devdependencies",
+      "fromNode": "n_package",
+      "toNode": "n_package_devdependencies",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_name",
+      "fromNode": "n_package",
+      "toNode": "n_package_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_private",
+      "fromNode": "n_package",
+      "toNode": "n_package_private",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_scripts",
+      "fromNode": "n_package",
+      "toNode": "n_package_scripts",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_type",
+      "fromNode": "n_package",
+      "toNode": "n_package_type",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_package_version",
+      "fromNode": "n_package",
+      "toNode": "n_package_version",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_build",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_build",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_dev",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_dev",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_scripts_package_scripts_preview",
+      "fromNode": "n_package_scripts",
+      "toNode": "n_package_scripts_preview",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_react",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_react_dom",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_react_dom",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_dependencies_package_dependencies_react_router_dom",
+      "fromNode": "n_package_dependencies",
+      "toNode": "n_package_dependencies_react_router_dom",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_vite",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_vite",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_package_devdependencies_package_devdependencies_vitejs_plugin_react",
+      "fromNode": "n_package_devdependencies",
+      "toNode": "n_package_devdependencies_vitejs_plugin_react",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_src_app_app",
+      "fromNode": "n_src_app",
+      "toNode": "n_src_app_app",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_src_components_landing_landing",
+      "fromNode": "n_src_app",
+      "toNode": "n_src_components_landing_landing",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_src_components_landing_landing_landing",
+      "fromNode": "n_src_app",
+      "toNode": "n_src_components_landing_landing_landing",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_src_components_placeholders_placeholderpage",
+      "fromNode": "n_src_app",
+      "toNode": "n_src_components_placeholders_placeholderpage",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_src_components_placeholders_placeholderpage_placeholderpage",
+      "fromNode": "n_src_app",
+      "toNode": "n_src_components_placeholders_placeholderpage_placeholderpage",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_src_main",
+      "fromNode": "n_src_app",
+      "toNode": "n_src_main",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_app_app_src_main",
+      "fromNode": "n_src_app_app",
+      "toNode": "n_src_main",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_landing_contributioncard_src_components_landing_contributioncard_contributioncard",
+      "fromNode": "n_src_components_landing_contributioncard",
+      "toNode": "n_src_components_landing_contributioncard_contributioncard",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_landing_contributioncard_src_components_landing_contributioncard_teammates",
+      "fromNode": "n_src_components_landing_contributioncard",
+      "toNode": "n_src_components_landing_contributioncard_teammates",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_landing_contributioncard_src_components_landing_landing",
+      "fromNode": "n_src_components_landing_contributioncard",
+      "toNode": "n_src_components_landing_landing",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_landing_contributioncard_contributioncard_plan_contribution_shares",
+      "fromNode": "n_src_components_landing_contributioncard_contributioncard",
+      "toNode": "n_plan_contribution_shares",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_src_components_landing_contributioncard_contributioncard_plan_fairness_report",
+      "fromNode": "n_src_components_landing_contributioncard_contributioncard",
+      "toNode": "n_plan_fairness_report",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_src_components_landing_contributioncard_contributioncard_src_components_landing_landing",
+      "fromNode": "n_src_components_landing_contributioncard_contributioncard",
+      "toNode": "n_src_components_landing_landing",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_landing_landing_src_components_landing_landing_googleglyph",
+      "fromNode": "n_src_components_landing_landing",
+      "toNode": "n_src_components_landing_landing_googleglyph",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_landing_landing_src_components_landing_landing_landing",
+      "fromNode": "n_src_components_landing_landing",
+      "toNode": "n_src_components_landing_landing_landing",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_landing_landing_src_components_landing_wordmark",
+      "fromNode": "n_src_components_landing_landing",
+      "toNode": "n_src_components_landing_wordmark",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_landing_landing_src_components_landing_wordmark_wordmark",
+      "fromNode": "n_src_components_landing_landing",
+      "toNode": "n_src_components_landing_wordmark_wordmark",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_landing_landing_landing_plan_design_system",
+      "fromNode": "n_src_components_landing_landing_landing",
+      "toNode": "n_plan_design_system",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_src_components_landing_wordmark_src_components_landing_wordmark_wordmark",
+      "fromNode": "n_src_components_landing_wordmark",
+      "toNode": "n_src_components_landing_wordmark_wordmark",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_components_landing_wordmark_wordmark_plan_design_system",
+      "fromNode": "n_src_components_landing_wordmark_wordmark",
+      "toNode": "n_plan_design_system",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_src_components_placeholders_placeholderpage_src_components_placeholders_placeholderpage_placeholderpage",
+      "fromNode": "n_src_components_placeholders_placeholderpage",
+      "toNode": "n_src_components_placeholders_placeholderpage_placeholderpage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_instructions_fairshare_plan_fairness_report",
+      "fromNode": "n_instructions_fairshare",
+      "toNode": "n_plan_fairness_report",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_instructions_fairshare_plan_task_board",
+      "fromNode": "n_instructions_fairshare",
+      "toNode": "n_plan_task_board",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_instructions_fairshare_instructions_social_loafing",
+      "fromNode": "n_instructions_fairshare",
+      "toNode": "n_instructions_social_loafing",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_instructions_social_loafing_instructions_latane_1979",
+      "fromNode": "n_instructions_social_loafing",
+      "toNode": "n_instructions_latane_1979",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_instructions_social_loafing_instructions_ringelmann_effect",
+      "fromNode": "n_instructions_social_loafing",
+      "toNode": "n_instructions_ringelmann_effect",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_instructions_peer_assessment_instructions_catme",
+      "fromNode": "n_instructions_peer_assessment",
+      "toNode": "n_instructions_catme",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_instructions_peer_assessment_instructions_falchikov_goldfinch_2000",
+      "fromNode": "n_instructions_peer_assessment",
+      "toNode": "n_instructions_falchikov_goldfinch_2000",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_instructions_peer_assessment_plan_peer_review",
+      "fromNode": "n_instructions_peer_assessment",
+      "toNode": "n_plan_peer_review",
+      "label": "rationale_for [INFERRED]"
+    },
+    {
+      "id": "e_plan_task_board_plan_join_code",
+      "fromNode": "n_plan_task_board",
+      "toNode": "n_plan_join_code",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_plan_task_board_plan_realtime_sync",
+      "fromNode": "n_plan_task_board",
+      "toNode": "n_plan_realtime_sync",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_task_board_plan_firestore_model",
+      "fromNode": "n_plan_task_board",
+      "toNode": "n_plan_firestore_model",
+      "label": "shares_data_with [INFERRED]"
+    },
+    {
+      "id": "e_plan_task_board_plan_teammate_verification",
+      "fromNode": "n_plan_task_board",
+      "toNode": "n_plan_teammate_verification",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_proof_link_plan_teammate_verification",
+      "fromNode": "n_plan_proof_link",
+      "toNode": "n_plan_teammate_verification",
+      "label": "conceptually_related_to [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_peer_review_plan_fairness_report",
+      "fromNode": "n_plan_peer_review",
+      "toNode": "n_plan_fairness_report",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_fairness_report_plan_contribution_shares",
+      "fromNode": "n_plan_fairness_report",
+      "toNode": "n_plan_contribution_shares",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_fairness_report_plan_rating_averages",
+      "fromNode": "n_plan_fairness_report",
+      "toNode": "n_plan_rating_averages",
+      "label": "shares_data_with [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_task_points_plan_contribution_shares",
+      "fromNode": "n_plan_task_points",
+      "toNode": "n_plan_contribution_shares",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_plan_contribution_shares_plan_firestore_model",
+      "fromNode": "n_plan_contribution_shares",
+      "toNode": "n_plan_firestore_model",
+      "label": "shares_data_with [INFERRED]"
+    },
+    {
+      "id": "e_plan_firestore_model_plan_google_signin",
+      "fromNode": "n_plan_firestore_model",
+      "toNode": "n_plan_google_signin",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_plan_firestore_model_plan_realtime_sync",
+      "fromNode": "n_plan_firestore_model",
+      "toNode": "n_plan_realtime_sync",
+      "label": "conceptually_related_to [EXTRACTED]"
+    }
+  ]
+}
