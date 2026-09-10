@@ -1,15 +1,43 @@
-import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { useAuth } from '../../hooks/useAuth.jsx'
 import Wordmark from './Wordmark.jsx'
 import ContributionCard from './ContributionCard.jsx'
 import './landing.css'
 
 /*
- * Landing page (route "/"). For F0 the "Sign in with Google" button is
- * intentionally non-functional — real auth arrives in feature 1. The footer
- * "peek" links exist only so this feature can be tested by clicking through
- * every placeholder route.
+ * Landing page (route "/"). The "Sign in with Google" button opens the Google
+ * popup via useAuth(). Once a user is signed in (either after the popup or on a
+ * refresh where the session was restored) we redirect to the dashboard, so the
+ * landing page is only ever seen while signed out. The footer "peek" links let
+ * us click through the placeholder routes during development.
  */
 export default function Landing() {
+  const { user, loading, signIn } = useAuth()
+  const navigate = useNavigate()
+  const [signingIn, setSigningIn] = useState(false)
+  const [error, setError] = useState('')
+
+  // Send signed-in users to their dashboard instead of showing the marketing page.
+  useEffect(() => {
+    if (!loading && user) navigate('/dashboard', { replace: true })
+  }, [loading, user, navigate])
+
+  const handleSignIn = async () => {
+    setError('')
+    setSigningIn(true)
+    try {
+      await signIn()
+      // On success, onAuthStateChanged updates `user` and the effect redirects.
+    } catch (err) {
+      // A user closing the popup is not a real error — stay quiet for that one.
+      if (err?.code !== 'auth/popup-closed-by-user' && err?.code !== 'auth/cancelled-popup-request') {
+        setError("We couldn't sign you in. Please try again.")
+      }
+      setSigningIn(false)
+    }
+  }
+
   return (
     <div className="landing">
       <header className="landing-header">
@@ -32,12 +60,22 @@ export default function Landing() {
           </p>
 
           <div className="hero-actions">
-            <button type="button" className="google-btn" aria-label="Sign in with Google">
+            <button
+              type="button"
+              className="google-btn"
+              onClick={handleSignIn}
+              disabled={signingIn}
+            >
               <GoogleGlyph />
-              Sign in with Google
+              {signingIn ? 'Opening Google…' : 'Sign in with Google'}
             </button>
             <span className="hero-hint">Free for your whole class</span>
           </div>
+          {error && (
+            <p className="hero-error" role="alert">
+              {error}
+            </p>
+          )}
         </section>
 
         <div className="hero-visual" aria-hidden="true">

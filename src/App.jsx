@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Landing from './components/landing/Landing.jsx'
+import Dashboard from './components/dashboard/Dashboard.jsx'
+import ProtectedRoute from './components/auth/ProtectedRoute.jsx'
 import PlaceholderPage from './components/placeholders/PlaceholderPage.jsx'
 
 /*
@@ -17,12 +19,9 @@ export default function App() {
       <Route
         path="/dashboard"
         element={
-          <PlaceholderPage
-            emoji="🗂️"
-            title="Your projects live here"
-            text="Soon this dashboard will list every group project you're in, with a button to start a new one or join a teammate's with a code."
-            feature="Coming in feature 2"
-          />
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
         }
       />
       <Route

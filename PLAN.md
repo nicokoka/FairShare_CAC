@@ -116,7 +116,7 @@ Each feature below = one execution session ending in a user manual-test gate. **
 Vite React app in the project directory; folder structure per Rules §5; `react-router-dom` with the route map (placeholder pages); `src/styles/tokens.css` with the playful design system — bright confident palette (pick a primary like coral/violet + 2 support colors, defined as CSS custom properties in oklch), rounded radii (12–20px), a friendly Google Font pairing (e.g., a rounded display face like Baloo 2 or Fredoka for headings + a clean body face like Nunito), spacing scale, motion tokens. Landing page with app name, tagline, and a (non-functional) sign-in button so there's something to look at.
 *User test:* `npm run dev` opens; landing page looks intentionally designed (not a template); clicking through routes shows placeholder pages.
 
-**F1. Firebase setup + Google sign-in.**
+**F1. Firebase setup + Google sign-in.** ✅ done 2026-09-10
 Model walks the user through Firebase Console: create project, enable Google auth provider, create Firestore DB (production mode), copy web app config. Config goes in `src/lib/firebase.js` (web API keys are safe to commit — explain this to the user). Build `useAuth` hook + auth context: sign-in popup, sign-out, loading state; protected routes redirect to `/`; header shows user photo + name + sign-out.
 *User test:* sign in with Google → lands on dashboard placeholder with their name/photo; refresh keeps them signed in; sign-out returns to landing.
 
