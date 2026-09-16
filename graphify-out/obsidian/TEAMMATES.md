@@ -1,12 +1,12 @@
 ---
 source_file: "src/components/landing/ContributionCard.jsx"
 type: "code"
-community: "Fairness Math & Contribution View"
+community: "Landing Contribution Card"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Fairness_Math__Contribution_View
+  - community/Landing_Contribution_Card
 ---
 
 # TEAMMATES
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContributionCard.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Fairness_Math__Contribution_View
+#graphify/code #graphify/EXTRACTED #community/Landing_Contribution_Card

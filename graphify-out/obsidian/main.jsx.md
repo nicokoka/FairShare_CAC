@@ -1,12 +1,12 @@
 ---
 source_file: "src/main.jsx"
 type: "code"
-community: "App Shell & Routing"
+community: "App Shell & Page Components"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Shell__Routing
+  - community/App_Shell__Page_Components
 ---
 
 # main.jsx
@@ -14,5 +14,7 @@ tags:
 ## Connections
 - [[App()]] - `imports` [EXTRACTED]
 - [[App.jsx]] - `imports_from` [EXTRACTED]
+- [[AuthProvider()]] - `imports` [EXTRACTED]
+- [[useAuth.jsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/App_Shell__Routing
+#graphify/code #graphify/EXTRACTED #community/App_Shell__Page_Components

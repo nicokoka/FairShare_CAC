@@ -1,18 +1,17 @@
 ---
 source_file: "src/components/landing/Wordmark.jsx"
 type: "code"
-community: "Playful Landing & Branding"
+community: "Wordmark Branding"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playful_Landing__Branding
+  - community/Wordmark_Branding
 ---
 
 # Wordmark.jsx
 
 ## Connections
-- [[Landing.jsx]] - `imports_from` [EXTRACTED]
 - [[Wordmark()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playful_Landing__Branding
+#graphify/code #graphify/EXTRACTED #community/Wordmark_Branding

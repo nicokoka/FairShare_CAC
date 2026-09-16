@@ -120,11 +120,11 @@ Vite React app in the project directory; folder structure per Rules §5; `react-
 Model walks the user through Firebase Console: create project, enable Google auth provider, create Firestore DB (production mode), copy web app config. Config goes in `src/lib/firebase.js` (web API keys are safe to commit — explain this to the user). Build `useAuth` hook + auth context: sign-in popup, sign-out, loading state; protected routes redirect to `/`; header shows user photo + name + sign-out.
 *User test:* sign in with Google → lands on dashboard placeholder with their name/photo; refresh keeps them signed in; sign-out returns to landing.
 
-**F2. Create project + dashboard.**
+**F2. Create project + dashboard.** ✅ done 2026-09-16
 Dashboard lists the user's projects (`onSnapshot` query on `memberIds array-contains uid`), newest first, each card showing name, member avatars, status. "Create project" modal → writes `projects` doc (creator in `memberIds`/`members`) + `joinCodes/{CODE}` doc; join code generated in `src/lib/joinCode.js` (6 chars, unambiguous alphabet). Project page header shows name + join code with copy button. First Firestore rules deploy (projects: member-only read; joinCodes as specified).
 *User test:* create a project → appears on dashboard instantly; open it → see join code; second Google account sees nothing (rules working).
 
-**F3. Join by code.**
+**F3. Join by code.** ✅ done 2026-09-16
 Dashboard "Join project" input → look up `joinCodes/{CODE}` → add self to `memberIds` + `members` (rules permit self-add only). Friendly errors: bad code, already a member, project ended. Members list on project page (avatars + names, creator badge).
 *User test (2 browsers/accounts):* account B enters A's code → project appears on B's dashboard; both see both members on the project page; wrong code shows a friendly error.
 

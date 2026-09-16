@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Build Config & Tooling"
-location: "L16"
+community: "Build Config & Dependencies"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Build_Config__Tooling
+  - community/Build_Config__Dependencies
 ---
 
 # devDependencies
@@ -16,4 +16,4 @@ tags:
 - [[package.json]] - `contains` [EXTRACTED]
 - [[vite]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Build_Config__Tooling
+#graphify/code #graphify/EXTRACTED #community/Build_Config__Dependencies

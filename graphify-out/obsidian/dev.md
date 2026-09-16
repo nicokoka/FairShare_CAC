@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "NPM Scripts"
+community: "Build Config & Dependencies"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NPM_Scripts
+  - community/Build_Config__Dependencies
 ---
 
 # dev
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scripts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NPM_Scripts
+#graphify/code #graphify/EXTRACTED #community/Build_Config__Dependencies

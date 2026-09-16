@@ -1,20 +1,18 @@
 ---
 source_file: "PLAN.md"
 type: "concept"
-community: "Fairness Math & Contribution View"
+community: "Fairness Math & Research Foundation"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Fairness_Math__Contribution_View
+  - community/Fairness_Math__Research_Foundation
 ---
 
 # Fairness Report
 
 ## Connections
-- [[ContributionCard()]] - `conceptually_related_to` [INFERRED]
+- [[F11 Fairness report page]] - `implements` [EXTRACTED]
 - [[FairShare]] - `conceptually_related_to` [EXTRACTED]
-- [[Peer Review (Effort  Quality  Teamwork)]] - `shares_data_with` [EXTRACTED]
-- [[contributionShares()]] - `shares_data_with` [EXTRACTED]
-- [[ratingAverages()]] - `shares_data_with` [EXTRACTED]
+- [[srclibfairness.js (pure functions)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Fairness_Math__Contribution_View
+#graphify/concept #graphify/EXTRACTED #community/Fairness_Math__Research_Foundation

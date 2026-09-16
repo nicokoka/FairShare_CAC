@@ -1,12 +1,12 @@
 ---
 source_file: "src/components/landing/Landing.jsx"
 type: "code"
-community: "Playful Landing & Branding"
-location: "L94"
+community: "App Shell & Page Components"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playful_Landing__Branding
+  - community/App_Shell__Page_Components
 ---
 
 # GoogleGlyph()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Landing.jsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playful_Landing__Branding
+#graphify/code #graphify/EXTRACTED #community/App_Shell__Page_Components

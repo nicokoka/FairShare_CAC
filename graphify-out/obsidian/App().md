@@ -1,12 +1,12 @@
 ---
 source_file: "src/App.jsx"
 type: "code"
-community: "App Shell & Routing"
-location: "L13"
+community: "App Shell & Page Components"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Shell__Routing
+  - community/App_Shell__Page_Components
 ---
 
 # App()
@@ -15,4 +15,4 @@ tags:
 - [[App.jsx]] - `contains` [EXTRACTED]
 - [[main.jsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/App_Shell__Routing
+#graphify/code #graphify/EXTRACTED #community/App_Shell__Page_Components

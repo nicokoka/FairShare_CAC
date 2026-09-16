@@ -1,11 +1,11 @@
 ---
 source_file: "instructions.txt"
 type: "concept"
-community: "Social Loafing Research Foundation"
+community: "Fairness Math & Research Foundation"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Social_Loafing_Research_Foundation
+  - community/Fairness_Math__Research_Foundation
 ---
 
 # Ringelmann Effect
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Social Loafing]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Social_Loafing_Research_Foundation
+#graphify/concept #graphify/EXTRACTED #community/Fairness_Math__Research_Foundation

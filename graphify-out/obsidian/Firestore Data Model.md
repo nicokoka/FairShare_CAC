@@ -1,19 +1,19 @@
 ---
 source_file: "PLAN.md"
 type: "concept"
-community: "Core Data Model & Features"
+community: "Feature Sequence & Milestones"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Core_Data_Model__Features
+  - graphify/EXTRACTED
+  - community/Feature_Sequence__Milestones
 ---
 
 # Firestore Data Model
 
 ## Connections
-- [[Google Sign-in]] - `conceptually_related_to` [INFERRED]
-- [[Real-time onSnapshot Sync]] - `conceptually_related_to` [EXTRACTED]
-- [[Task Board (To Do  Doing  Done)]] - `shares_data_with` [INFERRED]
-- [[contributionShares()]] - `shares_data_with` [INFERRED]
+- [[joinCodes collection]] - `references` [EXTRACTED]
+- [[projects collection]] - `references` [EXTRACTED]
+- [[reviews subcollection]] - `references` [EXTRACTED]
+- [[tasks subcollection]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Core_Data_Model__Features
+#graphify/concept #graphify/EXTRACTED #community/Feature_Sequence__Milestones

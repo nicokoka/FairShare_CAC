@@ -1,70 +1,70 @@
 {
   "colorGroups": [
     {
-      "query": "tag:#community/Build_Config_&_Tooling",
+      "query": "tag:#community/Feature_Sequence_&_Milestones",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Fairness_Math_&_Contribution_View",
+      "query": "tag:#community/App_Shell_&_Page_Components",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Core_Data_Model_&_Features",
+      "query": "tag:#community/Fairness_Math_&_Research_Foundation",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Playful_Landing_&_Branding",
+      "query": "tag:#community/Build_Config_&_Dependencies",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/App_Shell_&_Routing",
+      "query": "tag:#community/Dashboard_&_Project_UI",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Peer_Assessment_Research",
+      "query": "tag:#community/Project_&_Join-Code_Data_Layer",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Social_Loafing_Research_Foundation",
+      "query": "tag:#community/Auth_&_Firebase_Init",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/React_Dependencies",
+      "query": "tag:#community/Landing_Contribution_Card",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/NPM_Scripts",
+      "query": "tag:#community/Wordmark_Branding",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Obsidian_Vault_Config",
+      "query": "tag:#community/Placeholder_Page",
       "color": {
         "a": 1,
         "rgb": 12234924

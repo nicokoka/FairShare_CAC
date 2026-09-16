@@ -1,106 +1,106 @@
-# Graph Report - .  (2026-09-03)
+# Graph Report - .  (2026-09-16)
 
 ## Corpus Check
-- Corpus is ~5,208 words - fits in a single context window. You may not need a graph.
+- 21 files · ~9,015 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 51 nodes · 56 edges · 11 communities (10 shown, 1 thin omitted)
-- Extraction: 84% EXTRACTED · 16% INFERRED · 0% AMBIGUOUS · INFERRED: 9 edges (avg confidence: 0.81)
-- Token cost: 0 input · 0 output
+- 128 nodes · 203 edges · 11 communities (10 shown, 1 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.81)
+- Token cost: 64,812 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Build Config & Tooling|Build Config & Tooling]]
-- [[_COMMUNITY_Fairness Math & Contribution View|Fairness Math & Contribution View]]
-- [[_COMMUNITY_Core Data Model & Features|Core Data Model & Features]]
-- [[_COMMUNITY_Playful Landing & Branding|Playful Landing & Branding]]
-- [[_COMMUNITY_App Shell & Routing|App Shell & Routing]]
-- [[_COMMUNITY_Peer Assessment Research|Peer Assessment Research]]
-- [[_COMMUNITY_Social Loafing Research Foundation|Social Loafing Research Foundation]]
-- [[_COMMUNITY_React Dependencies|React Dependencies]]
-- [[_COMMUNITY_NPM Scripts|NPM Scripts]]
+- [[_COMMUNITY_Feature Sequence & Milestones|Feature Sequence & Milestones]]
+- [[_COMMUNITY_App Shell & Page Components|App Shell & Page Components]]
+- [[_COMMUNITY_Fairness Math & Research Foundation|Fairness Math & Research Foundation]]
+- [[_COMMUNITY_Build Config & Dependencies|Build Config & Dependencies]]
+- [[_COMMUNITY_Dashboard & Project UI|Dashboard & Project UI]]
+- [[_COMMUNITY_Project & Join-Code Data Layer|Project & Join-Code Data Layer]]
+- [[_COMMUNITY_Auth & Firebase Init|Auth & Firebase Init]]
+- [[_COMMUNITY_Landing Contribution Card|Landing Contribution Card]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Task Board (To Do / Doing / Done)` - 5 edges
-2. `Fairness Report` - 5 edges
-3. `scripts` - 4 edges
-4. `ContributionCard()` - 4 edges
-5. `contributionShares()` - 4 edges
-6. `Firestore Data Model` - 4 edges
-7. `Landing()` - 3 edges
-8. `Wordmark()` - 3 edges
-9. `FairShare` - 3 edges
-10. `Social Loafing` - 3 edges
+1. `useAuth()` - 13 edges
+2. `Firestore Security Rules` - 8 edges
+3. `Proof + Verification` - 6 edges
+4. `Milestone M1 (live board)` - 6 edges
+5. `tasks subcollection` - 5 edges
+6. `reviews subcollection` - 5 edges
+7. `Live Task Board` - 5 edges
+8. `src/lib/fairness.js (pure functions)` - 5 edges
+9. `Milestone M3 (report/polish/ship)` - 5 edges
+10. `scripts` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `contributionShares()` --semantically_similar_to--> `ContributionCard()`  [INFERRED] [semantically similar]
-  PLAN.md → src/components/landing/ContributionCard.jsx
-- `Fairness Report` --conceptually_related_to--> `ContributionCard()`  [INFERRED]
-  PLAN.md → src/components/landing/ContributionCard.jsx
-- `Playful Design System` --conceptually_related_to--> `Landing()`  [INFERRED]
-  PLAN.md → src/components/landing/Landing.jsx
-- `Playful Design System` --conceptually_related_to--> `Wordmark()`  [INFERRED]
-  PLAN.md → src/components/landing/Wordmark.jsx
+- `FairShare` --conceptually_related_to--> `Live Task Board`  [EXTRACTED]
+  instructions.txt → PLAN.md
+- `Peer Assessment` --rationale_for--> `Peer Review`  [INFERRED]
+  instructions.txt → PLAN.md
 - `FairShare` --conceptually_related_to--> `Fairness Report`  [EXTRACTED]
   instructions.txt → PLAN.md
+- `One-feature-per-session Workflow` --rationale_for--> `FairShare (App)`  [EXTRACTED]
+  PLAN.md → CLAUDE.md
+- `Playful & student-y visual style` --rationale_for--> `FairShare (App)`  [EXTRACTED]
+  PLAN.md → CLAUDE.md
 
 ## Import Cycles
 - None detected.
 
 ## Hyperedges (group relationships)
-- **Fairness Report Computation Flow** — plan_task_points, plan_contribution_shares, plan_rating_averages, plan_fairness_report [EXTRACTED 0.90]
+- **Fairness computation pipeline (verified tasks + reviews to report)** — plan_proof_verification, plan_peer_review, plan_fairness_lib, plan_fairness_report [EXTRACTED 0.90]
+- **Firestore data model collections** — plan_projects_collection, plan_joincodes_collection, plan_tasks_collection, plan_reviews_collection [EXTRACTED 0.90]
+- **Serverless client-only + rules-enforced security** — plan_no_cloud_functions, plan_security_rules, plan_reviews_collection [EXTRACTED 0.85]
 - **Research Foundation** — instructions_social_loafing, instructions_ringelmann_effect, instructions_peer_assessment, instructions_fairshare [EXTRACTED 0.85]
 
 ## Communities (11 total, 1 thin omitted)
 
-### Community 0 - "Build Config & Tooling"
-Cohesion: 0.25
-Nodes (7): devDependencies, vite, @vitejs/plugin-react, name, private, type, version
+### Community 0 - "Feature Sequence & Milestones"
+Cohesion: 0.10
+Nodes (31): Tech Stack (Vite + React + plain JS + Firebase Spark), CATME, Falchikov & Goldfinch (2000), Peer Assessment, End Project, F0 Scaffold & design system (done), F1 Firebase setup + Google sign-in (done), F2 Create project + dashboard (done) (+23 more)
 
-### Community 1 - "Fairness Math & Contribution View"
-Cohesion: 0.33
-Nodes (4): contributionShares(), Fairness Report, ContributionCard(), TEAMMATES
+### Community 1 - "App Shell & Page Components"
+Cohesion: 0.18
+Nodes (7): App(), ProtectedRoute(), LoadingScreen(), Landing(), MembersList(), ProjectPage(), useProject()
 
-### Community 2 - "Core Data Model & Features"
-Cohesion: 0.33
-Nodes (7): Firestore Data Model, Google Sign-in, Join Code, Proof Link, Real-time onSnapshot Sync, Task Board (To Do / Doing / Done), Teammate Verification
+### Community 2 - "Fairness Math & Research Foundation"
+Cohesion: 0.13
+Nodes (17): FairShare (App), FairShare, Latane, Williams & Harkins (1979), Ringelmann Effect, Social Loafing, contributionShares(tasks, memberIds), F10 Fairness math (pure functions), F11 Fairness report page (+9 more)
 
-### Community 3 - "Playful Landing & Branding"
-Cohesion: 0.47
-Nodes (3): Playful Design System, Landing(), Wordmark()
+### Community 3 - "Build Config & Dependencies"
+Cohesion: 0.12
+Nodes (16): dependencies, firebase, react, react-dom, react-router-dom, devDependencies, vite, @vitejs/plugin-react (+8 more)
 
-### Community 5 - "Peer Assessment Research"
-Cohesion: 0.50
-Nodes (4): CATME, Falchikov & Goldfinch (2000), Peer Assessment, Peer Review (Effort / Quality / Teamwork)
+### Community 4 - "Dashboard & Project UI"
+Cohesion: 0.20
+Nodes (8): CreateProjectModal(), Dashboard(), JoinProjectModal(), ProjectCard(), AppHeader(), useAuth(), useProjects(), projectsCollection
 
-### Community 6 - "Social Loafing Research Foundation"
-Cohesion: 0.50
-Nodes (4): FairShare, Latane, Williams & Harkins (1979), Ringelmann Effect, Social Loafing
+### Community 5 - "Project & Join-Code Data Layer"
+Cohesion: 0.42
+Nodes (7): generateJoinCode(), createProject(), joinCodeRef(), joinProject(), lookupJoinCode(), projectRef(), reserveUniqueCode()
 
-### Community 7 - "React Dependencies"
-Cohesion: 0.50
-Nodes (4): dependencies, react, react-dom, react-router-dom
-
-### Community 8 - "NPM Scripts"
-Cohesion: 0.50
-Nodes (4): scripts, build, dev, preview
+### Community 6 - "Auth & Firebase Init"
+Cohesion: 0.24
+Nodes (8): AuthContext, AuthProvider(), app, auth, db, firebaseConfig, googleProvider, REQUIRED
 
 ## Knowledge Gaps
-- **20 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+15 more)
+- **23 isolated node(s):** `TEAMMATES`, `Ringelmann Effect`, `CATME`, `Latane, Williams & Harkins (1979)`, `Falchikov & Goldfinch (2000)` (+18 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ContributionCard()` connect `Fairness Math & Contribution View` to `Playful Landing & Branding`?**
-  _High betweenness centrality (0.202) - this node is a cross-community bridge._
-- **Why does `Fairness Report` connect `Fairness Math & Contribution View` to `Peer Assessment Research`, `Social Loafing Research Foundation`?**
-  _High betweenness centrality (0.189) - this node is a cross-community bridge._
-- **Why does `FairShare` connect `Social Loafing Research Foundation` to `Fairness Math & Contribution View`, `Core Data Model & Features`?**
-  _High betweenness centrality (0.116) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `Task Board (To Do / Doing / Done)` (e.g. with `Join Code` and `Firestore Data Model`) actually correct?**
-  _`Task Board (To Do / Doing / Done)` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 2 inferred relationships involving `ContributionCard()` (e.g. with `contributionShares()` and `Fairness Report`) actually correct?**
-  _`ContributionCard()` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `name`, `private`, `version` to the rest of the system?**
-  _20 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `firebase` connect `Build Config & Dependencies` to `Auth & Firebase Init`?**
+  _High betweenness centrality (0.110) - this node is a cross-community bridge._
+- **Why does `Firestore Security Rules` connect `Feature Sequence & Milestones` to `Fairness Math & Research Foundation`?**
+  _High betweenness centrality (0.040) - this node is a cross-community bridge._
+- **Are the 2 inferred relationships involving `Proof + Verification` (e.g. with `contributionShares(tasks, memberIds)` and `Join Code (6-char)`) actually correct?**
+  _`Proof + Verification` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `TEAMMATES`, `Ringelmann Effect`, `CATME` to the rest of the system?**
+  _25 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Feature Sequence & Milestones` be split into smaller, more focused modules?**
+  _Cohesion score 0.0989247311827957 - nodes in this community are weakly interconnected._
+- **Should `Fairness Math & Research Foundation` be split into smaller, more focused modules?**
+  _Cohesion score 0.1323529411764706 - nodes in this community are weakly interconnected._
+- **Should `Build Config & Dependencies` be split into smaller, more focused modules?**
+  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._

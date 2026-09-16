@@ -1,11 +1,11 @@
 ---
 source_file: "instructions.txt"
 type: "paper"
-community: "Social Loafing Research Foundation"
+community: "Fairness Math & Research Foundation"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/Social_Loafing_Research_Foundation
+  - community/Fairness_Math__Research_Foundation
 ---
 
 # Latane, Williams & Harkins (1979)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Social Loafing]] - `cites` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/Social_Loafing_Research_Foundation
+#graphify/paper #graphify/EXTRACTED #community/Fairness_Math__Research_Foundation

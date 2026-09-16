@@ -1,23 +1,21 @@
 ---
 source_file: "src/components/landing/Landing.jsx"
 type: "code"
-community: "Playful Landing & Branding"
+community: "App Shell & Page Components"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playful_Landing__Branding
+  - community/App_Shell__Page_Components
 ---
 
 # Landing.jsx
 
 ## Connections
 - [[App.jsx]] - `imports_from` [EXTRACTED]
-- [[ContributionCard()]] - `imports` [EXTRACTED]
-- [[ContributionCard.jsx]] - `imports_from` [EXTRACTED]
 - [[GoogleGlyph()]] - `contains` [EXTRACTED]
 - [[Landing()]] - `contains` [EXTRACTED]
-- [[Wordmark()]] - `imports` [EXTRACTED]
-- [[Wordmark.jsx]] - `imports_from` [EXTRACTED]
+- [[useAuth()]] - `imports` [EXTRACTED]
+- [[useAuth.jsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playful_Landing__Branding
+#graphify/code #graphify/EXTRACTED #community/App_Shell__Page_Components

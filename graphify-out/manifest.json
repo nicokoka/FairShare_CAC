@@ -1,38 +1,13 @@
 {
-  "FairShareKnowlegeVault/.obsidian/app.json": {
-    "mtime": 1788455938.700549,
-    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
-    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
-  },
-  "FairShareKnowlegeVault/.obsidian/appearance.json": {
-    "mtime": 1788455938.701311,
-    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
-    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
-  },
-  "FairShareKnowlegeVault/.obsidian/core-plugins.json": {
-    "mtime": 1788455938.2601678,
-    "ast_hash": "7c877bea49eaeabb100563bd157b9051",
-    "semantic_hash": "7c877bea49eaeabb100563bd157b9051"
-  },
-  "FairShareKnowlegeVault/.obsidian/graph.json": {
-    "mtime": 1788455947.917,
-    "ast_hash": "d02c81153ab5233d3e1ad99934d6c814",
-    "semantic_hash": "d02c81153ab5233d3e1ad99934d6c814"
-  },
-  "FairShareKnowlegeVault/.obsidian/workspace.json": {
-    "mtime": 1788455950.0056598,
-    "ast_hash": "9941c809b2b7c5a122152a12ab23a072",
-    "semantic_hash": "9941c809b2b7c5a122152a12ab23a072"
-  },
   "package.json": {
-    "mtime": 1788455584.9329576,
-    "ast_hash": "c1634aae598e8a87d4449b8899fa4ae1",
-    "semantic_hash": "c1634aae598e8a87d4449b8899fa4ae1"
+    "mtime": 1788974825.6730657,
+    "ast_hash": "c59157b6f56d70f4af3bc93d3568a712",
+    "semantic_hash": "c59157b6f56d70f4af3bc93d3568a712"
   },
   "src/App.jsx": {
-    "mtime": 1788455635.5783577,
-    "ast_hash": "51c252896611c754be93e0b3d718388b",
-    "semantic_hash": "51c252896611c754be93e0b3d718388b"
+    "mtime": 1789253067.0455618,
+    "ast_hash": "0ebc7386a7fa4485878c6b8b2525b250",
+    "semantic_hash": "0ebc7386a7fa4485878c6b8b2525b250"
   },
   "src/components/landing/ContributionCard.jsx": {
     "mtime": 1788455674.586272,
@@ -40,9 +15,9 @@
     "semantic_hash": "cdb1f78bb65adc26c99446c0d6222764"
   },
   "src/components/landing/Landing.jsx": {
-    "mtime": 1788455656.0081542,
-    "ast_hash": "65af2f5c7456043d4a72f37277db875b",
-    "semantic_hash": "65af2f5c7456043d4a72f37277db875b"
+    "mtime": 1788974939.2156954,
+    "ast_hash": "8f76e2a7c036441d44ce35c55e86ddac",
+    "semantic_hash": "8f76e2a7c036441d44ce35c55e86ddac"
   },
   "src/components/landing/Wordmark.jsx": {
     "mtime": 1788455660.5556922,
@@ -55,24 +30,19 @@
     "semantic_hash": "b99dc85c9d21bc40901830f93bdca8e3"
   },
   "src/main.jsx": {
-    "mtime": 1788455624.5825691,
-    "ast_hash": "dc7d7b71639f447abd7c17b7c277da3e",
-    "semantic_hash": "dc7d7b71639f447abd7c17b7c277da3e"
+    "mtime": 1788974908.678138,
+    "ast_hash": "bcb758955ea98ed81c6dfe72a9818729",
+    "semantic_hash": "bcb758955ea98ed81c6dfe72a9818729"
   },
   "vite.config.js": {
     "mtime": 1788455587.8616152,
     "ast_hash": "e2328ed303dd893213a89bb6215c5408",
     "semantic_hash": "e2328ed303dd893213a89bb6215c5408"
   },
-  "FairShareKnowlegeVault/Welcome.md": {
-    "mtime": 1788455937.8048575,
-    "ast_hash": "5dce4937496ad2d20178a7578f1a1368",
-    "semantic_hash": "5dce4937496ad2d20178a7578f1a1368"
-  },
   "PLAN.md": {
-    "mtime": 1788455806.0008993,
-    "ast_hash": "07f79fe3661c18ed71c547776ef07f22",
-    "semantic_hash": "07f79fe3661c18ed71c547776ef07f22"
+    "mtime": 1789577983.9431067,
+    "ast_hash": "84ec71397b9e9d2231454ab11970acd3",
+    "semantic_hash": "84ec71397b9e9d2231454ab11970acd3"
   },
   "index.html": {
     "mtime": 1788455592.8619406,
@@ -83,5 +53,85 @@
     "mtime": 1788455405.587753,
     "ast_hash": "5f2bcd7accdd1bdbd2ee185ab14ac293",
     "semantic_hash": "5f2bcd7accdd1bdbd2ee185ab14ac293"
+  },
+  "src/components/auth/ProtectedRoute.jsx": {
+    "mtime": 1788974861.2658193,
+    "ast_hash": "881d4fea0eec919af4609c6b7e1b52bc",
+    "semantic_hash": "881d4fea0eec919af4609c6b7e1b52bc"
+  },
+  "src/components/common/LoadingScreen.jsx": {
+    "mtime": 1788974865.988682,
+    "ast_hash": "7d02db0370e6a6cb611baac04d1d93d2",
+    "semantic_hash": "7d02db0370e6a6cb611baac04d1d93d2"
+  },
+  "src/components/dashboard/CreateProjectModal.jsx": {
+    "mtime": 1789253017.1842752,
+    "ast_hash": "cae31f20b117434d412bdf578d9f5661",
+    "semantic_hash": "cae31f20b117434d412bdf578d9f5661"
+  },
+  "src/components/dashboard/Dashboard.jsx": {
+    "mtime": 1789491750.526585,
+    "ast_hash": "60a1cda029484f98cc072b5b37f6df89",
+    "semantic_hash": "60a1cda029484f98cc072b5b37f6df89"
+  },
+  "src/components/dashboard/JoinProjectModal.jsx": {
+    "mtime": 1789577743.408993,
+    "ast_hash": "16d5cbdb8db0ec91679d9db61ea6f896",
+    "semantic_hash": "16d5cbdb8db0ec91679d9db61ea6f896"
+  },
+  "src/components/dashboard/ProjectCard.jsx": {
+    "mtime": 1789253025.9044795,
+    "ast_hash": "863adfa78ef66933198e97b3058b537e",
+    "semantic_hash": "863adfa78ef66933198e97b3058b537e"
+  },
+  "src/components/layout/AppHeader.jsx": {
+    "mtime": 1788974879.6812172,
+    "ast_hash": "1ea6e6ffd11a1d6b3c821207df576e11",
+    "semantic_hash": "1ea6e6ffd11a1d6b3c821207df576e11"
+  },
+  "src/components/project/MembersList.jsx": {
+    "mtime": 1789491699.4669263,
+    "ast_hash": "964dcc8877db5b63f1ee18ea18d9bfb8",
+    "semantic_hash": "964dcc8877db5b63f1ee18ea18d9bfb8"
+  },
+  "src/components/project/ProjectPage.jsx": {
+    "mtime": 1789491707.6799448,
+    "ast_hash": "9868e1f7b7d0b3771e4f071c99660650",
+    "semantic_hash": "9868e1f7b7d0b3771e4f071c99660650"
+  },
+  "src/hooks/useAuth.jsx": {
+    "mtime": 1788974856.1961467,
+    "ast_hash": "eab498dbd2e1f7b073bc2433d484dcf4",
+    "semantic_hash": "eab498dbd2e1f7b073bc2433d484dcf4"
+  },
+  "src/hooks/useProject.jsx": {
+    "mtime": 1789253001.467008,
+    "ast_hash": "6ea0f95096c9d847568771e8a566d9b0",
+    "semantic_hash": "6ea0f95096c9d847568771e8a566d9b0"
+  },
+  "src/hooks/useProjects.jsx": {
+    "mtime": 1789252994.151579,
+    "ast_hash": "c0abb0135ae035062735d9087a8bf4bf",
+    "semantic_hash": "c0abb0135ae035062735d9087a8bf4bf"
+  },
+  "src/lib/firebase.js": {
+    "mtime": 1789060494.3330152,
+    "ast_hash": "5c9e00243266d62abbda0e3493f5ea0f",
+    "semantic_hash": "5c9e00243266d62abbda0e3493f5ea0f"
+  },
+  "src/lib/joinCode.js": {
+    "mtime": 1789252968.0556824,
+    "ast_hash": "c6d8de2908bfe477f89fd7a02ce2996c",
+    "semantic_hash": "c6d8de2908bfe477f89fd7a02ce2996c"
+  },
+  "src/lib/projects.js": {
+    "mtime": 1789491551.5191488,
+    "ast_hash": "a4d58522deed820e5aeb31a064f5f3a6",
+    "semantic_hash": "a4d58522deed820e5aeb31a064f5f3a6"
+  },
+  "CLAUDE.md": {
+    "mtime": 1789577993.8553302,
+    "ast_hash": "1fd21c7ad701a12b5271145cc57991fc",
+    "semantic_hash": "1fd21c7ad701a12b5271145cc57991fc"
   }
 }

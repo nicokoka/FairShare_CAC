@@ -1,11 +1,11 @@
 ---
 source_file: "instructions.txt"
 type: "rationale"
-community: "Peer Assessment Research"
+community: "Feature Sequence & Milestones"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Peer_Assessment_Research
+  - community/Feature_Sequence__Milestones
 ---
 
 # Peer Assessment
@@ -13,6 +13,6 @@ tags:
 ## Connections
 - [[CATME]] - `conceptually_related_to` [EXTRACTED]
 - [[Falchikov & Goldfinch (2000)]] - `cites` [EXTRACTED]
-- [[Peer Review (Effort  Quality  Teamwork)]] - `rationale_for` [INFERRED]
+- [[Peer Review]] - `rationale_for` [INFERRED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Peer_Assessment_Research
+#graphify/rationale #graphify/EXTRACTED #community/Feature_Sequence__Milestones

@@ -189,5 +189,32 @@
     }
   },
   "active": "c127cebf666a04d9",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "_COMMUNITY_Placeholder Page.md",
+    "_COMMUNITY_Wordmark Branding.md",
+    "_COMMUNITY_Landing Contribution Card.md",
+    "_COMMUNITY_Auth & Firebase Init.md",
+    "_COMMUNITY_Project & Join-Code Data Layer.md",
+    "_COMMUNITY_Dashboard & Project UI.md",
+    "_COMMUNITY_Build Config & Dependencies.md",
+    "_COMMUNITY_Fairness Math & Research Foundation.md",
+    "_COMMUNITY_App Shell & Page Components.md",
+    "_COMMUNITY_Feature Sequence & Milestones.md",
+    "Real-time onSnapshot listeners.md",
+    "Playful & student-y visual style.md",
+    "F14 Deploy + demo prep.md",
+    "F13 Visual polish + responsive pass.md",
+    "F12 Security rules audit + edge cases.md",
+    "F11 Fairness report page.md",
+    "F10 Fairness math (pure functions).md",
+    "F9 Peer review form.md",
+    "F8 End project.md",
+    "F7 Verification — approve or reject.md",
+    "F6 Mark done with proof.md",
+    "F5 Claim & move tasks.md",
+    "F4 Task board — create & display.md",
+    "F3 Join by code (done).md",
+    "F2 Create project + dashboard (done).md",
+    "F1 Firebase setup + Google sign-in (done).md"
+  ]
 }
