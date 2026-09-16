@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Landing from './components/landing/Landing.jsx'
 import Dashboard from './components/dashboard/Dashboard.jsx'
+import ProjectPage from './components/project/ProjectPage.jsx'
 import ProtectedRoute from './components/auth/ProtectedRoute.jsx'
 import PlaceholderPage from './components/placeholders/PlaceholderPage.jsx'
 
@@ -27,12 +28,9 @@ export default function App() {
       <Route
         path="/project/:id"
         element={
-          <PlaceholderPage
-            emoji="📋"
-            title="The task board"
-            text="To Do, Doing, and Done — updating live for the whole team. This is where the work (and who does it) becomes visible."
-            feature="Coming in feature 4"
-          />
+          <ProtectedRoute>
+            <ProjectPage />
+          </ProtectedRoute>
         }
       />
       <Route
