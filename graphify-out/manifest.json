@@ -40,9 +40,9 @@
     "semantic_hash": "e2328ed303dd893213a89bb6215c5408"
   },
   "PLAN.md": {
-    "mtime": 1789577983.9431067,
-    "ast_hash": "84ec71397b9e9d2231454ab11970acd3",
-    "semantic_hash": "84ec71397b9e9d2231454ab11970acd3"
+    "mtime": 1789622751.8664277,
+    "ast_hash": "4d9599d0ed238558216bbdfadd28cb84",
+    "semantic_hash": "4d9599d0ed238558216bbdfadd28cb84"
   },
   "index.html": {
     "mtime": 1788455592.8619406,
@@ -95,9 +95,9 @@
     "semantic_hash": "964dcc8877db5b63f1ee18ea18d9bfb8"
   },
   "src/components/project/ProjectPage.jsx": {
-    "mtime": 1789491707.6799448,
-    "ast_hash": "9868e1f7b7d0b3771e4f071c99660650",
-    "semantic_hash": "9868e1f7b7d0b3771e4f071c99660650"
+    "mtime": 1789622709.2567558,
+    "ast_hash": "49c8b9db9afdec6baef586ccfc15c08a",
+    "semantic_hash": "49c8b9db9afdec6baef586ccfc15c08a"
   },
   "src/hooks/useAuth.jsx": {
     "mtime": 1788974856.1961467,
@@ -130,8 +130,48 @@
     "semantic_hash": "a4d58522deed820e5aeb31a064f5f3a6"
   },
   "CLAUDE.md": {
-    "mtime": 1789577993.8553302,
-    "ast_hash": "1fd21c7ad701a12b5271145cc57991fc",
-    "semantic_hash": "1fd21c7ad701a12b5271145cc57991fc"
+    "mtime": 1789622758.3368657,
+    "ast_hash": "54f403daa46f1cdb927120b9296f087f",
+    "semantic_hash": "54f403daa46f1cdb927120b9296f087f"
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1789619210.4932153,
+    "ast_hash": "43d815593c64327ba40358d7911cf797",
+    "semantic_hash": "43d815593c64327ba40358d7911cf797"
+  },
+  "src/components/task/AddTaskModal.jsx": {
+    "mtime": 1789619074.2543883,
+    "ast_hash": "7b00af09b56ada8fd0e0a9e7f864028f",
+    "semantic_hash": "7b00af09b56ada8fd0e0a9e7f864028f"
+  },
+  "src/components/task/TaskBoard.jsx": {
+    "mtime": 1789622705.5905766,
+    "ast_hash": "0172193dcac8779603d3e4f16c0ee276",
+    "semantic_hash": "0172193dcac8779603d3e4f16c0ee276"
+  },
+  "src/components/task/TaskCard.jsx": {
+    "mtime": 1789622686.2249682,
+    "ast_hash": "4d906da2795b128b2d21210633fb5ee7",
+    "semantic_hash": "4d906da2795b128b2d21210633fb5ee7"
+  },
+  "src/components/task/TaskColumn.jsx": {
+    "mtime": 1789622696.7353454,
+    "ast_hash": "084167b0f286d0d2b0ed8fd939a27b35",
+    "semantic_hash": "084167b0f286d0d2b0ed8fd939a27b35"
+  },
+  "src/hooks/useTasks.jsx": {
+    "mtime": 1789619045.225972,
+    "ast_hash": "880402c599593ff29fdb242d9198dbe6",
+    "semantic_hash": "880402c599593ff29fdb242d9198dbe6"
+  },
+  "src/lib/tasks.js": {
+    "mtime": 1789622633.948345,
+    "ast_hash": "bd2178d588ef66f816e87d1313374aa1",
+    "semantic_hash": "bd2178d588ef66f816e87d1313374aa1"
+  },
+  "src/components/task/TaskMenu.jsx": {
+    "mtime": 1789622668.9657435,
+    "ast_hash": "8658dc0122e66fdee84b17ff59ff71d6",
+    "semantic_hash": "8658dc0122e66fdee84b17ff59ff71d6"
   }
 }

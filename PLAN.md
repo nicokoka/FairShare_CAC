@@ -128,11 +128,11 @@ Dashboard lists the user's projects (`onSnapshot` query on `memberIds array-cont
 Dashboard "Join project" input → look up `joinCodes/{CODE}` → add self to `memberIds` + `members` (rules permit self-add only). Friendly errors: bad code, already a member, project ended. Members list on project page (avatars + names, creator badge).
 *User test (2 browsers/accounts):* account B enters A's code → project appears on B's dashboard; both see both members on the project page; wrong code shows a friendly error.
 
-**F4. Task board — create & display tasks.**
+**F4. Task board — create & display tasks.** ✅ done 2026-09-16
 Board layout: three columns (To Do / Doing / Done) with playful column headers and an empty-state illustration/message per column. "Add task" modal: title, size picker (S/M/L shown as fun-sized chips with point values), optional assignee dropdown (members or "anyone can claim"). Tasks render as cards (title, size chip, assignee avatar or "unclaimed" state) via `onSnapshot` on the tasks subcollection. Task rules added.
 *User test (2 browsers):* A creates a task → B sees it appear **live without refreshing** (this is the M1 wow moment); assigned vs unclaimed tasks display differently.
 
-**F5. Claim & move tasks.**
+**F5. Claim & move tasks.** ✅ done 2026-09-16
 Unclaimed tasks show a "Claim" button (sets `assignee` to self, moves to Doing). Assigned To Do tasks: assignee can "Start" → Doing. Doing tasks show "Mark done" (leads to F6 — for now a disabled button with tooltip "next up!"). Only the assignee can move their task; creator can reassign or delete a task (small kebab menu).
 *User test (2 browsers):* B claims A's unclaimed task → both boards update live; B cannot move A's task; creator can delete a task.
 

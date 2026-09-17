@@ -1,2468 +1,345 @@
 {
-  "nodes": [
-    {
-      "id": "g0",
-      "type": "group",
-      "label": "Feature Sequence & Milestones",
-      "x": 0,
-      "y": 0,
-      "width": 1320,
-      "height": 720,
-      "color": "1"
-    },
-    {
-      "id": "n_instructions_catme",
-      "type": "file",
-      "file": "CATME.md",
-      "x": 20,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_end_project",
-      "type": "file",
-      "file": "End Project.md",
-      "x": 220,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f0_scaffold",
-      "type": "file",
-      "file": "F0 Scaffold & design system (done).md",
-      "x": 420,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f1_auth",
-      "type": "file",
-      "file": "F1 Firebase setup + Google sign-in (done).md",
-      "x": 620,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f2_create_dashboard",
-      "type": "file",
-      "file": "F2 Create project + dashboard (done).md",
-      "x": 820,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f3_join",
-      "type": "file",
-      "file": "F3 Join by code (done).md",
-      "x": 1020,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f4_task_board",
-      "type": "file",
-      "file": "F4 Task board \u2014 create & display.md",
-      "x": 20,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f5_claim_move",
-      "type": "file",
-      "file": "F5 Claim & move tasks.md",
-      "x": 220,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f6_mark_done",
-      "type": "file",
-      "file": "F6 Mark done with proof.md",
-      "x": 420,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f7_verification",
-      "type": "file",
-      "file": "F7 Verification \u2014 approve or reject.md",
-      "x": 620,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f8_end_project",
-      "type": "file",
-      "file": "F8 End project.md",
-      "x": 820,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f9_review_form",
-      "type": "file",
-      "file": "F9 Peer review form.md",
-      "x": 1020,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_instructions_falchikov_goldfinch_2000",
-      "type": "file",
-      "file": "Falchikov & Goldfinch (2000).md",
-      "x": 20,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_firestore_data_model",
-      "type": "file",
-      "file": "Firestore Data Model.md",
-      "x": 220,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_security_rules",
-      "type": "file",
-      "file": "Firestore Security Rules.md",
-      "x": 420,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_google_signin",
-      "type": "file",
-      "file": "Google Sign-in (Auth).md",
-      "x": 620,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_join_code",
-      "type": "file",
-      "file": "Join Code (6-char).md",
-      "x": 820,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_task_board",
-      "type": "file",
-      "file": "Live Task Board.md",
-      "x": 1020,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_milestone_m1",
-      "type": "file",
-      "file": "Milestone M1 (live board).md",
-      "x": 20,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_milestone_m2",
-      "type": "file",
-      "file": "Milestone M2 (proofverifyreviews).md",
-      "x": 220,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_no_cloud_functions",
-      "type": "file",
-      "file": "No Cloud Functions constraint.md",
-      "x": 420,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_instructions_peer_assessment",
-      "type": "file",
-      "file": "Peer Assessment.md",
-      "x": 620,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_peer_review",
-      "type": "file",
-      "file": "Peer Review.md",
-      "x": 820,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_proof_verification",
-      "type": "file",
-      "file": "Proof + Verification.md",
-      "x": 1020,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_realtime_onsnapshot",
-      "type": "file",
-      "file": "Real-time onSnapshot listeners.md",
-      "x": 20,
-      "y": 400,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_claude_tech_stack",
-      "type": "file",
-      "file": "Tech Stack (Vite + React + plain JS + Firebase Spark).md",
-      "x": 220,
-      "y": 400,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_joincodes_collection",
-      "type": "file",
-      "file": "joinCodes collection.md",
-      "x": 420,
-      "y": 400,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_projects_collection",
-      "type": "file",
-      "file": "projects collection.md",
-      "x": 620,
-      "y": 400,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_ratingaverages",
-      "type": "file",
-      "file": "ratingAverages(reviews, memberIds).md",
-      "x": 820,
-      "y": 400,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_reviews_collection",
-      "type": "file",
-      "file": "reviews subcollection.md",
-      "x": 1020,
-      "y": 400,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_tasks_collection",
-      "type": "file",
-      "file": "tasks subcollection.md",
-      "x": 20,
-      "y": 480,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g1",
-      "type": "group",
-      "label": "App Shell & Page Components",
-      "x": 1400,
-      "y": 0,
-      "width": 1100,
-      "height": 520,
-      "color": "2"
-    },
-    {
-      "id": "n_src_app_app",
-      "type": "file",
-      "file": "App().md",
-      "x": 1420,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_app",
-      "type": "file",
-      "file": "App.jsx.md",
-      "x": 1620,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_landing_landing_googleglyph",
-      "type": "file",
-      "file": "GoogleGlyph().md",
-      "x": 1820,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_project_projectpage_joincodebadge",
-      "type": "file",
-      "file": "JoinCodeBadge().md",
-      "x": 2020,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_landing_landing_landing",
-      "type": "file",
-      "file": "Landing().md",
-      "x": 2220,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_landing_landing",
-      "type": "file",
-      "file": "Landing.jsx.md",
-      "x": 1420,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_common_loadingscreen_loadingscreen",
-      "type": "file",
-      "file": "LoadingScreen().md",
-      "x": 1620,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_common_loadingscreen",
-      "type": "file",
-      "file": "LoadingScreen.jsx.md",
-      "x": 1820,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_project_memberslist_memberavatar",
-      "type": "file",
-      "file": "MemberAvatar()_1.md",
-      "x": 2020,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_project_memberslist_memberslist",
-      "type": "file",
-      "file": "MembersList().md",
-      "x": 2220,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_project_memberslist",
-      "type": "file",
-      "file": "MembersList.jsx.md",
-      "x": 1420,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_project_projectpage_projectpage",
-      "type": "file",
-      "file": "ProjectPage().md",
-      "x": 1620,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_project_projectpage",
-      "type": "file",
-      "file": "ProjectPage.jsx.md",
-      "x": 1820,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_auth_protectedroute_protectedroute",
-      "type": "file",
-      "file": "ProtectedRoute().md",
-      "x": 2020,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_auth_protectedroute",
-      "type": "file",
-      "file": "ProtectedRoute.jsx.md",
-      "x": 2220,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_main",
-      "type": "file",
-      "file": "main.jsx.md",
-      "x": 1420,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_hooks_useproject_useproject",
-      "type": "file",
-      "file": "useProject().md",
-      "x": 1620,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_hooks_useproject",
-      "type": "file",
-      "file": "useProject.jsx.md",
-      "x": 1820,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g2",
-      "type": "group",
-      "label": "Fairness Math & Research Foundation",
-      "x": 2580,
-      "y": 0,
-      "width": 1100,
-      "height": 520,
-      "color": "3"
-    },
-    {
-      "id": "n_plan_f10_fairness_math",
-      "type": "file",
-      "file": "F10 Fairness math (pure functions).md",
-      "x": 2600,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f11_report_page",
-      "type": "file",
-      "file": "F11 Fairness report page.md",
-      "x": 2800,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f12_security_audit",
-      "type": "file",
-      "file": "F12 Security rules audit + edge cases.md",
-      "x": 3000,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f13_visual_polish",
-      "type": "file",
-      "file": "F13 Visual polish + responsive pass.md",
-      "x": 3200,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_f14_deploy",
-      "type": "file",
-      "file": "F14 Deploy + demo prep.md",
-      "x": 3400,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_instructions_fairshare",
-      "type": "file",
-      "file": "FairShare.md",
-      "x": 2600,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_claude_fairshare",
-      "type": "file",
-      "file": "FairShare (App).md",
-      "x": 2800,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_fairness_report",
-      "type": "file",
-      "file": "Fairness Report.md",
-      "x": 3000,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_instructions_latane_1979",
-      "type": "file",
-      "file": "Latane, Williams & Harkins (1979).md",
-      "x": 3200,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_milestone_m3",
-      "type": "file",
-      "file": "Milestone M3 (reportpolishship).md",
-      "x": 3400,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_one_feature_workflow",
-      "type": "file",
-      "file": "One-feature-per-session Workflow.md",
-      "x": 2600,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_playful_style",
-      "type": "file",
-      "file": "Playful & student-y visual style.md",
-      "x": 2800,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_instructions_ringelmann_effect",
-      "type": "file",
-      "file": "Ringelmann Effect.md",
-      "x": 3000,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_instructions_social_loafing",
-      "type": "file",
-      "file": "Social Loafing.md",
-      "x": 3200,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_contributionshares",
-      "type": "file",
-      "file": "contributionShares(tasks, memberIds).md",
-      "x": 3400,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_fairness_lib",
-      "type": "file",
-      "file": "srclibfairness.js (pure functions).md",
-      "x": 2600,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_plan_taskpoints",
-      "type": "file",
-      "file": "taskPoints(size).md",
-      "x": 2800,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g3",
-      "type": "group",
-      "label": "Build Config & Dependencies",
-      "x": 3760,
-      "y": 0,
-      "width": 1100,
-      "height": 520,
-      "color": "4"
-    },
-    {
-      "id": "n_package_devdependencies_vitejs_plugin_react",
-      "type": "file",
-      "file": "@vitejsplugin-react.md",
-      "x": 3780,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_scripts_build",
-      "type": "file",
-      "file": "build.md",
-      "x": 3980,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_dependencies",
-      "type": "file",
-      "file": "dependencies.md",
-      "x": 4180,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_scripts_dev",
-      "type": "file",
-      "file": "dev.md",
-      "x": 4380,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_devdependencies",
-      "type": "file",
-      "file": "devDependencies.md",
-      "x": 4580,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_dependencies_firebase",
-      "type": "file",
-      "file": "firebase.md",
-      "x": 3780,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_name",
-      "type": "file",
-      "file": "name.md",
-      "x": 3980,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package",
-      "type": "file",
-      "file": "package.json.md",
-      "x": 4180,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_scripts_preview",
-      "type": "file",
-      "file": "preview.md",
-      "x": 4380,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_private",
-      "type": "file",
-      "file": "private.md",
-      "x": 4580,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_dependencies_react",
-      "type": "file",
-      "file": "react.md",
-      "x": 3780,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_dependencies_react_dom",
-      "type": "file",
-      "file": "react-dom.md",
-      "x": 3980,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_dependencies_react_router_dom",
-      "type": "file",
-      "file": "react-router-dom.md",
-      "x": 4180,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_scripts",
-      "type": "file",
-      "file": "scripts.md",
-      "x": 4380,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_type",
-      "type": "file",
-      "file": "type.md",
-      "x": 4580,
-      "y": 240,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_version",
-      "type": "file",
-      "file": "version.md",
-      "x": 3780,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_package_devdependencies_vite",
-      "type": "file",
-      "file": "vite.md",
-      "x": 3980,
-      "y": 320,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g4",
-      "type": "group",
-      "label": "Dashboard & Project UI",
-      "x": 0,
-      "y": 800,
-      "width": 1100,
-      "height": 520,
-      "color": "5"
-    },
-    {
-      "id": "n_src_components_layout_appheader_appheader",
-      "type": "file",
-      "file": "AppHeader().md",
-      "x": 20,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_layout_appheader",
-      "type": "file",
-      "file": "AppHeader.jsx.md",
-      "x": 220,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_layout_appheader_avatar",
-      "type": "file",
-      "file": "Avatar().md",
-      "x": 420,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_dashboard_createprojectmodal_createprojectmodal",
-      "type": "file",
-      "file": "CreateProjectModal().md",
-      "x": 620,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_dashboard_createprojectmodal",
-      "type": "file",
-      "file": "CreateProjectModal.jsx.md",
-      "x": 820,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_dashboard_dashboard_dashboard",
-      "type": "file",
-      "file": "Dashboard().md",
-      "x": 20,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_dashboard_dashboard",
-      "type": "file",
-      "file": "Dashboard.jsx.md",
-      "x": 220,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_dashboard_dashboard_emptystate",
-      "type": "file",
-      "file": "EmptyState().md",
-      "x": 420,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_dashboard_joinprojectmodal_joinprojectmodal",
-      "type": "file",
-      "file": "JoinProjectModal().md",
-      "x": 620,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_dashboard_projectcard_memberavatar",
-      "type": "file",
-      "file": "MemberAvatar().md",
-      "x": 820,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_dashboard_projectcard_projectcard",
-      "type": "file",
-      "file": "ProjectCard().md",
-      "x": 20,
-      "y": 1040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_dashboard_projectcard",
-      "type": "file",
-      "file": "ProjectCard.jsx.md",
-      "x": 220,
-      "y": 1040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_hooks_useprojects_bynewestfirst",
-      "type": "file",
-      "file": "byNewestFirst().md",
-      "x": 420,
-      "y": 1040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_projects_projectscollection",
-      "type": "file",
-      "file": "projectsCollection.md",
-      "x": 620,
-      "y": 1040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_hooks_useauth_useauth",
-      "type": "file",
-      "file": "useAuth().md",
-      "x": 820,
-      "y": 1040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_hooks_useprojects_useprojects",
-      "type": "file",
-      "file": "useProjects().md",
-      "x": 20,
-      "y": 1120,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_hooks_useprojects",
-      "type": "file",
-      "file": "useProjects.jsx.md",
-      "x": 220,
-      "y": 1120,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g5",
-      "type": "group",
-      "label": "Project & Join-Code Data Layer",
-      "x": 1400,
-      "y": 800,
-      "width": 880,
-      "height": 420,
-      "color": "6"
-    },
-    {
-      "id": "n_src_components_dashboard_joinprojectmodal",
-      "type": "file",
-      "file": "JoinProjectModal.jsx.md",
-      "x": 1420,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_projects_createproject",
-      "type": "file",
-      "file": "createProject().md",
-      "x": 1620,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_joincode_generatejoincode",
-      "type": "file",
-      "file": "generateJoinCode().md",
-      "x": 1820,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_joincode",
-      "type": "file",
-      "file": "joinCode.js.md",
-      "x": 2020,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_projects_joincoderef",
-      "type": "file",
-      "file": "joinCodeRef().md",
-      "x": 1420,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_projects_joinproject",
-      "type": "file",
-      "file": "joinProject().md",
-      "x": 1620,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_projects_lookupjoincode",
-      "type": "file",
-      "file": "lookupJoinCode().md",
-      "x": 1820,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_projects_projectref",
-      "type": "file",
-      "file": "projectRef().md",
-      "x": 2020,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_projects",
-      "type": "file",
-      "file": "projects.js.md",
-      "x": 1420,
-      "y": 1040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_projects_reserveuniquecode",
-      "type": "file",
-      "file": "reserveUniqueCode().md",
-      "x": 1620,
-      "y": 1040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g6",
-      "type": "group",
-      "label": "Auth & Firebase Init",
-      "x": 2580,
-      "y": 800,
-      "width": 880,
-      "height": 420,
-      "color": "1"
-    },
-    {
-      "id": "n_src_hooks_useauth_authcontext",
-      "type": "file",
-      "file": "AuthContext.md",
-      "x": 2600,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_hooks_useauth_authprovider",
-      "type": "file",
-      "file": "AuthProvider().md",
-      "x": 2800,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_firebase_required",
-      "type": "file",
-      "file": "REQUIRED.md",
-      "x": 3000,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_firebase_app",
-      "type": "file",
-      "file": "app.md",
-      "x": 3200,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_firebase_auth",
-      "type": "file",
-      "file": "auth.md",
-      "x": 2600,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_firebase_db",
-      "type": "file",
-      "file": "db.md",
-      "x": 2800,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_firebase",
-      "type": "file",
-      "file": "firebase.js.md",
-      "x": 3000,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_firebase_firebaseconfig",
-      "type": "file",
-      "file": "firebaseConfig.md",
-      "x": 3200,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_lib_firebase_googleprovider",
-      "type": "file",
-      "file": "googleProvider.md",
-      "x": 2600,
-      "y": 1040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_hooks_useauth",
-      "type": "file",
-      "file": "useAuth.jsx.md",
-      "x": 2800,
-      "y": 1040,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g7",
-      "type": "group",
-      "label": "Landing Contribution Card",
-      "x": 3760,
-      "y": 800,
-      "width": 600,
-      "height": 400,
-      "color": "2"
-    },
-    {
-      "id": "n_src_components_landing_contributioncard_contributioncard",
-      "type": "file",
-      "file": "ContributionCard().md",
-      "x": 3780,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_landing_contributioncard",
-      "type": "file",
-      "file": "ContributionCard.jsx.md",
-      "x": 3980,
-      "y": 880,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_landing_contributioncard_teammates",
-      "type": "file",
-      "file": "TEAMMATES.md",
-      "x": 3780,
-      "y": 960,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g8",
-      "type": "group",
-      "label": "Wordmark Branding",
-      "x": 0,
-      "y": 1400,
-      "width": 600,
-      "height": 400,
-      "color": "3"
-    },
-    {
-      "id": "n_src_components_landing_wordmark_wordmark",
-      "type": "file",
-      "file": "Wordmark().md",
-      "x": 20,
-      "y": 1480,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_landing_wordmark",
-      "type": "file",
-      "file": "Wordmark.jsx.md",
-      "x": 220,
-      "y": 1480,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g9",
-      "type": "group",
-      "label": "Placeholder Page",
-      "x": 1400,
-      "y": 1400,
-      "width": 600,
-      "height": 400,
-      "color": "4"
-    },
-    {
-      "id": "n_src_components_placeholders_placeholderpage_placeholderpage",
-      "type": "file",
-      "file": "PlaceholderPage().md",
-      "x": 1420,
-      "y": 1480,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_src_components_placeholders_placeholderpage",
-      "type": "file",
-      "file": "PlaceholderPage.jsx.md",
-      "x": 1620,
-      "y": 1480,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "g10",
-      "type": "group",
-      "label": "Vite Config",
-      "x": 2580,
-      "y": 1400,
-      "width": 600,
-      "height": 400,
-      "color": "5"
-    },
-    {
-      "id": "n_vite_config",
-      "type": "file",
-      "file": "vite.config.js.md",
-      "x": 2600,
-      "y": 1480,
-      "width": 180,
-      "height": 60
-    }
-  ],
-  "edges": [
-    {
-      "id": "e_src_components_landing_contributioncard_src_components_landing_contributioncard_contributioncard",
-      "fromNode": "n_src_components_landing_contributioncard",
-      "toNode": "n_src_components_landing_contributioncard_contributioncard",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_landing_contributioncard_src_components_landing_contributioncard_teammates",
-      "fromNode": "n_src_components_landing_contributioncard",
-      "toNode": "n_src_components_landing_contributioncard_teammates",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_landing_wordmark_src_components_landing_wordmark_wordmark",
-      "fromNode": "n_src_components_landing_wordmark",
-      "toNode": "n_src_components_landing_wordmark_wordmark",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_placeholders_placeholderpage_src_components_placeholders_placeholderpage_placeholderpage",
-      "fromNode": "n_src_components_placeholders_placeholderpage",
-      "toNode": "n_src_components_placeholders_placeholderpage_placeholderpage",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_instructions_fairshare_plan_fairness_report",
-      "fromNode": "n_instructions_fairshare",
-      "toNode": "n_plan_fairness_report",
-      "label": "conceptually_related_to [EXTRACTED]"
-    },
-    {
-      "id": "e_instructions_fairshare_plan_task_board",
-      "fromNode": "n_instructions_fairshare",
-      "toNode": "n_plan_task_board",
-      "label": "conceptually_related_to [EXTRACTED]"
-    },
-    {
-      "id": "e_instructions_fairshare_instructions_social_loafing",
-      "fromNode": "n_instructions_fairshare",
-      "toNode": "n_instructions_social_loafing",
-      "label": "rationale_for [EXTRACTED]"
-    },
-    {
-      "id": "e_instructions_social_loafing_instructions_latane_1979",
-      "fromNode": "n_instructions_social_loafing",
-      "toNode": "n_instructions_latane_1979",
-      "label": "cites [EXTRACTED]"
-    },
-    {
-      "id": "e_instructions_social_loafing_instructions_ringelmann_effect",
-      "fromNode": "n_instructions_social_loafing",
-      "toNode": "n_instructions_ringelmann_effect",
-      "label": "conceptually_related_to [EXTRACTED]"
-    },
-    {
-      "id": "e_instructions_peer_assessment_instructions_catme",
-      "fromNode": "n_instructions_peer_assessment",
-      "toNode": "n_instructions_catme",
-      "label": "conceptually_related_to [EXTRACTED]"
-    },
-    {
-      "id": "e_instructions_peer_assessment_instructions_falchikov_goldfinch_2000",
-      "fromNode": "n_instructions_peer_assessment",
-      "toNode": "n_instructions_falchikov_goldfinch_2000",
-      "label": "cites [EXTRACTED]"
-    },
-    {
-      "id": "e_instructions_peer_assessment_plan_peer_review",
-      "fromNode": "n_instructions_peer_assessment",
-      "toNode": "n_plan_peer_review",
-      "label": "rationale_for [INFERRED]"
-    },
-    {
-      "id": "e_package_package_dependencies",
-      "fromNode": "n_package",
-      "toNode": "n_package_dependencies",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_package_devdependencies",
-      "fromNode": "n_package",
-      "toNode": "n_package_devdependencies",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_package_name",
-      "fromNode": "n_package",
-      "toNode": "n_package_name",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_package_private",
-      "fromNode": "n_package",
-      "toNode": "n_package_private",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_package_scripts",
-      "fromNode": "n_package",
-      "toNode": "n_package_scripts",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_package_type",
-      "fromNode": "n_package",
-      "toNode": "n_package_type",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_package_version",
-      "fromNode": "n_package",
-      "toNode": "n_package_version",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_scripts_package_scripts_build",
-      "fromNode": "n_package_scripts",
-      "toNode": "n_package_scripts_build",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_scripts_package_scripts_dev",
-      "fromNode": "n_package_scripts",
-      "toNode": "n_package_scripts_dev",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_scripts_package_scripts_preview",
-      "fromNode": "n_package_scripts",
-      "toNode": "n_package_scripts_preview",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_dependencies_package_dependencies_firebase",
-      "fromNode": "n_package_dependencies",
-      "toNode": "n_package_dependencies_firebase",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_dependencies_package_dependencies_react",
-      "fromNode": "n_package_dependencies",
-      "toNode": "n_package_dependencies_react",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_dependencies_package_dependencies_react_dom",
-      "fromNode": "n_package_dependencies",
-      "toNode": "n_package_dependencies_react_dom",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_dependencies_package_dependencies_react_router_dom",
-      "fromNode": "n_package_dependencies",
-      "toNode": "n_package_dependencies_react_router_dom",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_dependencies_firebase_src_lib_firebase",
-      "fromNode": "n_package_dependencies_firebase",
-      "toNode": "n_src_lib_firebase",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_package_devdependencies_package_devdependencies_vite",
-      "fromNode": "n_package_devdependencies",
-      "toNode": "n_package_devdependencies_vite",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_package_devdependencies_package_devdependencies_vitejs_plugin_react",
-      "fromNode": "n_package_devdependencies",
-      "toNode": "n_package_devdependencies_vitejs_plugin_react",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_app_src_app_app",
-      "fromNode": "n_src_app",
-      "toNode": "n_src_app_app",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_app_src_components_auth_protectedroute",
-      "fromNode": "n_src_app",
-      "toNode": "n_src_components_auth_protectedroute",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_app_src_components_auth_protectedroute_protectedroute",
-      "fromNode": "n_src_app",
-      "toNode": "n_src_components_auth_protectedroute_protectedroute",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_app_src_components_dashboard_dashboard",
-      "fromNode": "n_src_app",
-      "toNode": "n_src_components_dashboard_dashboard",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_app_src_components_dashboard_dashboard_dashboard",
-      "fromNode": "n_src_app",
-      "toNode": "n_src_components_dashboard_dashboard_dashboard",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_app_src_components_landing_landing",
-      "fromNode": "n_src_app",
-      "toNode": "n_src_components_landing_landing",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_app_src_components_landing_landing_landing",
-      "fromNode": "n_src_app",
-      "toNode": "n_src_components_landing_landing_landing",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_app_src_components_project_projectpage",
-      "fromNode": "n_src_app",
-      "toNode": "n_src_components_project_projectpage",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_app_src_components_project_projectpage_projectpage",
-      "fromNode": "n_src_app",
-      "toNode": "n_src_components_project_projectpage_projectpage",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_app_src_main",
-      "fromNode": "n_src_app",
-      "toNode": "n_src_main",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_app_app_src_main",
-      "fromNode": "n_src_app_app",
-      "toNode": "n_src_main",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_auth_protectedroute_src_components_auth_protectedroute_protectedroute",
-      "fromNode": "n_src_components_auth_protectedroute",
-      "toNode": "n_src_components_auth_protectedroute_protectedroute",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_auth_protectedroute_src_components_common_loadingscreen",
-      "fromNode": "n_src_components_auth_protectedroute",
-      "toNode": "n_src_components_common_loadingscreen",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_auth_protectedroute_src_components_common_loadingscreen_loadingscreen",
-      "fromNode": "n_src_components_auth_protectedroute",
-      "toNode": "n_src_components_common_loadingscreen_loadingscreen",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_auth_protectedroute_src_hooks_useauth",
-      "fromNode": "n_src_components_auth_protectedroute",
-      "toNode": "n_src_hooks_useauth",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_auth_protectedroute_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_auth_protectedroute",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_auth_protectedroute_protectedroute_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_auth_protectedroute_protectedroute",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_common_loadingscreen_src_components_common_loadingscreen_loadingscreen",
-      "fromNode": "n_src_components_common_loadingscreen",
-      "toNode": "n_src_components_common_loadingscreen_loadingscreen",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_common_loadingscreen_src_components_project_projectpage",
-      "fromNode": "n_src_components_common_loadingscreen",
-      "toNode": "n_src_components_project_projectpage",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_common_loadingscreen_loadingscreen_src_components_project_projectpage",
-      "fromNode": "n_src_components_common_loadingscreen_loadingscreen",
-      "toNode": "n_src_components_project_projectpage",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_createprojectmodal_src_components_dashboard_createprojectmodal_createprojectmodal",
-      "fromNode": "n_src_components_dashboard_createprojectmodal",
-      "toNode": "n_src_components_dashboard_createprojectmodal_createprojectmodal",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_createprojectmodal_src_hooks_useauth",
-      "fromNode": "n_src_components_dashboard_createprojectmodal",
-      "toNode": "n_src_hooks_useauth",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_createprojectmodal_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_dashboard_createprojectmodal",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_createprojectmodal_src_lib_projects",
-      "fromNode": "n_src_components_dashboard_createprojectmodal",
-      "toNode": "n_src_lib_projects",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_createprojectmodal_src_lib_projects_createproject",
-      "fromNode": "n_src_components_dashboard_createprojectmodal",
-      "toNode": "n_src_lib_projects_createproject",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_createprojectmodal_src_components_dashboard_dashboard",
-      "fromNode": "n_src_components_dashboard_createprojectmodal",
-      "toNode": "n_src_components_dashboard_dashboard",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_createprojectmodal_createprojectmodal_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_dashboard_createprojectmodal_createprojectmodal",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_createprojectmodal_createprojectmodal_src_components_dashboard_dashboard",
-      "fromNode": "n_src_components_dashboard_createprojectmodal_createprojectmodal",
-      "toNode": "n_src_components_dashboard_dashboard",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_components_dashboard_dashboard_dashboard",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_components_dashboard_dashboard_dashboard",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_components_dashboard_dashboard_emptystate",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_components_dashboard_dashboard_emptystate",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_components_dashboard_joinprojectmodal",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_components_dashboard_joinprojectmodal",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_components_dashboard_joinprojectmodal_joinprojectmodal",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_components_dashboard_joinprojectmodal_joinprojectmodal",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_components_dashboard_projectcard",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_components_dashboard_projectcard",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_components_dashboard_projectcard_projectcard",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_components_dashboard_projectcard_projectcard",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_components_layout_appheader",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_components_layout_appheader",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_components_layout_appheader_appheader",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_components_layout_appheader_appheader",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_hooks_useauth",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_hooks_useauth",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_hooks_useprojects",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_hooks_useprojects",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_src_hooks_useprojects_useprojects",
-      "fromNode": "n_src_components_dashboard_dashboard",
-      "toNode": "n_src_hooks_useprojects_useprojects",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_dashboard_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_dashboard_dashboard_dashboard",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_dashboard_dashboard_src_hooks_useprojects_useprojects",
-      "fromNode": "n_src_components_dashboard_dashboard_dashboard",
-      "toNode": "n_src_hooks_useprojects_useprojects",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_joinprojectmodal_src_components_dashboard_joinprojectmodal_joinprojectmodal",
-      "fromNode": "n_src_components_dashboard_joinprojectmodal",
-      "toNode": "n_src_components_dashboard_joinprojectmodal_joinprojectmodal",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_joinprojectmodal_src_hooks_useauth",
-      "fromNode": "n_src_components_dashboard_joinprojectmodal",
-      "toNode": "n_src_hooks_useauth",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_joinprojectmodal_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_dashboard_joinprojectmodal",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_joinprojectmodal_src_lib_joincode",
-      "fromNode": "n_src_components_dashboard_joinprojectmodal",
-      "toNode": "n_src_lib_joincode",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_joinprojectmodal_src_lib_projects",
-      "fromNode": "n_src_components_dashboard_joinprojectmodal",
-      "toNode": "n_src_lib_projects",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_joinprojectmodal_src_lib_projects_joinproject",
-      "fromNode": "n_src_components_dashboard_joinprojectmodal",
-      "toNode": "n_src_lib_projects_joinproject",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_joinprojectmodal_src_lib_projects_lookupjoincode",
-      "fromNode": "n_src_components_dashboard_joinprojectmodal",
-      "toNode": "n_src_lib_projects_lookupjoincode",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_joinprojectmodal_joinprojectmodal_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_dashboard_joinprojectmodal_joinprojectmodal",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_projectcard_src_components_dashboard_projectcard_memberavatar",
-      "fromNode": "n_src_components_dashboard_projectcard",
-      "toNode": "n_src_components_dashboard_projectcard_memberavatar",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_dashboard_projectcard_src_components_dashboard_projectcard_projectcard",
-      "fromNode": "n_src_components_dashboard_projectcard",
-      "toNode": "n_src_components_dashboard_projectcard_projectcard",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_landing_landing_src_components_landing_landing_googleglyph",
-      "fromNode": "n_src_components_landing_landing",
-      "toNode": "n_src_components_landing_landing_googleglyph",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_landing_landing_src_components_landing_landing_landing",
-      "fromNode": "n_src_components_landing_landing",
-      "toNode": "n_src_components_landing_landing_landing",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_landing_landing_src_hooks_useauth",
-      "fromNode": "n_src_components_landing_landing",
-      "toNode": "n_src_hooks_useauth",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_landing_landing_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_landing_landing",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_landing_landing_landing_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_landing_landing_landing",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_layout_appheader_src_components_layout_appheader_appheader",
-      "fromNode": "n_src_components_layout_appheader",
-      "toNode": "n_src_components_layout_appheader_appheader",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_layout_appheader_src_components_layout_appheader_avatar",
-      "fromNode": "n_src_components_layout_appheader",
-      "toNode": "n_src_components_layout_appheader_avatar",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_layout_appheader_src_hooks_useauth",
-      "fromNode": "n_src_components_layout_appheader",
-      "toNode": "n_src_hooks_useauth",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_layout_appheader_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_layout_appheader",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_layout_appheader_src_components_project_projectpage",
-      "fromNode": "n_src_components_layout_appheader",
-      "toNode": "n_src_components_project_projectpage",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_layout_appheader_appheader_src_hooks_useauth_useauth",
-      "fromNode": "n_src_components_layout_appheader_appheader",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_layout_appheader_appheader_src_components_project_projectpage",
-      "fromNode": "n_src_components_layout_appheader_appheader",
-      "toNode": "n_src_components_project_projectpage",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_project_memberslist_src_components_project_memberslist_memberavatar",
-      "fromNode": "n_src_components_project_memberslist",
-      "toNode": "n_src_components_project_memberslist_memberavatar",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_project_memberslist_src_components_project_memberslist_memberslist",
-      "fromNode": "n_src_components_project_memberslist",
-      "toNode": "n_src_components_project_memberslist_memberslist",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_project_memberslist_src_components_project_projectpage",
-      "fromNode": "n_src_components_project_memberslist",
-      "toNode": "n_src_components_project_projectpage",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_project_memberslist_memberslist_src_components_project_projectpage",
-      "fromNode": "n_src_components_project_memberslist_memberslist",
-      "toNode": "n_src_components_project_projectpage",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_project_projectpage_src_components_project_projectpage_joincodebadge",
-      "fromNode": "n_src_components_project_projectpage",
-      "toNode": "n_src_components_project_projectpage_joincodebadge",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_project_projectpage_src_components_project_projectpage_projectpage",
-      "fromNode": "n_src_components_project_projectpage",
-      "toNode": "n_src_components_project_projectpage_projectpage",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_project_projectpage_src_hooks_useproject",
-      "fromNode": "n_src_components_project_projectpage",
-      "toNode": "n_src_hooks_useproject",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_project_projectpage_src_hooks_useproject_useproject",
-      "fromNode": "n_src_components_project_projectpage",
-      "toNode": "n_src_hooks_useproject_useproject",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_components_project_projectpage_projectpage_src_hooks_useproject_useproject",
-      "fromNode": "n_src_components_project_projectpage_projectpage",
-      "toNode": "n_src_hooks_useproject_useproject",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useauth_src_hooks_useauth_authcontext",
-      "fromNode": "n_src_hooks_useauth",
-      "toNode": "n_src_hooks_useauth_authcontext",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useauth_src_hooks_useauth_authprovider",
-      "fromNode": "n_src_hooks_useauth",
-      "toNode": "n_src_hooks_useauth_authprovider",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useauth_src_hooks_useauth_useauth",
-      "fromNode": "n_src_hooks_useauth",
-      "toNode": "n_src_hooks_useauth_useauth",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useauth_src_lib_firebase",
-      "fromNode": "n_src_hooks_useauth",
-      "toNode": "n_src_lib_firebase",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useauth_src_lib_firebase_auth",
-      "fromNode": "n_src_hooks_useauth",
-      "toNode": "n_src_lib_firebase_auth",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useauth_src_lib_firebase_googleprovider",
-      "fromNode": "n_src_hooks_useauth",
-      "toNode": "n_src_lib_firebase_googleprovider",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useauth_src_main",
-      "fromNode": "n_src_hooks_useauth",
-      "toNode": "n_src_main",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useauth_authprovider_src_main",
-      "fromNode": "n_src_hooks_useauth_authprovider",
-      "toNode": "n_src_main",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useproject_src_hooks_useproject_useproject",
-      "fromNode": "n_src_hooks_useproject",
-      "toNode": "n_src_hooks_useproject_useproject",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useproject_src_lib_projects",
-      "fromNode": "n_src_hooks_useproject",
-      "toNode": "n_src_lib_projects",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useproject_src_lib_projects_projectref",
-      "fromNode": "n_src_hooks_useproject",
-      "toNode": "n_src_lib_projects_projectref",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useprojects_src_hooks_useprojects_bynewestfirst",
-      "fromNode": "n_src_hooks_useprojects",
-      "toNode": "n_src_hooks_useprojects_bynewestfirst",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useprojects_src_hooks_useprojects_useprojects",
-      "fromNode": "n_src_hooks_useprojects",
-      "toNode": "n_src_hooks_useprojects_useprojects",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useprojects_src_lib_projects",
-      "fromNode": "n_src_hooks_useprojects",
-      "toNode": "n_src_lib_projects",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_hooks_useprojects_src_lib_projects_projectscollection",
-      "fromNode": "n_src_hooks_useprojects",
-      "toNode": "n_src_lib_projects_projectscollection",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_firebase_src_lib_firebase_app",
-      "fromNode": "n_src_lib_firebase",
-      "toNode": "n_src_lib_firebase_app",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_firebase_src_lib_firebase_auth",
-      "fromNode": "n_src_lib_firebase",
-      "toNode": "n_src_lib_firebase_auth",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_firebase_src_lib_firebase_db",
-      "fromNode": "n_src_lib_firebase",
-      "toNode": "n_src_lib_firebase_db",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_firebase_src_lib_firebase_firebaseconfig",
-      "fromNode": "n_src_lib_firebase",
-      "toNode": "n_src_lib_firebase_firebaseconfig",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_firebase_src_lib_firebase_googleprovider",
-      "fromNode": "n_src_lib_firebase",
-      "toNode": "n_src_lib_firebase_googleprovider",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_firebase_src_lib_firebase_required",
-      "fromNode": "n_src_lib_firebase",
-      "toNode": "n_src_lib_firebase_required",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_firebase_src_lib_projects",
-      "fromNode": "n_src_lib_firebase",
-      "toNode": "n_src_lib_projects",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_firebase_db_src_lib_projects",
-      "fromNode": "n_src_lib_firebase_db",
-      "toNode": "n_src_lib_projects",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_joincode_src_lib_joincode_generatejoincode",
-      "fromNode": "n_src_lib_joincode",
-      "toNode": "n_src_lib_joincode_generatejoincode",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_joincode_src_lib_projects",
-      "fromNode": "n_src_lib_joincode",
-      "toNode": "n_src_lib_projects",
-      "label": "imports_from [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_joincode_generatejoincode_src_lib_projects",
-      "fromNode": "n_src_lib_joincode_generatejoincode",
-      "toNode": "n_src_lib_projects",
-      "label": "imports [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_joincode_generatejoincode_src_lib_projects_reserveuniquecode",
-      "fromNode": "n_src_lib_joincode_generatejoincode",
-      "toNode": "n_src_lib_projects_reserveuniquecode",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_src_lib_projects_createproject",
-      "fromNode": "n_src_lib_projects",
-      "toNode": "n_src_lib_projects_createproject",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_src_lib_projects_joincoderef",
-      "fromNode": "n_src_lib_projects",
-      "toNode": "n_src_lib_projects_joincoderef",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_src_lib_projects_joinproject",
-      "fromNode": "n_src_lib_projects",
-      "toNode": "n_src_lib_projects_joinproject",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_src_lib_projects_lookupjoincode",
-      "fromNode": "n_src_lib_projects",
-      "toNode": "n_src_lib_projects_lookupjoincode",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_src_lib_projects_projectref",
-      "fromNode": "n_src_lib_projects",
-      "toNode": "n_src_lib_projects_projectref",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_src_lib_projects_projectscollection",
-      "fromNode": "n_src_lib_projects",
-      "toNode": "n_src_lib_projects_projectscollection",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_src_lib_projects_reserveuniquecode",
-      "fromNode": "n_src_lib_projects",
-      "toNode": "n_src_lib_projects_reserveuniquecode",
-      "label": "contains [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_projectref_src_lib_projects_joinproject",
-      "fromNode": "n_src_lib_projects_projectref",
-      "toNode": "n_src_lib_projects_joinproject",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_joincoderef_src_lib_projects_createproject",
-      "fromNode": "n_src_lib_projects_joincoderef",
-      "toNode": "n_src_lib_projects_createproject",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_joincoderef_src_lib_projects_lookupjoincode",
-      "fromNode": "n_src_lib_projects_joincoderef",
-      "toNode": "n_src_lib_projects_lookupjoincode",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_joincoderef_src_lib_projects_reserveuniquecode",
-      "fromNode": "n_src_lib_projects_joincoderef",
-      "toNode": "n_src_lib_projects_reserveuniquecode",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_src_lib_projects_reserveuniquecode_src_lib_projects_createproject",
-      "fromNode": "n_src_lib_projects_reserveuniquecode",
-      "toNode": "n_src_lib_projects_createproject",
-      "label": "calls [EXTRACTED]"
-    },
-    {
-      "id": "e_claude_fairshare_claude_tech_stack",
-      "fromNode": "n_claude_fairshare",
-      "toNode": "n_claude_tech_stack",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_claude_fairshare_plan_one_feature_workflow",
-      "fromNode": "n_claude_fairshare",
-      "toNode": "n_plan_one_feature_workflow",
-      "label": "rationale_for [EXTRACTED]"
-    },
-    {
-      "id": "e_claude_fairshare_plan_playful_style",
-      "fromNode": "n_claude_fairshare",
-      "toNode": "n_plan_playful_style",
-      "label": "rationale_for [EXTRACTED]"
-    },
-    {
-      "id": "e_claude_tech_stack_plan_google_signin",
-      "fromNode": "n_claude_tech_stack",
-      "toNode": "n_plan_google_signin",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_claude_tech_stack_plan_no_cloud_functions",
-      "fromNode": "n_claude_tech_stack",
-      "toNode": "n_plan_no_cloud_functions",
-      "label": "conceptually_related_to [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_no_cloud_functions_plan_reviews_collection",
-      "fromNode": "n_plan_no_cloud_functions",
-      "toNode": "n_plan_reviews_collection",
-      "label": "rationale_for [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_no_cloud_functions_plan_security_rules",
-      "fromNode": "n_plan_no_cloud_functions",
-      "toNode": "n_plan_security_rules",
-      "label": "rationale_for [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_google_signin_plan_f1_auth",
-      "fromNode": "n_plan_google_signin",
-      "toNode": "n_plan_f1_auth",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_firestore_data_model_plan_joincodes_collection",
-      "fromNode": "n_plan_firestore_data_model",
-      "toNode": "n_plan_joincodes_collection",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_firestore_data_model_plan_projects_collection",
-      "fromNode": "n_plan_firestore_data_model",
-      "toNode": "n_plan_projects_collection",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_firestore_data_model_plan_reviews_collection",
-      "fromNode": "n_plan_firestore_data_model",
-      "toNode": "n_plan_reviews_collection",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_firestore_data_model_plan_tasks_collection",
-      "fromNode": "n_plan_firestore_data_model",
-      "toNode": "n_plan_tasks_collection",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_projects_collection_plan_end_project",
-      "fromNode": "n_plan_projects_collection",
-      "toNode": "n_plan_end_project",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_projects_collection_plan_joincodes_collection",
-      "fromNode": "n_plan_projects_collection",
-      "toNode": "n_plan_joincodes_collection",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_projects_collection_plan_security_rules",
-      "fromNode": "n_plan_projects_collection",
-      "toNode": "n_plan_security_rules",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_joincodes_collection_plan_join_code",
-      "fromNode": "n_plan_joincodes_collection",
-      "toNode": "n_plan_join_code",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_joincodes_collection_plan_security_rules",
-      "fromNode": "n_plan_joincodes_collection",
-      "toNode": "n_plan_security_rules",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_tasks_collection_plan_contributionshares",
-      "fromNode": "n_plan_tasks_collection",
-      "toNode": "n_plan_contributionshares",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_tasks_collection_plan_proof_verification",
-      "fromNode": "n_plan_tasks_collection",
-      "toNode": "n_plan_proof_verification",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_tasks_collection_plan_security_rules",
-      "fromNode": "n_plan_tasks_collection",
-      "toNode": "n_plan_security_rules",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_tasks_collection_plan_task_board",
-      "fromNode": "n_plan_tasks_collection",
-      "toNode": "n_plan_task_board",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_reviews_collection_plan_peer_review",
-      "fromNode": "n_plan_reviews_collection",
-      "toNode": "n_plan_peer_review",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_reviews_collection_plan_ratingaverages",
-      "fromNode": "n_plan_reviews_collection",
-      "toNode": "n_plan_ratingaverages",
-      "label": "shares_data_with [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_reviews_collection_plan_security_rules",
-      "fromNode": "n_plan_reviews_collection",
-      "toNode": "n_plan_security_rules",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_join_code_plan_f2_create_dashboard",
-      "fromNode": "n_plan_join_code",
-      "toNode": "n_plan_f2_create_dashboard",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_join_code_plan_f3_join",
-      "fromNode": "n_plan_join_code",
-      "toNode": "n_plan_f3_join",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_join_code_plan_proof_verification",
-      "fromNode": "n_plan_join_code",
-      "toNode": "n_plan_proof_verification",
-      "label": "semantically_similar_to [INFERRED]"
-    },
-    {
-      "id": "e_plan_task_board_plan_f4_task_board",
-      "fromNode": "n_plan_task_board",
-      "toNode": "n_plan_f4_task_board",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_task_board_plan_f5_claim_move",
-      "fromNode": "n_plan_task_board",
-      "toNode": "n_plan_f5_claim_move",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_task_board_plan_realtime_onsnapshot",
-      "fromNode": "n_plan_task_board",
-      "toNode": "n_plan_realtime_onsnapshot",
-      "label": "rationale_for [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_proof_verification_plan_contributionshares",
-      "fromNode": "n_plan_proof_verification",
-      "toNode": "n_plan_contributionshares",
-      "label": "conceptually_related_to [INFERRED]"
-    },
-    {
-      "id": "e_plan_proof_verification_plan_f6_mark_done",
-      "fromNode": "n_plan_proof_verification",
-      "toNode": "n_plan_f6_mark_done",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_proof_verification_plan_f7_verification",
-      "fromNode": "n_plan_proof_verification",
-      "toNode": "n_plan_f7_verification",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_proof_verification_plan_security_rules",
-      "fromNode": "n_plan_proof_verification",
-      "toNode": "n_plan_security_rules",
-      "label": "conceptually_related_to [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_peer_review_plan_f9_review_form",
-      "fromNode": "n_plan_peer_review",
-      "toNode": "n_plan_f9_review_form",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_end_project_plan_security_rules",
-      "fromNode": "n_plan_end_project",
-      "toNode": "n_plan_security_rules",
-      "label": "conceptually_related_to [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_end_project_plan_f8_end_project",
-      "fromNode": "n_plan_end_project",
-      "toNode": "n_plan_f8_end_project",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_fairness_report_plan_f11_report_page",
-      "fromNode": "n_plan_fairness_report",
-      "toNode": "n_plan_f11_report_page",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_fairness_report_plan_fairness_lib",
-      "fromNode": "n_plan_fairness_report",
-      "toNode": "n_plan_fairness_lib",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_fairness_lib_plan_f10_fairness_math",
-      "fromNode": "n_plan_fairness_lib",
-      "toNode": "n_plan_f10_fairness_math",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_fairness_lib_plan_contributionshares",
-      "fromNode": "n_plan_fairness_lib",
-      "toNode": "n_plan_contributionshares",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_fairness_lib_plan_ratingaverages",
-      "fromNode": "n_plan_fairness_lib",
-      "toNode": "n_plan_ratingaverages",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_fairness_lib_plan_taskpoints",
-      "fromNode": "n_plan_fairness_lib",
-      "toNode": "n_plan_taskpoints",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_taskpoints_plan_contributionshares",
-      "fromNode": "n_plan_taskpoints",
-      "toNode": "n_plan_contributionshares",
-      "label": "calls [INFERRED]"
-    },
-    {
-      "id": "e_plan_security_rules_plan_f12_security_audit",
-      "fromNode": "n_plan_security_rules",
-      "toNode": "n_plan_f12_security_audit",
-      "label": "implements [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m1_plan_f0_scaffold",
-      "fromNode": "n_plan_milestone_m1",
-      "toNode": "n_plan_f0_scaffold",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m1_plan_f1_auth",
-      "fromNode": "n_plan_milestone_m1",
-      "toNode": "n_plan_f1_auth",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m1_plan_f2_create_dashboard",
-      "fromNode": "n_plan_milestone_m1",
-      "toNode": "n_plan_f2_create_dashboard",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m1_plan_f3_join",
-      "fromNode": "n_plan_milestone_m1",
-      "toNode": "n_plan_f3_join",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m1_plan_f4_task_board",
-      "fromNode": "n_plan_milestone_m1",
-      "toNode": "n_plan_f4_task_board",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m1_plan_f5_claim_move",
-      "fromNode": "n_plan_milestone_m1",
-      "toNode": "n_plan_f5_claim_move",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m2_plan_f6_mark_done",
-      "fromNode": "n_plan_milestone_m2",
-      "toNode": "n_plan_f6_mark_done",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m2_plan_f7_verification",
-      "fromNode": "n_plan_milestone_m2",
-      "toNode": "n_plan_f7_verification",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m2_plan_f8_end_project",
-      "fromNode": "n_plan_milestone_m2",
-      "toNode": "n_plan_f8_end_project",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m2_plan_f9_review_form",
-      "fromNode": "n_plan_milestone_m2",
-      "toNode": "n_plan_f9_review_form",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m3_plan_f10_fairness_math",
-      "fromNode": "n_plan_milestone_m3",
-      "toNode": "n_plan_f10_fairness_math",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m3_plan_f11_report_page",
-      "fromNode": "n_plan_milestone_m3",
-      "toNode": "n_plan_f11_report_page",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m3_plan_f12_security_audit",
-      "fromNode": "n_plan_milestone_m3",
-      "toNode": "n_plan_f12_security_audit",
-      "label": "references [EXTRACTED]"
-    },
-    {
-      "id": "e_plan_milestone_m3_plan_f13_visual_polish",
-      "fromNode": "n_plan_milestone_m3",
-      "toNode": "n_plan_f13_visual_polish",
-      "label": "references [EXTRACTED]"
-    }
-  ]
+	"nodes":[
+		{"id":"g0","type":"group","x":0,"y":0,"width":1320,"height":720,"color":"1","label":"Feature Sequence & Milestones"},
+		{"id":"g1","type":"group","x":1400,"y":0,"width":1100,"height":520,"color":"2","label":"App Shell & Page Components"},
+		{"id":"g2","type":"group","x":2580,"y":0,"width":1100,"height":520,"color":"3","label":"Fairness Math & Research Foundation"},
+		{"id":"g3","type":"group","x":3760,"y":0,"width":1100,"height":520,"color":"4","label":"Build Config & Dependencies"},
+		{"id":"g4","type":"group","x":0,"y":800,"width":1100,"height":520,"color":"5","label":"Dashboard & Project UI"},
+		{"id":"g5","type":"group","x":1400,"y":800,"width":880,"height":420,"color":"6","label":"Project & Join-Code Data Layer"},
+		{"id":"g6","type":"group","x":2580,"y":800,"width":880,"height":420,"color":"1","label":"Auth & Firebase Init"},
+		{"id":"g7","type":"group","x":3760,"y":800,"width":600,"height":400,"color":"2","label":"Landing Contribution Card"},
+		{"id":"g8","type":"group","x":0,"y":1400,"width":600,"height":400,"color":"3","label":"Wordmark Branding"},
+		{"id":"g9","type":"group","x":1400,"y":1400,"width":600,"height":400,"color":"4","label":"Placeholder Page"},
+		{"id":"g10","type":"group","x":2580,"y":1400,"width":600,"height":400,"color":"5","label":"Vite Config"},
+		{"id":"n_instructions_fairshare","type":"file","file":"FairShare.md","x":2600,"y":160,"width":180,"height":60},
+		{"id":"n_src_components_landing_contributioncard_contributioncard","type":"file","file":"ContributionCard().md","x":3780,"y":880,"width":180,"height":60},
+		{"id":"n_vite_config","type":"file","file":"vite.config.js.md","x":2600,"y":1480,"width":180,"height":60},
+		{"id":"n_src_components_landing_contributioncard","type":"file","file":"ContributionCard.jsx.md","x":3980,"y":880,"width":180,"height":60},
+		{"id":"n_instructions_catme","type":"file","file":"CATME.md","x":20,"y":80,"width":180,"height":60},
+		{"id":"n_src_components_placeholders_placeholderpage_placeholderpage","type":"file","file":"PlaceholderPage().md","x":1420,"y":1480,"width":180,"height":60},
+		{"id":"n_package_devdependencies_vitejs_plugin_react","type":"file","file":"@vitejsplugin-react.md","x":3780,"y":80,"width":180,"height":60},
+		{"id":"n_src_app_app","type":"file","file":"App().md","x":1420,"y":80,"width":180,"height":60},
+		{"id":"n_src_components_placeholders_placeholderpage","type":"file","file":"PlaceholderPage.jsx.md","x":1620,"y":1480,"width":180,"height":60},
+		{"id":"n_package_scripts_build","type":"file","file":"build.md","x":3980,"y":80,"width":180,"height":60},
+		{"id":"n_package_dependencies","type":"file","file":"dependencies.md","x":4180,"y":80,"width":180,"height":60},
+		{"id":"n_src_components_landing_wordmark_wordmark","type":"file","file":"Wordmark().md","x":20,"y":1480,"width":180,"height":60},
+		{"id":"n_src_components_landing_wordmark","type":"file","file":"Wordmark.jsx.md","x":220,"y":1480,"width":180,"height":60},
+		{"id":"n_plan_end_project","type":"file","file":"End Project.md","x":220,"y":80,"width":180,"height":60},
+		{"id":"n_plan_f0_scaffold","type":"file","file":"F0 Scaffold & design system (done).md","x":420,"y":80,"width":180,"height":60},
+		{"id":"n_plan_f1_auth","type":"file","file":"F1 Firebase setup + Google sign-in (done).md","x":620,"y":80,"width":180,"height":60},
+		{"id":"n_plan_f2_create_dashboard","type":"file","file":"F2 Create project + dashboard (done).md","x":820,"y":80,"width":180,"height":60},
+		{"id":"n_plan_f3_join","type":"file","file":"F3 Join by code (done).md","x":1020,"y":80,"width":180,"height":60},
+		{"id":"n_plan_f4_task_board","type":"file","file":"F4 Task board — create & display.md","x":20,"y":160,"width":180,"height":60},
+		{"id":"n_plan_f5_claim_move","type":"file","file":"F5 Claim & move tasks.md","x":220,"y":160,"width":180,"height":60},
+		{"id":"n_plan_f6_mark_done","type":"file","file":"F6 Mark done with proof.md","x":420,"y":160,"width":180,"height":60},
+		{"id":"n_plan_f7_verification","type":"file","file":"F7 Verification — approve or reject.md","x":620,"y":160,"width":180,"height":60},
+		{"id":"n_plan_f8_end_project","type":"file","file":"F8 End project.md","x":820,"y":160,"width":180,"height":60},
+		{"id":"n_plan_f9_review_form","type":"file","file":"F9 Peer review form.md","x":1020,"y":160,"width":180,"height":60},
+		{"id":"n_instructions_falchikov_goldfinch_2000","type":"file","file":"Falchikov & Goldfinch (2000).md","x":20,"y":240,"width":180,"height":60},
+		{"id":"n_plan_firestore_data_model","type":"file","file":"Firestore Data Model.md","x":220,"y":240,"width":180,"height":60},
+		{"id":"n_plan_security_rules","type":"file","file":"Firestore Security Rules.md","x":420,"y":240,"width":180,"height":60},
+		{"id":"n_plan_google_signin","type":"file","file":"Google Sign-in (Auth).md","x":620,"y":240,"width":180,"height":60},
+		{"id":"n_plan_join_code","type":"file","file":"Join Code (6-char).md","x":820,"y":240,"width":180,"height":60},
+		{"id":"n_plan_task_board","type":"file","file":"Live Task Board.md","x":1020,"y":240,"width":180,"height":60},
+		{"id":"n_plan_milestone_m1","type":"file","file":"Milestone M1 (live board).md","x":20,"y":320,"width":180,"height":60},
+		{"id":"n_plan_milestone_m2","type":"file","file":"Milestone M2 (proofverifyreviews).md","x":220,"y":320,"width":180,"height":60},
+		{"id":"n_plan_no_cloud_functions","type":"file","file":"No Cloud Functions constraint.md","x":420,"y":320,"width":180,"height":60},
+		{"id":"n_instructions_peer_assessment","type":"file","file":"Peer Assessment.md","x":620,"y":320,"width":180,"height":60},
+		{"id":"n_plan_peer_review","type":"file","file":"Peer Review.md","x":820,"y":320,"width":180,"height":60},
+		{"id":"n_plan_proof_verification","type":"file","file":"Proof + Verification.md","x":1020,"y":320,"width":180,"height":60},
+		{"id":"n_plan_realtime_onsnapshot","type":"file","file":"Real-time onSnapshot listeners.md","x":20,"y":400,"width":180,"height":60},
+		{"id":"n_claude_tech_stack","type":"file","file":"Tech Stack (Vite + React + plain JS + Firebase Spark).md","x":220,"y":400,"width":180,"height":60},
+		{"id":"n_plan_joincodes_collection","type":"file","file":"joinCodes collection.md","x":420,"y":400,"width":180,"height":60},
+		{"id":"n_plan_projects_collection","type":"file","file":"projects collection.md","x":620,"y":400,"width":180,"height":60},
+		{"id":"n_plan_ratingaverages","type":"file","file":"ratingAverages(reviews, memberIds).md","x":820,"y":400,"width":180,"height":60},
+		{"id":"n_plan_reviews_collection","type":"file","file":"reviews subcollection.md","x":1020,"y":400,"width":180,"height":60},
+		{"id":"n_plan_tasks_collection","type":"file","file":"tasks subcollection.md","x":20,"y":480,"width":180,"height":60},
+		{"id":"n_src_app","type":"file","file":"App.jsx.md","x":1620,"y":80,"width":180,"height":60},
+		{"id":"n_src_components_landing_landing_googleglyph","type":"file","file":"GoogleGlyph().md","x":1820,"y":80,"width":180,"height":60},
+		{"id":"n_src_components_project_projectpage_joincodebadge","type":"file","file":"JoinCodeBadge().md","x":2020,"y":80,"width":180,"height":60},
+		{"id":"n_src_components_landing_landing_landing","type":"file","file":"Landing().md","x":2220,"y":80,"width":180,"height":60},
+		{"id":"n_src_components_landing_landing","type":"file","file":"Landing.jsx.md","x":1420,"y":160,"width":180,"height":60},
+		{"id":"n_src_components_common_loadingscreen_loadingscreen","type":"file","file":"LoadingScreen().md","x":1620,"y":160,"width":180,"height":60},
+		{"id":"n_src_components_common_loadingscreen","type":"file","file":"LoadingScreen.jsx.md","x":1820,"y":160,"width":180,"height":60},
+		{"id":"n_src_components_project_memberslist_memberavatar","type":"file","file":"MemberAvatar()_1.md","x":2020,"y":160,"width":180,"height":60},
+		{"id":"n_src_components_project_memberslist_memberslist","type":"file","file":"MembersList().md","x":2220,"y":160,"width":180,"height":60},
+		{"id":"n_src_components_project_memberslist","type":"file","file":"MembersList.jsx.md","x":1420,"y":240,"width":180,"height":60},
+		{"id":"n_src_components_project_projectpage_projectpage","type":"file","file":"ProjectPage().md","x":1620,"y":240,"width":180,"height":60},
+		{"id":"n_src_components_project_projectpage","type":"file","file":"ProjectPage.jsx.md","x":1820,"y":240,"width":180,"height":60},
+		{"id":"n_src_components_auth_protectedroute_protectedroute","type":"file","file":"ProtectedRoute().md","x":2020,"y":240,"width":180,"height":60},
+		{"id":"n_src_components_auth_protectedroute","type":"file","file":"ProtectedRoute.jsx.md","x":2220,"y":240,"width":180,"height":60},
+		{"id":"n_src_main","type":"file","file":"main.jsx.md","x":1420,"y":320,"width":180,"height":60},
+		{"id":"n_src_hooks_useproject_useproject","type":"file","file":"useProject().md","x":1620,"y":320,"width":180,"height":60},
+		{"id":"n_src_hooks_useproject","type":"file","file":"useProject.jsx.md","x":1820,"y":320,"width":180,"height":60},
+		{"id":"n_claude_fairshare","type":"file","file":"FairShare (App).md","x":2800,"y":160,"width":180,"height":60},
+		{"id":"n_plan_fairness_report","type":"file","file":"Fairness Report.md","x":3000,"y":160,"width":180,"height":60},
+		{"id":"n_instructions_latane_1979","type":"file","file":"Latane, Williams & Harkins (1979).md","x":3200,"y":160,"width":180,"height":60},
+		{"id":"n_plan_milestone_m3","type":"file","file":"Milestone M3 (reportpolishship).md","x":3400,"y":160,"width":180,"height":60},
+		{"id":"n_plan_one_feature_workflow","type":"file","file":"One-feature-per-session Workflow.md","x":2600,"y":240,"width":180,"height":60},
+		{"id":"n_plan_playful_style","type":"file","file":"Playful & student-y visual style.md","x":2800,"y":240,"width":180,"height":60},
+		{"id":"n_instructions_ringelmann_effect","type":"file","file":"Ringelmann Effect.md","x":3000,"y":240,"width":180,"height":60},
+		{"id":"n_instructions_social_loafing","type":"file","file":"Social Loafing.md","x":3200,"y":240,"width":180,"height":60},
+		{"id":"n_plan_contributionshares","type":"file","file":"contributionShares(tasks, memberIds).md","x":3400,"y":240,"width":180,"height":60},
+		{"id":"n_plan_fairness_lib","type":"file","file":"srclibfairness.js (pure functions).md","x":2600,"y":320,"width":180,"height":60},
+		{"id":"n_plan_taskpoints","type":"file","file":"taskPoints(size).md","x":2800,"y":320,"width":180,"height":60},
+		{"id":"n_package_scripts_dev","type":"file","file":"dev.md","x":4380,"y":80,"width":180,"height":60},
+		{"id":"n_package_devdependencies","type":"file","file":"devDependencies.md","x":4580,"y":80,"width":180,"height":60},
+		{"id":"n_package_dependencies_firebase","type":"file","file":"firebase.md","x":3780,"y":160,"width":180,"height":60},
+		{"id":"n_package_name","type":"file","file":"name.md","x":3980,"y":160,"width":180,"height":60},
+		{"id":"n_package","type":"file","file":"package.json.md","x":4180,"y":160,"width":180,"height":60},
+		{"id":"n_package_scripts_preview","type":"file","file":"preview.md","x":4380,"y":160,"width":180,"height":60},
+		{"id":"n_package_private","type":"file","file":"private.md","x":4580,"y":160,"width":180,"height":60},
+		{"id":"n_package_dependencies_react","type":"file","file":"react.md","x":3780,"y":240,"width":180,"height":60},
+		{"id":"n_package_dependencies_react_dom","type":"file","file":"react-dom.md","x":3980,"y":240,"width":180,"height":60},
+		{"id":"n_package_dependencies_react_router_dom","type":"file","file":"react-router-dom.md","x":4180,"y":240,"width":180,"height":60},
+		{"id":"n_package_scripts","type":"file","file":"scripts.md","x":4380,"y":240,"width":180,"height":60},
+		{"id":"n_package_type","type":"file","file":"type.md","x":4580,"y":240,"width":180,"height":60},
+		{"id":"n_package_version","type":"file","file":"version.md","x":3780,"y":320,"width":180,"height":60},
+		{"id":"n_package_devdependencies_vite","type":"file","file":"vite.md","x":3980,"y":320,"width":180,"height":60},
+		{"id":"n_src_components_landing_contributioncard_teammates","type":"file","file":"TEAMMATES.md","x":3780,"y":960,"width":180,"height":60},
+		{"id":"n_src_components_layout_appheader_avatar","type":"file","file":"Avatar().md","x":420,"y":880,"width":180,"height":60},
+		{"id":"n_src_components_dashboard_createprojectmodal_createprojectmodal","type":"file","file":"CreateProjectModal().md","x":620,"y":880,"width":180,"height":60},
+		{"id":"n_src_components_dashboard_createprojectmodal","type":"file","file":"CreateProjectModal.jsx.md","x":820,"y":880,"width":180,"height":60},
+		{"id":"n_src_components_dashboard_dashboard_emptystate","type":"file","file":"EmptyState().md","x":420,"y":960,"width":180,"height":60},
+		{"id":"n_src_components_dashboard_joinprojectmodal_joinprojectmodal","type":"file","file":"JoinProjectModal().md","x":620,"y":960,"width":180,"height":60},
+		{"id":"n_src_components_dashboard_projectcard_memberavatar","type":"file","file":"MemberAvatar().md","x":820,"y":960,"width":180,"height":60},
+		{"id":"n_src_components_dashboard_projectcard","type":"file","file":"ProjectCard.jsx.md","x":220,"y":1040,"width":180,"height":60},
+		{"id":"n_src_hooks_useprojects_bynewestfirst","type":"file","file":"byNewestFirst().md","x":420,"y":1040,"width":180,"height":60},
+		{"id":"n_src_lib_projects_projectscollection","type":"file","file":"projectsCollection.md","x":620,"y":1040,"width":180,"height":60},
+		{"id":"n_src_hooks_useauth_useauth","type":"file","file":"useAuth().md","x":820,"y":1040,"width":180,"height":60},
+		{"id":"n_src_components_layout_appheader_appheader","type":"file","file":"AppHeader().md","x":20,"y":880,"width":180,"height":60},
+		{"id":"n_src_components_layout_appheader","type":"file","file":"AppHeader.jsx.md","x":220,"y":880,"width":180,"height":60},
+		{"id":"n_src_components_dashboard_dashboard_dashboard","type":"file","file":"Dashboard().md","x":20,"y":960,"width":180,"height":60},
+		{"id":"n_src_components_dashboard_dashboard","type":"file","file":"Dashboard.jsx.md","x":220,"y":960,"width":180,"height":60},
+		{"id":"n_src_components_dashboard_projectcard_projectcard","type":"file","file":"ProjectCard().md","x":20,"y":1040,"width":180,"height":60},
+		{"id":"n_src_hooks_useprojects_useprojects","type":"file","file":"useProjects().md","x":20,"y":1120,"width":180,"height":60},
+		{"id":"n_src_hooks_useprojects","type":"file","file":"useProjects.jsx.md","x":220,"y":1120,"width":180,"height":60},
+		{"id":"n_src_components_dashboard_joinprojectmodal","type":"file","file":"JoinProjectModal.jsx.md","x":1420,"y":880,"width":180,"height":60},
+		{"id":"n_src_lib_projects_createproject","type":"file","file":"createProject().md","x":1620,"y":880,"width":180,"height":60},
+		{"id":"n_src_lib_joincode_generatejoincode","type":"file","file":"generateJoinCode().md","x":1820,"y":880,"width":180,"height":60},
+		{"id":"n_src_lib_joincode","type":"file","file":"joinCode.js.md","x":2020,"y":880,"width":180,"height":60},
+		{"id":"n_src_lib_projects_joincoderef","type":"file","file":"joinCodeRef().md","x":1420,"y":960,"width":180,"height":60},
+		{"id":"n_src_lib_projects_joinproject","type":"file","file":"joinProject().md","x":1620,"y":960,"width":180,"height":60},
+		{"id":"n_src_lib_projects_lookupjoincode","type":"file","file":"lookupJoinCode().md","x":1820,"y":960,"width":180,"height":60},
+		{"id":"n_src_lib_projects_projectref","type":"file","file":"projectRef().md","x":2020,"y":960,"width":180,"height":60},
+		{"id":"n_src_lib_projects","type":"file","file":"projects.js.md","x":1420,"y":1040,"width":180,"height":60},
+		{"id":"n_src_lib_projects_reserveuniquecode","type":"file","file":"reserveUniqueCode().md","x":1620,"y":1040,"width":180,"height":60},
+		{"id":"n_plan_f12_security_audit","type":"file","file":"F12 Security rules audit + edge cases.md","x":3000,"y":80,"width":180,"height":60},
+		{"id":"n_plan_f13_visual_polish","type":"file","file":"F13 Visual polish + responsive pass.md","x":3200,"y":80,"width":180,"height":60},
+		{"id":"n_plan_f10_fairness_math","type":"file","file":"F10 Fairness math (pure functions).md","x":2600,"y":80,"width":180,"height":60},
+		{"id":"n_plan_f11_report_page","type":"file","file":"F11 Fairness report page.md","x":2800,"y":80,"width":180,"height":60},
+		{"id":"n_src_lib_firebase_auth","type":"file","file":"auth.md","x":2600,"y":960,"width":180,"height":60},
+		{"id":"n_src_lib_firebase_googleprovider","type":"file","file":"googleProvider.md","x":2600,"y":1040,"width":180,"height":60},
+		{"id":"n_src_hooks_useauth","type":"file","file":"useAuth.jsx.md","x":2800,"y":1040,"width":180,"height":60},
+		{"id":"n_src_hooks_useauth_authcontext","type":"file","file":"AuthContext.md","x":2600,"y":880,"width":180,"height":60},
+		{"id":"n_src_hooks_useauth_authprovider","type":"file","file":"AuthProvider().md","x":2800,"y":880,"width":180,"height":60},
+		{"id":"n_src_lib_firebase_required","type":"file","file":"REQUIRED.md","x":3000,"y":880,"width":180,"height":60},
+		{"id":"n_src_lib_firebase_app","type":"file","file":"app.md","x":3200,"y":880,"width":180,"height":60},
+		{"id":"n_src_lib_firebase_db","type":"file","file":"db.md","x":2800,"y":960,"width":180,"height":60},
+		{"id":"n_src_lib_firebase","type":"file","file":"firebase.js.md","x":3000,"y":960,"width":180,"height":60},
+		{"id":"n_src_lib_firebase_firebaseconfig","type":"file","file":"firebaseConfig.md","x":3200,"y":960,"width":180,"height":60},
+		{"id":"n_plan_f14_deploy","type":"file","file":"F14 Deploy + demo prep.md","x":3400,"y":80,"width":180,"height":60}
+	],
+	"edges":[
+		{"id":"e_package_package_dependencies","fromNode":"n_package","fromSide":"top","toNode":"n_package_dependencies","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_package_package_devdependencies","fromNode":"n_package","fromSide":"right","toNode":"n_package_devdependencies","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_package_package_name","fromNode":"n_package","fromSide":"left","toNode":"n_package_name","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_package_package_private","fromNode":"n_package","fromSide":"right","toNode":"n_package_private","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_package_package_scripts","fromNode":"n_package","fromSide":"bottom","toNode":"n_package_scripts","toSide":"top","label":"contains [EXTRACTED]"},
+		{"id":"e_package_package_type","fromNode":"n_package","fromSide":"right","toNode":"n_package_type","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_package_package_version","fromNode":"n_package","fromSide":"bottom","toNode":"n_package_version","toSide":"top","label":"contains [EXTRACTED]"},
+		{"id":"e_package_scripts_package_scripts_build","fromNode":"n_package_scripts","fromSide":"top","toNode":"n_package_scripts_build","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_package_scripts_package_scripts_dev","fromNode":"n_package_scripts","fromSide":"top","toNode":"n_package_scripts_dev","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_package_scripts_package_scripts_preview","fromNode":"n_package_scripts","fromSide":"top","toNode":"n_package_scripts_preview","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_package_dependencies_package_dependencies_react","fromNode":"n_package_dependencies","fromSide":"bottom","toNode":"n_package_dependencies_react","toSide":"top","label":"contains [EXTRACTED]"},
+		{"id":"e_package_dependencies_package_dependencies_react_dom","fromNode":"n_package_dependencies","fromSide":"bottom","toNode":"n_package_dependencies_react_dom","toSide":"top","label":"contains [EXTRACTED]"},
+		{"id":"e_package_dependencies_package_dependencies_react_router_dom","fromNode":"n_package_dependencies","fromSide":"bottom","toNode":"n_package_dependencies_react_router_dom","toSide":"top","label":"contains [EXTRACTED]"},
+		{"id":"e_package_devdependencies_package_devdependencies_vite","fromNode":"n_package_devdependencies","fromSide":"bottom","toNode":"n_package_devdependencies_vite","toSide":"top","label":"contains [EXTRACTED]"},
+		{"id":"e_package_devdependencies_package_devdependencies_vitejs_plugin_react","fromNode":"n_package_devdependencies","fromSide":"left","toNode":"n_package_devdependencies_vitejs_plugin_react","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_app_src_app_app","fromNode":"n_src_app","fromSide":"left","toNode":"n_src_app_app","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_app_src_components_landing_landing","fromNode":"n_src_app","fromSide":"bottom","toNode":"n_src_components_landing_landing","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_app_src_components_landing_landing_landing","fromNode":"n_src_app","fromSide":"right","toNode":"n_src_components_landing_landing_landing","toSide":"left","label":"imports [EXTRACTED]"},
+		{"id":"e_src_app_src_main","fromNode":"n_src_app","fromSide":"bottom","toNode":"n_src_main","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_app_app_src_main","fromNode":"n_src_app_app","fromSide":"bottom","toNode":"n_src_main","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_landing_contributioncard_src_components_landing_contributioncard_contributioncard","fromNode":"n_src_components_landing_contributioncard","fromSide":"left","toNode":"n_src_components_landing_contributioncard_contributioncard","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_landing_contributioncard_src_components_landing_contributioncard_teammates","fromNode":"n_src_components_landing_contributioncard","fromSide":"bottom","toNode":"n_src_components_landing_contributioncard_teammates","toSide":"top","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_landing_landing_src_components_landing_landing_googleglyph","fromNode":"n_src_components_landing_landing","fromSide":"right","toNode":"n_src_components_landing_landing_googleglyph","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_landing_landing_src_components_landing_landing_landing","fromNode":"n_src_components_landing_landing","fromSide":"right","toNode":"n_src_components_landing_landing_landing","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_landing_wordmark_src_components_landing_wordmark_wordmark","fromNode":"n_src_components_landing_wordmark","fromSide":"left","toNode":"n_src_components_landing_wordmark_wordmark","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_placeholders_placeholderpage_src_components_placeholders_placeholderpage_placeholderpage","fromNode":"n_src_components_placeholders_placeholderpage","fromSide":"left","toNode":"n_src_components_placeholders_placeholderpage_placeholderpage","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_instructions_fairshare_plan_fairness_report","fromNode":"n_instructions_fairshare","fromSide":"right","toNode":"n_plan_fairness_report","toSide":"left","label":"conceptually_related_to [EXTRACTED]"},
+		{"id":"e_instructions_fairshare_plan_task_board","fromNode":"n_instructions_fairshare","fromSide":"left","toNode":"n_plan_task_board","toSide":"right","label":"conceptually_related_to [EXTRACTED]"},
+		{"id":"e_instructions_fairshare_instructions_social_loafing","fromNode":"n_instructions_fairshare","fromSide":"right","toNode":"n_instructions_social_loafing","toSide":"left","label":"rationale_for [EXTRACTED]"},
+		{"id":"e_instructions_social_loafing_instructions_latane_1979","fromNode":"n_instructions_social_loafing","fromSide":"top","toNode":"n_instructions_latane_1979","toSide":"bottom","label":"cites [EXTRACTED]"},
+		{"id":"e_instructions_social_loafing_instructions_ringelmann_effect","fromNode":"n_instructions_social_loafing","fromSide":"left","toNode":"n_instructions_ringelmann_effect","toSide":"right","label":"conceptually_related_to [EXTRACTED]"},
+		{"id":"e_instructions_peer_assessment_instructions_catme","fromNode":"n_instructions_peer_assessment","fromSide":"top","toNode":"n_instructions_catme","toSide":"bottom","label":"conceptually_related_to [EXTRACTED]"},
+		{"id":"e_instructions_peer_assessment_instructions_falchikov_goldfinch_2000","fromNode":"n_instructions_peer_assessment","fromSide":"left","toNode":"n_instructions_falchikov_goldfinch_2000","toSide":"right","label":"cites [EXTRACTED]"},
+		{"id":"e_instructions_peer_assessment_plan_peer_review","fromNode":"n_instructions_peer_assessment","fromSide":"right","toNode":"n_plan_peer_review","toSide":"left","label":"rationale_for [INFERRED]"},
+		{"id":"e_package_dependencies_package_dependencies_firebase","fromNode":"n_package_dependencies","fromSide":"left","toNode":"n_package_dependencies_firebase","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_package_dependencies_firebase_src_lib_firebase","fromNode":"n_package_dependencies_firebase","fromSide":"bottom","toNode":"n_src_lib_firebase","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_app_src_components_auth_protectedroute","fromNode":"n_src_app","fromSide":"right","toNode":"n_src_components_auth_protectedroute","toSide":"left","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_app_src_components_auth_protectedroute_protectedroute","fromNode":"n_src_app","fromSide":"bottom","toNode":"n_src_components_auth_protectedroute_protectedroute","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_app_src_components_dashboard_dashboard","fromNode":"n_src_app","fromSide":"bottom","toNode":"n_src_components_dashboard_dashboard","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_app_src_components_dashboard_dashboard_dashboard","fromNode":"n_src_app","fromSide":"bottom","toNode":"n_src_components_dashboard_dashboard_dashboard","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_app_src_components_project_projectpage","fromNode":"n_src_app","fromSide":"bottom","toNode":"n_src_components_project_projectpage","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_app_src_components_project_projectpage_projectpage","fromNode":"n_src_app","fromSide":"bottom","toNode":"n_src_components_project_projectpage_projectpage","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_auth_protectedroute_src_components_auth_protectedroute_protectedroute","fromNode":"n_src_components_auth_protectedroute","fromSide":"left","toNode":"n_src_components_auth_protectedroute_protectedroute","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_auth_protectedroute_src_components_common_loadingscreen","fromNode":"n_src_components_auth_protectedroute","fromSide":"left","toNode":"n_src_components_common_loadingscreen","toSide":"right","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_auth_protectedroute_src_components_common_loadingscreen_loadingscreen","fromNode":"n_src_components_auth_protectedroute","fromSide":"left","toNode":"n_src_components_common_loadingscreen_loadingscreen","toSide":"right","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_auth_protectedroute_src_hooks_useauth","fromNode":"n_src_components_auth_protectedroute","fromSide":"bottom","toNode":"n_src_hooks_useauth","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_auth_protectedroute_src_hooks_useauth_useauth","fromNode":"n_src_components_auth_protectedroute","fromSide":"bottom","toNode":"n_src_hooks_useauth_useauth","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_auth_protectedroute_protectedroute_src_hooks_useauth_useauth","fromNode":"n_src_components_auth_protectedroute_protectedroute","fromSide":"bottom","toNode":"n_src_hooks_useauth_useauth","toSide":"top","label":"calls [EXTRACTED]"},
+		{"id":"e_src_components_common_loadingscreen_src_components_common_loadingscreen_loadingscreen","fromNode":"n_src_components_common_loadingscreen","fromSide":"left","toNode":"n_src_components_common_loadingscreen_loadingscreen","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_common_loadingscreen_src_components_project_projectpage","fromNode":"n_src_components_common_loadingscreen","fromSide":"bottom","toNode":"n_src_components_project_projectpage","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_common_loadingscreen_loadingscreen_src_components_project_projectpage","fromNode":"n_src_components_common_loadingscreen_loadingscreen","fromSide":"bottom","toNode":"n_src_components_project_projectpage","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_createprojectmodal_src_components_dashboard_createprojectmodal_createprojectmodal","fromNode":"n_src_components_dashboard_createprojectmodal","fromSide":"left","toNode":"n_src_components_dashboard_createprojectmodal_createprojectmodal","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_createprojectmodal_src_hooks_useauth","fromNode":"n_src_components_dashboard_createprojectmodal","fromSide":"right","toNode":"n_src_hooks_useauth","toSide":"left","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_createprojectmodal_src_hooks_useauth_useauth","fromNode":"n_src_components_dashboard_createprojectmodal","fromSide":"bottom","toNode":"n_src_hooks_useauth_useauth","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_createprojectmodal_src_lib_projects","fromNode":"n_src_components_dashboard_createprojectmodal","fromSide":"right","toNode":"n_src_lib_projects","toSide":"left","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_createprojectmodal_src_lib_projects_createproject","fromNode":"n_src_components_dashboard_createprojectmodal","fromSide":"right","toNode":"n_src_lib_projects_createproject","toSide":"left","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_createprojectmodal_src_components_dashboard_dashboard","fromNode":"n_src_components_dashboard_createprojectmodal","fromSide":"left","toNode":"n_src_components_dashboard_dashboard","toSide":"right","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_createprojectmodal_createprojectmodal_src_hooks_useauth_useauth","fromNode":"n_src_components_dashboard_createprojectmodal_createprojectmodal","fromSide":"bottom","toNode":"n_src_hooks_useauth_useauth","toSide":"top","label":"calls [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_createprojectmodal_createprojectmodal_src_components_dashboard_dashboard","fromNode":"n_src_components_dashboard_createprojectmodal_createprojectmodal","fromSide":"left","toNode":"n_src_components_dashboard_dashboard","toSide":"right","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_components_dashboard_dashboard_dashboard","fromNode":"n_src_components_dashboard_dashboard","fromSide":"left","toNode":"n_src_components_dashboard_dashboard_dashboard","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_components_dashboard_dashboard_emptystate","fromNode":"n_src_components_dashboard_dashboard","fromSide":"right","toNode":"n_src_components_dashboard_dashboard_emptystate","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_components_dashboard_joinprojectmodal","fromNode":"n_src_components_dashboard_dashboard","fromSide":"right","toNode":"n_src_components_dashboard_joinprojectmodal","toSide":"left","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_components_dashboard_joinprojectmodal_joinprojectmodal","fromNode":"n_src_components_dashboard_dashboard","fromSide":"right","toNode":"n_src_components_dashboard_joinprojectmodal_joinprojectmodal","toSide":"left","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_components_dashboard_projectcard","fromNode":"n_src_components_dashboard_dashboard","fromSide":"bottom","toNode":"n_src_components_dashboard_projectcard","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_components_dashboard_projectcard_projectcard","fromNode":"n_src_components_dashboard_dashboard","fromSide":"bottom","toNode":"n_src_components_dashboard_projectcard_projectcard","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_components_layout_appheader","fromNode":"n_src_components_dashboard_dashboard","fromSide":"top","toNode":"n_src_components_layout_appheader","toSide":"bottom","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_components_layout_appheader_appheader","fromNode":"n_src_components_dashboard_dashboard","fromSide":"top","toNode":"n_src_components_layout_appheader_appheader","toSide":"bottom","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_hooks_useauth","fromNode":"n_src_components_dashboard_dashboard","fromSide":"right","toNode":"n_src_hooks_useauth","toSide":"left","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_hooks_useauth_useauth","fromNode":"n_src_components_dashboard_dashboard","fromSide":"right","toNode":"n_src_hooks_useauth_useauth","toSide":"left","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_hooks_useprojects","fromNode":"n_src_components_dashboard_dashboard","fromSide":"bottom","toNode":"n_src_hooks_useprojects","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_src_hooks_useprojects_useprojects","fromNode":"n_src_components_dashboard_dashboard","fromSide":"bottom","toNode":"n_src_hooks_useprojects_useprojects","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_dashboard_src_hooks_useauth_useauth","fromNode":"n_src_components_dashboard_dashboard_dashboard","fromSide":"right","toNode":"n_src_hooks_useauth_useauth","toSide":"left","label":"calls [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_dashboard_dashboard_src_hooks_useprojects_useprojects","fromNode":"n_src_components_dashboard_dashboard_dashboard","fromSide":"bottom","toNode":"n_src_hooks_useprojects_useprojects","toSide":"top","label":"calls [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_joinprojectmodal_src_components_dashboard_joinprojectmodal_joinprojectmodal","fromNode":"n_src_components_dashboard_joinprojectmodal","fromSide":"left","toNode":"n_src_components_dashboard_joinprojectmodal_joinprojectmodal","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_joinprojectmodal_src_hooks_useauth","fromNode":"n_src_components_dashboard_joinprojectmodal","fromSide":"right","toNode":"n_src_hooks_useauth","toSide":"left","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_joinprojectmodal_src_hooks_useauth_useauth","fromNode":"n_src_components_dashboard_joinprojectmodal","fromSide":"left","toNode":"n_src_hooks_useauth_useauth","toSide":"right","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_joinprojectmodal_src_lib_joincode","fromNode":"n_src_components_dashboard_joinprojectmodal","fromSide":"right","toNode":"n_src_lib_joincode","toSide":"left","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_joinprojectmodal_src_lib_projects","fromNode":"n_src_components_dashboard_joinprojectmodal","fromSide":"bottom","toNode":"n_src_lib_projects","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_joinprojectmodal_src_lib_projects_joinproject","fromNode":"n_src_components_dashboard_joinprojectmodal","fromSide":"bottom","toNode":"n_src_lib_projects_joinproject","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_joinprojectmodal_src_lib_projects_lookupjoincode","fromNode":"n_src_components_dashboard_joinprojectmodal","fromSide":"right","toNode":"n_src_lib_projects_lookupjoincode","toSide":"left","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_joinprojectmodal_joinprojectmodal_src_hooks_useauth_useauth","fromNode":"n_src_components_dashboard_joinprojectmodal_joinprojectmodal","fromSide":"bottom","toNode":"n_src_hooks_useauth_useauth","toSide":"top","label":"calls [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_projectcard_src_components_dashboard_projectcard_memberavatar","fromNode":"n_src_components_dashboard_projectcard","fromSide":"right","toNode":"n_src_components_dashboard_projectcard_memberavatar","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_dashboard_projectcard_src_components_dashboard_projectcard_projectcard","fromNode":"n_src_components_dashboard_projectcard","fromSide":"left","toNode":"n_src_components_dashboard_projectcard_projectcard","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_landing_landing_src_hooks_useauth","fromNode":"n_src_components_landing_landing","fromSide":"bottom","toNode":"n_src_hooks_useauth","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_landing_landing_src_hooks_useauth_useauth","fromNode":"n_src_components_landing_landing","fromSide":"bottom","toNode":"n_src_hooks_useauth_useauth","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_landing_landing_landing_src_hooks_useauth_useauth","fromNode":"n_src_components_landing_landing_landing","fromSide":"bottom","toNode":"n_src_hooks_useauth_useauth","toSide":"top","label":"calls [EXTRACTED]"},
+		{"id":"e_src_components_layout_appheader_src_components_layout_appheader_appheader","fromNode":"n_src_components_layout_appheader","fromSide":"left","toNode":"n_src_components_layout_appheader_appheader","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_layout_appheader_src_components_layout_appheader_avatar","fromNode":"n_src_components_layout_appheader","fromSide":"right","toNode":"n_src_components_layout_appheader_avatar","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_layout_appheader_src_hooks_useauth","fromNode":"n_src_components_layout_appheader","fromSide":"right","toNode":"n_src_hooks_useauth","toSide":"left","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_layout_appheader_src_hooks_useauth_useauth","fromNode":"n_src_components_layout_appheader","fromSide":"right","toNode":"n_src_hooks_useauth_useauth","toSide":"left","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_layout_appheader_src_components_project_projectpage","fromNode":"n_src_components_layout_appheader","fromSide":"top","toNode":"n_src_components_project_projectpage","toSide":"bottom","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_layout_appheader_appheader_src_hooks_useauth_useauth","fromNode":"n_src_components_layout_appheader_appheader","fromSide":"right","toNode":"n_src_hooks_useauth_useauth","toSide":"left","label":"calls [EXTRACTED]"},
+		{"id":"e_src_components_layout_appheader_appheader_src_components_project_projectpage","fromNode":"n_src_components_layout_appheader_appheader","fromSide":"top","toNode":"n_src_components_project_projectpage","toSide":"bottom","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_project_memberslist_src_components_project_memberslist_memberavatar","fromNode":"n_src_components_project_memberslist","fromSide":"right","toNode":"n_src_components_project_memberslist_memberavatar","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_project_memberslist_src_components_project_memberslist_memberslist","fromNode":"n_src_components_project_memberslist","fromSide":"right","toNode":"n_src_components_project_memberslist_memberslist","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_project_memberslist_src_components_project_projectpage","fromNode":"n_src_components_project_memberslist","fromSide":"right","toNode":"n_src_components_project_projectpage","toSide":"left","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_project_memberslist_memberslist_src_components_project_projectpage","fromNode":"n_src_components_project_memberslist_memberslist","fromSide":"left","toNode":"n_src_components_project_projectpage","toSide":"right","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_project_projectpage_src_components_project_projectpage_joincodebadge","fromNode":"n_src_components_project_projectpage","fromSide":"top","toNode":"n_src_components_project_projectpage_joincodebadge","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_project_projectpage_src_components_project_projectpage_projectpage","fromNode":"n_src_components_project_projectpage","fromSide":"left","toNode":"n_src_components_project_projectpage_projectpage","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_components_project_projectpage_src_hooks_useproject","fromNode":"n_src_components_project_projectpage","fromSide":"bottom","toNode":"n_src_hooks_useproject","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_components_project_projectpage_src_hooks_useproject_useproject","fromNode":"n_src_components_project_projectpage","fromSide":"bottom","toNode":"n_src_hooks_useproject_useproject","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_components_project_projectpage_projectpage_src_hooks_useproject_useproject","fromNode":"n_src_components_project_projectpage_projectpage","fromSide":"bottom","toNode":"n_src_hooks_useproject_useproject","toSide":"top","label":"calls [EXTRACTED]"},
+		{"id":"e_src_hooks_useauth_src_hooks_useauth_authcontext","fromNode":"n_src_hooks_useauth","fromSide":"top","toNode":"n_src_hooks_useauth_authcontext","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_src_hooks_useauth_src_hooks_useauth_authprovider","fromNode":"n_src_hooks_useauth","fromSide":"top","toNode":"n_src_hooks_useauth_authprovider","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_src_hooks_useauth_src_hooks_useauth_useauth","fromNode":"n_src_hooks_useauth","fromSide":"left","toNode":"n_src_hooks_useauth_useauth","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_hooks_useauth_src_lib_firebase","fromNode":"n_src_hooks_useauth","fromSide":"top","toNode":"n_src_lib_firebase","toSide":"bottom","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_hooks_useauth_src_lib_firebase_auth","fromNode":"n_src_hooks_useauth","fromSide":"top","toNode":"n_src_lib_firebase_auth","toSide":"bottom","label":"imports [EXTRACTED]"},
+		{"id":"e_src_hooks_useauth_src_lib_firebase_googleprovider","fromNode":"n_src_hooks_useauth","fromSide":"left","toNode":"n_src_lib_firebase_googleprovider","toSide":"right","label":"imports [EXTRACTED]"},
+		{"id":"e_src_hooks_useauth_src_main","fromNode":"n_src_hooks_useauth","fromSide":"top","toNode":"n_src_main","toSide":"bottom","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_hooks_useauth_authprovider_src_main","fromNode":"n_src_hooks_useauth_authprovider","fromSide":"top","toNode":"n_src_main","toSide":"bottom","label":"imports [EXTRACTED]"},
+		{"id":"e_src_hooks_useproject_src_hooks_useproject_useproject","fromNode":"n_src_hooks_useproject","fromSide":"left","toNode":"n_src_hooks_useproject_useproject","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_hooks_useproject_src_lib_projects","fromNode":"n_src_hooks_useproject","fromSide":"bottom","toNode":"n_src_lib_projects","toSide":"top","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_hooks_useproject_src_lib_projects_projectref","fromNode":"n_src_hooks_useproject","fromSide":"bottom","toNode":"n_src_lib_projects_projectref","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_hooks_useprojects_src_hooks_useprojects_bynewestfirst","fromNode":"n_src_hooks_useprojects","fromSide":"top","toNode":"n_src_hooks_useprojects_bynewestfirst","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_src_hooks_useprojects_src_hooks_useprojects_useprojects","fromNode":"n_src_hooks_useprojects","fromSide":"left","toNode":"n_src_hooks_useprojects_useprojects","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_hooks_useprojects_src_lib_projects","fromNode":"n_src_hooks_useprojects","fromSide":"right","toNode":"n_src_lib_projects","toSide":"left","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_hooks_useprojects_src_lib_projects_projectscollection","fromNode":"n_src_hooks_useprojects","fromSide":"right","toNode":"n_src_lib_projects_projectscollection","toSide":"left","label":"imports [EXTRACTED]"},
+		{"id":"e_src_lib_firebase_src_lib_firebase_app","fromNode":"n_src_lib_firebase","fromSide":"top","toNode":"n_src_lib_firebase_app","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_firebase_src_lib_firebase_auth","fromNode":"n_src_lib_firebase","fromSide":"left","toNode":"n_src_lib_firebase_auth","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_firebase_src_lib_firebase_db","fromNode":"n_src_lib_firebase","fromSide":"left","toNode":"n_src_lib_firebase_db","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_firebase_src_lib_firebase_firebaseconfig","fromNode":"n_src_lib_firebase","fromSide":"right","toNode":"n_src_lib_firebase_firebaseconfig","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_firebase_src_lib_firebase_googleprovider","fromNode":"n_src_lib_firebase","fromSide":"left","toNode":"n_src_lib_firebase_googleprovider","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_firebase_src_lib_firebase_required","fromNode":"n_src_lib_firebase","fromSide":"top","toNode":"n_src_lib_firebase_required","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_firebase_src_lib_projects","fromNode":"n_src_lib_firebase","fromSide":"left","toNode":"n_src_lib_projects","toSide":"right","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_lib_firebase_db_src_lib_projects","fromNode":"n_src_lib_firebase_db","fromSide":"left","toNode":"n_src_lib_projects","toSide":"right","label":"imports [EXTRACTED]"},
+		{"id":"e_src_lib_joincode_src_lib_joincode_generatejoincode","fromNode":"n_src_lib_joincode","fromSide":"left","toNode":"n_src_lib_joincode_generatejoincode","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_joincode_src_lib_projects","fromNode":"n_src_lib_joincode","fromSide":"left","toNode":"n_src_lib_projects","toSide":"right","label":"imports_from [EXTRACTED]"},
+		{"id":"e_src_lib_joincode_generatejoincode_src_lib_projects","fromNode":"n_src_lib_joincode_generatejoincode","fromSide":"bottom","toNode":"n_src_lib_projects","toSide":"top","label":"imports [EXTRACTED]"},
+		{"id":"e_src_lib_joincode_generatejoincode_src_lib_projects_reserveuniquecode","fromNode":"n_src_lib_joincode_generatejoincode","fromSide":"bottom","toNode":"n_src_lib_projects_reserveuniquecode","toSide":"top","label":"calls [EXTRACTED]"},
+		{"id":"e_src_lib_projects_src_lib_projects_createproject","fromNode":"n_src_lib_projects","fromSide":"top","toNode":"n_src_lib_projects_createproject","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_projects_src_lib_projects_joincoderef","fromNode":"n_src_lib_projects","fromSide":"top","toNode":"n_src_lib_projects_joincoderef","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_projects_src_lib_projects_joinproject","fromNode":"n_src_lib_projects","fromSide":"top","toNode":"n_src_lib_projects_joinproject","toSide":"bottom","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_projects_src_lib_projects_lookupjoincode","fromNode":"n_src_lib_projects","fromSide":"right","toNode":"n_src_lib_projects_lookupjoincode","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_projects_src_lib_projects_projectref","fromNode":"n_src_lib_projects","fromSide":"right","toNode":"n_src_lib_projects_projectref","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_projects_src_lib_projects_projectscollection","fromNode":"n_src_lib_projects","fromSide":"left","toNode":"n_src_lib_projects_projectscollection","toSide":"right","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_projects_src_lib_projects_reserveuniquecode","fromNode":"n_src_lib_projects","fromSide":"right","toNode":"n_src_lib_projects_reserveuniquecode","toSide":"left","label":"contains [EXTRACTED]"},
+		{"id":"e_src_lib_projects_projectref_src_lib_projects_joinproject","fromNode":"n_src_lib_projects_projectref","fromSide":"left","toNode":"n_src_lib_projects_joinproject","toSide":"right","label":"calls [EXTRACTED]"},
+		{"id":"e_src_lib_projects_joincoderef_src_lib_projects_createproject","fromNode":"n_src_lib_projects_joincoderef","fromSide":"top","toNode":"n_src_lib_projects_createproject","toSide":"bottom","label":"calls [EXTRACTED]"},
+		{"id":"e_src_lib_projects_joincoderef_src_lib_projects_lookupjoincode","fromNode":"n_src_lib_projects_joincoderef","fromSide":"right","toNode":"n_src_lib_projects_lookupjoincode","toSide":"left","label":"calls [EXTRACTED]"},
+		{"id":"e_src_lib_projects_joincoderef_src_lib_projects_reserveuniquecode","fromNode":"n_src_lib_projects_joincoderef","fromSide":"bottom","toNode":"n_src_lib_projects_reserveuniquecode","toSide":"top","label":"calls [EXTRACTED]"},
+		{"id":"e_src_lib_projects_reserveuniquecode_src_lib_projects_createproject","fromNode":"n_src_lib_projects_reserveuniquecode","fromSide":"top","toNode":"n_src_lib_projects_createproject","toSide":"bottom","label":"calls [EXTRACTED]"},
+		{"id":"e_claude_fairshare_claude_tech_stack","fromNode":"n_claude_fairshare","fromSide":"left","toNode":"n_claude_tech_stack","toSide":"right","label":"implements [EXTRACTED]"},
+		{"id":"e_claude_fairshare_plan_one_feature_workflow","fromNode":"n_claude_fairshare","fromSide":"bottom","toNode":"n_plan_one_feature_workflow","toSide":"top","label":"rationale_for [EXTRACTED]"},
+		{"id":"e_claude_fairshare_plan_playful_style","fromNode":"n_claude_fairshare","fromSide":"bottom","toNode":"n_plan_playful_style","toSide":"top","label":"rationale_for [EXTRACTED]"},
+		{"id":"e_claude_tech_stack_plan_google_signin","fromNode":"n_claude_tech_stack","fromSide":"top","toNode":"n_plan_google_signin","toSide":"bottom","label":"references [EXTRACTED]"},
+		{"id":"e_claude_tech_stack_plan_no_cloud_functions","fromNode":"n_claude_tech_stack","fromSide":"top","toNode":"n_plan_no_cloud_functions","toSide":"bottom","label":"conceptually_related_to [EXTRACTED]"},
+		{"id":"e_plan_no_cloud_functions_plan_reviews_collection","fromNode":"n_plan_no_cloud_functions","fromSide":"right","toNode":"n_plan_reviews_collection","toSide":"left","label":"rationale_for [EXTRACTED]"},
+		{"id":"e_plan_no_cloud_functions_plan_security_rules","fromNode":"n_plan_no_cloud_functions","fromSide":"top","toNode":"n_plan_security_rules","toSide":"bottom","label":"rationale_for [EXTRACTED]"},
+		{"id":"e_plan_google_signin_plan_f1_auth","fromNode":"n_plan_google_signin","fromSide":"top","toNode":"n_plan_f1_auth","toSide":"bottom","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_firestore_data_model_plan_joincodes_collection","fromNode":"n_plan_firestore_data_model","fromSide":"bottom","toNode":"n_plan_joincodes_collection","toSide":"top","label":"references [EXTRACTED]"},
+		{"id":"e_plan_firestore_data_model_plan_projects_collection","fromNode":"n_plan_firestore_data_model","fromSide":"bottom","toNode":"n_plan_projects_collection","toSide":"top","label":"references [EXTRACTED]"},
+		{"id":"e_plan_firestore_data_model_plan_reviews_collection","fromNode":"n_plan_firestore_data_model","fromSide":"right","toNode":"n_plan_reviews_collection","toSide":"left","label":"references [EXTRACTED]"},
+		{"id":"e_plan_firestore_data_model_plan_tasks_collection","fromNode":"n_plan_firestore_data_model","fromSide":"bottom","toNode":"n_plan_tasks_collection","toSide":"top","label":"references [EXTRACTED]"},
+		{"id":"e_plan_projects_collection_plan_end_project","fromNode":"n_plan_projects_collection","fromSide":"top","toNode":"n_plan_end_project","toSide":"bottom","label":"shares_data_with [EXTRACTED]"},
+		{"id":"e_plan_projects_collection_plan_joincodes_collection","fromNode":"n_plan_projects_collection","fromSide":"left","toNode":"n_plan_joincodes_collection","toSide":"right","label":"shares_data_with [EXTRACTED]"},
+		{"id":"e_plan_projects_collection_plan_security_rules","fromNode":"n_plan_projects_collection","fromSide":"top","toNode":"n_plan_security_rules","toSide":"bottom","label":"references [EXTRACTED]"},
+		{"id":"e_plan_joincodes_collection_plan_join_code","fromNode":"n_plan_joincodes_collection","fromSide":"top","toNode":"n_plan_join_code","toSide":"bottom","label":"shares_data_with [EXTRACTED]"},
+		{"id":"e_plan_joincodes_collection_plan_security_rules","fromNode":"n_plan_joincodes_collection","fromSide":"top","toNode":"n_plan_security_rules","toSide":"bottom","label":"references [EXTRACTED]"},
+		{"id":"e_plan_tasks_collection_plan_contributionshares","fromNode":"n_plan_tasks_collection","fromSide":"right","toNode":"n_plan_contributionshares","toSide":"left","label":"shares_data_with [EXTRACTED]"},
+		{"id":"e_plan_tasks_collection_plan_proof_verification","fromNode":"n_plan_tasks_collection","fromSide":"right","toNode":"n_plan_proof_verification","toSide":"left","label":"shares_data_with [EXTRACTED]"},
+		{"id":"e_plan_tasks_collection_plan_security_rules","fromNode":"n_plan_tasks_collection","fromSide":"top","toNode":"n_plan_security_rules","toSide":"bottom","label":"references [EXTRACTED]"},
+		{"id":"e_plan_tasks_collection_plan_task_board","fromNode":"n_plan_tasks_collection","fromSide":"right","toNode":"n_plan_task_board","toSide":"left","label":"shares_data_with [EXTRACTED]"},
+		{"id":"e_plan_reviews_collection_plan_peer_review","fromNode":"n_plan_reviews_collection","fromSide":"top","toNode":"n_plan_peer_review","toSide":"bottom","label":"shares_data_with [EXTRACTED]"},
+		{"id":"e_plan_reviews_collection_plan_ratingaverages","fromNode":"n_plan_reviews_collection","fromSide":"left","toNode":"n_plan_ratingaverages","toSide":"right","label":"shares_data_with [EXTRACTED]"},
+		{"id":"e_plan_reviews_collection_plan_security_rules","fromNode":"n_plan_reviews_collection","fromSide":"left","toNode":"n_plan_security_rules","toSide":"right","label":"references [EXTRACTED]"},
+		{"id":"e_plan_join_code_plan_f2_create_dashboard","fromNode":"n_plan_join_code","fromSide":"top","toNode":"n_plan_f2_create_dashboard","toSide":"bottom","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_join_code_plan_f3_join","fromNode":"n_plan_join_code","fromSide":"top","toNode":"n_plan_f3_join","toSide":"bottom","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_join_code_plan_proof_verification","fromNode":"n_plan_join_code","fromSide":"bottom","toNode":"n_plan_proof_verification","toSide":"top","label":"semantically_similar_to [INFERRED]"},
+		{"id":"e_plan_task_board_plan_f4_task_board","fromNode":"n_plan_task_board","fromSide":"left","toNode":"n_plan_f4_task_board","toSide":"right","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_task_board_plan_f5_claim_move","fromNode":"n_plan_task_board","fromSide":"left","toNode":"n_plan_f5_claim_move","toSide":"right","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_task_board_plan_realtime_onsnapshot","fromNode":"n_plan_task_board","fromSide":"left","toNode":"n_plan_realtime_onsnapshot","toSide":"right","label":"rationale_for [EXTRACTED]"},
+		{"id":"e_plan_proof_verification_plan_contributionshares","fromNode":"n_plan_proof_verification","fromSide":"right","toNode":"n_plan_contributionshares","toSide":"left","label":"conceptually_related_to [INFERRED]"},
+		{"id":"e_plan_proof_verification_plan_f6_mark_done","fromNode":"n_plan_proof_verification","fromSide":"left","toNode":"n_plan_f6_mark_done","toSide":"right","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_proof_verification_plan_f7_verification","fromNode":"n_plan_proof_verification","fromSide":"top","toNode":"n_plan_f7_verification","toSide":"bottom","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_proof_verification_plan_security_rules","fromNode":"n_plan_proof_verification","fromSide":"left","toNode":"n_plan_security_rules","toSide":"right","label":"conceptually_related_to [EXTRACTED]"},
+		{"id":"e_plan_peer_review_plan_f9_review_form","fromNode":"n_plan_peer_review","fromSide":"top","toNode":"n_plan_f9_review_form","toSide":"bottom","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_end_project_plan_security_rules","fromNode":"n_plan_end_project","fromSide":"bottom","toNode":"n_plan_security_rules","toSide":"top","label":"conceptually_related_to [EXTRACTED]"},
+		{"id":"e_plan_end_project_plan_f8_end_project","fromNode":"n_plan_end_project","fromSide":"right","toNode":"n_plan_f8_end_project","toSide":"left","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_fairness_report_plan_f11_report_page","fromNode":"n_plan_fairness_report","fromSide":"top","toNode":"n_plan_f11_report_page","toSide":"bottom","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_fairness_report_plan_fairness_lib","fromNode":"n_plan_fairness_report","fromSide":"bottom","toNode":"n_plan_fairness_lib","toSide":"top","label":"references [EXTRACTED]"},
+		{"id":"e_plan_fairness_lib_plan_f10_fairness_math","fromNode":"n_plan_fairness_lib","fromSide":"top","toNode":"n_plan_f10_fairness_math","toSide":"bottom","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_fairness_lib_plan_contributionshares","fromNode":"n_plan_fairness_lib","fromSide":"right","toNode":"n_plan_contributionshares","toSide":"left","label":"references [EXTRACTED]"},
+		{"id":"e_plan_fairness_lib_plan_ratingaverages","fromNode":"n_plan_fairness_lib","fromSide":"left","toNode":"n_plan_ratingaverages","toSide":"right","label":"references [EXTRACTED]"},
+		{"id":"e_plan_fairness_lib_plan_taskpoints","fromNode":"n_plan_fairness_lib","fromSide":"right","toNode":"n_plan_taskpoints","toSide":"left","label":"references [EXTRACTED]"},
+		{"id":"e_plan_taskpoints_plan_contributionshares","fromNode":"n_plan_taskpoints","fromSide":"right","toNode":"n_plan_contributionshares","toSide":"left","label":"calls [INFERRED]"},
+		{"id":"e_plan_security_rules_plan_f12_security_audit","fromNode":"n_plan_security_rules","fromSide":"right","toNode":"n_plan_f12_security_audit","toSide":"left","label":"implements [EXTRACTED]"},
+		{"id":"e_plan_milestone_m1_plan_f0_scaffold","fromNode":"n_plan_milestone_m1","fromSide":"top","toNode":"n_plan_f0_scaffold","toSide":"bottom","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m1_plan_f1_auth","fromNode":"n_plan_milestone_m1","fromSide":"top","toNode":"n_plan_f1_auth","toSide":"bottom","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m1_plan_f2_create_dashboard","fromNode":"n_plan_milestone_m1","fromSide":"right","toNode":"n_plan_f2_create_dashboard","toSide":"left","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m1_plan_f3_join","fromNode":"n_plan_milestone_m1","fromSide":"right","toNode":"n_plan_f3_join","toSide":"left","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m1_plan_f4_task_board","fromNode":"n_plan_milestone_m1","fromSide":"top","toNode":"n_plan_f4_task_board","toSide":"bottom","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m1_plan_f5_claim_move","fromNode":"n_plan_milestone_m1","fromSide":"top","toNode":"n_plan_f5_claim_move","toSide":"bottom","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m2_plan_f6_mark_done","fromNode":"n_plan_milestone_m2","fromSide":"top","toNode":"n_plan_f6_mark_done","toSide":"bottom","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m2_plan_f7_verification","fromNode":"n_plan_milestone_m2","fromSide":"top","toNode":"n_plan_f7_verification","toSide":"bottom","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m2_plan_f8_end_project","fromNode":"n_plan_milestone_m2","fromSide":"right","toNode":"n_plan_f8_end_project","toSide":"left","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m2_plan_f9_review_form","fromNode":"n_plan_milestone_m2","fromSide":"right","toNode":"n_plan_f9_review_form","toSide":"left","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m3_plan_f10_fairness_math","fromNode":"n_plan_milestone_m3","fromSide":"left","toNode":"n_plan_f10_fairness_math","toSide":"right","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m3_plan_f11_report_page","fromNode":"n_plan_milestone_m3","fromSide":"left","toNode":"n_plan_f11_report_page","toSide":"right","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m3_plan_f12_security_audit","fromNode":"n_plan_milestone_m3","fromSide":"left","toNode":"n_plan_f12_security_audit","toSide":"right","label":"references [EXTRACTED]"},
+		{"id":"e_plan_milestone_m3_plan_f13_visual_polish","fromNode":"n_plan_milestone_m3","fromSide":"top","toNode":"n_plan_f13_visual_polish","toSide":"bottom","label":"references [EXTRACTED]"}
+	]
 }

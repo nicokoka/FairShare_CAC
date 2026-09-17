@@ -4,44 +4,46 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "fairshare_fairness_pipeline",
-        "label": "Fairness computation pipeline (verified tasks + reviews to report)",
-        "nodes": [
-          "plan_proof_verification",
-          "plan_peer_review",
-          "plan_fairness_lib",
-          "plan_fairness_report"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.9,
-        "source_file": "PLAN.md"
-      },
-      {
-        "id": "fairshare_firestore_model",
+        "id": "firestore_data_model_collections",
         "label": "Firestore data model collections",
         "nodes": [
-          "plan_projects_collection",
-          "plan_joincodes_collection",
-          "plan_tasks_collection",
-          "plan_reviews_collection"
+          "plan_collection_projects",
+          "plan_collection_joincodes",
+          "plan_collection_tasks",
+          "plan_collection_reviews"
         ],
         "relation": "form",
         "confidence": "EXTRACTED",
-        "confidence_score": 0.9,
+        "confidence_score": 1.0,
         "source_file": "PLAN.md"
       },
       {
-        "id": "fairshare_serverless_security",
-        "label": "Serverless client-only + rules-enforced security",
+        "id": "fairness_pure_functions",
+        "label": "Fairness pure functions",
         "nodes": [
-          "plan_no_cloud_functions",
-          "plan_security_rules",
-          "plan_reviews_collection"
+          "plan_fn_taskpoints",
+          "plan_fn_contributionshares",
+          "plan_fn_ratingaverages"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "PLAN.md"
+      },
+      {
+        "id": "milestone_1_features",
+        "label": "Milestone 1 features (complete)",
+        "nodes": [
+          "plan_f0",
+          "plan_f1",
+          "plan_f2",
+          "plan_f3",
+          "plan_f4",
+          "plan_f5"
         ],
         "relation": "participate_in",
         "confidence": "EXTRACTED",
-        "confidence_score": 0.85,
+        "confidence_score": 1.0,
         "source_file": "PLAN.md"
       },
       {
@@ -67,7 +69,7 @@
       "source_file": "src/components/landing/ContributionCard.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "norm_label": "contributioncard.jsx",
       "id": "src_components_landing_contributioncard"
     },
@@ -77,7 +79,7 @@
       "source_file": "src/components/landing/ContributionCard.jsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "norm_label": "teammates",
       "id": "src_components_landing_contributioncard_teammates"
     },
@@ -87,7 +89,7 @@
       "source_file": "src/components/landing/ContributionCard.jsx",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "norm_label": "contributioncard()",
       "id": "src_components_landing_contributioncard_contributioncard"
     },
@@ -97,7 +99,7 @@
       "source_file": "src/components/landing/Wordmark.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 12,
       "norm_label": "wordmark.jsx",
       "id": "src_components_landing_wordmark"
     },
@@ -107,7 +109,7 @@
       "source_file": "src/components/landing/Wordmark.jsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 8,
+      "community": 12,
       "norm_label": "wordmark()",
       "id": "src_components_landing_wordmark_wordmark"
     },
@@ -117,7 +119,7 @@
       "source_file": "src/components/placeholders/PlaceholderPage.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 9,
+      "community": 13,
       "norm_label": "placeholderpage.jsx",
       "id": "src_components_placeholders_placeholderpage"
     },
@@ -127,7 +129,7 @@
       "source_file": "src/components/placeholders/PlaceholderPage.jsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 9,
+      "community": 13,
       "norm_label": "placeholderpage()",
       "id": "src_components_placeholders_placeholderpage_placeholderpage"
     },
@@ -137,7 +139,7 @@
       "source_file": "vite.config.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
+      "community": 15,
       "norm_label": "vite.config.js",
       "id": "vite_config"
     },
@@ -151,7 +153,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Web app that makes group grades match who actually did the work, by making effort visible rather than punishing anyone.",
-      "community": 2,
+      "community": 8,
       "norm_label": "fairshare",
       "id": "instructions_fairshare"
     },
@@ -165,7 +167,7 @@
       "author": null,
       "contributor": null,
       "rationale": "People exert less effort in a group than alone. This is the core problem FairShare exists to counter; documented by Latane, Williams & Harkins (1979).",
-      "community": 2,
+      "community": 8,
       "norm_label": "social loafing",
       "id": "instructions_social_loafing"
     },
@@ -179,7 +181,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Older finding that per-person effort drops as group size grows; the basis social loafing builds on.",
-      "community": 2,
+      "community": 8,
       "norm_label": "ringelmann effect",
       "id": "instructions_ringelmann_effect"
     },
@@ -193,7 +195,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Teammates rating each other is shown to be fair and accurate vs teacher marks (Falchikov & Goldfinch 2000). Justifies FairShare's private peer-review mechanism.",
-      "community": 0,
+      "community": 9,
       "norm_label": "peer assessment",
       "id": "instructions_peer_assessment"
     },
@@ -207,7 +209,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Existing college peer-evaluation tool; FairShare adapts the same idea to be free and student-run with no teacher account.",
-      "community": 0,
+      "community": 9,
       "norm_label": "catme",
       "id": "instructions_catme"
     },
@@ -220,7 +222,7 @@
       "captured_at": null,
       "author": "Latane, Williams & Harkins",
       "contributor": null,
-      "community": 2,
+      "community": 8,
       "norm_label": "latane, williams & harkins (1979)",
       "id": "instructions_latane_1979"
     },
@@ -233,7 +235,7 @@
       "captured_at": null,
       "author": "Falchikov & Goldfinch",
       "contributor": null,
-      "community": 0,
+      "community": 9,
       "norm_label": "falchikov & goldfinch (2000)",
       "id": "instructions_falchikov_goldfinch_2000"
     },
@@ -243,9 +245,9 @@
       "source_file": "package.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "package",
-      "community": 3,
-      "norm_label": "package.json"
+      "community": 5,
+      "norm_label": "package.json",
+      "id": "package"
     },
     {
       "label": "name",
@@ -253,9 +255,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "package_name",
-      "community": 3,
-      "norm_label": "name"
+      "community": 5,
+      "norm_label": "name",
+      "id": "package_name"
     },
     {
       "label": "private",
@@ -263,9 +265,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "package_private",
-      "community": 3,
-      "norm_label": "private"
+      "community": 5,
+      "norm_label": "private",
+      "id": "package_private"
     },
     {
       "label": "version",
@@ -273,9 +275,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "package_version",
-      "community": 3,
-      "norm_label": "version"
+      "community": 5,
+      "norm_label": "version",
+      "id": "package_version"
     },
     {
       "label": "type",
@@ -283,9 +285,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "package_type",
-      "community": 3,
-      "norm_label": "type"
+      "community": 5,
+      "norm_label": "type",
+      "id": "package_type"
     },
     {
       "label": "scripts",
@@ -293,9 +295,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "package_scripts",
-      "community": 3,
-      "norm_label": "scripts"
+      "community": 5,
+      "norm_label": "scripts",
+      "id": "package_scripts"
     },
     {
       "label": "dev",
@@ -303,9 +305,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "package_scripts_dev",
-      "community": 3,
-      "norm_label": "dev"
+      "community": 5,
+      "norm_label": "dev",
+      "id": "package_scripts_dev"
     },
     {
       "label": "build",
@@ -313,9 +315,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "package_scripts_build",
-      "community": 3,
-      "norm_label": "build"
+      "community": 5,
+      "norm_label": "build",
+      "id": "package_scripts_build"
     },
     {
       "label": "preview",
@@ -323,9 +325,9 @@
       "source_file": "package.json",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "package_scripts_preview",
-      "community": 3,
-      "norm_label": "preview"
+      "community": 5,
+      "norm_label": "preview",
+      "id": "package_scripts_preview"
     },
     {
       "label": "dependencies",
@@ -333,9 +335,9 @@
       "source_file": "package.json",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "package_dependencies",
-      "community": 3,
-      "norm_label": "dependencies"
+      "community": 6,
+      "norm_label": "dependencies",
+      "id": "package_dependencies"
     },
     {
       "label": "firebase",
@@ -343,9 +345,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "package_dependencies_firebase",
-      "community": 3,
-      "norm_label": "firebase"
+      "community": 6,
+      "norm_label": "firebase",
+      "id": "package_dependencies_firebase"
     },
     {
       "label": "react",
@@ -353,9 +355,9 @@
       "source_file": "package.json",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "package_dependencies_react",
-      "community": 3,
-      "norm_label": "react"
+      "community": 6,
+      "norm_label": "react",
+      "id": "package_dependencies_react"
     },
     {
       "label": "react-dom",
@@ -363,9 +365,9 @@
       "source_file": "package.json",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "package_dependencies_react_dom",
-      "community": 3,
-      "norm_label": "react-dom"
+      "community": 6,
+      "norm_label": "react-dom",
+      "id": "package_dependencies_react_dom"
     },
     {
       "label": "react-router-dom",
@@ -373,9 +375,9 @@
       "source_file": "package.json",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "package_dependencies_react_router_dom",
-      "community": 3,
-      "norm_label": "react-router-dom"
+      "community": 6,
+      "norm_label": "react-router-dom",
+      "id": "package_dependencies_react_router_dom"
     },
     {
       "label": "devDependencies",
@@ -383,9 +385,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "package_devdependencies",
-      "community": 3,
-      "norm_label": "devdependencies"
+      "community": 5,
+      "norm_label": "devdependencies",
+      "id": "package_devdependencies"
     },
     {
       "label": "@vitejs/plugin-react",
@@ -393,9 +395,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "package_devdependencies_vitejs_plugin_react",
-      "community": 3,
-      "norm_label": "@vitejs/plugin-react"
+      "community": 5,
+      "norm_label": "@vitejs/plugin-react",
+      "id": "package_devdependencies_vitejs_plugin_react"
     },
     {
       "label": "vite",
@@ -403,9 +405,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "package_devdependencies_vite",
-      "community": 3,
-      "norm_label": "vite"
+      "community": 5,
+      "norm_label": "vite",
+      "id": "package_devdependencies_vite"
     },
     {
       "label": "App.jsx",
@@ -413,9 +415,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_app",
-      "community": 1,
-      "norm_label": "app.jsx"
+      "community": 0,
+      "norm_label": "app.jsx",
+      "id": "src_app"
     },
     {
       "label": "App()",
@@ -423,9 +425,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "src_app_app",
-      "community": 1,
-      "norm_label": "app()"
+      "community": 0,
+      "norm_label": "app()",
+      "id": "src_app_app"
     },
     {
       "label": "ProtectedRoute.jsx",
@@ -433,9 +435,9 @@
       "source_file": "src/components/auth/ProtectedRoute.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_auth_protectedroute",
-      "community": 1,
-      "norm_label": "protectedroute.jsx"
+      "community": 0,
+      "norm_label": "protectedroute.jsx",
+      "id": "src_components_auth_protectedroute"
     },
     {
       "label": "ProtectedRoute()",
@@ -443,9 +445,9 @@
       "source_file": "src/components/auth/ProtectedRoute.jsx",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "src_components_auth_protectedroute_protectedroute",
-      "community": 1,
-      "norm_label": "protectedroute()"
+      "community": 0,
+      "norm_label": "protectedroute()",
+      "id": "src_components_auth_protectedroute_protectedroute"
     },
     {
       "label": "LoadingScreen.jsx",
@@ -453,9 +455,9 @@
       "source_file": "src/components/common/LoadingScreen.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_common_loadingscreen",
-      "community": 1,
-      "norm_label": "loadingscreen.jsx"
+      "community": 0,
+      "norm_label": "loadingscreen.jsx",
+      "id": "src_components_common_loadingscreen"
     },
     {
       "label": "LoadingScreen()",
@@ -463,9 +465,9 @@
       "source_file": "src/components/common/LoadingScreen.jsx",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "src_components_common_loadingscreen_loadingscreen",
-      "community": 1,
-      "norm_label": "loadingscreen()"
+      "community": 0,
+      "norm_label": "loadingscreen()",
+      "id": "src_components_common_loadingscreen_loadingscreen"
     },
     {
       "label": "CreateProjectModal.jsx",
@@ -473,9 +475,9 @@
       "source_file": "src/components/dashboard/CreateProjectModal.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_dashboard_createprojectmodal",
-      "community": 4,
-      "norm_label": "createprojectmodal.jsx"
+      "community": 0,
+      "norm_label": "createprojectmodal.jsx",
+      "id": "src_components_dashboard_createprojectmodal"
     },
     {
       "label": "CreateProjectModal()",
@@ -483,9 +485,9 @@
       "source_file": "src/components/dashboard/CreateProjectModal.jsx",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "src_components_dashboard_createprojectmodal_createprojectmodal",
-      "community": 4,
-      "norm_label": "createprojectmodal()"
+      "community": 0,
+      "norm_label": "createprojectmodal()",
+      "id": "src_components_dashboard_createprojectmodal_createprojectmodal"
     },
     {
       "label": "Dashboard.jsx",
@@ -493,9 +495,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_dashboard_dashboard",
-      "community": 4,
-      "norm_label": "dashboard.jsx"
+      "community": 0,
+      "norm_label": "dashboard.jsx",
+      "id": "src_components_dashboard_dashboard"
     },
     {
       "label": "Dashboard()",
@@ -503,9 +505,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "src_components_dashboard_dashboard_dashboard",
-      "community": 4,
-      "norm_label": "dashboard()"
+      "community": 0,
+      "norm_label": "dashboard()",
+      "id": "src_components_dashboard_dashboard_dashboard"
     },
     {
       "label": "EmptyState()",
@@ -513,9 +515,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L107",
       "_origin": "ast",
-      "id": "src_components_dashboard_dashboard_emptystate",
-      "community": 4,
-      "norm_label": "emptystate()"
+      "community": 0,
+      "norm_label": "emptystate()",
+      "id": "src_components_dashboard_dashboard_emptystate"
     },
     {
       "label": "JoinProjectModal.jsx",
@@ -523,9 +525,9 @@
       "source_file": "src/components/dashboard/JoinProjectModal.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_dashboard_joinprojectmodal",
-      "community": 5,
-      "norm_label": "joinprojectmodal.jsx"
+      "community": 4,
+      "norm_label": "joinprojectmodal.jsx",
+      "id": "src_components_dashboard_joinprojectmodal"
     },
     {
       "label": "JoinProjectModal()",
@@ -533,9 +535,9 @@
       "source_file": "src/components/dashboard/JoinProjectModal.jsx",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "src_components_dashboard_joinprojectmodal_joinprojectmodal",
-      "community": 4,
-      "norm_label": "joinprojectmodal()"
+      "community": 0,
+      "norm_label": "joinprojectmodal()",
+      "id": "src_components_dashboard_joinprojectmodal_joinprojectmodal"
     },
     {
       "label": "ProjectCard.jsx",
@@ -543,9 +545,9 @@
       "source_file": "src/components/dashboard/ProjectCard.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_dashboard_projectcard",
-      "community": 4,
-      "norm_label": "projectcard.jsx"
+      "community": 0,
+      "norm_label": "projectcard.jsx",
+      "id": "src_components_dashboard_projectcard"
     },
     {
       "label": "ProjectCard()",
@@ -553,9 +555,9 @@
       "source_file": "src/components/dashboard/ProjectCard.jsx",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "src_components_dashboard_projectcard_projectcard",
-      "community": 4,
-      "norm_label": "projectcard()"
+      "community": 0,
+      "norm_label": "projectcard()",
+      "id": "src_components_dashboard_projectcard_projectcard"
     },
     {
       "label": "MemberAvatar()",
@@ -563,9 +565,9 @@
       "source_file": "src/components/dashboard/ProjectCard.jsx",
       "source_location": "L37",
       "_origin": "ast",
-      "id": "src_components_dashboard_projectcard_memberavatar",
-      "community": 4,
-      "norm_label": "memberavatar()"
+      "community": 0,
+      "norm_label": "memberavatar()",
+      "id": "src_components_dashboard_projectcard_memberavatar"
     },
     {
       "label": "Landing.jsx",
@@ -573,9 +575,9 @@
       "source_file": "src/components/landing/Landing.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_landing_landing",
-      "community": 1,
-      "norm_label": "landing.jsx"
+      "community": 0,
+      "norm_label": "landing.jsx",
+      "id": "src_components_landing_landing"
     },
     {
       "label": "Landing()",
@@ -583,9 +585,9 @@
       "source_file": "src/components/landing/Landing.jsx",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "src_components_landing_landing_landing",
-      "community": 1,
-      "norm_label": "landing()"
+      "community": 0,
+      "norm_label": "landing()",
+      "id": "src_components_landing_landing_landing"
     },
     {
       "label": "GoogleGlyph()",
@@ -593,9 +595,9 @@
       "source_file": "src/components/landing/Landing.jsx",
       "source_location": "L132",
       "_origin": "ast",
-      "id": "src_components_landing_landing_googleglyph",
-      "community": 1,
-      "norm_label": "googleglyph()"
+      "community": 0,
+      "norm_label": "googleglyph()",
+      "id": "src_components_landing_landing_googleglyph"
     },
     {
       "label": "AppHeader.jsx",
@@ -603,9 +605,9 @@
       "source_file": "src/components/layout/AppHeader.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_layout_appheader",
-      "community": 4,
-      "norm_label": "appheader.jsx"
+      "community": 0,
+      "norm_label": "appheader.jsx",
+      "id": "src_components_layout_appheader"
     },
     {
       "label": "AppHeader()",
@@ -613,9 +615,9 @@
       "source_file": "src/components/layout/AppHeader.jsx",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "src_components_layout_appheader_appheader",
-      "community": 4,
-      "norm_label": "appheader()"
+      "community": 0,
+      "norm_label": "appheader()",
+      "id": "src_components_layout_appheader_appheader"
     },
     {
       "label": "Avatar()",
@@ -623,9 +625,9 @@
       "source_file": "src/components/layout/AppHeader.jsx",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "src_components_layout_appheader_avatar",
-      "community": 4,
-      "norm_label": "avatar()"
+      "community": 0,
+      "norm_label": "avatar()",
+      "id": "src_components_layout_appheader_avatar"
     },
     {
       "label": "MembersList.jsx",
@@ -633,9 +635,9 @@
       "source_file": "src/components/project/MembersList.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_project_memberslist",
-      "community": 1,
-      "norm_label": "memberslist.jsx"
+      "community": 11,
+      "norm_label": "memberslist.jsx",
+      "id": "src_components_project_memberslist"
     },
     {
       "label": "MembersList()",
@@ -643,9 +645,9 @@
       "source_file": "src/components/project/MembersList.jsx",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "src_components_project_memberslist_memberslist",
-      "community": 1,
-      "norm_label": "memberslist()"
+      "community": 11,
+      "norm_label": "memberslist()",
+      "id": "src_components_project_memberslist_memberslist"
     },
     {
       "label": "MemberAvatar()",
@@ -653,9 +655,329 @@
       "source_file": "src/components/project/MembersList.jsx",
       "source_location": "L35",
       "_origin": "ast",
-      "id": "src_components_project_memberslist_memberavatar",
-      "community": 1,
-      "norm_label": "memberavatar()"
+      "community": 11,
+      "norm_label": "memberavatar()",
+      "id": "src_components_project_memberslist_memberavatar"
+    },
+    {
+      "label": "useAuth.jsx",
+      "file_type": "code",
+      "source_file": "src/hooks/useAuth.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "useauth.jsx",
+      "id": "src_hooks_useauth"
+    },
+    {
+      "label": "AuthContext",
+      "file_type": "code",
+      "source_file": "src/hooks/useAuth.jsx",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "authcontext",
+      "id": "src_hooks_useauth_authcontext"
+    },
+    {
+      "label": "AuthProvider()",
+      "file_type": "code",
+      "source_file": "src/hooks/useAuth.jsx",
+      "source_location": "L19",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "authprovider()",
+      "id": "src_hooks_useauth_authprovider"
+    },
+    {
+      "label": "useAuth()",
+      "file_type": "code",
+      "source_file": "src/hooks/useAuth.jsx",
+      "source_location": "L43",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "useauth()",
+      "id": "src_hooks_useauth_useauth"
+    },
+    {
+      "label": "useProject.jsx",
+      "file_type": "code",
+      "source_file": "src/hooks/useProject.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "useproject.jsx",
+      "id": "src_hooks_useproject"
+    },
+    {
+      "label": "useProject()",
+      "file_type": "code",
+      "source_file": "src/hooks/useProject.jsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "useproject()",
+      "id": "src_hooks_useproject_useproject"
+    },
+    {
+      "label": "useProjects.jsx",
+      "file_type": "code",
+      "source_file": "src/hooks/useProjects.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "useprojects.jsx",
+      "id": "src_hooks_useprojects"
+    },
+    {
+      "label": "useProjects()",
+      "file_type": "code",
+      "source_file": "src/hooks/useProjects.jsx",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "useprojects()",
+      "id": "src_hooks_useprojects_useprojects"
+    },
+    {
+      "label": "byNewestFirst()",
+      "file_type": "code",
+      "source_file": "src/hooks/useProjects.jsx",
+      "source_location": "L58",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "bynewestfirst()",
+      "id": "src_hooks_useprojects_bynewestfirst"
+    },
+    {
+      "label": "firebase.js",
+      "file_type": "code",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "firebase.js",
+      "id": "src_lib_firebase"
+    },
+    {
+      "label": "firebaseConfig",
+      "file_type": "code",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "firebaseconfig",
+      "id": "src_lib_firebase_firebaseconfig"
+    },
+    {
+      "label": "REQUIRED",
+      "file_type": "code",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L29",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "required",
+      "id": "src_lib_firebase_required"
+    },
+    {
+      "label": "app",
+      "file_type": "code",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L37",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "app",
+      "id": "src_lib_firebase_app"
+    },
+    {
+      "label": "auth",
+      "file_type": "code",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L39",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "auth",
+      "id": "src_lib_firebase_auth"
+    },
+    {
+      "label": "db",
+      "file_type": "code",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "db",
+      "id": "src_lib_firebase_db"
+    },
+    {
+      "label": "googleProvider",
+      "file_type": "code",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L43",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "googleprovider",
+      "id": "src_lib_firebase_googleprovider"
+    },
+    {
+      "label": "joinCode.js",
+      "file_type": "code",
+      "source_file": "src/lib/joinCode.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "joincode.js",
+      "id": "src_lib_joincode"
+    },
+    {
+      "label": "generateJoinCode()",
+      "file_type": "code",
+      "source_file": "src/lib/joinCode.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "generatejoincode()",
+      "id": "src_lib_joincode_generatejoincode"
+    },
+    {
+      "label": "projects.js",
+      "file_type": "code",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "projects.js",
+      "id": "src_lib_projects"
+    },
+    {
+      "label": "projectsCollection",
+      "file_type": "code",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L20",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "projectscollection",
+      "id": "src_lib_projects_projectscollection"
+    },
+    {
+      "label": "projectRef()",
+      "file_type": "code",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "projectref()",
+      "id": "src_lib_projects_projectref"
+    },
+    {
+      "label": "joinCodeRef()",
+      "file_type": "code",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "joincoderef()",
+      "id": "src_lib_projects_joincoderef"
+    },
+    {
+      "label": "reserveUniqueCode()",
+      "file_type": "code",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "reserveuniquecode()",
+      "id": "src_lib_projects_reserveuniquecode"
+    },
+    {
+      "label": "createProject()",
+      "file_type": "code",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L56",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "createproject()",
+      "id": "src_lib_projects_createproject"
+    },
+    {
+      "label": "lookupJoinCode()",
+      "file_type": "code",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L91",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "lookupjoincode()",
+      "id": "src_lib_projects_lookupjoincode"
+    },
+    {
+      "label": "joinProject()",
+      "file_type": "code",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L105",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "joinproject()",
+      "id": "src_lib_projects_joinproject"
+    },
+    {
+      "label": "main.jsx",
+      "file_type": "code",
+      "source_file": "src/main.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "main.jsx",
+      "id": "src_main"
+    },
+    {
+      "label": "AddTaskModal.jsx",
+      "file_type": "code",
+      "source_file": "src/components/task/AddTaskModal.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "addtaskmodal.jsx",
+      "id": "src_components_task_addtaskmodal"
+    },
+    {
+      "label": "AddTaskModal()",
+      "file_type": "code",
+      "source_file": "src/components/task/AddTaskModal.jsx",
+      "source_location": "L18",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "addtaskmodal()",
+      "id": "src_components_task_addtaskmodal_addtaskmodal"
+    },
+    {
+      "label": "useTasks.jsx",
+      "file_type": "code",
+      "source_file": "src/hooks/useTasks.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "usetasks.jsx",
+      "id": "src_hooks_usetasks"
+    },
+    {
+      "label": "useTasks()",
+      "file_type": "code",
+      "source_file": "src/hooks/useTasks.jsx",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "usetasks()",
+      "id": "src_hooks_usetasks_usetasks"
+    },
+    {
+      "label": "byOldestFirst()",
+      "file_type": "code",
+      "source_file": "src/hooks/useTasks.jsx",
+      "source_location": "L53",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "byoldestfirst()",
+      "id": "src_hooks_usetasks_byoldestfirst"
     },
     {
       "label": "ProjectPage.jsx",
@@ -664,7 +986,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_project_projectpage",
-      "community": 1,
+      "community": 7,
       "norm_label": "projectpage.jsx"
     },
     {
@@ -674,291 +996,241 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_components_project_projectpage_projectpage",
-      "community": 1,
+      "community": 7,
       "norm_label": "projectpage()"
     },
     {
       "label": "JoinCodeBadge()",
       "file_type": "code",
       "source_file": "src/components/project/ProjectPage.jsx",
-      "source_location": "L72",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "src_components_project_projectpage_joincodebadge",
-      "community": 1,
+      "community": 7,
       "norm_label": "joincodebadge()"
     },
     {
-      "label": "useAuth.jsx",
+      "label": "TaskBoard.jsx",
       "file_type": "code",
-      "source_file": "src/hooks/useAuth.jsx",
+      "source_file": "src/components/task/TaskBoard.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_hooks_useauth",
-      "community": 6,
-      "norm_label": "useauth.jsx"
+      "id": "src_components_task_taskboard",
+      "community": 7,
+      "norm_label": "taskboard.jsx"
     },
     {
-      "label": "AuthContext",
+      "label": "COLUMNS",
       "file_type": "code",
-      "source_file": "src/hooks/useAuth.jsx",
-      "source_location": "L17",
+      "source_file": "src/components/task/TaskBoard.jsx",
+      "source_location": "L16",
       "_origin": "ast",
-      "id": "src_hooks_useauth_authcontext",
-      "community": 6,
-      "norm_label": "authcontext"
+      "id": "src_components_task_taskboard_columns",
+      "community": 7,
+      "norm_label": "columns"
     },
     {
-      "label": "AuthProvider()",
+      "label": "TaskBoard()",
       "file_type": "code",
-      "source_file": "src/hooks/useAuth.jsx",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "src_hooks_useauth_authprovider",
-      "community": 6,
-      "norm_label": "authprovider()"
-    },
-    {
-      "label": "useAuth()",
-      "file_type": "code",
-      "source_file": "src/hooks/useAuth.jsx",
-      "source_location": "L43",
-      "_origin": "ast",
-      "id": "src_hooks_useauth_useauth",
-      "community": 4,
-      "norm_label": "useauth()"
-    },
-    {
-      "label": "useProject.jsx",
-      "file_type": "code",
-      "source_file": "src/hooks/useProject.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_hooks_useproject",
-      "community": 1,
-      "norm_label": "useproject.jsx"
-    },
-    {
-      "label": "useProject()",
-      "file_type": "code",
-      "source_file": "src/hooks/useProject.jsx",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "src_hooks_useproject_useproject",
-      "community": 1,
-      "norm_label": "useproject()"
-    },
-    {
-      "label": "useProjects.jsx",
-      "file_type": "code",
-      "source_file": "src/hooks/useProjects.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_hooks_useprojects",
-      "community": 4,
-      "norm_label": "useprojects.jsx"
-    },
-    {
-      "label": "useProjects()",
-      "file_type": "code",
-      "source_file": "src/hooks/useProjects.jsx",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "src_hooks_useprojects_useprojects",
-      "community": 4,
-      "norm_label": "useprojects()"
-    },
-    {
-      "label": "byNewestFirst()",
-      "file_type": "code",
-      "source_file": "src/hooks/useProjects.jsx",
-      "source_location": "L58",
-      "_origin": "ast",
-      "id": "src_hooks_useprojects_bynewestfirst",
-      "community": 4,
-      "norm_label": "bynewestfirst()"
-    },
-    {
-      "label": "firebase.js",
-      "file_type": "code",
-      "source_file": "src/lib/firebase.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_lib_firebase",
-      "community": 6,
-      "norm_label": "firebase.js"
-    },
-    {
-      "label": "firebaseConfig",
-      "file_type": "code",
-      "source_file": "src/lib/firebase.js",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "src_lib_firebase_firebaseconfig",
-      "community": 6,
-      "norm_label": "firebaseconfig"
-    },
-    {
-      "label": "REQUIRED",
-      "file_type": "code",
-      "source_file": "src/lib/firebase.js",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "src_lib_firebase_required",
-      "community": 6,
-      "norm_label": "required"
-    },
-    {
-      "label": "app",
-      "file_type": "code",
-      "source_file": "src/lib/firebase.js",
-      "source_location": "L37",
-      "_origin": "ast",
-      "id": "src_lib_firebase_app",
-      "community": 6,
-      "norm_label": "app"
-    },
-    {
-      "label": "auth",
-      "file_type": "code",
-      "source_file": "src/lib/firebase.js",
-      "source_location": "L39",
-      "_origin": "ast",
-      "id": "src_lib_firebase_auth",
-      "community": 6,
-      "norm_label": "auth"
-    },
-    {
-      "label": "db",
-      "file_type": "code",
-      "source_file": "src/lib/firebase.js",
+      "source_file": "src/components/task/TaskBoard.jsx",
       "source_location": "L40",
       "_origin": "ast",
-      "id": "src_lib_firebase_db",
-      "community": 6,
-      "norm_label": "db"
+      "id": "src_components_task_taskboard_taskboard",
+      "community": 7,
+      "norm_label": "taskboard()"
     },
     {
-      "label": "googleProvider",
+      "label": "TaskCard.jsx",
       "file_type": "code",
-      "source_file": "src/lib/firebase.js",
-      "source_location": "L43",
-      "_origin": "ast",
-      "id": "src_lib_firebase_googleprovider",
-      "community": 6,
-      "norm_label": "googleprovider"
-    },
-    {
-      "label": "joinCode.js",
-      "file_type": "code",
-      "source_file": "src/lib/joinCode.js",
+      "source_file": "src/components/task/TaskCard.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_lib_joincode",
-      "community": 5,
-      "norm_label": "joincode.js"
+      "id": "src_components_task_taskcard",
+      "community": 2,
+      "norm_label": "taskcard.jsx"
     },
     {
-      "label": "generateJoinCode()",
+      "label": "TaskCard()",
       "file_type": "code",
-      "source_file": "src/lib/joinCode.js",
-      "source_location": "L15",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L14",
       "_origin": "ast",
-      "id": "src_lib_joincode_generatejoincode",
-      "community": 5,
-      "norm_label": "generatejoincode()"
+      "id": "src_components_task_taskcard_taskcard",
+      "community": 7,
+      "norm_label": "taskcard()"
     },
     {
-      "label": "projects.js",
+      "label": "SizeChip()",
       "file_type": "code",
-      "source_file": "src/lib/projects.js",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "src_components_task_taskcard_sizechip",
+      "community": 2,
+      "norm_label": "sizechip()"
+    },
+    {
+      "label": "TaskAvatar()",
+      "file_type": "code",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "src_components_task_taskcard_taskavatar",
+      "community": 2,
+      "norm_label": "taskavatar()"
+    },
+    {
+      "label": "TaskColumn.jsx",
+      "file_type": "code",
+      "source_file": "src/components/task/TaskColumn.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_lib_projects",
-      "community": 5,
-      "norm_label": "projects.js"
+      "id": "src_components_task_taskcolumn",
+      "community": 7,
+      "norm_label": "taskcolumn.jsx"
     },
     {
-      "label": "projectsCollection",
+      "label": "TaskColumn()",
       "file_type": "code",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L20",
+      "source_file": "src/components/task/TaskColumn.jsx",
+      "source_location": "L9",
       "_origin": "ast",
-      "id": "src_lib_projects_projectscollection",
-      "community": 4,
-      "norm_label": "projectscollection"
+      "id": "src_components_task_taskcolumn_taskcolumn",
+      "community": 7,
+      "norm_label": "taskcolumn()"
     },
     {
-      "label": "projectRef()",
+      "label": "TaskMenu.jsx",
       "file_type": "code",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "src_lib_projects_projectref",
-      "community": 5,
-      "norm_label": "projectref()"
-    },
-    {
-      "label": "joinCodeRef()",
-      "file_type": "code",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L28",
-      "_origin": "ast",
-      "id": "src_lib_projects_joincoderef",
-      "community": 5,
-      "norm_label": "joincoderef()"
-    },
-    {
-      "label": "reserveUniqueCode()",
-      "file_type": "code",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L38",
-      "_origin": "ast",
-      "id": "src_lib_projects_reserveuniquecode",
-      "community": 5,
-      "norm_label": "reserveuniquecode()"
-    },
-    {
-      "label": "createProject()",
-      "file_type": "code",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L56",
-      "_origin": "ast",
-      "id": "src_lib_projects_createproject",
-      "community": 5,
-      "norm_label": "createproject()"
-    },
-    {
-      "label": "lookupJoinCode()",
-      "file_type": "code",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L91",
-      "_origin": "ast",
-      "id": "src_lib_projects_lookupjoincode",
-      "community": 5,
-      "norm_label": "lookupjoincode()"
-    },
-    {
-      "label": "joinProject()",
-      "file_type": "code",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L105",
-      "_origin": "ast",
-      "id": "src_lib_projects_joinproject",
-      "community": 5,
-      "norm_label": "joinproject()"
-    },
-    {
-      "label": "main.jsx",
-      "file_type": "code",
-      "source_file": "src/main.jsx",
+      "source_file": "src/components/task/TaskMenu.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_main",
-      "community": 1,
-      "norm_label": "main.jsx"
+      "id": "src_components_task_taskmenu",
+      "community": 2,
+      "norm_label": "taskmenu.jsx"
     },
     {
-      "label": "FairShare (App)",
+      "label": "TaskMenu()",
+      "file_type": "code",
+      "source_file": "src/components/task/TaskMenu.jsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "src_components_task_taskmenu_taskmenu",
+      "community": 2,
+      "norm_label": "taskmenu()"
+    },
+    {
+      "label": "tasks.js",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_tasks",
+      "community": 2,
+      "norm_label": "tasks.js"
+    },
+    {
+      "label": "TASK_SIZES",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "src_lib_tasks_task_sizes",
+      "community": 2,
+      "norm_label": "task_sizes"
+    },
+    {
+      "label": "SIZE_VALUES",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "src_lib_tasks_size_values",
+      "community": 2,
+      "norm_label": "size_values"
+    },
+    {
+      "label": "sizePoints()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "src_lib_tasks_sizepoints",
+      "community": 2,
+      "norm_label": "sizepoints()"
+    },
+    {
+      "label": "tasksCollection()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "src_lib_tasks_taskscollection",
+      "community": 2,
+      "norm_label": "taskscollection()"
+    },
+    {
+      "label": "taskRef()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "src_lib_tasks_taskref",
+      "community": 2,
+      "norm_label": "taskref()"
+    },
+    {
+      "label": "createTask()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "src_lib_tasks_createtask",
+      "community": 2,
+      "norm_label": "createtask()"
+    },
+    {
+      "label": "claimTask()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "src_lib_tasks_claimtask",
+      "community": 2,
+      "norm_label": "claimtask()"
+    },
+    {
+      "label": "startTask()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "src_lib_tasks_starttask",
+      "community": 2,
+      "norm_label": "starttask()"
+    },
+    {
+      "label": "reassignTask()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "src_lib_tasks_reassigntask",
+      "community": 2,
+      "norm_label": "reassigntask()"
+    },
+    {
+      "label": "deleteTask()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "src_lib_tasks_deletetask",
+      "community": 2,
+      "norm_label": "deletetask()"
+    },
+    {
+      "label": "FairShare (app)",
       "file_type": "concept",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -966,13 +1238,25 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Web app that makes school group projects fair by tracking who actually does the work: teammates join with a code, work off a live task board, completed work needs a proof link plus a teammate's verification, and at the end everyone privately rates each other. Produces a printable fairness report for the teacher. Built by a high-school student for the Congressional App Challenge.",
       "id": "claude_fairshare",
-      "community": 2,
+      "community": 1,
       "norm_label": "fairshare (app)"
     },
     {
-      "label": "Tech Stack (Vite + React + plain JS + Firebase Spark)",
+      "label": "Graphify Knowledge Graph Workflow",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_knowledge_graph_workflow",
+      "community": 1,
+      "norm_label": "graphify knowledge graph workflow"
+    },
+    {
+      "label": "Gitignored .env Firebase Config",
       "file_type": "concept",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -980,13 +1264,25 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Vite + React + plain JavaScript (no TypeScript) + Firebase (Auth, Firestore, Hosting), free Spark tier only, no Cloud Functions. Chosen because developer knows JS/HTML/CSS but is new to React/Firebase; free tier constrains all logic to the client. Allowed deps only: react, react-dom, react-router-dom, firebase. No UI kits, no Tailwind; hand-written CSS with design tokens.",
-      "id": "claude_tech_stack",
-      "community": 0,
-      "norm_label": "tech stack (vite + react + plain js + firebase spark)"
+      "id": "claude_env_config",
+      "community": 1,
+      "norm_label": "gitignored .env firebase config"
     },
     {
-      "label": "No Cloud Functions constraint",
+      "label": "Stack: Vite + React + plain JS + Firebase",
+      "file_type": "concept",
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_stack",
+      "community": 1,
+      "norm_label": "stack: vite + react + plain js + firebase"
+    },
+    {
+      "label": "Rules for the Executing Model",
       "file_type": "rationale",
       "source_file": "PLAN.md",
       "source_location": null,
@@ -994,13 +1290,25 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Spark (free) tier only means no server code; all logic is client-side and security is enforced solely by Firestore rules. This forces the report math to run in the browser, which is why review docs become readable to members after project end.",
-      "id": "plan_no_cloud_functions",
-      "community": 0,
-      "norm_label": "no cloud functions constraint"
+      "id": "plan_executing_model_rules",
+      "community": 1,
+      "norm_label": "rules for the executing model"
     },
     {
-      "label": "Google Sign-in (Auth)",
+      "label": "One-Feature-At-A-Time Workflow",
+      "file_type": "rationale",
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_one_feature_workflow",
+      "community": 1,
+      "norm_label": "one-feature-at-a-time workflow"
+    },
+    {
+      "label": "Playful & Student-y Visual Style",
       "file_type": "concept",
       "source_file": "PLAN.md",
       "source_location": null,
@@ -1008,10 +1316,22 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Google sign-in only (popup). useAuth hook + auth context handle sign-in/out, loading state; protected routes redirect to landing. Web API keys are safe to commit.",
-      "id": "plan_google_signin",
-      "community": 0,
-      "norm_label": "google sign-in (auth)"
+      "id": "plan_visual_style",
+      "community": 1,
+      "norm_label": "playful & student-y visual style"
+    },
+    {
+      "label": "Architecture (React SPA, no server)",
+      "file_type": "concept",
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_architecture",
+      "community": 1,
+      "norm_label": "architecture (react spa, no server)"
     },
     {
       "label": "Firestore Data Model",
@@ -1022,9 +1342,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Root collections projects and joinCodes; subcollections tasks and reviews under each project. memberIds array kept for security rules + queries; members map kept for display. joinCodes/{CODE} exists as a lookup so non-members can find a project to join.",
       "id": "plan_firestore_data_model",
-      "community": 0,
+      "community": 3,
       "norm_label": "firestore data model"
     },
     {
@@ -1036,9 +1355,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "projects/{projectId} with name, createdBy, createdAt, status (active|ended), endedAt, joinCode, memberIds array, members map. Read only by members; only the creator can set status ended.",
-      "id": "plan_projects_collection",
-      "community": 0,
+      "id": "plan_collection_projects",
+      "community": 3,
       "norm_label": "projects collection"
     },
     {
@@ -1050,9 +1368,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "joinCodes/{CODE} maps a 6-char code to a projectId so a non-member can look up and join. Readable by any signed-in user; created only alongside the project by its creator.",
-      "id": "plan_joincodes_collection",
-      "community": 0,
+      "id": "plan_collection_joincodes",
+      "community": 3,
       "norm_label": "joincodes collection"
     },
     {
@@ -1064,9 +1381,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "projects/{projectId}/tasks/{taskId} with title, size (S|M|L = 1/2/3 points), status (todo|doing|done|verified), assignee (uid|null; null = claimable), proofUrl (required to enter done), verifiedBy/verifiedAt, lastRejection. Read/write members only; verification writes require verifiedBy == auth.uid != assignee.",
-      "id": "plan_tasks_collection",
-      "community": 0,
+      "id": "plan_collection_tasks",
+      "community": 3,
       "norm_label": "tasks subcollection"
     },
     {
@@ -1078,150 +1394,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "projects/{projectId}/reviews/{reviewerUid}, one doc per reviewer, holding a ratings map keyed by revieweeUid with effort/quality/teamwork (1-5) + comment. Own doc always readable/writable; others' review docs readable only when parent project status == ended, so the client can compute report math without Cloud Functions. Known tradeoff: a determined member could read raw ratings via devtools after end; UI only shows averages and anonymized comments.",
-      "id": "plan_reviews_collection",
-      "community": 0,
+      "id": "plan_collection_reviews",
+      "community": 3,
       "norm_label": "reviews subcollection"
-    },
-    {
-      "label": "Join Code (6-char)",
-      "file_type": "concept",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "6 chars from A-Z + 2-9 (no confusable chars), generated in src/lib/joinCode.js. Teammates join a project by entering the code.",
-      "id": "plan_join_code",
-      "community": 0,
-      "norm_label": "join code (6-char)"
-    },
-    {
-      "label": "Live Task Board",
-      "file_type": "concept",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Three columns (To Do / Doing / Done). Tasks can be created unassigned (anyone claims) or assigned to a member. Real-time first: all project/task/review reads use onSnapshot listeners so two browsers stay in sync \u2014 the M1 demo wow moment.",
-      "id": "plan_task_board",
-      "community": 0,
-      "norm_label": "live task board"
-    },
-    {
-      "label": "Proof + Verification",
-      "file_type": "concept",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Marking a task done requires a proof URL. Any teammate except the task's assignee can Approve or Reject with a written reason (reject sends the task back to Doing). Verifier identity is stored and shown on the report. Rules enforce verifier != assignee, blocking self-verification.",
-      "id": "plan_proof_verification",
-      "community": 0,
-      "norm_label": "proof + verification"
-    },
-    {
-      "label": "Peer Review",
-      "file_type": "concept",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "After a project ends, each member privately rates each teammate (not self) 1-5 stars on Effort, Quality, Teamwork, plus an optional comment. One submission per user (doc id = uid). Private.",
-      "id": "plan_peer_review",
-      "community": 0,
-      "norm_label": "peer review"
-    },
-    {
-      "label": "End Project",
-      "file_type": "concept",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Only the creator can end a project. Sets status ended + endedAt; board locks read-only and the peer-review phase opens. Rules allow only the creator to set status ended.",
-      "id": "plan_end_project",
-      "community": 0,
-      "norm_label": "end project"
-    },
-    {
-      "label": "Fairness Report",
-      "file_type": "concept",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Printable web page (browser Print / Save as PDF). Two headline numbers per person \u2014 % of verified task points and average peer rating \u2014 with NO single combined score, deliberately keeping the two dimensions separate. Generates regardless of missing reviews and lists who didn't submit; averages use whatever exists.",
-      "id": "plan_fairness_report",
-      "community": 2,
-      "norm_label": "fairness report"
-    },
-    {
-      "label": "src/lib/fairness.js (pure functions)",
-      "file_type": "concept",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "The fairness math lives in pure functions with zero Firebase imports so the student can read, explain, and unit-test it in isolation. This is the code the user must deeply understand for the judges.",
-      "id": "plan_fairness_lib",
-      "community": 2,
-      "norm_label": "src/lib/fairness.js (pure functions)"
-    },
-    {
-      "label": "taskPoints(size)",
-      "file_type": "concept",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Maps size to points: S:1, M:2, L:3. A constant in lib/fairness.js.",
-      "id": "plan_taskpoints",
-      "community": 2,
-      "norm_label": "taskpoints(size)"
-    },
-    {
-      "label": "contributionShares(tasks, memberIds)",
-      "file_type": "concept",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "For each member: sum of points of their verified tasks divided by total verified points across the project, as a percentage. Also returns raw counts (verified tasks, points). Only verified work counts.",
-      "id": "plan_contributionshares",
-      "community": 2,
-      "norm_label": "contributionshares(tasks, memberids)"
-    },
-    {
-      "label": "ratingAverages(reviews, memberIds)",
-      "file_type": "concept",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Per member, per criterion mean of all ratings about them (self-rating not collected), plus overall mean of the three criteria, plus a list of members who never submitted a review.",
-      "id": "plan_ratingaverages",
-      "community": 0,
-      "norm_label": "ratingaverages(reviews, memberids)"
     },
     {
       "label": "Firestore Security Rules",
@@ -1232,13 +1407,77 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Since there is no server code, all access control is enforced by Firestore rules. Rules are updated in the same feature that introduces the data they protect, never left for later. Covers member-only project reads, creator-only end, self-add join, verifier != assignee, and post-end review visibility.",
       "id": "plan_security_rules",
-      "community": 0,
+      "community": 3,
       "norm_label": "firestore security rules"
     },
     {
-      "label": "One-feature-per-session Workflow",
+      "label": "Fairness Report Math (src/lib/fairness.js)",
+      "file_type": "concept",
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_fairness_math",
+      "community": 1,
+      "norm_label": "fairness report math (src/lib/fairness.js)"
+    },
+    {
+      "label": "taskPoints(size)",
+      "file_type": "code",
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_fn_taskpoints",
+      "community": 1,
+      "norm_label": "taskpoints(size)"
+    },
+    {
+      "label": "contributionShares(tasks, memberIds)",
+      "file_type": "code",
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_fn_contributionshares",
+      "community": 1,
+      "norm_label": "contributionshares(tasks, memberids)"
+    },
+    {
+      "label": "ratingAverages(reviews, memberIds)",
+      "file_type": "code",
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_fn_ratingaverages",
+      "community": 1,
+      "norm_label": "ratingaverages(reviews, memberids)"
+    },
+    {
+      "label": "Route Map",
+      "file_type": "concept",
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_route_map",
+      "community": 1,
+      "norm_label": "route map"
+    },
+    {
+      "label": "Manual Two-Account Verification Approach",
       "file_type": "rationale",
       "source_file": "PLAN.md",
       "source_location": null,
@@ -1246,13 +1485,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Build exactly one feature per session in order; do not scaffold ahead. After each feature: stop, explain in plain English what was built, give a manual two-account test script, and list Firebase Console steps for the user. Ensures a high-school student can explain the app to judges and keeps scope disciplined.",
-      "id": "plan_one_feature_workflow",
-      "community": 2,
-      "norm_label": "one-feature-per-session workflow"
+      "id": "plan_verification_approach",
+      "community": 1,
+      "norm_label": "manual two-account verification approach"
     },
     {
-      "label": "Milestone M1 (live board)",
+      "label": "Out of Scope",
       "file_type": "concept",
       "source_file": "PLAN.md",
       "source_location": null,
@@ -1260,13 +1498,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "'Two accounts see the same live board' (~Sept 18). Covers F0-F5: scaffold, auth, create/dashboard, join, task board, claim/move.",
-      "id": "plan_milestone_m1",
-      "community": 0,
-      "norm_label": "milestone m1 (live board)"
+      "id": "plan_out_of_scope",
+      "community": 14,
+      "norm_label": "out of scope"
     },
     {
-      "label": "Milestone M2 (proof/verify/reviews)",
+      "label": "Milestone 1 \u2014 Two accounts, one live board (complete)",
       "file_type": "concept",
       "source_file": "PLAN.md",
       "source_location": null,
@@ -1274,13 +1511,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "'Proof, verification, and peer reviews work' (~Oct 9). Covers F6-F9: mark done with proof, verification, end project, peer review form.",
-      "id": "plan_milestone_m2",
-      "community": 0,
-      "norm_label": "milestone m2 (proof/verify/reviews)"
+      "id": "plan_milestone_1",
+      "community": 3,
+      "norm_label": "milestone 1 \u2014 two accounts, one live board (complete)"
     },
     {
-      "label": "Milestone M3 (report/polish/ship)",
+      "label": "Milestone 2 \u2014 Proof, verification, peer reviews",
       "file_type": "concept",
       "source_file": "PLAN.md",
       "source_location": null,
@@ -1288,10 +1524,22 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "'Report, polish, ship' (~Oct 26). Covers F10-F14: fairness math, report page, security audit, visual polish, deploy + demo prep.",
-      "id": "plan_milestone_m3",
-      "community": 2,
-      "norm_label": "milestone m3 (report/polish/ship)"
+      "id": "plan_milestone_2",
+      "community": 3,
+      "norm_label": "milestone 2 \u2014 proof, verification, peer reviews"
+    },
+    {
+      "label": "Milestone 3 \u2014 Report, polish, ship",
+      "file_type": "concept",
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "plan_milestone_3",
+      "community": 1,
+      "norm_label": "milestone 3 \u2014 report, polish, ship"
     },
     {
       "label": "F0 Scaffold & design system (done)",
@@ -1302,9 +1550,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Done 2026-09-03. Vite React app, folder structure, react-router-dom route map with placeholders, playful design tokens in src/styles/tokens.css, landing page.",
-      "id": "plan_f0_scaffold",
-      "community": 0,
+      "id": "plan_f0",
+      "community": 1,
       "norm_label": "f0 scaffold & design system (done)"
     },
     {
@@ -1316,9 +1563,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Done 2026-09-10. Firebase Console setup, config in src/lib/firebase.js, useAuth hook + auth context, protected routes, header with user photo/name/sign-out.",
-      "id": "plan_f1_auth",
-      "community": 0,
+      "id": "plan_f1",
+      "community": 1,
       "norm_label": "f1 firebase setup + google sign-in (done)"
     },
     {
@@ -1330,9 +1576,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Done 2026-09-16. Dashboard onSnapshot query on memberIds array-contains uid; create-project modal writes projects doc + joinCodes doc; joinCode generated in src/lib/joinCode.js; first Firestore rules deploy.",
-      "id": "plan_f2_create_dashboard",
-      "community": 0,
+      "id": "plan_f2",
+      "community": 3,
       "norm_label": "f2 create project + dashboard (done)"
     },
     {
@@ -1344,13 +1589,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Done 2026-09-16. Look up joinCodes/{CODE}, self-add to memberIds + members (rules permit self-add only), friendly errors, members list with creator badge.",
-      "id": "plan_f3_join",
-      "community": 0,
+      "id": "plan_f3",
+      "community": 3,
       "norm_label": "f3 join by code (done)"
     },
     {
-      "label": "F4 Task board \u2014 create & display",
+      "label": "F4 Task board \u2014 create & display (done)",
       "file_type": "concept",
       "source_file": "PLAN.md",
       "source_location": null,
@@ -1358,13 +1602,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Three columns with empty states, add-task modal (title, S/M/L size chips, optional assignee), tasks render via onSnapshot on the tasks subcollection. Task rules added.",
-      "id": "plan_f4_task_board",
-      "community": 0,
-      "norm_label": "f4 task board \u2014 create & display"
+      "id": "plan_f4",
+      "community": 3,
+      "norm_label": "f4 task board \u2014 create & display (done)"
     },
     {
-      "label": "F5 Claim & move tasks",
+      "label": "F5 Claim & move tasks (done)",
       "file_type": "concept",
       "source_file": "PLAN.md",
       "source_location": null,
@@ -1372,10 +1615,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Claim unclaimed tasks (set assignee to self, move to Doing), Start assigned tasks, Mark done stub. Only assignee moves their task; creator can reassign or delete.",
-      "id": "plan_f5_claim_move",
-      "community": 0,
-      "norm_label": "f5 claim & move tasks"
+      "id": "plan_f5",
+      "community": 3,
+      "norm_label": "f5 claim & move tasks (done)"
     },
     {
       "label": "F6 Mark done with proof",
@@ -1386,9 +1628,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Mark-done modal requires a validated proof URL; task moves to Done styled as waiting-for-verification with a clickable proof link.",
-      "id": "plan_f6_mark_done",
-      "community": 0,
+      "id": "plan_f6",
+      "community": 3,
       "norm_label": "f6 mark done with proof"
     },
     {
@@ -1400,9 +1641,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Non-assignee members Approve (status verified, store verifiedBy/verifiedAt) or Reject with reason (back to doing, store lastRejection). Rules enforce verifier != assignee.",
-      "id": "plan_f7_verification",
-      "community": 0,
+      "id": "plan_f7",
+      "community": 3,
       "norm_label": "f7 verification \u2014 approve or reject"
     },
     {
@@ -1414,9 +1654,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Creator-only End project button sets status ended + endedAt, locks the board read-only, shows a review banner. Rules: only creator can set ended.",
-      "id": "plan_f8_end_project",
-      "community": 0,
+      "id": "plan_f8",
+      "community": 3,
       "norm_label": "f8 end project"
     },
     {
@@ -1428,9 +1667,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "/project/:id/review (ended only): 1-5 star inputs per teammate for Effort/Quality/Teamwork + comment; one submission per user (doc id = uid). Review rules added (own-doc write, others readable only when ended).",
-      "id": "plan_f9_review_form",
-      "community": 0,
+      "id": "plan_f9",
+      "community": 3,
       "norm_label": "f9 peer review form"
     },
     {
@@ -1442,9 +1680,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Implements taskPoints, contributionShares, ratingAverages in src/lib/fairness.js, written WITH the user and verified against hand-worked examples.",
-      "id": "plan_f10_fairness_math",
-      "community": 2,
+      "id": "plan_f10",
+      "community": 1,
       "norm_label": "f10 fairness math (pure functions)"
     },
     {
@@ -1456,9 +1693,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "/project/:id/report (ended, members only): headline stat cards, verified-task table with proof links and verifiers, per-criterion averages, anonymized comments, missing-review callout, @media print stylesheet.",
-      "id": "plan_f11_report_page",
-      "community": 2,
+      "id": "plan_f11",
+      "community": 1,
       "norm_label": "f11 fairness report page"
     },
     {
@@ -1470,9 +1706,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Full review of firestore.rules against every feature via emulator or second-account probing; adversarial checklist for the user.",
-      "id": "plan_f12_security_audit",
-      "community": 2,
+      "id": "plan_f12",
+      "community": 1,
       "norm_label": "f12 security rules audit + edge cases"
     },
     {
@@ -1484,9 +1719,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Consistent tokens, designed hover/focus/active states, empty states, compositor-friendly micro-motion respecting prefers-reduced-motion, responsive at 320/768/1024/1440, contrast check. No new features.",
-      "id": "plan_f13_visual_polish",
-      "community": 2,
+      "id": "plan_f13",
+      "community": 1,
       "norm_label": "f13 visual polish + responsive pass"
     },
     {
@@ -1498,38 +1732,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "firebase init hosting + deploy, add live URL to authorized domains, production smoke test, produce DEMO_SCRIPT.md connecting features to social-loafing research.",
-      "id": "plan_f14_deploy",
-      "community": 2,
+      "id": "plan_f14",
+      "community": 1,
       "norm_label": "f14 deploy + demo prep"
-    },
-    {
-      "label": "Playful & student-y visual style",
-      "file_type": "rationale",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Bright colors, rounded shapes, friendly typography, fun empty states \u2014 deliberately must NOT look like a default template. Tokens defined in src/styles/tokens.css (oklch palette, 12-20px radii, rounded display + clean body font pairing, spacing and motion scales).",
-      "id": "plan_playful_style",
-      "community": 2,
-      "norm_label": "playful & student-y visual style"
-    },
-    {
-      "label": "Real-time onSnapshot listeners",
-      "file_type": "rationale",
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "All project/task/review reads use onSnapshot listeners rather than one-time gets so two browsers always stay in sync \u2014 this live sync is the M1 demo and why every feature gate is a two-account manual test.",
-      "id": "plan_realtime_onsnapshot",
-      "community": 0,
-      "norm_label": "real-time onsnapshot listeners"
     }
   ],
   "links": [
@@ -1572,26 +1777,6 @@
       "confidence_score": 1.0,
       "source": "src_components_placeholders_placeholderpage",
       "target": "src_components_placeholders_placeholderpage_placeholderpage"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "instructions.txt",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "instructions_fairshare",
-      "target": "plan_fairness_report"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "instructions.txt",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "instructions_fairshare",
-      "target": "plan_task_board"
     },
     {
       "relation": "rationale_for",
@@ -1644,24 +1829,14 @@
       "target": "instructions_falchikov_goldfinch_2000"
     },
     {
-      "relation": "rationale_for",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "instructions.txt",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "instructions_peer_assessment",
-      "target": "plan_peer_review"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_dependencies",
-      "confidence_score": 1.0
+      "target": "package_dependencies"
     },
     {
       "relation": "contains",
@@ -1669,9 +1844,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_devdependencies",
-      "confidence_score": 1.0
+      "target": "package_devdependencies"
     },
     {
       "relation": "contains",
@@ -1679,9 +1854,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_name",
-      "confidence_score": 1.0
+      "target": "package_name"
     },
     {
       "relation": "contains",
@@ -1689,9 +1864,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_private",
-      "confidence_score": 1.0
+      "target": "package_private"
     },
     {
       "relation": "contains",
@@ -1699,9 +1874,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_scripts",
-      "confidence_score": 1.0
+      "target": "package_scripts"
     },
     {
       "relation": "contains",
@@ -1709,9 +1884,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_type",
-      "confidence_score": 1.0
+      "target": "package_type"
     },
     {
       "relation": "contains",
@@ -1719,9 +1894,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_version",
-      "confidence_score": 1.0
+      "target": "package_version"
     },
     {
       "relation": "contains",
@@ -1729,9 +1904,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_build",
-      "confidence_score": 1.0
+      "target": "package_scripts_build"
     },
     {
       "relation": "contains",
@@ -1739,9 +1914,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_dev",
-      "confidence_score": 1.0
+      "target": "package_scripts_dev"
     },
     {
       "relation": "contains",
@@ -1749,9 +1924,9 @@
       "source_file": "package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_preview",
-      "confidence_score": 1.0
+      "target": "package_scripts_preview"
     },
     {
       "relation": "contains",
@@ -1759,9 +1934,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_firebase",
-      "confidence_score": 1.0
+      "target": "package_dependencies_firebase"
     },
     {
       "relation": "contains",
@@ -1769,9 +1944,9 @@
       "source_file": "package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
-      "confidence_score": 1.0
+      "target": "package_dependencies_react"
     },
     {
       "relation": "contains",
@@ -1779,9 +1954,9 @@
       "source_file": "package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
-      "confidence_score": 1.0
+      "target": "package_dependencies_react_dom"
     },
     {
       "relation": "contains",
@@ -1789,9 +1964,9 @@
       "source_file": "package.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_react_router_dom",
-      "confidence_score": 1.0
+      "target": "package_dependencies_react_router_dom"
     },
     {
       "relation": "imports",
@@ -1800,9 +1975,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "context": "import",
+      "confidence_score": 1.0,
       "source": "package_dependencies_firebase",
-      "target": "src_lib_firebase",
-      "confidence_score": 1.0
+      "target": "src_lib_firebase"
     },
     {
       "relation": "contains",
@@ -1810,9 +1985,9 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_vite",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_vite"
     },
     {
       "relation": "contains",
@@ -1820,9 +1995,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_vitejs_plugin_react",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_vitejs_plugin_react"
     },
     {
       "relation": "contains",
@@ -1830,9 +2005,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "imports_from",
@@ -1841,9 +2016,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_auth_protectedroute",
-      "confidence_score": 1.0
+      "target": "src_components_auth_protectedroute"
     },
     {
       "relation": "imports",
@@ -1852,9 +2027,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_auth_protectedroute_protectedroute",
-      "confidence_score": 1.0
+      "target": "src_components_auth_protectedroute_protectedroute"
     },
     {
       "relation": "imports_from",
@@ -1863,9 +2038,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_dashboard_dashboard",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_dashboard"
     },
     {
       "relation": "imports",
@@ -1874,9 +2049,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_dashboard_dashboard_dashboard",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_dashboard_dashboard"
     },
     {
       "relation": "imports_from",
@@ -1885,9 +2060,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_landing_landing",
-      "confidence_score": 1.0
+      "target": "src_components_landing_landing"
     },
     {
       "relation": "imports",
@@ -1896,9 +2071,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_landing_landing_landing",
-      "confidence_score": 1.0
+      "target": "src_components_landing_landing_landing"
     },
     {
       "relation": "imports_from",
@@ -1907,9 +2082,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_project_projectpage",
-      "confidence_score": 1.0
+      "target": "src_components_project_projectpage"
     },
     {
       "relation": "imports",
@@ -1918,9 +2093,9 @@
       "source_file": "src/App.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_project_projectpage_projectpage",
-      "confidence_score": 1.0
+      "target": "src_components_project_projectpage_projectpage"
     },
     {
       "relation": "imports_from",
@@ -1929,9 +2104,9 @@
       "source_file": "src/main.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_app",
-      "confidence_score": 1.0
+      "target": "src_app"
     },
     {
       "relation": "imports",
@@ -1940,9 +2115,9 @@
       "source_file": "src/main.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "contains",
@@ -1950,9 +2125,9 @@
       "source_file": "src/components/auth/ProtectedRoute.jsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_auth_protectedroute",
-      "target": "src_components_auth_protectedroute_protectedroute",
-      "confidence_score": 1.0
+      "target": "src_components_auth_protectedroute_protectedroute"
     },
     {
       "relation": "imports_from",
@@ -1961,9 +2136,9 @@
       "source_file": "src/components/auth/ProtectedRoute.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_auth_protectedroute",
-      "target": "src_components_common_loadingscreen",
-      "confidence_score": 1.0
+      "target": "src_components_common_loadingscreen"
     },
     {
       "relation": "imports",
@@ -1972,9 +2147,9 @@
       "source_file": "src/components/auth/ProtectedRoute.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_auth_protectedroute",
-      "target": "src_components_common_loadingscreen_loadingscreen",
-      "confidence_score": 1.0
+      "target": "src_components_common_loadingscreen_loadingscreen"
     },
     {
       "relation": "imports_from",
@@ -1983,9 +2158,9 @@
       "source_file": "src/components/auth/ProtectedRoute.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_auth_protectedroute",
-      "target": "src_hooks_useauth",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth"
     },
     {
       "relation": "imports",
@@ -1994,9 +2169,9 @@
       "source_file": "src/components/auth/ProtectedRoute.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_auth_protectedroute",
-      "target": "src_hooks_useauth_useauth",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth_useauth"
     },
     {
       "relation": "calls",
@@ -2015,31 +2190,9 @@
       "source_file": "src/components/common/LoadingScreen.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_common_loadingscreen",
-      "target": "src_components_common_loadingscreen_loadingscreen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/project/ProjectPage.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_components_project_projectpage",
-      "target": "src_components_common_loadingscreen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/project/ProjectPage.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_components_project_projectpage",
-      "target": "src_components_common_loadingscreen_loadingscreen",
-      "confidence_score": 1.0
+      "target": "src_components_common_loadingscreen_loadingscreen"
     },
     {
       "relation": "contains",
@@ -2047,9 +2200,9 @@
       "source_file": "src/components/dashboard/CreateProjectModal.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_createprojectmodal",
-      "target": "src_components_dashboard_createprojectmodal_createprojectmodal",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_createprojectmodal_createprojectmodal"
     },
     {
       "relation": "imports_from",
@@ -2058,9 +2211,9 @@
       "source_file": "src/components/dashboard/CreateProjectModal.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_createprojectmodal",
-      "target": "src_hooks_useauth",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth"
     },
     {
       "relation": "imports",
@@ -2069,9 +2222,9 @@
       "source_file": "src/components/dashboard/CreateProjectModal.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_createprojectmodal",
-      "target": "src_hooks_useauth_useauth",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth_useauth"
     },
     {
       "relation": "imports_from",
@@ -2080,9 +2233,9 @@
       "source_file": "src/components/dashboard/CreateProjectModal.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_createprojectmodal",
-      "target": "src_lib_projects",
-      "confidence_score": 1.0
+      "target": "src_lib_projects"
     },
     {
       "relation": "imports",
@@ -2091,9 +2244,9 @@
       "source_file": "src/components/dashboard/CreateProjectModal.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_createprojectmodal",
-      "target": "src_lib_projects_createproject",
-      "confidence_score": 1.0
+      "target": "src_lib_projects_createproject"
     },
     {
       "relation": "imports_from",
@@ -2102,9 +2255,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_components_dashboard_createprojectmodal",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_createprojectmodal"
     },
     {
       "relation": "calls",
@@ -2124,9 +2277,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_components_dashboard_createprojectmodal_createprojectmodal",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_createprojectmodal_createprojectmodal"
     },
     {
       "relation": "contains",
@@ -2134,9 +2287,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_components_dashboard_dashboard_dashboard",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_dashboard_dashboard"
     },
     {
       "relation": "contains",
@@ -2144,9 +2297,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_components_dashboard_dashboard_emptystate",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_dashboard_emptystate"
     },
     {
       "relation": "imports_from",
@@ -2155,9 +2308,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_components_dashboard_joinprojectmodal",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_joinprojectmodal"
     },
     {
       "relation": "imports",
@@ -2166,9 +2319,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_components_dashboard_joinprojectmodal_joinprojectmodal",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_joinprojectmodal_joinprojectmodal"
     },
     {
       "relation": "imports_from",
@@ -2177,9 +2330,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_components_dashboard_projectcard",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_projectcard"
     },
     {
       "relation": "imports",
@@ -2188,9 +2341,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_components_dashboard_projectcard_projectcard",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_projectcard_projectcard"
     },
     {
       "relation": "imports_from",
@@ -2199,9 +2352,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_components_layout_appheader",
-      "confidence_score": 1.0
+      "target": "src_components_layout_appheader"
     },
     {
       "relation": "imports",
@@ -2210,9 +2363,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_components_layout_appheader_appheader",
-      "confidence_score": 1.0
+      "target": "src_components_layout_appheader_appheader"
     },
     {
       "relation": "imports_from",
@@ -2221,9 +2374,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_hooks_useauth",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth"
     },
     {
       "relation": "imports",
@@ -2232,9 +2385,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_hooks_useauth_useauth",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth_useauth"
     },
     {
       "relation": "imports_from",
@@ -2243,9 +2396,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_hooks_useprojects",
-      "confidence_score": 1.0
+      "target": "src_hooks_useprojects"
     },
     {
       "relation": "imports",
@@ -2254,9 +2407,9 @@
       "source_file": "src/components/dashboard/Dashboard.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_dashboard",
-      "target": "src_hooks_useprojects_useprojects",
-      "confidence_score": 1.0
+      "target": "src_hooks_useprojects_useprojects"
     },
     {
       "relation": "calls",
@@ -2286,9 +2439,9 @@
       "source_file": "src/components/dashboard/JoinProjectModal.jsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_joinprojectmodal",
-      "target": "src_components_dashboard_joinprojectmodal_joinprojectmodal",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_joinprojectmodal_joinprojectmodal"
     },
     {
       "relation": "imports_from",
@@ -2297,9 +2450,9 @@
       "source_file": "src/components/dashboard/JoinProjectModal.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_joinprojectmodal",
-      "target": "src_hooks_useauth",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth"
     },
     {
       "relation": "imports",
@@ -2308,9 +2461,9 @@
       "source_file": "src/components/dashboard/JoinProjectModal.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_joinprojectmodal",
-      "target": "src_hooks_useauth_useauth",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth_useauth"
     },
     {
       "relation": "imports_from",
@@ -2319,9 +2472,9 @@
       "source_file": "src/components/dashboard/JoinProjectModal.jsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_joinprojectmodal",
-      "target": "src_lib_joincode",
-      "confidence_score": 1.0
+      "target": "src_lib_joincode"
     },
     {
       "relation": "imports_from",
@@ -2330,9 +2483,9 @@
       "source_file": "src/components/dashboard/JoinProjectModal.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_joinprojectmodal",
-      "target": "src_lib_projects",
-      "confidence_score": 1.0
+      "target": "src_lib_projects"
     },
     {
       "relation": "imports",
@@ -2341,9 +2494,9 @@
       "source_file": "src/components/dashboard/JoinProjectModal.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_joinprojectmodal",
-      "target": "src_lib_projects_joinproject",
-      "confidence_score": 1.0
+      "target": "src_lib_projects_joinproject"
     },
     {
       "relation": "imports",
@@ -2352,9 +2505,9 @@
       "source_file": "src/components/dashboard/JoinProjectModal.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_joinprojectmodal",
-      "target": "src_lib_projects_lookupjoincode",
-      "confidence_score": 1.0
+      "target": "src_lib_projects_lookupjoincode"
     },
     {
       "relation": "calls",
@@ -2373,9 +2526,9 @@
       "source_file": "src/components/dashboard/ProjectCard.jsx",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_projectcard",
-      "target": "src_components_dashboard_projectcard_memberavatar",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_projectcard_memberavatar"
     },
     {
       "relation": "contains",
@@ -2383,9 +2536,9 @@
       "source_file": "src/components/dashboard/ProjectCard.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_dashboard_projectcard",
-      "target": "src_components_dashboard_projectcard_projectcard",
-      "confidence_score": 1.0
+      "target": "src_components_dashboard_projectcard_projectcard"
     },
     {
       "relation": "contains",
@@ -2393,9 +2546,9 @@
       "source_file": "src/components/landing/Landing.jsx",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_landing",
-      "target": "src_components_landing_landing_googleglyph",
-      "confidence_score": 1.0
+      "target": "src_components_landing_landing_googleglyph"
     },
     {
       "relation": "contains",
@@ -2403,9 +2556,9 @@
       "source_file": "src/components/landing/Landing.jsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_landing",
-      "target": "src_components_landing_landing_landing",
-      "confidence_score": 1.0
+      "target": "src_components_landing_landing_landing"
     },
     {
       "relation": "imports_from",
@@ -2414,9 +2567,9 @@
       "source_file": "src/components/landing/Landing.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_landing",
-      "target": "src_hooks_useauth",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth"
     },
     {
       "relation": "imports",
@@ -2425,9 +2578,9 @@
       "source_file": "src/components/landing/Landing.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_landing",
-      "target": "src_hooks_useauth_useauth",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth_useauth"
     },
     {
       "relation": "calls",
@@ -2446,9 +2599,9 @@
       "source_file": "src/components/layout/AppHeader.jsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_layout_appheader",
-      "target": "src_components_layout_appheader_appheader",
-      "confidence_score": 1.0
+      "target": "src_components_layout_appheader_appheader"
     },
     {
       "relation": "contains",
@@ -2456,9 +2609,9 @@
       "source_file": "src/components/layout/AppHeader.jsx",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_layout_appheader",
-      "target": "src_components_layout_appheader_avatar",
-      "confidence_score": 1.0
+      "target": "src_components_layout_appheader_avatar"
     },
     {
       "relation": "imports_from",
@@ -2467,9 +2620,9 @@
       "source_file": "src/components/layout/AppHeader.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_layout_appheader",
-      "target": "src_hooks_useauth",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth"
     },
     {
       "relation": "imports",
@@ -2478,20 +2631,9 @@
       "source_file": "src/components/layout/AppHeader.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_layout_appheader",
-      "target": "src_hooks_useauth_useauth",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/project/ProjectPage.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_components_project_projectpage",
-      "target": "src_components_layout_appheader",
-      "confidence_score": 1.0
+      "target": "src_hooks_useauth_useauth"
     },
     {
       "relation": "calls",
@@ -2505,25 +2647,14 @@
       "target": "src_hooks_useauth_useauth"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/project/ProjectPage.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_components_project_projectpage",
-      "target": "src_components_layout_appheader_appheader",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/project/MembersList.jsx",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_project_memberslist",
-      "target": "src_components_project_memberslist_memberavatar",
-      "confidence_score": 1.0
+      "target": "src_components_project_memberslist_memberavatar"
     },
     {
       "relation": "contains",
@@ -2531,37 +2662,509 @@
       "source_file": "src/components/project/MembersList.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_project_memberslist",
-      "target": "src_components_project_memberslist_memberslist",
-      "confidence_score": 1.0
+      "target": "src_components_project_memberslist_memberslist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useAuth.jsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_useauth",
+      "target": "src_hooks_useauth_authcontext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useAuth.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_useauth",
+      "target": "src_hooks_useauth_authprovider"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useAuth.jsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_useauth",
+      "target": "src_hooks_useauth_useauth"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/project/ProjectPage.jsx",
-      "source_location": "L6",
+      "source_file": "src/hooks/useAuth.jsx",
+      "source_location": "L7",
       "weight": 1.0,
-      "source": "src_components_project_projectpage",
-      "target": "src_components_project_memberslist",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_hooks_useauth",
+      "target": "src_lib_firebase"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/project/ProjectPage.jsx",
-      "source_location": "L6",
+      "source_file": "src/hooks/useAuth.jsx",
+      "source_location": "L7",
       "weight": 1.0,
-      "source": "src_components_project_projectpage",
-      "target": "src_components_project_memberslist_memberslist",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_hooks_useauth",
+      "target": "src_lib_firebase_auth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useAuth.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_useauth",
+      "target": "src_lib_firebase_googleprovider"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main",
+      "target": "src_hooks_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_main",
+      "target": "src_hooks_useauth_authprovider"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useProject.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_useproject",
+      "target": "src_hooks_useproject_useproject"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useProject.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_useproject",
+      "target": "src_lib_projects"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useProject.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_useproject",
+      "target": "src_lib_projects_projectref"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useProjects.jsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_useprojects",
+      "target": "src_hooks_useprojects_bynewestfirst"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useProjects.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_useprojects",
+      "target": "src_hooks_useprojects_useprojects"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useProjects.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_useprojects",
+      "target": "src_lib_projects"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useProjects.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_useprojects",
+      "target": "src_lib_projects_projectscollection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_firebase",
+      "target": "src_lib_firebase_app"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_firebase",
+      "target": "src_lib_firebase_auth"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_firebase",
+      "target": "src_lib_firebase_db"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_firebase",
+      "target": "src_lib_firebase_firebaseconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_firebase",
+      "target": "src_lib_firebase_googleprovider"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/firebase.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_firebase",
+      "target": "src_lib_firebase_required"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects",
+      "target": "src_lib_firebase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects",
+      "target": "src_lib_firebase_db"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/joinCode.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_joincode",
+      "target": "src_lib_joincode_generatejoincode"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects",
+      "target": "src_lib_joincode"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects",
+      "target": "src_lib_joincode_generatejoincode"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects_reserveuniquecode",
+      "target": "src_lib_joincode_generatejoincode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects",
+      "target": "src_lib_projects_createproject"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects",
+      "target": "src_lib_projects_joincoderef"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects",
+      "target": "src_lib_projects_joinproject"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects",
+      "target": "src_lib_projects_lookupjoincode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects",
+      "target": "src_lib_projects_projectref"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects",
+      "target": "src_lib_projects_projectscollection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects",
+      "target": "src_lib_projects_reserveuniquecode"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects_joinproject",
+      "target": "src_lib_projects_projectref"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects_createproject",
+      "target": "src_lib_projects_joincoderef"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects_lookupjoincode",
+      "target": "src_lib_projects_joincoderef"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects_reserveuniquecode",
+      "target": "src_lib_projects_joincoderef"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/projects.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_projects_createproject",
+      "target": "src_lib_projects_reserveuniquecode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/AddTaskModal.jsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_task_addtaskmodal",
+      "target": "src_components_task_addtaskmodal_addtaskmodal"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/AddTaskModal.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_task_addtaskmodal",
+      "target": "src_lib_tasks"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/AddTaskModal.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_task_addtaskmodal",
+      "target": "src_lib_tasks_createtask"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/AddTaskModal.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_task_addtaskmodal",
+      "target": "src_lib_tasks_task_sizes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useTasks.jsx",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_usetasks",
+      "target": "src_hooks_usetasks_byoldestfirst"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useTasks.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_usetasks",
+      "target": "src_hooks_usetasks_usetasks"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useTasks.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_usetasks",
+      "target": "src_lib_tasks"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/hooks/useTasks.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_hooks_usetasks",
+      "target": "src_lib_tasks_taskscollection"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/project/ProjectPage.jsx",
-      "source_location": "L72",
+      "source_location": "L71",
       "weight": 1.0,
       "source": "src_components_project_projectpage",
       "target": "src_components_project_projectpage_joincodebadge",
@@ -2582,10 +3185,10 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/components/project/ProjectPage.jsx",
-      "source_location": "L3",
+      "source_location": "L7",
       "weight": 1.0,
       "source": "src_components_project_projectpage",
-      "target": "src_hooks_useproject",
+      "target": "src_components_task_taskboard",
       "confidence_score": 1.0
     },
     {
@@ -2593,461 +3196,430 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/components/project/ProjectPage.jsx",
-      "source_location": "L3",
+      "source_location": "L7",
       "weight": 1.0,
       "source": "src_components_project_projectpage",
-      "target": "src_hooks_useproject_useproject",
+      "target": "src_components_task_taskboard_taskboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskBoard.jsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_components_task_taskboard",
+      "target": "src_components_task_taskboard_columns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskBoard.jsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "src_components_task_taskboard",
+      "target": "src_components_task_taskboard_taskboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskBoard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_task_taskboard",
+      "target": "src_components_task_taskcolumn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskBoard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_task_taskboard",
+      "target": "src_components_task_taskcolumn_taskcolumn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_components_task_taskcard_sizechip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_components_task_taskcard_taskavatar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_components_task_taskcard_taskcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_components_task_taskmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_components_task_taskmenu_taskmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_lib_tasks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_lib_tasks_claimtask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_lib_tasks_sizepoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_lib_tasks_starttask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskColumn.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_components_task_taskcolumn",
+      "target": "src_components_task_taskcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskColumn.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_components_task_taskcolumn",
+      "target": "src_components_task_taskcard_taskcard",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/project/ProjectPage.jsx",
-      "source_location": "L20",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L109",
       "weight": 1.0,
-      "source": "src_components_project_projectpage_projectpage",
-      "target": "src_hooks_useproject_useproject"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useAuth.jsx",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "src_hooks_useauth",
-      "target": "src_hooks_useauth_authcontext",
+      "source": "src_components_task_taskcard_sizechip",
+      "target": "src_lib_tasks_sizepoints",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useAuth.jsx",
-      "source_location": "L19",
+      "source_file": "src/components/task/TaskColumn.jsx",
+      "source_location": "L9",
       "weight": 1.0,
-      "source": "src_hooks_useauth",
-      "target": "src_hooks_useauth_authprovider",
+      "source": "src_components_task_taskcolumn",
+      "target": "src_components_task_taskcolumn_taskcolumn",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useAuth.jsx",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "src_hooks_useauth",
-      "target": "src_hooks_useauth_useauth",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useAuth.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "src_hooks_useauth",
-      "target": "src_lib_firebase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useAuth.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "src_hooks_useauth",
-      "target": "src_lib_firebase_auth",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useAuth.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "src_hooks_useauth",
-      "target": "src_lib_firebase_googleprovider",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_main",
-      "target": "src_hooks_useauth",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/main.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_main",
-      "target": "src_hooks_useauth_authprovider",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useProject.jsx",
+      "source_file": "src/components/task/TaskMenu.jsx",
       "source_location": "L11",
       "weight": 1.0,
-      "source": "src_hooks_useproject",
-      "target": "src_hooks_useproject_useproject",
+      "source": "src_components_task_taskmenu",
+      "target": "src_components_task_taskmenu_taskmenu",
       "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useProject.jsx",
-      "source_location": "L3",
+      "source_file": "src/components/task/TaskMenu.jsx",
+      "source_location": "L2",
       "weight": 1.0,
-      "source": "src_hooks_useproject",
-      "target": "src_lib_projects",
+      "source": "src_components_task_taskmenu",
+      "target": "src_lib_tasks",
       "confidence_score": 1.0
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useProject.jsx",
-      "source_location": "L3",
+      "source_file": "src/components/task/TaskMenu.jsx",
+      "source_location": "L2",
       "weight": 1.0,
-      "source": "src_hooks_useproject",
-      "target": "src_lib_projects_projectref",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useProjects.jsx",
-      "source_location": "L58",
-      "weight": 1.0,
-      "source": "src_hooks_useprojects",
-      "target": "src_hooks_useprojects_bynewestfirst",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useProjects.jsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "src_hooks_useprojects",
-      "target": "src_hooks_useprojects_useprojects",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useProjects.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_hooks_useprojects",
-      "target": "src_lib_projects",
+      "source": "src_components_task_taskmenu",
+      "target": "src_lib_tasks_deletetask",
       "confidence_score": 1.0
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/hooks/useProjects.jsx",
-      "source_location": "L3",
+      "source_file": "src/components/task/TaskMenu.jsx",
+      "source_location": "L2",
       "weight": 1.0,
-      "source": "src_hooks_useprojects",
-      "target": "src_lib_projects_projectscollection",
+      "source": "src_components_task_taskmenu",
+      "target": "src_lib_tasks_reassigntask",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/lib/firebase.js",
-      "source_location": "L37",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L83",
       "weight": 1.0,
-      "source": "src_lib_firebase",
-      "target": "src_lib_firebase_app",
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_claimtask",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/lib/firebase.js",
-      "source_location": "L39",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L55",
       "weight": 1.0,
-      "source": "src_lib_firebase",
-      "target": "src_lib_firebase_auth",
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_createtask",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/lib/firebase.js",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_deletetask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_reassigntask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_size_values",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_sizepoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_starttask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_task_sizes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
       "source_location": "L40",
       "weight": 1.0,
-      "source": "src_lib_firebase",
-      "target": "src_lib_firebase_db",
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_taskref",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/lib/firebase.js",
-      "source_location": "L17",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L35",
       "weight": 1.0,
-      "source": "src_lib_firebase",
-      "target": "src_lib_firebase_firebaseconfig",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/firebase.js",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "src_lib_firebase",
-      "target": "src_lib_firebase_googleprovider",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/firebase.js",
-      "source_location": "L29",
-      "weight": 1.0,
-      "source": "src_lib_firebase",
-      "target": "src_lib_firebase_required",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "src_lib_projects",
-      "target": "src_lib_firebase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "src_lib_projects",
-      "target": "src_lib_firebase_db",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/joinCode.js",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "src_lib_joincode",
-      "target": "src_lib_joincode_generatejoincode",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "src_lib_projects",
-      "target": "src_lib_joincode",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "src_lib_projects",
-      "target": "src_lib_joincode_generatejoincode",
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_taskscollection",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L40",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L59",
       "weight": 1.0,
-      "source": "src_lib_projects_reserveuniquecode",
-      "target": "src_lib_joincode_generatejoincode",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L56",
-      "weight": 1.0,
-      "source": "src_lib_projects",
-      "target": "src_lib_projects_createproject",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L28",
-      "weight": 1.0,
-      "source": "src_lib_projects",
-      "target": "src_lib_projects_joincoderef",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L105",
-      "weight": 1.0,
-      "source": "src_lib_projects",
-      "target": "src_lib_projects_joinproject",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L91",
-      "weight": 1.0,
-      "source": "src_lib_projects",
-      "target": "src_lib_projects_lookupjoincode",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "src_lib_projects",
-      "target": "src_lib_projects_projectref",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "src_lib_projects",
-      "target": "src_lib_projects_projectscollection",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L38",
-      "weight": 1.0,
-      "source": "src_lib_projects",
-      "target": "src_lib_projects_reserveuniquecode",
+      "source": "src_lib_tasks_createtask",
+      "target": "src_lib_tasks_taskscollection",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L106",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L84",
       "weight": 1.0,
-      "source": "src_lib_projects_joinproject",
-      "target": "src_lib_projects_projectref",
+      "source": "src_lib_tasks_claimtask",
+      "target": "src_lib_tasks_taskref",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L78",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L121",
       "weight": 1.0,
-      "source": "src_lib_projects_createproject",
-      "target": "src_lib_projects_joincoderef",
+      "source": "src_lib_tasks_deletetask",
+      "target": "src_lib_tasks_taskref",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L92",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L111",
       "weight": 1.0,
-      "source": "src_lib_projects_lookupjoincode",
-      "target": "src_lib_projects_joincoderef",
+      "source": "src_lib_tasks_reassigntask",
+      "target": "src_lib_tasks_taskref",
       "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L41",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L99",
       "weight": 1.0,
-      "source": "src_lib_projects_reserveuniquecode",
-      "target": "src_lib_projects_joincoderef",
+      "source": "src_lib_tasks_starttask",
+      "target": "src_lib_tasks_taskref",
       "confidence_score": 1.0
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/projects.js",
-      "source_location": "L57",
-      "weight": 1.0,
-      "source": "src_lib_projects_createproject",
-      "target": "src_lib_projects_reserveuniquecode",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "implements",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
       "source": "claude_fairshare",
-      "target": "claude_tech_stack"
+      "target": "claude_knowledge_graph_workflow"
     },
     {
-      "relation": "rationale_for",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_one_feature_workflow",
-      "target": "claude_fairshare"
+      "source": "claude_fairshare",
+      "target": "plan_one_feature_workflow"
     },
     {
-      "relation": "rationale_for",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "PLAN.md",
+      "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_playful_style",
-      "target": "claude_fairshare"
+      "source": "claude_fairshare",
+      "target": "plan_stack"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_env_config",
+      "target": "plan_stack"
     },
     {
       "relation": "references",
@@ -3056,8 +3628,28 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "claude_tech_stack",
-      "target": "plan_google_signin"
+      "source": "plan_architecture",
+      "target": "plan_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f1",
+      "target": "plan_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f14",
+      "target": "plan_stack"
     },
     {
       "relation": "conceptually_related_to",
@@ -3066,258 +3658,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "claude_tech_stack",
-      "target": "plan_no_cloud_functions"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_no_cloud_functions",
-      "target": "plan_reviews_collection"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_no_cloud_functions",
-      "target": "plan_security_rules"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_f1_auth",
-      "target": "plan_google_signin"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_firestore_data_model",
-      "target": "plan_joincodes_collection"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_firestore_data_model",
-      "target": "plan_projects_collection"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_firestore_data_model",
-      "target": "plan_reviews_collection"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_firestore_data_model",
-      "target": "plan_tasks_collection"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_end_project",
-      "target": "plan_projects_collection"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_joincodes_collection",
-      "target": "plan_projects_collection"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_security_rules",
-      "target": "plan_projects_collection"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_join_code",
-      "target": "plan_joincodes_collection"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_security_rules",
-      "target": "plan_joincodes_collection"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_contributionshares",
-      "target": "plan_tasks_collection"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_proof_verification",
-      "target": "plan_tasks_collection"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_security_rules",
-      "target": "plan_tasks_collection"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_task_board",
-      "target": "plan_tasks_collection"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_peer_review",
-      "target": "plan_reviews_collection"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_ratingaverages",
-      "target": "plan_reviews_collection"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_security_rules",
-      "target": "plan_reviews_collection"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_f2_create_dashboard",
-      "target": "plan_join_code"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_f3_join",
-      "target": "plan_join_code"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.65,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_join_code",
-      "target": "plan_proof_verification"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_f4_task_board",
-      "target": "plan_task_board"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_f5_claim_move",
-      "target": "plan_task_board"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_realtime_onsnapshot",
-      "target": "plan_task_board"
+      "source": "plan_one_feature_workflow",
+      "target": "plan_executing_model_rules"
     },
     {
       "relation": "conceptually_related_to",
@@ -3326,8 +3668,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_contributionshares",
-      "target": "plan_proof_verification"
+      "source": "plan_verification_approach",
+      "target": "plan_one_feature_workflow"
     },
     {
       "relation": "implements",
@@ -3336,8 +3678,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_f6_mark_done",
-      "target": "plan_proof_verification"
+      "source": "plan_f0",
+      "target": "plan_visual_style"
     },
     {
       "relation": "implements",
@@ -3346,8 +3688,18 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_f7_verification",
-      "target": "plan_proof_verification"
+      "source": "plan_f13",
+      "target": "plan_visual_style"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_architecture",
+      "target": "plan_firestore_data_model"
     },
     {
       "relation": "conceptually_related_to",
@@ -3356,7 +3708,247 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_proof_verification",
+      "source": "plan_route_map",
+      "target": "plan_architecture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_firestore_data_model",
+      "target": "plan_collection_joincodes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_firestore_data_model",
+      "target": "plan_collection_projects"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_firestore_data_model",
+      "target": "plan_collection_reviews"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_firestore_data_model",
+      "target": "plan_collection_tasks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_security_rules",
+      "target": "plan_firestore_data_model"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_collection_joincodes",
+      "target": "plan_collection_projects"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_collection_reviews",
+      "target": "plan_collection_projects"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_collection_tasks",
+      "target": "plan_collection_projects"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f2",
+      "target": "plan_collection_projects"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f8",
+      "target": "plan_collection_projects"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_security_rules",
+      "target": "plan_collection_projects"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f2",
+      "target": "plan_collection_joincodes"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f3",
+      "target": "plan_collection_joincodes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_security_rules",
+      "target": "plan_collection_joincodes"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f4",
+      "target": "plan_collection_tasks"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f5",
+      "target": "plan_collection_tasks"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f6",
+      "target": "plan_collection_tasks"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f7",
+      "target": "plan_collection_tasks"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_fn_contributionshares",
+      "target": "plan_collection_tasks"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_security_rules",
+      "target": "plan_collection_tasks"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f9",
+      "target": "plan_collection_reviews"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_fn_ratingaverages",
+      "target": "plan_collection_reviews"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_security_rules",
+      "target": "plan_collection_reviews"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_f12",
       "target": "plan_security_rules"
     },
     {
@@ -3366,38 +3958,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_f9_review_form",
-      "target": "plan_peer_review"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_end_project",
-      "target": "plan_security_rules"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_f8_end_project",
-      "target": "plan_end_project"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_f11_report_page",
-      "target": "plan_fairness_report"
+      "source": "plan_f10",
+      "target": "plan_fairness_math"
     },
     {
       "relation": "references",
@@ -3406,18 +3968,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_fairness_report",
-      "target": "plan_fairness_lib"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_f10_fairness_math",
-      "target": "plan_fairness_lib"
+      "source": "plan_f11",
+      "target": "plan_fairness_math"
     },
     {
       "relation": "references",
@@ -3426,8 +3978,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_fairness_lib",
-      "target": "plan_contributionshares"
+      "source": "plan_fairness_math",
+      "target": "plan_fn_contributionshares"
     },
     {
       "relation": "references",
@@ -3436,8 +3988,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_fairness_lib",
-      "target": "plan_ratingaverages"
+      "source": "plan_fairness_math",
+      "target": "plan_fn_ratingaverages"
     },
     {
       "relation": "references",
@@ -3446,8 +3998,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_fairness_lib",
-      "target": "plan_taskpoints"
+      "source": "plan_fairness_math",
+      "target": "plan_fn_taskpoints"
     },
     {
       "relation": "calls",
@@ -3456,18 +4008,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_contributionshares",
-      "target": "plan_taskpoints"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_f12_security_audit",
-      "target": "plan_security_rules"
+      "source": "plan_fn_contributionshares",
+      "target": "plan_fn_taskpoints"
     },
     {
       "relation": "references",
@@ -3476,8 +4018,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m1",
-      "target": "plan_f0_scaffold"
+      "source": "plan_f11",
+      "target": "plan_route_map"
     },
     {
       "relation": "references",
@@ -3486,8 +4028,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m1",
-      "target": "plan_f1_auth"
+      "source": "plan_milestone_1",
+      "target": "plan_f0"
     },
     {
       "relation": "references",
@@ -3496,8 +4038,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m1",
-      "target": "plan_f2_create_dashboard"
+      "source": "plan_milestone_1",
+      "target": "plan_f1"
     },
     {
       "relation": "references",
@@ -3506,8 +4048,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m1",
-      "target": "plan_f3_join"
+      "source": "plan_milestone_1",
+      "target": "plan_f2"
     },
     {
       "relation": "references",
@@ -3516,8 +4058,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m1",
-      "target": "plan_f4_task_board"
+      "source": "plan_milestone_1",
+      "target": "plan_f3"
     },
     {
       "relation": "references",
@@ -3526,8 +4068,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m1",
-      "target": "plan_f5_claim_move"
+      "source": "plan_milestone_1",
+      "target": "plan_f4"
     },
     {
       "relation": "references",
@@ -3536,8 +4078,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m2",
-      "target": "plan_f6_mark_done"
+      "source": "plan_milestone_1",
+      "target": "plan_f5"
     },
     {
       "relation": "references",
@@ -3546,8 +4088,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m2",
-      "target": "plan_f7_verification"
+      "source": "plan_milestone_2",
+      "target": "plan_f6"
     },
     {
       "relation": "references",
@@ -3556,8 +4098,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m2",
-      "target": "plan_f8_end_project"
+      "source": "plan_milestone_2",
+      "target": "plan_f7"
     },
     {
       "relation": "references",
@@ -3566,8 +4108,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m2",
-      "target": "plan_f9_review_form"
+      "source": "plan_milestone_2",
+      "target": "plan_f8"
     },
     {
       "relation": "references",
@@ -3576,8 +4118,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m3",
-      "target": "plan_f10_fairness_math"
+      "source": "plan_milestone_2",
+      "target": "plan_f9"
     },
     {
       "relation": "references",
@@ -3586,8 +4128,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m3",
-      "target": "plan_f11_report_page"
+      "source": "plan_milestone_3",
+      "target": "plan_f10"
     },
     {
       "relation": "references",
@@ -3596,8 +4138,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m3",
-      "target": "plan_f12_security_audit"
+      "source": "plan_milestone_3",
+      "target": "plan_f11"
     },
     {
       "relation": "references",
@@ -3606,8 +4148,8 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m3",
-      "target": "plan_f13_visual_polish"
+      "source": "plan_milestone_3",
+      "target": "plan_f12"
     },
     {
       "relation": "references",
@@ -3616,70 +4158,72 @@
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_milestone_m3",
-      "target": "plan_f14_deploy"
+      "source": "plan_milestone_3",
+      "target": "plan_f13"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "plan_milestone_3",
+      "target": "plan_f14"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "PLAN.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "plan_f5_claim_move",
-      "target": "plan_f6_mark_done"
-    },
-    {
-      "relation": "implements",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PLAN.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "plan_f13_visual_polish",
-      "target": "plan_playful_style"
+      "source": "plan_f7",
+      "target": "plan_f6"
     }
   ],
   "hyperedges": [
     {
-      "id": "fairshare_fairness_pipeline",
-      "label": "Fairness computation pipeline (verified tasks + reviews to report)",
-      "nodes": [
-        "plan_proof_verification",
-        "plan_peer_review",
-        "plan_fairness_lib",
-        "plan_fairness_report"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.9,
-      "source_file": "PLAN.md"
-    },
-    {
-      "id": "fairshare_firestore_model",
+      "id": "firestore_data_model_collections",
       "label": "Firestore data model collections",
       "nodes": [
-        "plan_projects_collection",
-        "plan_joincodes_collection",
-        "plan_tasks_collection",
-        "plan_reviews_collection"
+        "plan_collection_projects",
+        "plan_collection_joincodes",
+        "plan_collection_tasks",
+        "plan_collection_reviews"
       ],
       "relation": "form",
       "confidence": "EXTRACTED",
-      "confidence_score": 0.9,
+      "confidence_score": 1.0,
       "source_file": "PLAN.md"
     },
     {
-      "id": "fairshare_serverless_security",
-      "label": "Serverless client-only + rules-enforced security",
+      "id": "fairness_pure_functions",
+      "label": "Fairness pure functions",
       "nodes": [
-        "plan_no_cloud_functions",
-        "plan_security_rules",
-        "plan_reviews_collection"
+        "plan_fn_taskpoints",
+        "plan_fn_contributionshares",
+        "plan_fn_ratingaverages"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PLAN.md"
+    },
+    {
+      "id": "milestone_1_features",
+      "label": "Milestone 1 features (complete)",
+      "nodes": [
+        "plan_f0",
+        "plan_f1",
+        "plan_f2",
+        "plan_f3",
+        "plan_f4",
+        "plan_f5"
       ],
       "relation": "participate_in",
       "confidence": "EXTRACTED",
-      "confidence_score": 0.85,
+      "confidence_score": 1.0,
       "source_file": "PLAN.md"
     },
     {
@@ -3697,5 +4241,5 @@
       "source_file": "instructions.txt"
     }
   ],
-  "built_at_commit": "42571454df07e9b496f609ddebd63f63a3ae9dbe"
+  "built_at_commit": "1d536086dce780e5df287759820834ff88d03314"
 }
