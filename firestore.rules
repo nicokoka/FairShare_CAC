@@ -1,0 +1,148 @@
+rules_version = '2';
+
+// FairShare Firestore security rules.
+//
+// Rules are built up feature by feature (see PLAN.md §6). Covers so far:
+//   F2 — create/read projects; read/create join-code lookups.
+//   F3 — a non-member may add ONLY their own uid to an ACTIVE project (join).
+//   F4 — a member may read the tasks subcollection and create new tasks.
+//   F5 — claim/start (assignee moves own task), creator reassign, creator delete.
+//   F6 — mark done with a proof link (assignee moves own "doing" → "done").
+//   F7 — approve/reject a "done" task (any member EXCEPT the assignee).
+// Review rules arrive in a later feature. Anything not explicitly allowed here
+// is denied by default.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // A project is readable only by its members. It can be created by any
+    // signed-in user, who must list themselves as the creator and a member.
+    // Updates/deletes are intentionally not allowed yet — the join flow (F3)
+    // and task edits (F4) will add narrowly-scoped update rules.
+    match /projects/{projectId} {
+      allow read: if request.auth != null
+                  && request.auth.uid in resource.data.memberIds;
+
+      allow create: if request.auth != null
+                    && request.resource.data.createdBy == request.auth.uid
+                    && request.auth.uid in request.resource.data.memberIds;
+
+      // Self-join (F3): a signed-in non-member may add ONLY themselves, and only
+      // while the project is active. They may touch nothing but their own slot:
+      //   - memberIds must gain exactly their uid and keep every existing one
+      //     (order-independent: keep all old ids, add self, size grows by one),
+      //   - the members map may change only for their own uid,
+      //   - no other field (name, status, joinCode, createdBy, …) may change.
+      // This is what stops someone editing others' data or joining ended
+      // projects. Broader member updates (task edits, ending) come in F4/F8.
+      allow update: if request.auth != null
+                    && resource.data.status == 'active'
+                    && !(request.auth.uid in resource.data.memberIds)
+                    && request.auth.uid in request.resource.data.memberIds
+                    && request.resource.data.memberIds.hasAll(resource.data.memberIds)
+                    && request.resource.data.memberIds.size()
+                       == resource.data.memberIds.size() + 1
+                    && request.resource.data.diff(resource.data).affectedKeys()
+                       .hasOnly(['memberIds', 'members'])
+                    && request.resource.data.members.diff(resource.data.members)
+                       .affectedKeys().hasOnly([request.auth.uid]);
+
+      // Tasks live in a subcollection of the project. Any member of the parent
+      // project may read the board and add tasks; a new task must start in the
+      // "todo" column and be stamped with the creator's own uid. Claiming and
+      // moving tasks (update) plus creator deletion arrive in F5, and
+      // verification writes in F7 — until then updates and deletes stay denied.
+      match /tasks/{taskId} {
+        function projectData() {
+          return get(/databases/$(database)/documents/projects/$(projectId)).data;
+        }
+        function isProjectMember() {
+          return request.auth != null
+                 && request.auth.uid in projectData().memberIds;
+        }
+        function isProjectCreator() {
+          return request.auth != null
+                 && request.auth.uid == projectData().createdBy;
+        }
+        // The exact set of task fields this write touched.
+        function changed(keys) {
+          return request.resource.data.diff(resource.data).affectedKeys().hasOnly(keys);
+        }
+
+        allow read: if isProjectMember();
+
+        allow create: if isProjectMember()
+                      && request.resource.data.createdBy == request.auth.uid
+                      && request.resource.data.status == 'todo';
+
+        // F5/F6 — claim, move & mark done. Four shapes are allowed; each leaves
+        // every other field untouched, so a mover can never rewrite a task's
+        // title, size, creator, or (later) verification fields:
+        //   1. Claim  — a member takes an UNCLAIMED "todo" task, becoming its
+        //               assignee and moving it to "doing".
+        //   2. Start  — the current assignee moves their own "todo" → "doing".
+        //   3. Reassign — the PROJECT CREATOR changes only the assignee, to
+        //               another member or null (release to "anyone can claim").
+        //   4. Mark done (F6) — the current assignee moves their own "doing" →
+        //               "done", attaching a non-empty proof link and a submit
+        //               time. Only these three fields may change; the http(s)
+        //               shape of proofUrl is checked client-side.
+        // A non-creator member therefore cannot touch a task assigned to
+        // someone else — that's the "B cannot move A's task" guarantee.
+        allow update: if isProjectMember() && (
+          (resource.data.status == 'todo'
+            && resource.data.assignee == null
+            && request.resource.data.assignee == request.auth.uid
+            && request.resource.data.status == 'doing'
+            && changed(['assignee', 'status']))
+          || (resource.data.assignee == request.auth.uid
+            && resource.data.status == 'todo'
+            && request.resource.data.assignee == request.auth.uid
+            && request.resource.data.status == 'doing'
+            && changed(['status']))
+          || (isProjectCreator()
+            && changed(['assignee'])
+            && (request.resource.data.assignee == null
+                || request.resource.data.assignee in projectData().memberIds))
+          || (resource.data.assignee == request.auth.uid
+            && resource.data.status == 'doing'
+            && request.resource.data.status == 'done'
+            && request.resource.data.proofUrl is string
+            && request.resource.data.proofUrl.size() > 0
+            && changed(['status', 'proofUrl', 'submittedAt']))
+          // 5. Approve (F7) — any member EXCEPT the assignee turns a "done" task
+          //    into "verified", stamping their own uid as the verifier. This is
+          //    the "you can't verify your own work" guarantee, enforced here so
+          //    it holds even if someone bypasses the UI.
+          || (request.auth.uid != resource.data.assignee
+            && resource.data.status == 'done'
+            && request.resource.data.status == 'verified'
+            && request.resource.data.verifiedBy == request.auth.uid
+            && changed(['status', 'verifiedBy', 'verifiedAt']))
+          // 6. Reject (F7) — any member EXCEPT the assignee sends a "done" task
+          //    back to "doing" with a non-empty written reason, recording their
+          //    own uid as the rejecter so the card can show who asked for changes.
+          || (request.auth.uid != resource.data.assignee
+            && resource.data.status == 'done'
+            && request.resource.data.status == 'doing'
+            && request.resource.data.lastRejection.by == request.auth.uid
+            && request.resource.data.lastRejection.reason is string
+            && request.resource.data.lastRejection.reason.size() > 0
+            && changed(['status', 'lastRejection']))
+        );
+
+        // F5 — only the project creator may delete a task.
+        allow delete: if isProjectCreator();
+      }
+    }
+
+    // Join codes are a public lookup (a teammate needs to resolve a code to a
+    // project id before they're a member). Any signed-in user may read them and
+    // create one. They're never updated or deleted.
+    match /joinCodes/{code} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null
+                    && request.resource.data.projectId is string;
+    }
+  }
+}

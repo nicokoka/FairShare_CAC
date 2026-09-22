@@ -1,0 +1,195 @@
+.dashboard {
+  min-height: 100vh;
+}
+
+.dashboard-main {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-5);
+}
+
+.dashboard-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+}
+
+.dashboard-eyebrow {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--mint-500);
+  margin-bottom: var(--space-2);
+}
+
+.dashboard-greeting {
+  font-size: var(--text-2xl);
+}
+
+.dashboard-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.dashboard-status {
+  color: var(--color-text-soft);
+  font-size: var(--text-lg);
+}
+
+.dashboard-status--error {
+  color: var(--coral-500);
+  font-weight: 700;
+}
+
+/* ---- Project grid ------------------------------------------------------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: var(--space-5);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+  color: var(--color-text);
+  transition: transform var(--duration-fast) var(--ease-out-back),
+    box-shadow var(--duration-normal) ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.project-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-pill {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+}
+
+.status-pill--active {
+  color: var(--grape-700);
+  background: var(--mint-200);
+}
+
+.status-pill--ended {
+  color: var(--ink-600);
+  background: var(--cloud);
+}
+
+.project-card-count {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-faint);
+}
+
+.project-card-name {
+  font-size: var(--text-xl);
+  line-height: 1.15;
+}
+
+/* Overlapping circle avatars, like a friendly team photo. */
+.avatar-stack {
+  display: flex;
+  align-items: center;
+}
+
+.stack-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--color-surface);
+  margin-left: -8px;
+  object-fit: cover;
+}
+
+.stack-avatar:first-child {
+  margin-left: 0;
+}
+
+.stack-avatar--fallback {
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: #ffffff;
+  background: var(--grape-500);
+}
+
+.avatar-more {
+  margin-left: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-faint);
+}
+
+/* ---- Empty state -------------------------------------------------------- */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-3);
+  background: var(--color-surface);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-5);
+}
+
+.empty-emoji {
+  font-size: 3rem;
+}
+
+.empty-title {
+  font-size: var(--text-xl);
+}
+
+.empty-text {
+  max-width: 32rem;
+  color: var(--color-text-soft);
+  margin-bottom: var(--space-3);
+}
+
+.empty-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Shared "coming next" tag, reused on the project page placeholder. */
+.dashboard-next-tag {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--grape-700);
+  background: var(--grape-100);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+}
