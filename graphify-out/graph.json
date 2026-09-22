@@ -69,7 +69,7 @@
       "source_file": "src/components/landing/ContributionCard.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "contributioncard.jsx",
       "id": "src_components_landing_contributioncard"
     },
@@ -79,7 +79,7 @@
       "source_file": "src/components/landing/ContributionCard.jsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "teammates",
       "id": "src_components_landing_contributioncard_teammates"
     },
@@ -89,7 +89,7 @@
       "source_file": "src/components/landing/ContributionCard.jsx",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 10,
+      "community": 9,
       "norm_label": "contributioncard()",
       "id": "src_components_landing_contributioncard_contributioncard"
     },
@@ -99,7 +99,7 @@
       "source_file": "src/components/landing/Wordmark.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "norm_label": "wordmark.jsx",
       "id": "src_components_landing_wordmark"
     },
@@ -109,7 +109,7 @@
       "source_file": "src/components/landing/Wordmark.jsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "norm_label": "wordmark()",
       "id": "src_components_landing_wordmark_wordmark"
     },
@@ -119,7 +119,7 @@
       "source_file": "src/components/placeholders/PlaceholderPage.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "placeholderpage.jsx",
       "id": "src_components_placeholders_placeholderpage"
     },
@@ -129,7 +129,7 @@
       "source_file": "src/components/placeholders/PlaceholderPage.jsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "placeholderpage()",
       "id": "src_components_placeholders_placeholderpage_placeholderpage"
     },
@@ -139,7 +139,7 @@
       "source_file": "vite.config.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "norm_label": "vite.config.js",
       "id": "vite_config"
     },
@@ -153,7 +153,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Web app that makes group grades match who actually did the work, by making effort visible rather than punishing anyone.",
-      "community": 8,
+      "community": 7,
       "norm_label": "fairshare",
       "id": "instructions_fairshare"
     },
@@ -167,7 +167,7 @@
       "author": null,
       "contributor": null,
       "rationale": "People exert less effort in a group than alone. This is the core problem FairShare exists to counter; documented by Latane, Williams & Harkins (1979).",
-      "community": 8,
+      "community": 7,
       "norm_label": "social loafing",
       "id": "instructions_social_loafing"
     },
@@ -181,7 +181,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Older finding that per-person effort drops as group size grows; the basis social loafing builds on.",
-      "community": 8,
+      "community": 7,
       "norm_label": "ringelmann effect",
       "id": "instructions_ringelmann_effect"
     },
@@ -195,7 +195,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Teammates rating each other is shown to be fair and accurate vs teacher marks (Falchikov & Goldfinch 2000). Justifies FairShare's private peer-review mechanism.",
-      "community": 9,
+      "community": 8,
       "norm_label": "peer assessment",
       "id": "instructions_peer_assessment"
     },
@@ -209,7 +209,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Existing college peer-evaluation tool; FairShare adapts the same idea to be free and student-run with no teacher account.",
-      "community": 9,
+      "community": 8,
       "norm_label": "catme",
       "id": "instructions_catme"
     },
@@ -222,7 +222,7 @@
       "captured_at": null,
       "author": "Latane, Williams & Harkins",
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "latane, williams & harkins (1979)",
       "id": "instructions_latane_1979"
     },
@@ -235,7 +235,7 @@
       "captured_at": null,
       "author": "Falchikov & Goldfinch",
       "contributor": null,
-      "community": 9,
+      "community": 8,
       "norm_label": "falchikov & goldfinch (2000)",
       "id": "instructions_falchikov_goldfinch_2000"
     },
@@ -245,7 +245,7 @@
       "source_file": "package.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "package.json",
       "id": "package"
     },
@@ -255,7 +255,7 @@
       "source_file": "package.json",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "name",
       "id": "package_name"
     },
@@ -265,7 +265,7 @@
       "source_file": "package.json",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "private",
       "id": "package_private"
     },
@@ -275,7 +275,7 @@
       "source_file": "package.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "version",
       "id": "package_version"
     },
@@ -285,7 +285,7 @@
       "source_file": "package.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "type",
       "id": "package_type"
     },
@@ -295,7 +295,7 @@
       "source_file": "package.json",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "scripts",
       "id": "package_scripts"
     },
@@ -305,7 +305,7 @@
       "source_file": "package.json",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "dev",
       "id": "package_scripts_dev"
     },
@@ -315,7 +315,7 @@
       "source_file": "package.json",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "build",
       "id": "package_scripts_build"
     },
@@ -325,7 +325,7 @@
       "source_file": "package.json",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "preview",
       "id": "package_scripts_preview"
     },
@@ -335,7 +335,7 @@
       "source_file": "package.json",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 6,
+      "community": 3,
       "norm_label": "dependencies",
       "id": "package_dependencies"
     },
@@ -345,7 +345,7 @@
       "source_file": "package.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 6,
+      "community": 3,
       "norm_label": "firebase",
       "id": "package_dependencies_firebase"
     },
@@ -355,7 +355,7 @@
       "source_file": "package.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 6,
+      "community": 3,
       "norm_label": "react",
       "id": "package_dependencies_react"
     },
@@ -365,7 +365,7 @@
       "source_file": "package.json",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 6,
+      "community": 3,
       "norm_label": "react-dom",
       "id": "package_dependencies_react_dom"
     },
@@ -375,7 +375,7 @@
       "source_file": "package.json",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 6,
+      "community": 3,
       "norm_label": "react-router-dom",
       "id": "package_dependencies_react_router_dom"
     },
@@ -385,7 +385,7 @@
       "source_file": "package.json",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "devdependencies",
       "id": "package_devdependencies"
     },
@@ -395,7 +395,7 @@
       "source_file": "package.json",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "@vitejs/plugin-react",
       "id": "package_devdependencies_vitejs_plugin_react"
     },
@@ -405,7 +405,7 @@
       "source_file": "package.json",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 5,
+      "community": 3,
       "norm_label": "vite",
       "id": "package_devdependencies_vite"
     },
@@ -525,7 +525,7 @@
       "source_file": "src/components/dashboard/JoinProjectModal.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "joinprojectmodal.jsx",
       "id": "src_components_dashboard_joinprojectmodal"
     },
@@ -635,7 +635,7 @@
       "source_file": "src/components/project/MembersList.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "memberslist.jsx",
       "id": "src_components_project_memberslist"
     },
@@ -645,7 +645,7 @@
       "source_file": "src/components/project/MembersList.jsx",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "memberslist()",
       "id": "src_components_project_memberslist_memberslist"
     },
@@ -655,7 +655,7 @@
       "source_file": "src/components/project/MembersList.jsx",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "norm_label": "memberavatar()",
       "id": "src_components_project_memberslist_memberavatar"
     },
@@ -705,7 +705,7 @@
       "source_file": "src/hooks/useProject.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "useproject.jsx",
       "id": "src_hooks_useproject"
     },
@@ -715,7 +715,7 @@
       "source_file": "src/hooks/useProject.jsx",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "useproject()",
       "id": "src_hooks_useproject_useproject"
     },
@@ -725,7 +725,7 @@
       "source_file": "src/hooks/useProjects.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "useprojects.jsx",
       "id": "src_hooks_useprojects"
     },
@@ -745,7 +745,7 @@
       "source_file": "src/hooks/useProjects.jsx",
       "source_location": "L58",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "bynewestfirst()",
       "id": "src_hooks_useprojects_bynewestfirst"
     },
@@ -755,7 +755,7 @@
       "source_file": "src/lib/firebase.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 6,
+      "community": 0,
       "norm_label": "firebase.js",
       "id": "src_lib_firebase"
     },
@@ -765,7 +765,7 @@
       "source_file": "src/lib/firebase.js",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 6,
+      "community": 0,
       "norm_label": "firebaseconfig",
       "id": "src_lib_firebase_firebaseconfig"
     },
@@ -775,7 +775,7 @@
       "source_file": "src/lib/firebase.js",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 6,
+      "community": 0,
       "norm_label": "required",
       "id": "src_lib_firebase_required"
     },
@@ -785,7 +785,7 @@
       "source_file": "src/lib/firebase.js",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 6,
+      "community": 0,
       "norm_label": "app",
       "id": "src_lib_firebase_app"
     },
@@ -805,7 +805,7 @@
       "source_file": "src/lib/firebase.js",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 6,
+      "community": 0,
       "norm_label": "db",
       "id": "src_lib_firebase_db"
     },
@@ -815,7 +815,7 @@
       "source_file": "src/lib/firebase.js",
       "source_location": "L43",
       "_origin": "ast",
-      "community": 6,
+      "community": 0,
       "norm_label": "googleprovider",
       "id": "src_lib_firebase_googleprovider"
     },
@@ -825,7 +825,7 @@
       "source_file": "src/lib/joinCode.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "joincode.js",
       "id": "src_lib_joincode"
     },
@@ -835,7 +835,7 @@
       "source_file": "src/lib/joinCode.js",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "generatejoincode()",
       "id": "src_lib_joincode_generatejoincode"
     },
@@ -845,7 +845,7 @@
       "source_file": "src/lib/projects.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "projects.js",
       "id": "src_lib_projects"
     },
@@ -855,7 +855,7 @@
       "source_file": "src/lib/projects.js",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "projectscollection",
       "id": "src_lib_projects_projectscollection"
     },
@@ -865,7 +865,7 @@
       "source_file": "src/lib/projects.js",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "projectref()",
       "id": "src_lib_projects_projectref"
     },
@@ -875,7 +875,7 @@
       "source_file": "src/lib/projects.js",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "joincoderef()",
       "id": "src_lib_projects_joincoderef"
     },
@@ -885,7 +885,7 @@
       "source_file": "src/lib/projects.js",
       "source_location": "L38",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "reserveuniquecode()",
       "id": "src_lib_projects_reserveuniquecode"
     },
@@ -895,7 +895,7 @@
       "source_file": "src/lib/projects.js",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "createproject()",
       "id": "src_lib_projects_createproject"
     },
@@ -905,7 +905,7 @@
       "source_file": "src/lib/projects.js",
       "source_location": "L91",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "lookupjoincode()",
       "id": "src_lib_projects_lookupjoincode"
     },
@@ -915,7 +915,7 @@
       "source_file": "src/lib/projects.js",
       "source_location": "L105",
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "joinproject()",
       "id": "src_lib_projects_joinproject"
     },
@@ -935,7 +935,7 @@
       "source_file": "src/components/task/AddTaskModal.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "addtaskmodal.jsx",
       "id": "src_components_task_addtaskmodal"
     },
@@ -945,7 +945,7 @@
       "source_file": "src/components/task/AddTaskModal.jsx",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "addtaskmodal()",
       "id": "src_components_task_addtaskmodal_addtaskmodal"
     },
@@ -955,7 +955,7 @@
       "source_file": "src/hooks/useTasks.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "usetasks.jsx",
       "id": "src_hooks_usetasks"
     },
@@ -965,7 +965,7 @@
       "source_file": "src/hooks/useTasks.jsx",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "usetasks()",
       "id": "src_hooks_usetasks_usetasks"
     },
@@ -975,7 +975,7 @@
       "source_file": "src/hooks/useTasks.jsx",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "byoldestfirst()",
       "id": "src_hooks_usetasks_byoldestfirst"
     },
@@ -985,9 +985,9 @@
       "source_file": "src/components/project/ProjectPage.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_project_projectpage",
-      "community": 7,
-      "norm_label": "projectpage.jsx"
+      "community": 6,
+      "norm_label": "projectpage.jsx",
+      "id": "src_components_project_projectpage"
     },
     {
       "label": "ProjectPage()",
@@ -995,9 +995,9 @@
       "source_file": "src/components/project/ProjectPage.jsx",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "src_components_project_projectpage_projectpage",
-      "community": 7,
-      "norm_label": "projectpage()"
+      "community": 6,
+      "norm_label": "projectpage()",
+      "id": "src_components_project_projectpage_projectpage"
     },
     {
       "label": "JoinCodeBadge()",
@@ -1005,9 +1005,9 @@
       "source_file": "src/components/project/ProjectPage.jsx",
       "source_location": "L71",
       "_origin": "ast",
-      "id": "src_components_project_projectpage_joincodebadge",
-      "community": 7,
-      "norm_label": "joincodebadge()"
+      "community": 6,
+      "norm_label": "joincodebadge()",
+      "id": "src_components_project_projectpage_joincodebadge"
     },
     {
       "label": "TaskBoard.jsx",
@@ -1015,9 +1015,9 @@
       "source_file": "src/components/task/TaskBoard.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_task_taskboard",
-      "community": 7,
-      "norm_label": "taskboard.jsx"
+      "community": 6,
+      "norm_label": "taskboard.jsx",
+      "id": "src_components_task_taskboard"
     },
     {
       "label": "COLUMNS",
@@ -1025,9 +1025,9 @@
       "source_file": "src/components/task/TaskBoard.jsx",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "src_components_task_taskboard_columns",
-      "community": 7,
-      "norm_label": "columns"
+      "community": 6,
+      "norm_label": "columns",
+      "id": "src_components_task_taskboard_columns"
     },
     {
       "label": "TaskBoard()",
@@ -1035,49 +1035,9 @@
       "source_file": "src/components/task/TaskBoard.jsx",
       "source_location": "L40",
       "_origin": "ast",
-      "id": "src_components_task_taskboard_taskboard",
-      "community": 7,
-      "norm_label": "taskboard()"
-    },
-    {
-      "label": "TaskCard.jsx",
-      "file_type": "code",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_components_task_taskcard",
-      "community": 2,
-      "norm_label": "taskcard.jsx"
-    },
-    {
-      "label": "TaskCard()",
-      "file_type": "code",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "src_components_task_taskcard_taskcard",
-      "community": 7,
-      "norm_label": "taskcard()"
-    },
-    {
-      "label": "SizeChip()",
-      "file_type": "code",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L108",
-      "_origin": "ast",
-      "id": "src_components_task_taskcard_sizechip",
-      "community": 2,
-      "norm_label": "sizechip()"
-    },
-    {
-      "label": "TaskAvatar()",
-      "file_type": "code",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L119",
-      "_origin": "ast",
-      "id": "src_components_task_taskcard_taskavatar",
-      "community": 2,
-      "norm_label": "taskavatar()"
+      "community": 6,
+      "norm_label": "taskboard()",
+      "id": "src_components_task_taskboard_taskboard"
     },
     {
       "label": "TaskColumn.jsx",
@@ -1085,9 +1045,9 @@
       "source_file": "src/components/task/TaskColumn.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_task_taskcolumn",
-      "community": 7,
-      "norm_label": "taskcolumn.jsx"
+      "community": 6,
+      "norm_label": "taskcolumn.jsx",
+      "id": "src_components_task_taskcolumn"
     },
     {
       "label": "TaskColumn()",
@@ -1095,9 +1055,9 @@
       "source_file": "src/components/task/TaskColumn.jsx",
       "source_location": "L9",
       "_origin": "ast",
-      "id": "src_components_task_taskcolumn_taskcolumn",
-      "community": 7,
-      "norm_label": "taskcolumn()"
+      "community": 6,
+      "norm_label": "taskcolumn()",
+      "id": "src_components_task_taskcolumn_taskcolumn"
     },
     {
       "label": "TaskMenu.jsx",
@@ -1105,9 +1065,9 @@
       "source_file": "src/components/task/TaskMenu.jsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_task_taskmenu",
-      "community": 2,
-      "norm_label": "taskmenu.jsx"
+      "community": 1,
+      "norm_label": "taskmenu.jsx",
+      "id": "src_components_task_taskmenu"
     },
     {
       "label": "TaskMenu()",
@@ -1115,119 +1075,9 @@
       "source_file": "src/components/task/TaskMenu.jsx",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "src_components_task_taskmenu_taskmenu",
-      "community": 2,
-      "norm_label": "taskmenu()"
-    },
-    {
-      "label": "tasks.js",
-      "file_type": "code",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_lib_tasks",
-      "community": 2,
-      "norm_label": "tasks.js"
-    },
-    {
-      "label": "TASK_SIZES",
-      "file_type": "code",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "src_lib_tasks_task_sizes",
-      "community": 2,
-      "norm_label": "task_sizes"
-    },
-    {
-      "label": "SIZE_VALUES",
-      "file_type": "code",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L27",
-      "_origin": "ast",
-      "id": "src_lib_tasks_size_values",
-      "community": 2,
-      "norm_label": "size_values"
-    },
-    {
-      "label": "sizePoints()",
-      "file_type": "code",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L30",
-      "_origin": "ast",
-      "id": "src_lib_tasks_sizepoints",
-      "community": 2,
-      "norm_label": "sizepoints()"
-    },
-    {
-      "label": "tasksCollection()",
-      "file_type": "code",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L35",
-      "_origin": "ast",
-      "id": "src_lib_tasks_taskscollection",
-      "community": 2,
-      "norm_label": "taskscollection()"
-    },
-    {
-      "label": "taskRef()",
-      "file_type": "code",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L40",
-      "_origin": "ast",
-      "id": "src_lib_tasks_taskref",
-      "community": 2,
-      "norm_label": "taskref()"
-    },
-    {
-      "label": "createTask()",
-      "file_type": "code",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "src_lib_tasks_createtask",
-      "community": 2,
-      "norm_label": "createtask()"
-    },
-    {
-      "label": "claimTask()",
-      "file_type": "code",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L83",
-      "_origin": "ast",
-      "id": "src_lib_tasks_claimtask",
-      "community": 2,
-      "norm_label": "claimtask()"
-    },
-    {
-      "label": "startTask()",
-      "file_type": "code",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L98",
-      "_origin": "ast",
-      "id": "src_lib_tasks_starttask",
-      "community": 2,
-      "norm_label": "starttask()"
-    },
-    {
-      "label": "reassignTask()",
-      "file_type": "code",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L110",
-      "_origin": "ast",
-      "id": "src_lib_tasks_reassigntask",
-      "community": 2,
-      "norm_label": "reassigntask()"
-    },
-    {
-      "label": "deleteTask()",
-      "file_type": "code",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L120",
-      "_origin": "ast",
-      "id": "src_lib_tasks_deletetask",
-      "community": 2,
-      "norm_label": "deletetask()"
+      "community": 1,
+      "norm_label": "taskmenu()",
+      "id": "src_components_task_taskmenu_taskmenu"
     },
     {
       "label": "FairShare (app)",
@@ -1238,9 +1088,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_fairshare",
-      "community": 1,
-      "norm_label": "fairshare (app)"
+      "community": 2,
+      "norm_label": "fairshare (app)",
+      "id": "claude_fairshare"
     },
     {
       "label": "Graphify Knowledge Graph Workflow",
@@ -1251,9 +1101,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_knowledge_graph_workflow",
-      "community": 1,
-      "norm_label": "graphify knowledge graph workflow"
+      "community": 2,
+      "norm_label": "graphify knowledge graph workflow",
+      "id": "claude_knowledge_graph_workflow"
     },
     {
       "label": "Gitignored .env Firebase Config",
@@ -1264,9 +1114,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_env_config",
-      "community": 1,
-      "norm_label": "gitignored .env firebase config"
+      "community": 2,
+      "norm_label": "gitignored .env firebase config",
+      "id": "claude_env_config"
     },
     {
       "label": "Stack: Vite + React + plain JS + Firebase",
@@ -1277,9 +1127,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_stack",
-      "community": 1,
-      "norm_label": "stack: vite + react + plain js + firebase"
+      "community": 2,
+      "norm_label": "stack: vite + react + plain js + firebase",
+      "id": "plan_stack"
     },
     {
       "label": "Rules for the Executing Model",
@@ -1290,9 +1140,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_executing_model_rules",
-      "community": 1,
-      "norm_label": "rules for the executing model"
+      "community": 2,
+      "norm_label": "rules for the executing model",
+      "id": "plan_executing_model_rules"
     },
     {
       "label": "One-Feature-At-A-Time Workflow",
@@ -1303,9 +1153,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_one_feature_workflow",
-      "community": 1,
-      "norm_label": "one-feature-at-a-time workflow"
+      "community": 2,
+      "norm_label": "one-feature-at-a-time workflow",
+      "id": "plan_one_feature_workflow"
     },
     {
       "label": "Playful & Student-y Visual Style",
@@ -1316,9 +1166,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_visual_style",
-      "community": 1,
-      "norm_label": "playful & student-y visual style"
+      "community": 2,
+      "norm_label": "playful & student-y visual style",
+      "id": "plan_visual_style"
     },
     {
       "label": "Architecture (React SPA, no server)",
@@ -1329,9 +1179,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_architecture",
-      "community": 1,
-      "norm_label": "architecture (react spa, no server)"
+      "community": 2,
+      "norm_label": "architecture (react spa, no server)",
+      "id": "plan_architecture"
     },
     {
       "label": "Firestore Data Model",
@@ -1342,9 +1192,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_firestore_data_model",
-      "community": 3,
-      "norm_label": "firestore data model"
+      "community": 4,
+      "norm_label": "firestore data model",
+      "id": "plan_firestore_data_model"
     },
     {
       "label": "projects collection",
@@ -1355,9 +1205,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_collection_projects",
-      "community": 3,
-      "norm_label": "projects collection"
+      "community": 4,
+      "norm_label": "projects collection",
+      "id": "plan_collection_projects"
     },
     {
       "label": "joinCodes collection",
@@ -1368,9 +1218,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_collection_joincodes",
-      "community": 3,
-      "norm_label": "joincodes collection"
+      "community": 4,
+      "norm_label": "joincodes collection",
+      "id": "plan_collection_joincodes"
     },
     {
       "label": "tasks subcollection",
@@ -1381,9 +1231,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_collection_tasks",
-      "community": 3,
-      "norm_label": "tasks subcollection"
+      "community": 4,
+      "norm_label": "tasks subcollection",
+      "id": "plan_collection_tasks"
     },
     {
       "label": "reviews subcollection",
@@ -1394,9 +1244,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_collection_reviews",
-      "community": 3,
-      "norm_label": "reviews subcollection"
+      "community": 4,
+      "norm_label": "reviews subcollection",
+      "id": "plan_collection_reviews"
     },
     {
       "label": "Firestore Security Rules",
@@ -1407,9 +1257,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_security_rules",
-      "community": 3,
-      "norm_label": "firestore security rules"
+      "community": 4,
+      "norm_label": "firestore security rules",
+      "id": "plan_security_rules"
     },
     {
       "label": "Fairness Report Math (src/lib/fairness.js)",
@@ -1420,9 +1270,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_fairness_math",
-      "community": 1,
-      "norm_label": "fairness report math (src/lib/fairness.js)"
+      "community": 2,
+      "norm_label": "fairness report math (src/lib/fairness.js)",
+      "id": "plan_fairness_math"
     },
     {
       "label": "taskPoints(size)",
@@ -1433,9 +1283,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_fn_taskpoints",
-      "community": 1,
-      "norm_label": "taskpoints(size)"
+      "community": 2,
+      "norm_label": "taskpoints(size)",
+      "id": "plan_fn_taskpoints"
     },
     {
       "label": "contributionShares(tasks, memberIds)",
@@ -1446,9 +1296,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_fn_contributionshares",
-      "community": 1,
-      "norm_label": "contributionshares(tasks, memberids)"
+      "community": 2,
+      "norm_label": "contributionshares(tasks, memberids)",
+      "id": "plan_fn_contributionshares"
     },
     {
       "label": "ratingAverages(reviews, memberIds)",
@@ -1459,9 +1309,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_fn_ratingaverages",
-      "community": 1,
-      "norm_label": "ratingaverages(reviews, memberids)"
+      "community": 2,
+      "norm_label": "ratingaverages(reviews, memberids)",
+      "id": "plan_fn_ratingaverages"
     },
     {
       "label": "Route Map",
@@ -1472,9 +1322,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_route_map",
-      "community": 1,
-      "norm_label": "route map"
+      "community": 2,
+      "norm_label": "route map",
+      "id": "plan_route_map"
     },
     {
       "label": "Manual Two-Account Verification Approach",
@@ -1485,9 +1335,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_verification_approach",
-      "community": 1,
-      "norm_label": "manual two-account verification approach"
+      "community": 2,
+      "norm_label": "manual two-account verification approach",
+      "id": "plan_verification_approach"
     },
     {
       "label": "Out of Scope",
@@ -1498,9 +1348,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_out_of_scope",
-      "community": 14,
-      "norm_label": "out of scope"
+      "community": 13,
+      "norm_label": "out of scope",
+      "id": "plan_out_of_scope"
     },
     {
       "label": "Milestone 1 \u2014 Two accounts, one live board (complete)",
@@ -1511,9 +1361,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_milestone_1",
-      "community": 3,
-      "norm_label": "milestone 1 \u2014 two accounts, one live board (complete)"
+      "community": 4,
+      "norm_label": "milestone 1 \u2014 two accounts, one live board (complete)",
+      "id": "plan_milestone_1"
     },
     {
       "label": "Milestone 2 \u2014 Proof, verification, peer reviews",
@@ -1524,9 +1374,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_milestone_2",
-      "community": 3,
-      "norm_label": "milestone 2 \u2014 proof, verification, peer reviews"
+      "community": 4,
+      "norm_label": "milestone 2 \u2014 proof, verification, peer reviews",
+      "id": "plan_milestone_2"
     },
     {
       "label": "Milestone 3 \u2014 Report, polish, ship",
@@ -1537,9 +1387,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_milestone_3",
-      "community": 1,
-      "norm_label": "milestone 3 \u2014 report, polish, ship"
+      "community": 2,
+      "norm_label": "milestone 3 \u2014 report, polish, ship",
+      "id": "plan_milestone_3"
     },
     {
       "label": "F0 Scaffold & design system (done)",
@@ -1550,9 +1400,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f0",
-      "community": 1,
-      "norm_label": "f0 scaffold & design system (done)"
+      "community": 2,
+      "norm_label": "f0 scaffold & design system (done)",
+      "id": "plan_f0"
     },
     {
       "label": "F1 Firebase setup + Google sign-in (done)",
@@ -1563,9 +1413,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f1",
-      "community": 1,
-      "norm_label": "f1 firebase setup + google sign-in (done)"
+      "community": 2,
+      "norm_label": "f1 firebase setup + google sign-in (done)",
+      "id": "plan_f1"
     },
     {
       "label": "F2 Create project + dashboard (done)",
@@ -1576,9 +1426,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f2",
-      "community": 3,
-      "norm_label": "f2 create project + dashboard (done)"
+      "community": 4,
+      "norm_label": "f2 create project + dashboard (done)",
+      "id": "plan_f2"
     },
     {
       "label": "F3 Join by code (done)",
@@ -1589,9 +1439,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f3",
-      "community": 3,
-      "norm_label": "f3 join by code (done)"
+      "community": 4,
+      "norm_label": "f3 join by code (done)",
+      "id": "plan_f3"
     },
     {
       "label": "F4 Task board \u2014 create & display (done)",
@@ -1602,9 +1452,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f4",
-      "community": 3,
-      "norm_label": "f4 task board \u2014 create & display (done)"
+      "community": 4,
+      "norm_label": "f4 task board \u2014 create & display (done)",
+      "id": "plan_f4"
     },
     {
       "label": "F5 Claim & move tasks (done)",
@@ -1615,9 +1465,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f5",
-      "community": 3,
-      "norm_label": "f5 claim & move tasks (done)"
+      "community": 4,
+      "norm_label": "f5 claim & move tasks (done)",
+      "id": "plan_f5"
     },
     {
       "label": "F6 Mark done with proof",
@@ -1628,9 +1478,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f6",
-      "community": 3,
-      "norm_label": "f6 mark done with proof"
+      "community": 4,
+      "norm_label": "f6 mark done with proof",
+      "id": "plan_f6"
     },
     {
       "label": "F7 Verification \u2014 approve or reject",
@@ -1641,9 +1491,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f7",
-      "community": 3,
-      "norm_label": "f7 verification \u2014 approve or reject"
+      "community": 4,
+      "norm_label": "f7 verification \u2014 approve or reject",
+      "id": "plan_f7"
     },
     {
       "label": "F8 End project",
@@ -1654,9 +1504,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f8",
-      "community": 3,
-      "norm_label": "f8 end project"
+      "community": 4,
+      "norm_label": "f8 end project",
+      "id": "plan_f8"
     },
     {
       "label": "F9 Peer review form",
@@ -1667,9 +1517,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f9",
-      "community": 3,
-      "norm_label": "f9 peer review form"
+      "community": 4,
+      "norm_label": "f9 peer review form",
+      "id": "plan_f9"
     },
     {
       "label": "F10 Fairness math (pure functions)",
@@ -1680,9 +1530,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f10",
-      "community": 1,
-      "norm_label": "f10 fairness math (pure functions)"
+      "community": 2,
+      "norm_label": "f10 fairness math (pure functions)",
+      "id": "plan_f10"
     },
     {
       "label": "F11 Fairness report page",
@@ -1693,9 +1543,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f11",
-      "community": 1,
-      "norm_label": "f11 fairness report page"
+      "community": 2,
+      "norm_label": "f11 fairness report page",
+      "id": "plan_f11"
     },
     {
       "label": "F12 Security rules audit + edge cases",
@@ -1706,9 +1556,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f12",
-      "community": 1,
-      "norm_label": "f12 security rules audit + edge cases"
+      "community": 2,
+      "norm_label": "f12 security rules audit + edge cases",
+      "id": "plan_f12"
     },
     {
       "label": "F13 Visual polish + responsive pass",
@@ -1719,9 +1569,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f13",
-      "community": 1,
-      "norm_label": "f13 visual polish + responsive pass"
+      "community": 2,
+      "norm_label": "f13 visual polish + responsive pass",
+      "id": "plan_f13"
     },
     {
       "label": "F14 Deploy + demo prep",
@@ -1732,9 +1582,199 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "plan_f14",
+      "community": 2,
+      "norm_label": "f14 deploy + demo prep",
+      "id": "plan_f14"
+    },
+    {
+      "label": "MarkDoneModal.jsx",
+      "file_type": "code",
+      "source_file": "src/components/task/MarkDoneModal.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_task_markdonemodal",
       "community": 1,
-      "norm_label": "f14 deploy + demo prep"
+      "norm_label": "markdonemodal.jsx"
+    },
+    {
+      "label": "MarkDoneModal()",
+      "file_type": "code",
+      "source_file": "src/components/task/MarkDoneModal.jsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_components_task_markdonemodal_markdonemodal",
+      "community": 1,
+      "norm_label": "markdonemodal()"
+    },
+    {
+      "label": "TaskCard.jsx",
+      "file_type": "code",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_task_taskcard",
+      "community": 1,
+      "norm_label": "taskcard.jsx"
+    },
+    {
+      "label": "TaskCard()",
+      "file_type": "code",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "src_components_task_taskcard_taskcard",
+      "community": 1,
+      "norm_label": "taskcard()"
+    },
+    {
+      "label": "SizeChip()",
+      "file_type": "code",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "src_components_task_taskcard_sizechip",
+      "community": 1,
+      "norm_label": "sizechip()"
+    },
+    {
+      "label": "TaskAvatar()",
+      "file_type": "code",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "src_components_task_taskcard_taskavatar",
+      "community": 1,
+      "norm_label": "taskavatar()"
+    },
+    {
+      "label": "tasks.js",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_tasks",
+      "community": 1,
+      "norm_label": "tasks.js"
+    },
+    {
+      "label": "TASK_SIZES",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "src_lib_tasks_task_sizes",
+      "community": 1,
+      "norm_label": "task_sizes"
+    },
+    {
+      "label": "SIZE_VALUES",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "src_lib_tasks_size_values",
+      "community": 1,
+      "norm_label": "size_values"
+    },
+    {
+      "label": "sizePoints()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "src_lib_tasks_sizepoints",
+      "community": 1,
+      "norm_label": "sizepoints()"
+    },
+    {
+      "label": "isValidProofUrl()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "src_lib_tasks_isvalidproofurl",
+      "community": 1,
+      "norm_label": "isvalidproofurl()"
+    },
+    {
+      "label": "tasksCollection()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "src_lib_tasks_taskscollection",
+      "community": 1,
+      "norm_label": "taskscollection()"
+    },
+    {
+      "label": "taskRef()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "src_lib_tasks_taskref",
+      "community": 1,
+      "norm_label": "taskref()"
+    },
+    {
+      "label": "createTask()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "src_lib_tasks_createtask",
+      "community": 1,
+      "norm_label": "createtask()"
+    },
+    {
+      "label": "claimTask()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "src_lib_tasks_claimtask",
+      "community": 1,
+      "norm_label": "claimtask()"
+    },
+    {
+      "label": "startTask()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "src_lib_tasks_starttask",
+      "community": 1,
+      "norm_label": "starttask()"
+    },
+    {
+      "label": "markTaskDone()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "src_lib_tasks_marktaskdone",
+      "community": 1,
+      "norm_label": "marktaskdone()"
+    },
+    {
+      "label": "reassignTask()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L150",
+      "_origin": "ast",
+      "id": "src_lib_tasks_reassigntask",
+      "community": 1,
+      "norm_label": "reassigntask()"
+    },
+    {
+      "label": "deleteTask()",
+      "file_type": "code",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L160",
+      "_origin": "ast",
+      "id": "src_lib_tasks_deletetask",
+      "community": 1,
+      "norm_label": "deletetask()"
     }
   ],
   "links": [
@@ -3166,9 +3206,9 @@
       "source_file": "src/components/project/ProjectPage.jsx",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_project_projectpage",
-      "target": "src_components_project_projectpage_joincodebadge",
-      "confidence_score": 1.0
+      "target": "src_components_project_projectpage_joincodebadge"
     },
     {
       "relation": "contains",
@@ -3176,9 +3216,9 @@
       "source_file": "src/components/project/ProjectPage.jsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_project_projectpage",
-      "target": "src_components_project_projectpage_projectpage",
-      "confidence_score": 1.0
+      "target": "src_components_project_projectpage_projectpage"
     },
     {
       "relation": "imports_from",
@@ -3187,9 +3227,9 @@
       "source_file": "src/components/project/ProjectPage.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_project_projectpage",
-      "target": "src_components_task_taskboard",
-      "confidence_score": 1.0
+      "target": "src_components_task_taskboard"
     },
     {
       "relation": "imports",
@@ -3198,9 +3238,9 @@
       "source_file": "src/components/project/ProjectPage.jsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_project_projectpage",
-      "target": "src_components_task_taskboard_taskboard",
-      "confidence_score": 1.0
+      "target": "src_components_task_taskboard_taskboard"
     },
     {
       "relation": "contains",
@@ -3208,9 +3248,9 @@
       "source_file": "src/components/task/TaskBoard.jsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_task_taskboard",
-      "target": "src_components_task_taskboard_columns",
-      "confidence_score": 1.0
+      "target": "src_components_task_taskboard_columns"
     },
     {
       "relation": "contains",
@@ -3218,9 +3258,9 @@
       "source_file": "src/components/task/TaskBoard.jsx",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_task_taskboard",
-      "target": "src_components_task_taskboard_taskboard",
-      "confidence_score": 1.0
+      "target": "src_components_task_taskboard_taskboard"
     },
     {
       "relation": "imports_from",
@@ -3229,9 +3269,9 @@
       "source_file": "src/components/task/TaskBoard.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_task_taskboard",
-      "target": "src_components_task_taskcolumn",
-      "confidence_score": 1.0
+      "target": "src_components_task_taskcolumn"
     },
     {
       "relation": "imports",
@@ -3240,105 +3280,9 @@
       "source_file": "src/components/task/TaskBoard.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_task_taskboard",
-      "target": "src_components_task_taskcolumn_taskcolumn",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L108",
-      "weight": 1.0,
-      "source": "src_components_task_taskcard",
-      "target": "src_components_task_taskcard_sizechip",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L119",
-      "weight": 1.0,
-      "source": "src_components_task_taskcard",
-      "target": "src_components_task_taskcard_taskavatar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "src_components_task_taskcard",
-      "target": "src_components_task_taskcard_taskcard",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_components_task_taskcard",
-      "target": "src_components_task_taskmenu",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_components_task_taskcard",
-      "target": "src_components_task_taskmenu_taskmenu",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_components_task_taskcard",
-      "target": "src_lib_tasks",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_components_task_taskcard",
-      "target": "src_lib_tasks_claimtask",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_components_task_taskcard",
-      "target": "src_lib_tasks_sizepoints",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_components_task_taskcard",
-      "target": "src_lib_tasks_starttask",
-      "confidence_score": 1.0
+      "target": "src_components_task_taskcolumn_taskcolumn"
     },
     {
       "relation": "imports_from",
@@ -3347,9 +3291,9 @@
       "source_file": "src/components/task/TaskColumn.jsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_task_taskcolumn",
-      "target": "src_components_task_taskcard",
-      "confidence_score": 1.0
+      "target": "src_components_task_taskcard"
     },
     {
       "relation": "imports",
@@ -3358,20 +3302,9 @@
       "source_file": "src/components/task/TaskColumn.jsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_task_taskcolumn",
-      "target": "src_components_task_taskcard_taskcard",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/task/TaskCard.jsx",
-      "source_location": "L109",
-      "weight": 1.0,
-      "source": "src_components_task_taskcard_sizechip",
-      "target": "src_lib_tasks_sizepoints",
-      "confidence_score": 1.0
+      "target": "src_components_task_taskcard_taskcard"
     },
     {
       "relation": "contains",
@@ -3379,9 +3312,9 @@
       "source_file": "src/components/task/TaskColumn.jsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_task_taskcolumn",
-      "target": "src_components_task_taskcolumn_taskcolumn",
-      "confidence_score": 1.0
+      "target": "src_components_task_taskcolumn_taskcolumn"
     },
     {
       "relation": "contains",
@@ -3389,9 +3322,9 @@
       "source_file": "src/components/task/TaskMenu.jsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_task_taskmenu",
-      "target": "src_components_task_taskmenu_taskmenu",
-      "confidence_score": 1.0
+      "target": "src_components_task_taskmenu_taskmenu"
     },
     {
       "relation": "imports_from",
@@ -3400,9 +3333,9 @@
       "source_file": "src/components/task/TaskMenu.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_task_taskmenu",
-      "target": "src_lib_tasks",
-      "confidence_score": 1.0
+      "target": "src_lib_tasks"
     },
     {
       "relation": "imports",
@@ -3411,9 +3344,9 @@
       "source_file": "src/components/task/TaskMenu.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_task_taskmenu",
-      "target": "src_lib_tasks_deletetask",
-      "confidence_score": 1.0
+      "target": "src_lib_tasks_deletetask"
     },
     {
       "relation": "imports",
@@ -3422,164 +3355,9 @@
       "source_file": "src/components/task/TaskMenu.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_task_taskmenu",
-      "target": "src_lib_tasks_reassigntask",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L83",
-      "weight": 1.0,
-      "source": "src_lib_tasks",
-      "target": "src_lib_tasks_claimtask",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L55",
-      "weight": 1.0,
-      "source": "src_lib_tasks",
-      "target": "src_lib_tasks_createtask",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L120",
-      "weight": 1.0,
-      "source": "src_lib_tasks",
-      "target": "src_lib_tasks_deletetask",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L110",
-      "weight": 1.0,
-      "source": "src_lib_tasks",
-      "target": "src_lib_tasks_reassigntask",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "src_lib_tasks",
-      "target": "src_lib_tasks_size_values",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "src_lib_tasks",
-      "target": "src_lib_tasks_sizepoints",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L98",
-      "weight": 1.0,
-      "source": "src_lib_tasks",
-      "target": "src_lib_tasks_starttask",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "src_lib_tasks",
-      "target": "src_lib_tasks_task_sizes",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L40",
-      "weight": 1.0,
-      "source": "src_lib_tasks",
-      "target": "src_lib_tasks_taskref",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L35",
-      "weight": 1.0,
-      "source": "src_lib_tasks",
-      "target": "src_lib_tasks_taskscollection",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L59",
-      "weight": 1.0,
-      "source": "src_lib_tasks_createtask",
-      "target": "src_lib_tasks_taskscollection",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L84",
-      "weight": 1.0,
-      "source": "src_lib_tasks_claimtask",
-      "target": "src_lib_tasks_taskref",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L121",
-      "weight": 1.0,
-      "source": "src_lib_tasks_deletetask",
-      "target": "src_lib_tasks_taskref",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L111",
-      "weight": 1.0,
-      "source": "src_lib_tasks_reassigntask",
-      "target": "src_lib_tasks_taskref",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/tasks.js",
-      "source_location": "L99",
-      "weight": 1.0,
-      "source": "src_lib_tasks_starttask",
-      "target": "src_lib_tasks_taskref",
-      "confidence_score": 1.0
+      "target": "src_lib_tasks_reassigntask"
     },
     {
       "relation": "references",
@@ -4180,6 +3958,364 @@
       "weight": 1.0,
       "source": "plan_f7",
       "target": "plan_f6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/MarkDoneModal.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_components_task_markdonemodal",
+      "target": "src_components_task_markdonemodal_markdonemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/MarkDoneModal.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_markdonemodal",
+      "target": "src_lib_tasks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/MarkDoneModal.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_markdonemodal",
+      "target": "src_lib_tasks_isvalidproofurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/MarkDoneModal.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_markdonemodal",
+      "target": "src_lib_tasks_marktaskdone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_components_task_markdonemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_components_task_markdonemodal_markdonemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_components_task_taskcard_sizechip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_components_task_taskcard_taskavatar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_components_task_taskcard_taskcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_lib_tasks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_lib_tasks_claimtask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_lib_tasks_isvalidproofurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_lib_tasks_sizepoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard",
+      "target": "src_lib_tasks_starttask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard_taskcard",
+      "target": "src_lib_tasks_isvalidproofurl"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/task/TaskCard.jsx",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "src_components_task_taskcard_sizechip",
+      "target": "src_lib_tasks_sizepoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_claimtask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_createtask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_deletetask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_isvalidproofurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_marktaskdone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_reassigntask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_size_values",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_sizepoints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_starttask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_task_sizes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_taskref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "src_lib_tasks",
+      "target": "src_lib_tasks_taskscollection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "src_lib_tasks_createtask",
+      "target": "src_lib_tasks_taskscollection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "src_lib_tasks_claimtask",
+      "target": "src_lib_tasks_taskref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "src_lib_tasks_deletetask",
+      "target": "src_lib_tasks_taskref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "src_lib_tasks_marktaskdone",
+      "target": "src_lib_tasks_taskref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "src_lib_tasks_reassigntask",
+      "target": "src_lib_tasks_taskref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/tasks.js",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "src_lib_tasks_starttask",
+      "target": "src_lib_tasks_taskref",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [
@@ -4241,5 +4377,5 @@
       "source_file": "instructions.txt"
     }
   ],
-  "built_at_commit": "1d536086dce780e5df287759820834ff88d03314"
+  "built_at_commit": "52b6b263b90809249b7c4507a0abf48968d255c9"
 }

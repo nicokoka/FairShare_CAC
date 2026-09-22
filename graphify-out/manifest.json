@@ -40,9 +40,9 @@
     "semantic_hash": "e2328ed303dd893213a89bb6215c5408"
   },
   "PLAN.md": {
-    "mtime": 1789622751.8664277,
-    "ast_hash": "4d9599d0ed238558216bbdfadd28cb84",
-    "semantic_hash": "4d9599d0ed238558216bbdfadd28cb84"
+    "mtime": 1790044891.906635,
+    "ast_hash": "8f4f2860b9e278a57cc5263eb3ef3963",
+    "semantic_hash": "8f4f2860b9e278a57cc5263eb3ef3963"
   },
   "index.html": {
     "mtime": 1788455592.8619406,
@@ -150,9 +150,9 @@
     "semantic_hash": "0172193dcac8779603d3e4f16c0ee276"
   },
   "src/components/task/TaskCard.jsx": {
-    "mtime": 1789622686.2249682,
-    "ast_hash": "4d906da2795b128b2d21210633fb5ee7",
-    "semantic_hash": "4d906da2795b128b2d21210633fb5ee7"
+    "mtime": 1790044228.7776823,
+    "ast_hash": "0aa1e2a27474ca14072fe41ba5ac594e",
+    "semantic_hash": "0aa1e2a27474ca14072fe41ba5ac594e"
   },
   "src/components/task/TaskColumn.jsx": {
     "mtime": 1789622696.7353454,
@@ -165,13 +165,18 @@
     "semantic_hash": "880402c599593ff29fdb242d9198dbe6"
   },
   "src/lib/tasks.js": {
-    "mtime": 1789622633.948345,
-    "ast_hash": "bd2178d588ef66f816e87d1313374aa1",
-    "semantic_hash": "bd2178d588ef66f816e87d1313374aa1"
+    "mtime": 1790044135.9065087,
+    "ast_hash": "306bca015ddebea0da5490a7d95da4ea",
+    "semantic_hash": "306bca015ddebea0da5490a7d95da4ea"
   },
   "src/components/task/TaskMenu.jsx": {
     "mtime": 1789622668.9657435,
     "ast_hash": "8658dc0122e66fdee84b17ff59ff71d6",
     "semantic_hash": "8658dc0122e66fdee84b17ff59ff71d6"
+  },
+  "src/components/task/MarkDoneModal.jsx": {
+    "mtime": 1790044179.951096,
+    "ast_hash": "71368f8ee64a556119ce5183a6285fb3",
+    "semantic_hash": "71368f8ee64a556119ce5183a6285fb3"
   }
 }

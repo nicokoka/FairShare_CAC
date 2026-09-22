@@ -142,7 +142,7 @@ Unclaimed tasks show a "Claim" button (sets `assignee` to self, moves to Doing).
 
 ### Milestone 2 — "Proof, verification, and peer reviews work"
 
-**F6. Mark done with proof.**
+**F6. Mark done with proof.** ✅ done 2026-09-21
 "Mark done" opens a modal requiring a proof URL (validated as a plausible link; helper text suggests Google Docs/GitHub/photos links). Task moves to Done column with status `done`, styled as "waiting for verification" (e.g., dashed border + hourglass motif), showing the clickable proof link.
 *User test:* mark a Doing task done → proof required (empty/invalid rejected with friendly message); Done column shows the pending state; teammate sees it live.
 
