@@ -22,7 +22,7 @@ import TaskMenu from './TaskMenu.jsx'
  * gets a "⋯" menu to reassign or delete. Who can do what is enforced by the
  * Firestore rules; this component only shows the buttons that will succeed.
  */
-export default function TaskCard({ task, members, projectId, projectCreatedBy }) {
+export default function TaskCard({ task, members, projectId, projectCreatedBy, locked = false }) {
   const { user } = useAuth()
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
@@ -39,11 +39,13 @@ export default function TaskCard({ task, members, projectId, projectCreatedBy })
   const isDone = task.status === 'done'
   const isVerified = task.status === 'verified'
 
-  const showClaim = isUnclaimed && task.status === 'todo'
-  const showStart = isMine && task.status === 'todo'
-  const showMarkDone = isMine && isDoing
+  // Once the project has ended the board is read-only — every action is hidden
+  // (the rules deny the writes too, so this just keeps the UI honest).
+  const showClaim = !locked && isUnclaimed && task.status === 'todo'
+  const showStart = !locked && isMine && task.status === 'todo'
+  const showMarkDone = !locked && isMine && isDoing
   // Any member except the assignee can verify a task that's waiting.
-  const showVerify = isDone && !isMine
+  const showVerify = !locked && isDone && !isMine
   const hasMoveAction = showClaim || showStart || showMarkDone
 
   const hasProofLink = (isDone || isVerified) && isValidProofUrl(task.proofUrl)
@@ -73,7 +75,7 @@ export default function TaskCard({ task, members, projectId, projectCreatedBy })
 
   return (
     <article className={cardClass}>
-      {isCreator && (
+      {isCreator && !locked && (
         <TaskMenu task={task} members={members} projectId={projectId} />
       )}
 

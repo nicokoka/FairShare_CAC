@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { useAuth } from '../../hooks/useAuth.jsx'
 import { useProject } from '../../hooks/useProject.jsx'
 import AppHeader from '../layout/AppHeader.jsx'
 import LoadingScreen from '../common/LoadingScreen.jsx'
 import MembersList from './MembersList.jsx'
+import EndProjectModal from './EndProjectModal.jsx'
 import TaskBoard from '../task/TaskBoard.jsx'
 import './project-page.css'
 
@@ -17,7 +19,9 @@ const COPIED_FEEDBACK_MS = 1600
  */
 export default function ProjectPage() {
   const { id } = useParams()
+  const { user } = useAuth()
   const { project, loading, notFound } = useProject(id)
+  const [ending, setEnding] = useState(false)
 
   if (loading) return <LoadingScreen />
 
@@ -40,6 +44,9 @@ export default function ProjectPage() {
     )
   }
 
+  const isCreator = user?.uid === project.createdBy
+  const isEnded = project.status === 'ended'
+
   return (
     <div className="project-page">
       <AppHeader />
@@ -52,8 +59,33 @@ export default function ProjectPage() {
             </Link>
             <h1 className="project-name">{project.name}</h1>
           </div>
-          <JoinCodeBadge code={project.joinCode} />
+          <div className="project-header-side">
+            {!isEnded && <JoinCodeBadge code={project.joinCode} />}
+            {isCreator && !isEnded && (
+              <button
+                type="button"
+                className="btn-ghost project-end-btn"
+                onClick={() => setEnding(true)}
+              >
+                🏁 End project
+              </button>
+            )}
+          </div>
         </header>
+
+        {isEnded && (
+          <div className="project-ended-banner" role="status">
+            <div className="project-ended-text">
+              <p className="project-ended-title">🎊 Project ended — time for peer reviews!</p>
+              <p className="project-ended-sub">
+                The board is locked. Rate your teammates, then check the fairness report.
+              </p>
+            </div>
+            <Link to={`/project/${project.id}/review`} className="btn-primary">
+              Rate teammates →
+            </Link>
+          </div>
+        )}
 
         <MembersList members={project.members} createdBy={project.createdBy} />
 
@@ -61,8 +93,17 @@ export default function ProjectPage() {
           projectId={project.id}
           members={project.members}
           createdBy={project.createdBy}
+          locked={isEnded}
         />
       </main>
+
+      {ending && (
+        <EndProjectModal
+          projectId={project.id}
+          projectName={project.name}
+          onClose={() => setEnding(false)}
+        />
+      )}
     </div>
   )
 }

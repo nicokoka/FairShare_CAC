@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Landing from './components/landing/Landing.jsx'
 import Dashboard from './components/dashboard/Dashboard.jsx'
 import ProjectPage from './components/project/ProjectPage.jsx'
+import ReviewPage from './components/review/ReviewPage.jsx'
 import ProtectedRoute from './components/auth/ProtectedRoute.jsx'
 import PlaceholderPage from './components/placeholders/PlaceholderPage.jsx'
 
@@ -36,12 +37,9 @@ export default function App() {
       <Route
         path="/project/:id/review"
         element={
-          <PlaceholderPage
-            emoji="⭐"
-            title="Rate your teammates"
-            text="When a project wraps up, everyone privately rates each teammate on effort, quality, and teamwork."
-            feature="Coming in feature 9"
-          />
+          <ProtectedRoute>
+            <ReviewPage />
+          </ProtectedRoute>
         }
       />
       <Route

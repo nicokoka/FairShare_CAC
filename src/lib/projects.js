@@ -94,6 +94,20 @@ export async function lookupJoinCode(code) {
 }
 
 /**
+ * End a project (F8): flip it from "active" to "ended" and stamp when. Only the
+ * creator may do this (enforced by the rules). Ending locks the board — task
+ * writes are denied once status is "ended" — and opens the peer-review phase.
+ *
+ * @param {string} projectId
+ */
+export async function endProject(projectId) {
+  await updateDoc(projectRef(projectId), {
+    status: 'ended',
+    endedAt: serverTimestamp(),
+  })
+}
+
+/**
  * Add `user` to a project as a new member. This is a self-join: the security
  * rules only permit a signed-in user to add *their own* uid, and only while the
  * project is still active. The write uses arrayUnion so it's idempotent on the

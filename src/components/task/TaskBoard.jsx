@@ -37,7 +37,7 @@ const COLUMNS = [
   },
 ]
 
-export default function TaskBoard({ projectId, members, createdBy }) {
+export default function TaskBoard({ projectId, members, createdBy, locked = false }) {
   const { tasks } = useTasks(projectId)
   const [showAdd, setShowAdd] = useState(false)
 
@@ -45,9 +45,13 @@ export default function TaskBoard({ projectId, members, createdBy }) {
     <section className="board" aria-label="Task board">
       <div className="board-toolbar">
         <h2 className="board-heading">Task board</h2>
-        <button type="button" className="btn-primary" onClick={() => setShowAdd(true)}>
-          + Add task
-        </button>
+        {/* When the project has ended the board is read-only, so there's no way
+            to add tasks (the rules deny it too — this just hides the button). */}
+        {!locked && (
+          <button type="button" className="btn-primary" onClick={() => setShowAdd(true)}>
+            + Add task
+          </button>
+        )}
       </div>
 
       <div className="board-columns">
@@ -59,6 +63,7 @@ export default function TaskBoard({ projectId, members, createdBy }) {
             members={members}
             projectId={projectId}
             projectCreatedBy={createdBy}
+            locked={locked}
           />
         ))}
       </div>

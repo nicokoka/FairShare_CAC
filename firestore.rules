@@ -9,8 +9,9 @@ rules_version = '2';
 //   F5 — claim/start (assignee moves own task), creator reassign, creator delete.
 //   F6 — mark done with a proof link (assignee moves own "doing" → "done").
 //   F7 — approve/reject a "done" task (any member EXCEPT the assignee).
-// Review rules arrive in a later feature. Anything not explicitly allowed here
-// is denied by default.
+//   F8 — the CREATOR ends the project; task writes are locked once ended.
+//   F9 — peer reviews: own review always; others readable only once ended.
+// Anything not explicitly allowed here is denied by default.
 
 service cloud.firestore {
   match /databases/{database}/documents {
@@ -47,6 +48,17 @@ service cloud.firestore {
                     && request.resource.data.members.diff(resource.data.members)
                        .affectedKeys().hasOnly([request.auth.uid]);
 
+      // End project (F8): ONLY the creator may flip an active project to
+      // "ended", touching nothing but status + endedAt. This is the "non-creator
+      // can't end it" guarantee, and it's what locks the board (the task rules
+      // below only allow writes while the project is active).
+      allow update: if request.auth != null
+                    && request.auth.uid == resource.data.createdBy
+                    && resource.data.status == 'active'
+                    && request.resource.data.status == 'ended'
+                    && request.resource.data.diff(resource.data).affectedKeys()
+                       .hasOnly(['status', 'endedAt']);
+
       // Tasks live in a subcollection of the project. Any member of the parent
       // project may read the board and add tasks; a new task must start in the
       // "todo" column and be stamped with the creator's own uid. Claiming and
@@ -72,6 +84,7 @@ service cloud.firestore {
         allow read: if isProjectMember();
 
         allow create: if isProjectMember()
+                      && projectData().status == 'active'
                       && request.resource.data.createdBy == request.auth.uid
                       && request.resource.data.status == 'todo';
 
@@ -89,7 +102,10 @@ service cloud.firestore {
         //               shape of proofUrl is checked client-side.
         // A non-creator member therefore cannot touch a task assigned to
         // someone else — that's the "B cannot move A's task" guarantee.
-        allow update: if isProjectMember() && (
+        // Once the project is "ended" (F8) every task write below is denied, so
+        // the board is genuinely read-only during the peer-review phase.
+        allow update: if isProjectMember()
+          && projectData().status == 'active' && (
           (resource.data.status == 'todo'
             && resource.data.assignee == null
             && request.resource.data.assignee == request.auth.uid
@@ -133,6 +149,37 @@ service cloud.firestore {
 
         // F5 — only the project creator may delete a task.
         allow delete: if isProjectCreator();
+      }
+
+      // Peer reviews live in a subcollection, one doc per reviewer (doc id =
+      // reviewer uid). Reviews are private: you can always read and write your
+      // OWN review, but you can only read a teammate's review once the project
+      // has ended — that's what lets the report do its averaging client-side
+      // (there are no Cloud Functions on the free tier). Known tradeoff noted in
+      // PLAN.md: a determined member could read raw ratings via devtools after
+      // the project ends; the UI only ever shows averages + anonymized comments.
+      match /reviews/{reviewerUid} {
+        function reviewProject() {
+          return get(/databases/$(database)/documents/projects/$(projectId)).data;
+        }
+        function isReviewMember() {
+          return request.auth != null
+                 && request.auth.uid in reviewProject().memberIds;
+        }
+        function isOwnReview() {
+          return request.auth != null && reviewerUid == request.auth.uid;
+        }
+
+        allow read: if isOwnReview()
+                    || (isReviewMember() && reviewProject().status == 'ended');
+
+        // Create-only (no update/delete) makes reviews one-shot: a second
+        // submission would be an update and is denied. You may only write your
+        // OWN review, and only once the project has ended.
+        allow create: if isOwnReview()
+                      && isReviewMember()
+                      && reviewProject().status == 'ended'
+                      && request.resource.data.ratings is map;
       }
     }
 

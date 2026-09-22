@@ -5,9 +5,9 @@
     "semantic_hash": "c59157b6f56d70f4af3bc93d3568a712"
   },
   "src/App.jsx": {
-    "mtime": 1789253067.0455618,
-    "ast_hash": "0ebc7386a7fa4485878c6b8b2525b250",
-    "semantic_hash": "0ebc7386a7fa4485878c6b8b2525b250"
+    "mtime": 1790051257.294679,
+    "ast_hash": "d01f86a47f221d00d30d795af2ae5e28",
+    "semantic_hash": "d01f86a47f221d00d30d795af2ae5e28"
   },
   "src/components/landing/ContributionCard.jsx": {
     "mtime": 1788455674.586272,
@@ -40,9 +40,9 @@
     "semantic_hash": "e2328ed303dd893213a89bb6215c5408"
   },
   "PLAN.md": {
-    "mtime": 1790044891.906635,
-    "ast_hash": "8f4f2860b9e278a57cc5263eb3ef3963",
-    "semantic_hash": "8f4f2860b9e278a57cc5263eb3ef3963"
+    "mtime": 1790051318.233677,
+    "ast_hash": "220b61bcc779590e38077b71dce4c0a7",
+    "semantic_hash": "220b61bcc779590e38077b71dce4c0a7"
   },
   "index.html": {
     "mtime": 1788455592.8619406,
@@ -95,9 +95,9 @@
     "semantic_hash": "964dcc8877db5b63f1ee18ea18d9bfb8"
   },
   "src/components/project/ProjectPage.jsx": {
-    "mtime": 1789622709.2567558,
-    "ast_hash": "49c8b9db9afdec6baef586ccfc15c08a",
-    "semantic_hash": "49c8b9db9afdec6baef586ccfc15c08a"
+    "mtime": 1790050639.9953523,
+    "ast_hash": "d8dcc9206b611286a46e4dc9deadcbef",
+    "semantic_hash": "d8dcc9206b611286a46e4dc9deadcbef"
   },
   "src/hooks/useAuth.jsx": {
     "mtime": 1788974856.1961467,
@@ -125,9 +125,9 @@
     "semantic_hash": "c6d8de2908bfe477f89fd7a02ce2996c"
   },
   "src/lib/projects.js": {
-    "mtime": 1789491551.5191488,
-    "ast_hash": "a4d58522deed820e5aeb31a064f5f3a6",
-    "semantic_hash": "a4d58522deed820e5aeb31a064f5f3a6"
+    "mtime": 1790050559.4895923,
+    "ast_hash": "c23f6665b86709db7f2fd22c39cc3919",
+    "semantic_hash": "c23f6665b86709db7f2fd22c39cc3919"
   },
   "CLAUDE.md": {
     "mtime": 1789622758.3368657,
@@ -145,19 +145,19 @@
     "semantic_hash": "7b00af09b56ada8fd0e0a9e7f864028f"
   },
   "src/components/task/TaskBoard.jsx": {
-    "mtime": 1789622705.5905766,
-    "ast_hash": "0172193dcac8779603d3e4f16c0ee276",
-    "semantic_hash": "0172193dcac8779603d3e4f16c0ee276"
+    "mtime": 1790050652.5587153,
+    "ast_hash": "62e737b4851f264f9512e5fdf0bf6783",
+    "semantic_hash": "62e737b4851f264f9512e5fdf0bf6783"
   },
   "src/components/task/TaskCard.jsx": {
-    "mtime": 1790044228.7776823,
-    "ast_hash": "0aa1e2a27474ca14072fe41ba5ac594e",
-    "semantic_hash": "0aa1e2a27474ca14072fe41ba5ac594e"
+    "mtime": 1790050679.1719742,
+    "ast_hash": "c5a244aecb1d97444c269de2985837c3",
+    "semantic_hash": "c5a244aecb1d97444c269de2985837c3"
   },
   "src/components/task/TaskColumn.jsx": {
-    "mtime": 1789622696.7353454,
-    "ast_hash": "084167b0f286d0d2b0ed8fd939a27b35",
-    "semantic_hash": "084167b0f286d0d2b0ed8fd939a27b35"
+    "mtime": 1790050662.0479293,
+    "ast_hash": "6ea3acfd6968fa11198893542f6372c5",
+    "semantic_hash": "6ea3acfd6968fa11198893542f6372c5"
   },
   "src/hooks/useTasks.jsx": {
     "mtime": 1789619045.225972,
@@ -165,9 +165,9 @@
     "semantic_hash": "880402c599593ff29fdb242d9198dbe6"
   },
   "src/lib/tasks.js": {
-    "mtime": 1790044135.9065087,
-    "ast_hash": "306bca015ddebea0da5490a7d95da4ea",
-    "semantic_hash": "306bca015ddebea0da5490a7d95da4ea"
+    "mtime": 1790049727.0513992,
+    "ast_hash": "b279cd194e1eb68bf1b7cde1f6ef7894",
+    "semantic_hash": "b279cd194e1eb68bf1b7cde1f6ef7894"
   },
   "src/components/task/TaskMenu.jsx": {
     "mtime": 1789622668.9657435,
@@ -178,5 +178,35 @@
     "mtime": 1790044179.951096,
     "ast_hash": "71368f8ee64a556119ce5183a6285fb3",
     "semantic_hash": "71368f8ee64a556119ce5183a6285fb3"
+  },
+  "src/components/project/EndProjectModal.jsx": {
+    "mtime": 1790050614.1362154,
+    "ast_hash": "7792490f554eb5165a735292fc5c617f",
+    "semantic_hash": "7792490f554eb5165a735292fc5c617f"
+  },
+  "src/components/review/ReviewPage.jsx": {
+    "mtime": 1790051242.0762455,
+    "ast_hash": "1a6ca928d5e3f7e012ff6e91dcdfdca9",
+    "semantic_hash": "1a6ca928d5e3f7e012ff6e91dcdfdca9"
+  },
+  "src/components/review/StarRating.jsx": {
+    "mtime": 1790051208.614703,
+    "ast_hash": "9ae9d225f9205b726b2d20b5a05c9ce1",
+    "semantic_hash": "9ae9d225f9205b726b2d20b5a05c9ce1"
+  },
+  "src/components/task/RejectTaskModal.jsx": {
+    "mtime": 1790049764.6570797,
+    "ast_hash": "edf6d83427fe35752220b5ade499ace1",
+    "semantic_hash": "edf6d83427fe35752220b5ade499ace1"
+  },
+  "src/hooks/useMyReview.jsx": {
+    "mtime": 1790051179.5089831,
+    "ast_hash": "7587e4b06864ad6ce06d1c1b0c63c801",
+    "semantic_hash": "7587e4b06864ad6ce06d1c1b0c63c801"
+  },
+  "src/lib/reviews.js": {
+    "mtime": 1790051150.8074753,
+    "ast_hash": "68f3ff21f1f3705a1275208e125ffdf4",
+    "semantic_hash": "68f3ff21f1f3705a1275208e125ffdf4"
   }
 }

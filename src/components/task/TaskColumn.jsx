@@ -6,7 +6,7 @@ import TaskCard from './TaskCard.jsx'
  * blank gap. `column` carries the title, emoji, and empty-state copy; `tasks`
  * is the already-filtered list for this column.
  */
-export default function TaskColumn({ column, tasks, members, projectId, projectCreatedBy }) {
+export default function TaskColumn({ column, tasks, members, projectId, projectCreatedBy, locked }) {
   return (
     <section className="board-column" aria-label={column.title}>
       <header className="column-header">
@@ -26,6 +26,7 @@ export default function TaskColumn({ column, tasks, members, projectId, projectC
                 members={members}
                 projectId={projectId}
                 projectCreatedBy={projectCreatedBy}
+                locked={locked}
               />
             </li>
           ))}

@@ -146,15 +146,15 @@ Unclaimed tasks show a "Claim" button (sets `assignee` to self, moves to Doing).
 "Mark done" opens a modal requiring a proof URL (validated as a plausible link; helper text suggests Google Docs/GitHub/photos links). Task moves to Done column with status `done`, styled as "waiting for verification" (e.g., dashed border + hourglass motif), showing the clickable proof link.
 *User test:* mark a Doing task done → proof required (empty/invalid rejected with friendly message); Done column shows the pending state; teammate sees it live.
 
-**F7. Verification — approve or reject.**
+**F7. Verification — approve or reject.** ✅ done 2026-09-21
 On `done` tasks, any member **except the assignee** sees Approve / Reject buttons. Approve → status `verified`, stores `verifiedBy`/`verifiedAt`, card gets a celebratory verified style (stamp/check + subtle confetti-ish flourish). Reject → modal requires a reason → task returns to `doing` with `lastRejection` stored; assignee sees the reason on the card. Assignee sees "waiting for a teammate to verify" on their own done tasks. Rules enforce verifier ≠ assignee.
 *User test (2 browsers):* assignee sees no verify buttons on own task; teammate rejects with reason → task back in Doing with reason visible; teammate approves → verified style; try to self-verify via UI absence (and note rules block it).
 
-**F8. End project.**
+**F8. End project.** ✅ done 2026-09-21
 Creator-only "End project" button (confirmation dialog explaining what happens). Sets `status: "ended"`, `endedAt`. Board becomes read-only (no create/claim/move/verify); banner appears: "Project ended — time for peer reviews!" with a button to `/project/:id/review`. Non-creators never see the end button. Rules: only creator can set `ended`.
 *User test (2 browsers):* B sees no End button; A ends → both instantly see locked board + review banner; all task buttons gone.
 
-**F9. Peer review form.**
+**F9. Peer review form.** ✅ done 2026-09-21
 `/project/:id/review` (only reachable when ended): for each teammate (not self), 1–5 star inputs for Effort / Quality / Teamwork + optional comment box. One submission per user (doc id = uid); after submitting, the form shows a read-only "you rated" summary. Star inputs are keyboard-accessible and fun (hover fill animation). Review rules added (own-doc write; others readable only when ended).
 *User test (2 browsers):* both accounts submit reviews of each other; resubmission not possible (shows summary instead); reviews not visible to the other person as raw data anywhere in the UI.
 
