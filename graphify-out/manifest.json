@@ -1,13 +1,13 @@
 {
   "package.json": {
-    "mtime": 1788974825.6730657,
-    "ast_hash": "c59157b6f56d70f4af3bc93d3568a712",
-    "semantic_hash": "c59157b6f56d70f4af3bc93d3568a712"
+    "mtime": 1790121420.9065058,
+    "ast_hash": "944f9dcc078d0701248122a00e38738a",
+    "semantic_hash": "944f9dcc078d0701248122a00e38738a"
   },
   "src/App.jsx": {
-    "mtime": 1790051257.294679,
-    "ast_hash": "d01f86a47f221d00d30d795af2ae5e28",
-    "semantic_hash": "d01f86a47f221d00d30d795af2ae5e28"
+    "mtime": 1790117009.201709,
+    "ast_hash": "920c5da8aad3fb2cc24e59eb8881524b",
+    "semantic_hash": "920c5da8aad3fb2cc24e59eb8881524b"
   },
   "src/components/landing/ContributionCard.jsx": {
     "mtime": 1788455674.586272,
@@ -40,9 +40,9 @@
     "semantic_hash": "e2328ed303dd893213a89bb6215c5408"
   },
   "PLAN.md": {
-    "mtime": 1790051318.233677,
-    "ast_hash": "220b61bcc779590e38077b71dce4c0a7",
-    "semantic_hash": "220b61bcc779590e38077b71dce4c0a7"
+    "mtime": 1790122822.620175,
+    "ast_hash": "78e5944461051b98d90c335330891896",
+    "semantic_hash": "78e5944461051b98d90c335330891896"
   },
   "index.html": {
     "mtime": 1788455592.8619406,
@@ -95,9 +95,9 @@
     "semantic_hash": "964dcc8877db5b63f1ee18ea18d9bfb8"
   },
   "src/components/project/ProjectPage.jsx": {
-    "mtime": 1790050639.9953523,
-    "ast_hash": "d8dcc9206b611286a46e4dc9deadcbef",
-    "semantic_hash": "d8dcc9206b611286a46e4dc9deadcbef"
+    "mtime": 1790117014.4831574,
+    "ast_hash": "372dd091bf374af8a95ecbffe63e1353",
+    "semantic_hash": "372dd091bf374af8a95ecbffe63e1353"
   },
   "src/hooks/useAuth.jsx": {
     "mtime": 1788974856.1961467,
@@ -130,9 +130,9 @@
     "semantic_hash": "c23f6665b86709db7f2fd22c39cc3919"
   },
   "CLAUDE.md": {
-    "mtime": 1789622758.3368657,
-    "ast_hash": "54f403daa46f1cdb927120b9296f087f",
-    "semantic_hash": "54f403daa46f1cdb927120b9296f087f"
+    "mtime": 1790122833.5006802,
+    "ast_hash": "ae7dc1e4a7d9654267f6c83ef0d807e0",
+    "semantic_hash": "ae7dc1e4a7d9654267f6c83ef0d807e0"
   },
   ".claude/settings.local.json": {
     "mtime": 1789619210.4932153,
@@ -208,5 +208,35 @@
     "mtime": 1790051150.8074753,
     "ast_hash": "68f3ff21f1f3705a1275208e125ffdf4",
     "semantic_hash": "68f3ff21f1f3705a1275208e125ffdf4"
+  },
+  "firebase.json": {
+    "mtime": 1790121064.6422365,
+    "ast_hash": "d6525cfb9f8b2e18f6aaf615da24898b",
+    "semantic_hash": "d6525cfb9f8b2e18f6aaf615da24898b"
+  },
+  "firestore.indexes.json": {
+    "mtime": 1790121071.6579897,
+    "ast_hash": "6c1369bcee45fa3baebaaf77f2dc3ae3",
+    "semantic_hash": "6c1369bcee45fa3baebaaf77f2dc3ae3"
+  },
+  "src/components/report/ReportPage.jsx": {
+    "mtime": 1790118239.2682729,
+    "ast_hash": "3f2f469280dc55254b74bd12cba25e7e",
+    "semantic_hash": "3f2f469280dc55254b74bd12cba25e7e"
+  },
+  "src/hooks/useReviews.jsx": {
+    "mtime": 1790116918.464,
+    "ast_hash": "b82863554f4b8c9dbd01e6746d244ba6",
+    "semantic_hash": "b82863554f4b8c9dbd01e6746d244ba6"
+  },
+  "src/lib/fairness.js": {
+    "mtime": 1790117730.1327755,
+    "ast_hash": "caa71bb6b26de05848dcd5981b057901",
+    "semantic_hash": "caa71bb6b26de05848dcd5981b057901"
+  },
+  "DEMO_SCRIPT.md": {
+    "mtime": 1790121127.303573,
+    "ast_hash": "47ebecc164cff1c2d705eeba7918e680",
+    "semantic_hash": "47ebecc164cff1c2d705eeba7918e680"
   }
 }
