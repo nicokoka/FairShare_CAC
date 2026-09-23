@@ -11,6 +11,9 @@ rules_version = '2';
 //   F7 — approve/reject a "done" task (any member EXCEPT the assignee).
 //   F8 — the CREATOR ends the project; task writes are locked once ended.
 //   F9 — peer reviews: own review always; others readable only once ended.
+//   F12 — security/edge-case hardening: creator is a new project's only initial
+//         member; reassign can't touch done/verified tasks (no credit theft);
+//         a reviewer can't rate themselves.
 // Anything not explicitly allowed here is denied by default.
 
 service cloud.firestore {
@@ -24,9 +27,17 @@ service cloud.firestore {
       allow read: if request.auth != null
                   && request.auth.uid in resource.data.memberIds;
 
+      // The creator must be the project's ONLY initial member — memberIds and the
+      // members map may contain nobody but them, and the project must start
+      // "active" (F12 hardening). Without this a griefer could create a project
+      // with other people's uids pre-loaded, injecting it onto their dashboards;
+      // everyone else joins through the self-join rule below.
       allow create: if request.auth != null
                     && request.resource.data.createdBy == request.auth.uid
-                    && request.auth.uid in request.resource.data.memberIds;
+                    && request.auth.uid in request.resource.data.memberIds
+                    && request.resource.data.memberIds.hasOnly([request.auth.uid])
+                    && request.resource.data.members.keys().hasOnly([request.auth.uid])
+                    && request.resource.data.status == 'active';
 
       // Self-join (F3): a signed-in non-member may add ONLY themselves, and only
       // while the project is active. They may touch nothing but their own slot:
@@ -116,7 +127,13 @@ service cloud.firestore {
             && request.resource.data.assignee == request.auth.uid
             && request.resource.data.status == 'doing'
             && changed(['status']))
+          //    Reassign is limited to work still in progress: a creator can move
+          //    a "todo"/"doing" task to another member (or release it), but NOT
+          //    an already "done" or "verified" task — that would let a creator
+          //    reassign a teammate's verified task to themselves and steal the
+          //    contribution credit on the report (F12 hardening).
           || (isProjectCreator()
+            && resource.data.status in ['todo', 'doing']
             && changed(['assignee'])
             && (request.resource.data.assignee == null
                 || request.resource.data.assignee in projectData().memberIds))
@@ -175,11 +192,14 @@ service cloud.firestore {
 
         // Create-only (no update/delete) makes reviews one-shot: a second
         // submission would be an update and is denied. You may only write your
-        // OWN review, and only once the project has ended.
+        // OWN review, and only once the project has ended. The final clause
+        // (F12) blocks self-rating: your own uid may not appear as a key in the
+        // ratings map, so nobody can grade themselves to inflate their average.
         allow create: if isOwnReview()
                       && isReviewMember()
                       && reviewProject().status == 'ended'
-                      && request.resource.data.ratings is map;
+                      && request.resource.data.ratings is map
+                      && !(request.auth.uid in request.resource.data.ratings.keys());
       }
     }
 

@@ -164,23 +164,23 @@ Creator-only "End project" button (confirmation dialog explaining what happens).
 
 ### Milestone 3 — "Report, polish, ship"
 
-**F10. Fairness math (pure functions).**
+**F10. Fairness math (pure functions).** ✅ done 2026-09-22
 `src/lib/fairness.js`: `taskPoints`, `contributionShares`, `ratingAverages` exactly per the Architecture section. **This is the code the user must deeply understand** — the model writes it WITH the user: explain the approach first, write each function with narrated reasoning, then walk through worked examples by hand (e.g., 3 members, 5 tasks of mixed sizes, one missing review) and confirm the numbers match the user's own hand calculation.
 *User test:* user computes a small example on paper; a temporary dev-only page (or console call) shows the functions produce the same numbers.
 
-**F11. Fairness report page.**
+**F11. Fairness report page.** ✅ done 2026-09-22
 `/project/:id/report` (ended projects only, members only): project header (name, dates, members); per-member section with the two headline stats (contribution % of verified points + average peer rating) shown as friendly stat cards; table of each member's verified tasks with size, points, proof links, and who verified them; per-criterion rating averages; anonymized comments; callout listing members who didn't submit reviews; note of any tasks never verified. Print stylesheet (`@media print`) that strips nav/buttons and lays the report out cleanly on paper; prominent "Print / Save as PDF" button.
 *User test:* end-to-end run with 2 accounts produces a report whose numbers match F10 hand-math; browser Print preview looks like a clean teacher-ready document.
 
-**F12. Security rules audit + edge-case pass.**
+**F12. Security rules audit + edge-case pass.** ✅ done 2026-09-22
 Full review of `firestore.rules` against every feature; test with the Firebase emulator or manual second-account probing: non-member can't read a project, non-creator can't end it, self-verification blocked at the rules level, review privacy holds pre-end. Fix loose ends: leaving a project? (out of scope — document as future work), deleted-task effects on report (they're simply absent), ended-project join attempts (blocked with friendly error).
 *User test:* model provides an adversarial checklist (things a sneaky classmate would try); user attempts each with account B and confirms failure.
 
-**F13. Visual polish + responsive pass.**
+**F13. Visual polish + responsive pass.** ✅ done 2026-09-22
 One dedicated pass over every screen against the playful direction: consistent tokens, designed hover/focus/active states, delightful empty states everywhere (empty dashboard, empty columns, no reviews yet), micro-motion on card moves and verification (compositor-friendly transforms/opacity only, respecting `prefers-reduced-motion`), responsive at 320/768/1024/1440 (board columns stack on phones), color-contrast check. No new features.
 *User test:* click through the whole app at phone + laptop widths; nothing overflows; everything feels like one designed product.
 
-**F14. Deploy + demo prep.**
+**F14. Deploy + demo prep.** ✅ done 2026-09-22
 `firebase init hosting` + deploy; add the live URL to Google auth authorized domains; full production smoke test with two real accounts. Model produces `DEMO_SCRIPT.md`: a beat-by-beat run-through for the challenge video (create → join → tasks → proof → reject → verify → end → reviews → report → print) plus talking points connecting features to the social-loafing research in the proposal.
 *User test:* the full demo script executed successfully on the **live URL** with two accounts.
 

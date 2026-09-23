@@ -133,6 +133,14 @@
   margin-top: var(--space-1);
 }
 
+/* The two ways forward from an ended project: review, then report. */
+.project-ended-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
 /* Bulleted "what happens" list inside the end-project confirmation modal. */
 .modal-list {
   margin: var(--space-4) 0;

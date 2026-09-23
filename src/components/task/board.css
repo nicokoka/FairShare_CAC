@@ -87,6 +87,21 @@
   padding: var(--space-4);
   box-shadow: var(--shadow-sm);
   transition: transform var(--duration-fast) ease, box-shadow var(--duration-fast) ease;
+  /* A card animates in when it first appears — and again when it moves columns,
+     since React remounts it in the new list. That's the "cards move" micro-motion
+     from PLAN F13. The global prefers-reduced-motion rule neutralizes it. */
+  animation: task-in var(--duration-normal) var(--ease-out-soft);
+}
+
+@keyframes task-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .task-card:hover {
@@ -160,7 +175,7 @@
   font-family: var(--font-display);
   font-weight: 600;
   font-size: var(--text-base);
-  color: #ffffff;
+  color: var(--ink-900);
   background: var(--mint-500);
   border: 2px solid var(--color-surface);
   border-radius: var(--radius-pill);
@@ -334,9 +349,10 @@
   cursor: default;
 }
 
-/* Claim is the "your turn" call to action — warm coral, high pull. */
+/* Claim is the "your turn" call to action — warm coral, high pull. Dark ink
+   text keeps the bright fill but meets WCAG AA contrast (5.1:1). */
 .task-btn--claim {
-  color: #ffffff;
+  color: var(--ink-900);
   background: var(--coral-500);
 }
 
@@ -344,13 +360,14 @@
   background: oklch(66% 0.18 30);
 }
 
+/* grape-600 (not -500) so white text clears AA (5.3:1), matching .btn-primary. */
 .task-btn--start {
   color: #ffffff;
-  background: var(--grape-500);
+  background: var(--grape-600);
 }
 
 .task-btn--start:hover:not(:disabled) {
-  background: var(--grape-600);
+  background: var(--grape-700);
 }
 
 /* Mark done — fresh mint, the "finish it" action. */
@@ -361,12 +378,13 @@
 
 .task-btn--done:hover:not(:disabled) {
   background: var(--mint-500);
-  color: #ffffff;
+  color: var(--ink-900);
 }
 
-/* Approve — the confident "sign off" action, in success mint. */
+/* Approve — the confident "sign off" action, in success mint. Dark ink on the
+   light mint fill meets AA (7.8:1); white text on mint fails badly (1.9:1). */
 .task-btn--approve {
-  color: #ffffff;
+  color: var(--ink-900);
   background: var(--mint-500);
 }
 

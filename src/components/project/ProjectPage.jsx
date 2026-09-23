@@ -81,9 +81,14 @@ export default function ProjectPage() {
                 The board is locked. Rate your teammates, then check the fairness report.
               </p>
             </div>
-            <Link to={`/project/${project.id}/review`} className="btn-primary">
-              Rate teammates →
-            </Link>
+            <div className="project-ended-actions">
+              <Link to={`/project/${project.id}/review`} className="btn-primary">
+                Rate teammates →
+              </Link>
+              <Link to={`/project/${project.id}/report`} className="btn-ghost">
+                📊 Fairness report
+              </Link>
+            </div>
           </div>
         )}
 

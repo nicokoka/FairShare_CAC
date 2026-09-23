@@ -3,6 +3,7 @@ import Landing from './components/landing/Landing.jsx'
 import Dashboard from './components/dashboard/Dashboard.jsx'
 import ProjectPage from './components/project/ProjectPage.jsx'
 import ReviewPage from './components/review/ReviewPage.jsx'
+import ReportPage from './components/report/ReportPage.jsx'
 import ProtectedRoute from './components/auth/ProtectedRoute.jsx'
 import PlaceholderPage from './components/placeholders/PlaceholderPage.jsx'
 
@@ -45,12 +46,9 @@ export default function App() {
       <Route
         path="/project/:id/report"
         element={
-          <PlaceholderPage
-            emoji="📊"
-            title="The fairness report"
-            text="A clean, printable page showing each person's verified contribution and average peer rating — ready for the teacher."
-            feature="Coming in feature 11"
-          />
+          <ProtectedRoute>
+            <ReportPage />
+          </ProtectedRoute>
         }
       />
       <Route

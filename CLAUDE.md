@@ -40,13 +40,19 @@ lives in pure functions in `src/lib/fairness.js` with zero Firebase imports.
 ## Progress
 
 Completed features are marked `✅ done <date>` in `PLAN.md`. Check there for the
-current state rather than assuming. As of last session: **F0–F5 are done**
-(scaffold, Google auth, create project + dashboard, join by code, task board —
-create & display, claim & move tasks) — this completes **Milestone 1** (two
-accounts, one live board). Firestore rules are live for `projects`/`joinCodes`
-(including the self-join rule) and the `tasks` subcollection (member read +
-create; assignee claim/start; creator reassign/delete). Next up is **F6 (Mark
-done with proof)** — the start of Milestone 2.
+current state rather than assuming. As of last session: **F0–F14 are all done** —
+the entire PLAN is complete through **Milestone 3**. That includes the fairness
+math (`src/lib/fairness.js`), the printable report page (`/project/:id/report`),
+a security/edge-case hardening pass on `firestore.rules` (creator-only initial
+member, no reassigning done/verified tasks, no self-rating), a visual polish +
+responsive + WCAG-contrast pass, and deployment.
+
+**The app is live at https://fairshare-3d5c2.web.app** (Firebase Hosting, project
+`fairshare-3d5c2`). Deploy config is committed (`firebase.json`, `.firebaserc`,
+`firestore.indexes.json`); redeploy any change with **`npm run deploy`** (builds
+then deploys hosting + Firestore rules). `DEMO_SCRIPT.md` holds the CAC video
+run-through. Remaining optional work is stretch-only (e.g. unit tests for
+`fairness.js`, the AI report-summary idea) — the core project is finished.
 
 ## Environment notes (non-obvious)
 
