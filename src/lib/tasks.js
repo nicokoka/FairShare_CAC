@@ -69,11 +69,15 @@ export function taskRef(projectId, taskId) {
  * fields start null and are filled in by F6/F7 — we write them now so every
  * task document has a stable, predictable shape.
  *
+ * An optional dueDate (a 'YYYY-MM-DD' calendar-day string, see src/lib/dueDate.js)
+ * marks when the task should be finished; it's stored as null when omitted so
+ * every task document keeps a stable, predictable shape.
+ *
  * @param {string} projectId
  * @param {{ uid: string }} user  the creator
- * @param {{ title: string, size: string, assignee?: string|null }} input
+ * @param {{ title: string, size: string, assignee?: string|null, dueDate?: string|null }} input
  */
-export async function createTask(projectId, user, { title, size, assignee }) {
+export async function createTask(projectId, user, { title, size, assignee, dueDate }) {
   if (!SIZE_VALUES.includes(size)) {
     throw new Error(`Unknown task size: ${size}`)
   }
@@ -82,6 +86,7 @@ export async function createTask(projectId, user, { title, size, assignee }) {
     size,
     status: 'todo',
     assignee: assignee || null,
+    dueDate: dueDate || null,
     createdBy: user.uid,
     createdAt: serverTimestamp(),
     proofUrl: null,
@@ -90,6 +95,20 @@ export async function createTask(projectId, user, { title, size, assignee }) {
     verifiedAt: null,
     lastRejection: null,
   })
+}
+
+/*
+ * Set or clear a task's due date (F15): pass a 'YYYY-MM-DD' string to set it, or
+ * a falsy value to clear it. The rules allow this only for the task's assignee or
+ * the project creator, while the project is active. Kept as its own single-field
+ * write so it can never disturb the title, size, or verification fields.
+ *
+ * @param {string} projectId
+ * @param {string} taskId
+ * @param {string|null} dueDate  a 'YYYY-MM-DD' day, or null to clear
+ */
+export async function setTaskDueDate(projectId, taskId, dueDate) {
+  await updateDoc(taskRef(projectId, taskId), { dueDate: dueDate || null })
 }
 
 /*

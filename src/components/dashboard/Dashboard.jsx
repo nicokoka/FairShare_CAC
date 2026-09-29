@@ -6,6 +6,7 @@ import AppHeader from '../layout/AppHeader.jsx'
 import ProjectCard from './ProjectCard.jsx'
 import CreateProjectModal from './CreateProjectModal.jsx'
 import JoinProjectModal from './JoinProjectModal.jsx'
+import Icon from '../ui/Icon.jsx'
 import './dashboard.css'
 
 /*
@@ -107,7 +108,7 @@ export default function Dashboard() {
 function EmptyState({ onCreate, onJoin }) {
   return (
     <div className="empty-state">
-      <p className="empty-emoji" aria-hidden="true">🌱</p>
+      <p className="empty-emoji"><Icon name="sprout" size={48} /></p>
       <h2 className="empty-title">No projects yet</h2>
       <p className="empty-text">
         Start your first group project and share the join code with your team —

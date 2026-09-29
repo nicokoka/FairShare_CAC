@@ -24,6 +24,11 @@
   /* Highlight: sunny yellow — small accents, stars, sparkle. */
   --sun-400: oklch(87% 0.15 92);
 
+  /* Alert tones: warm amber for "due soon" / "needs attention" (F15, reused by
+     the needs-attention surfacing in F16). Coral already covers "overdue". */
+  --amber-600: oklch(58% 0.13 75);
+  --amber-100: oklch(93% 0.05 85);
+
   /* Neutrals: warm paper, not clinical gray. */
   --paper: oklch(98.5% 0.008 92);
   --cloud: oklch(96% 0.012 92);

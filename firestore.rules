@@ -97,7 +97,11 @@ service cloud.firestore {
         allow create: if isProjectMember()
                       && projectData().status == 'active'
                       && request.resource.data.createdBy == request.auth.uid
-                      && request.resource.data.status == 'todo';
+                      && request.resource.data.status == 'todo'
+                      // F15 — dueDate is optional; if present it must be a string
+                      // (a 'YYYY-MM-DD' calendar day) or null.
+                      && (request.resource.data.dueDate == null
+                          || request.resource.data.dueDate is string);
 
         // F5/F6 — claim, move & mark done. Four shapes are allowed; each leaves
         // every other field untouched, so a mover can never rewrite a task's
@@ -162,6 +166,16 @@ service cloud.firestore {
             && request.resource.data.lastRejection.reason is string
             && request.resource.data.lastRejection.reason.size() > 0
             && changed(['status', 'lastRejection']))
+          // 7. Set/clear due date (F15) — the task's assignee or the project
+          //    creator may change ONLY the dueDate (a 'YYYY-MM-DD' string, or
+          //    null to clear) on a task that isn't finished yet. Because only
+          //    dueDate may change, this can never touch assignment, status,
+          //    proof, or the verification fields.
+          || ((resource.data.assignee == request.auth.uid || isProjectCreator())
+            && resource.data.status in ['todo', 'doing']
+            && (request.resource.data.dueDate == null
+                || request.resource.data.dueDate is string)
+            && changed(['dueDate']))
         );
 
         // F5 — only the project creator may delete a task.

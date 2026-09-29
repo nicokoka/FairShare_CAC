@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom'
+import Icon from '../ui/Icon.jsx'
 import './placeholder.css'
 
 /*
  * A friendly "coming soon" screen reused by every route that isn't built yet.
  * Keeps the app navigable during F0 so each route can be clicked through.
  */
-export default function PlaceholderPage({ emoji, title, text, feature }) {
+export default function PlaceholderPage({ icon, title, text, feature }) {
   return (
     <div className="placeholder">
       <div className="placeholder-card">
-        <span className="placeholder-emoji" role="img" aria-hidden="true">
-          {emoji}
+        <span className="placeholder-emoji">
+          <Icon name={icon} size={48} />
         </span>
         <span className="placeholder-tag">{feature}</span>
         <h1 className="placeholder-title">{title}</h1>

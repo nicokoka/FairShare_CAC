@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useAuth } from '../../hooks/useAuth.jsx'
 import { rejectTask } from '../../lib/tasks.js'
+import Icon from '../ui/Icon.jsx'
 import '../dashboard/create-project-modal.css'
 import './board.css'
 
@@ -60,7 +61,7 @@ export default function RejectTaskModal({ projectId, task, members, onClose }) {
           ✕
         </button>
 
-        <p className="modal-emoji" aria-hidden="true">↩️</p>
+        <p className="modal-emoji"><Icon name="undo" size={38} /></p>
         <h2 id="reject-task-title" className="modal-title">Send it back</h2>
         <p className="modal-sub">
           Tell {assigneeName} what to fix on “{task.title}”. It’ll return to Doing.

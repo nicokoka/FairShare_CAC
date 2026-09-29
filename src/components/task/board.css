@@ -315,6 +315,112 @@
   border-radius: var(--radius-pill);
 }
 
+/* ---- Due date (F15) ----------------------------------------------------- */
+/* An overdue, still-open task gets a warm coral edge so it's impossible to miss
+   on the board. (Only todo/doing tasks ever get this — see TaskCard.) */
+.task-card--overdue {
+  border-color: var(--coral-500);
+  background: oklch(70% 0.17 30 / 0.06);
+}
+
+/* The due chip sits on its own row under the size/assignee meta. It's the same
+   pill shape as the other chips; the tone modifier colors it by urgency. When
+   it's editable it's a <button> (pointer cursor); otherwise a static <span>. */
+.task-due {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: var(--space-3);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  padding: var(--space-1) var(--space-3);
+  border: 2px solid transparent;
+  border-radius: var(--radius-pill);
+  transition: background var(--duration-fast) ease, border-color var(--duration-fast) ease;
+}
+
+button.task-due:hover {
+  border-color: currentColor;
+}
+
+.task-due--ok {
+  color: var(--color-text-soft);
+  background: var(--cloud);
+}
+
+.task-due--soon,
+.task-due--today {
+  color: var(--amber-600);
+  background: var(--amber-100);
+}
+
+.task-due--today {
+  font-weight: 700;
+}
+
+.task-due--overdue {
+  color: var(--coral-500);
+  background: var(--coral-200);
+}
+
+/* "Add due date" — a quiet dashed prompt so it never competes with the real
+   action buttons below. */
+.task-due--add {
+  color: var(--color-text-faint);
+  background: transparent;
+  border-color: var(--color-border);
+  border-style: dashed;
+}
+
+.task-due--add:hover {
+  color: var(--color-text-soft);
+  border-color: var(--grape-200);
+}
+
+.task-due-edit {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.task-due-input {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  background: var(--paper);
+  padding: var(--space-1) var(--space-2);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.task-due-input:focus {
+  outline: none;
+  border-color: var(--grape-500);
+}
+
+.task-due-clear {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  color: var(--coral-500);
+  background: transparent;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: background var(--duration-fast) ease;
+}
+
+.task-due-clear:hover:not(:disabled) {
+  background: var(--coral-200);
+}
+
+/* The "(optional)" hint next to the due-date label in the add-task modal. */
+.modal-optional {
+  color: var(--color-text-faint);
+  font-weight: 600;
+}
+
 /* ---- Task actions (claim / start / mark done) --------------------------- */
 .task-actions {
   display: flex;

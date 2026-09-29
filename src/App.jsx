@@ -2,8 +2,6 @@ import { Routes, Route } from 'react-router-dom'
 import Landing from './components/landing/Landing.jsx'
 import Dashboard from './components/dashboard/Dashboard.jsx'
 import ProjectPage from './components/project/ProjectPage.jsx'
-import ReviewPage from './components/review/ReviewPage.jsx'
-import ReportPage from './components/report/ReportPage.jsx'
 import ProtectedRoute from './components/auth/ProtectedRoute.jsx'
 import PlaceholderPage from './components/placeholders/PlaceholderPage.jsx'
 
@@ -38,24 +36,30 @@ export default function App() {
       <Route
         path="/project/:id/review"
         element={
-          <ProtectedRoute>
-            <ReviewPage />
-          </ProtectedRoute>
+          <PlaceholderPage
+            icon="star"
+            title="Rate your teammates"
+            text="When a project wraps up, everyone privately rates each teammate on effort, quality, and teamwork."
+            feature="Coming in feature 9"
+          />
         }
       />
       <Route
         path="/project/:id/report"
         element={
-          <ProtectedRoute>
-            <ReportPage />
-          </ProtectedRoute>
+          <PlaceholderPage
+            icon="chart"
+            title="The fairness report"
+            text="A clean, printable page showing each person's verified contribution and average peer rating — ready for the teacher."
+            feature="Coming in feature 11"
+          />
         }
       />
       <Route
         path="*"
         element={
           <PlaceholderPage
-            emoji="🧭"
+            icon="compass"
             title="This page wandered off"
             text="We couldn't find that page. Let's get you back to somewhere friendly."
             feature="404"

@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useAuth } from '../../hooks/useAuth.jsx'
 import { createTask, TASK_SIZES } from '../../lib/tasks.js'
+import { toDateString } from '../../lib/dueDate.js'
+import Icon from '../ui/Icon.jsx'
 import '../dashboard/create-project-modal.css'
 import './board.css'
 
@@ -20,6 +22,7 @@ export default function AddTaskModal({ projectId, members, onClose }) {
   const [title, setTitle] = useState('')
   const [size, setSize] = useState(DEFAULT_SIZE)
   const [assignee, setAssignee] = useState('')
+  const [dueDate, setDueDate] = useState('')
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
   const inputRef = useRef(null)
@@ -47,6 +50,7 @@ export default function AddTaskModal({ projectId, members, onClose }) {
         title: trimmedTitle,
         size,
         assignee: assignee || null,
+        dueDate: dueDate || null,
       })
       onClose()
     } catch {
@@ -68,7 +72,7 @@ export default function AddTaskModal({ projectId, members, onClose }) {
           ✕
         </button>
 
-        <p className="modal-emoji" aria-hidden="true">✏️</p>
+        <p className="modal-emoji"><Icon name="edit" size={38} /></p>
         <h2 id="add-task-title" className="modal-title">Add a task</h2>
         <p className="modal-sub">
           What needs doing? Pick a size so effort counts fairly later.
@@ -124,6 +128,18 @@ export default function AddTaskModal({ projectId, members, onClose }) {
               </option>
             ))}
           </select>
+
+          <label className="modal-label" htmlFor="task-due">
+            Due date <span className="modal-optional">(optional)</span>
+          </label>
+          <input
+            id="task-due"
+            className="modal-input"
+            type="date"
+            value={dueDate}
+            min={toDateString(new Date())}
+            onChange={(event) => setDueDate(event.target.value)}
+          />
 
           {error && (
             <p className="modal-error" role="alert">

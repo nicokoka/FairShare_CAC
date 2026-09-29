@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { isValidProofUrl, markTaskDone } from '../../lib/tasks.js'
+import Icon from '../ui/Icon.jsx'
 import '../dashboard/create-project-modal.css'
 import './board.css'
 
@@ -61,7 +62,7 @@ export default function MarkDoneModal({ projectId, task, onClose }) {
           ✕
         </button>
 
-        <p className="modal-emoji" aria-hidden="true">🎉</p>
+        <p className="modal-emoji"><Icon name="confetti" size={38} /></p>
         <h2 id="mark-done-title" className="modal-title">Show your work</h2>
         <p className="modal-sub">
           Add a link to “{task.title}” so a teammate can check it off.

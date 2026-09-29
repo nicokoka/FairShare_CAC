@@ -4,12 +4,15 @@ import {
   approveTask,
   claimTask,
   isValidProofUrl,
+  setTaskDueDate,
   sizePoints,
   startTask,
 } from '../../lib/tasks.js'
+import { formatDueLabel } from '../../lib/dueDate.js'
 import MarkDoneModal from './MarkDoneModal.jsx'
 import RejectTaskModal from './RejectTaskModal.jsx'
 import TaskMenu from './TaskMenu.jsx'
+import Icon from '../ui/Icon.jsx'
 
 /*
  * A single task on the board: title, a size chip with its point value, the
@@ -35,9 +38,17 @@ export default function TaskCard({ task, members, projectId, projectCreatedBy, l
   const isUnclaimed = task.assignee == null
   const isCreator = currentUid === projectCreatedBy
 
+  const isTodo = task.status === 'todo'
   const isDoing = task.status === 'doing'
   const isDone = task.status === 'done'
   const isVerified = task.status === 'verified'
+
+  // Due date (F15). Overdue only nags while there's still work to do — once a
+  // task is submitted (done) or verified we stop flagging it. The assignee or
+  // the project creator can set/clear the date on a still-open task.
+  const due = formatDueLabel(task.dueDate)
+  const isOverdue = due?.tone === 'overdue' && (isTodo || isDoing)
+  const canEditDue = !locked && (isMine || isCreator) && (isTodo || isDoing)
 
   // Once the project has ended the board is read-only — every action is hidden
   // (the rules deny the writes too, so this just keeps the UI honest).
@@ -56,6 +67,7 @@ export default function TaskCard({ task, members, projectId, projectCreatedBy, l
     'task-card',
     isDone && 'task-card--pending',
     isVerified && 'task-card--verified',
+    isOverdue && 'task-card--overdue',
   ]
     .filter(Boolean)
     .join(' ')
@@ -97,10 +109,12 @@ export default function TaskCard({ task, members, projectId, projectCreatedBy, l
         )}
       </div>
 
+      <DueDate task={task} due={due} projectId={projectId} canEdit={canEditDue} />
+
       {rejection && (
         <div className="task-rejection" role="status">
           <p className="task-rejection-label">
-            <span aria-hidden="true">↩️</span> Sent back — needs another look
+            <Icon name="undo" size={16} className="icon-inline" /> Sent back — needs another look
           </p>
           <p className="task-rejection-reason">“{rejection.reason}”</p>
         </div>
@@ -109,7 +123,7 @@ export default function TaskCard({ task, members, projectId, projectCreatedBy, l
       {isDone && (
         <div className="task-pending">
           <p className="task-pending-status">
-            <span aria-hidden="true">⏳</span>{' '}
+            <Icon name="hourglass" size={16} className="icon-inline" />
             {isMine ? 'Waiting for a teammate to verify' : 'Needs verification'}
           </p>
           {hasProofLink && <ProofLink url={task.proofUrl} />}
@@ -119,7 +133,7 @@ export default function TaskCard({ task, members, projectId, projectCreatedBy, l
       {isVerified && (
         <div className="task-verified">
           <p className="task-verified-status">
-            <span aria-hidden="true">🎉</span> Verified
+            <Icon name="confetti" size={16} className="icon-inline" /> Verified
             {verifier ? ` by ${verifier.name || 'a teammate'}` : ''}
           </p>
           {hasProofLink && <ProofLink url={task.proofUrl} />}
@@ -207,6 +221,87 @@ export default function TaskCard({ task, members, projectId, projectCreatedBy, l
   )
 }
 
+// The due-date row (F15). Shows a friendly relative chip colored by urgency. If
+// the current user may edit it (assignee/creator on an open task), the chip is a
+// button that reveals an inline date picker; otherwise it's a static chip. When
+// there's no date yet, editors see a quiet "Add due date" affordance.
+function DueDate({ task, due, projectId, canEdit }) {
+  const [editing, setEditing] = useState(false)
+  const [saving, setSaving] = useState(false)
+
+  // Save (or clear, with '') the date, then close the editor. On failure we keep
+  // the editor open so the user can retry rather than silently losing their pick.
+  const save = async (value) => {
+    setSaving(true)
+    try {
+      await setTaskDueDate(projectId, task.id, value)
+      setEditing(false)
+    } catch {
+      setSaving(false)
+    }
+  }
+
+  if (editing) {
+    return (
+      <div className="task-due-edit">
+        <input
+          type="date"
+          className="task-due-input"
+          defaultValue={task.dueDate || ''}
+          disabled={saving}
+          aria-label="Set due date"
+          onChange={(event) => save(event.target.value)}
+        />
+        {task.dueDate && (
+          <button
+            type="button"
+            className="task-due-clear"
+            disabled={saving}
+            onClick={() => save('')}
+          >
+            Clear
+          </button>
+        )}
+      </div>
+    )
+  }
+
+  if (due && !canEdit) {
+    return (
+      <span className={`task-due task-due--${due.tone}`}>
+        <Icon name="calendar" size={15} /> {due.label}
+      </span>
+    )
+  }
+
+  if (due) {
+    return (
+      <button
+        type="button"
+        className={`task-due task-due--${due.tone}`}
+        aria-label={`${due.label}. Change due date`}
+        onClick={() => setEditing(true)}
+      >
+        <Icon name="calendar" size={15} /> {due.label}
+      </button>
+    )
+  }
+
+  if (canEdit) {
+    return (
+      <button
+        type="button"
+        className="task-due task-due--add"
+        onClick={() => setEditing(true)}
+      >
+        <Icon name="calendar" size={15} /> Add due date
+      </button>
+    )
+  }
+
+  return null
+}
+
 // The clickable proof link shown on done and verified cards.
 function ProofLink({ url }) {
   return (
@@ -216,7 +311,7 @@ function ProofLink({ url }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      🔗 View proof
+      <Icon name="link" size={14} className="icon-inline" /> View proof
     </a>
   )
 }

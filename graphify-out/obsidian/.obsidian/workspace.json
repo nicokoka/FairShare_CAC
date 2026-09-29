@@ -15,9 +15,9 @@
               "state": {
                 "file": "graph.canvas",
                 "viewState": {
-                  "x": 2487.491403237905,
-                  "y": 1023.5048871464135,
-                  "zoom": -2.134340311599146
+                  "x": 2430,
+                  "y": 900,
+                  "zoom": -2.075905092103671
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -190,6 +190,8 @@
   },
   "active": "c127cebf666a04d9",
   "lastOpenFiles": [
+    "Join Code.md",
+    "graph.canvas",
     "_COMMUNITY_Placeholder Page.md",
     "_COMMUNITY_Wordmark Branding.md",
     "_COMMUNITY_Landing Contribution Card.md",
@@ -214,7 +216,6 @@
     "F5 Claim & move tasks.md",
     "F4 Task board — create & display.md",
     "F3 Join by code (done).md",
-    "F2 Create project + dashboard (done).md",
-    "F1 Firebase setup + Google sign-in (done).md"
+    "F2 Create project + dashboard (done).md"
   ]
 }

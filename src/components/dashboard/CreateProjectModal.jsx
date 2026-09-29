@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useAuth } from '../../hooks/useAuth.jsx'
 import { createProject } from '../../lib/projects.js'
+import Icon from '../ui/Icon.jsx'
 import './create-project-modal.css'
 
 const MAX_NAME_LENGTH = 60
@@ -68,7 +69,7 @@ export default function CreateProjectModal({ onClose, onCreated }) {
           ✕
         </button>
 
-        <p className="modal-emoji" aria-hidden="true">🚀</p>
+        <p className="modal-emoji"><Icon name="rocket" size={38} /></p>
         <h2 id="create-project-title" className="modal-title">
           Start a new project
         </h2>

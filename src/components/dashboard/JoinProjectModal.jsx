@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom'
 import { useAuth } from '../../hooks/useAuth.jsx'
 import { joinProject, lookupJoinCode } from '../../lib/projects.js'
 import { CODE_LENGTH } from '../../lib/joinCode.js'
+import Icon from '../ui/Icon.jsx'
 import './create-project-modal.css'
 
 /*
@@ -92,7 +93,7 @@ export default function JoinProjectModal({ myProjects, onClose, onJoined }) {
           ✕
         </button>
 
-        <p className="modal-emoji" aria-hidden="true">🎟️</p>
+        <p className="modal-emoji"><Icon name="ticket" size={38} /></p>
         <h2 id="join-project-title" className="modal-title">
           Join a project
         </h2>

@@ -1,4 +1,5 @@
 import TaskCard from './TaskCard.jsx'
+import Icon from '../ui/Icon.jsx'
 
 /*
  * One column of the board (To Do / Doing / Done). Shows a playful header with a
@@ -10,7 +11,7 @@ export default function TaskColumn({ column, tasks, members, projectId, projectC
   return (
     <section className="board-column" aria-label={column.title}>
       <header className="column-header">
-        <span className="column-emoji" aria-hidden="true">{column.emoji}</span>
+        <span className="column-emoji"><Icon name={column.icon} size={22} /></span>
         <h3 className="column-title">{column.title}</h3>
         <span className="column-count">{tasks.length}</span>
       </header>

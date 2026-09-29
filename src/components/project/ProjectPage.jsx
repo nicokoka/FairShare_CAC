@@ -7,6 +7,7 @@ import LoadingScreen from '../common/LoadingScreen.jsx'
 import MembersList from './MembersList.jsx'
 import EndProjectModal from './EndProjectModal.jsx'
 import TaskBoard from '../task/TaskBoard.jsx'
+import Icon from '../ui/Icon.jsx'
 import './project-page.css'
 
 // How long the "Copied!" confirmation stays visible after clicking copy.
@@ -30,7 +31,7 @@ export default function ProjectPage() {
       <div className="project-page">
         <AppHeader />
         <main className="project-missing">
-          <p className="project-missing-emoji" aria-hidden="true">🔍</p>
+          <p className="project-missing-emoji"><Icon name="search" size={48} /></p>
           <h1 className="project-missing-title">We can't find that project</h1>
           <p className="project-missing-text">
             It might have been deleted, or you're not a member of it yet. Ask a
@@ -67,7 +68,7 @@ export default function ProjectPage() {
                 className="btn-ghost project-end-btn"
                 onClick={() => setEnding(true)}
               >
-                🏁 End project
+                <Icon name="flag" size={18} className="icon-inline" /> End project
               </button>
             )}
           </div>
@@ -76,7 +77,9 @@ export default function ProjectPage() {
         {isEnded && (
           <div className="project-ended-banner" role="status">
             <div className="project-ended-text">
-              <p className="project-ended-title">🎊 Project ended — time for peer reviews!</p>
+              <p className="project-ended-title">
+                <Icon name="confetti" size={22} className="icon-inline" /> Project ended — time for peer reviews!
+              </p>
               <p className="project-ended-sub">
                 The board is locked. Rate your teammates, then check the fairness report.
               </p>
@@ -86,7 +89,7 @@ export default function ProjectPage() {
                 Rate teammates →
               </Link>
               <Link to={`/project/${project.id}/report`} className="btn-ghost">
-                📊 Fairness report
+                <Icon name="chart" size={18} className="icon-inline" /> Fairness report
               </Link>
             </div>
           </div>
