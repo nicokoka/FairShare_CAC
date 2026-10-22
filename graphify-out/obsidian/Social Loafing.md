@@ -1,18 +1,18 @@
 ---
 source_file: "instructions.txt"
 type: "rationale"
-community: "Fairness Math & Research Foundation"
+community: "Project Context & Research"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Fairness_Math__Research_Foundation
+  - community/Project_Context__Research
 ---
 
 # Social Loafing
 
 ## Connections
 - [[FairShare]] - `rationale_for` [EXTRACTED]
-- [[Latane, Williams & Harkins (1979)]] - `cites` [EXTRACTED]
+- [[Latané, Williams & Harkins (1979)]] - `cites` [EXTRACTED]
 - [[Ringelmann Effect]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Fairness_Math__Research_Foundation
+#graphify/rationale #graphify/EXTRACTED #community/Project_Context__Research

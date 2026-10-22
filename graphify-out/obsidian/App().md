@@ -1,12 +1,12 @@
 ---
 source_file: "src/App.jsx"
 type: "code"
-community: "App Shell & Page Components"
-location: "L16"
+community: "Auth, Create Project & AI"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Shell__Page_Components
+  - community/Auth_Create_Project__AI
 ---
 
 # App()
@@ -15,4 +15,4 @@ tags:
 - [[App.jsx]] - `contains` [EXTRACTED]
 - [[main.jsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/App_Shell__Page_Components
+#graphify/code #graphify/EXTRACTED #community/Auth_Create_Project__AI

@@ -1,12 +1,12 @@
 ---
 source_file: "src/main.jsx"
 type: "code"
-community: "App Shell & Page Components"
+community: "Auth, Create Project & AI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Shell__Page_Components
+  - community/Auth_Create_Project__AI
 ---
 
 # main.jsx
@@ -17,4 +17,4 @@ tags:
 - [[AuthProvider()]] - `imports` [EXTRACTED]
 - [[useAuth.jsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/App_Shell__Page_Components
+#graphify/code #graphify/EXTRACTED #community/Auth_Create_Project__AI

@@ -1,19 +1,20 @@
 ---
 source_file: "PLAN.md"
 type: "concept"
-community: "Feature Sequence & Milestones"
+community: "Project Context & Research"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Feature_Sequence__Milestones
+  - community/Project_Context__Research
 ---
 
 # Firestore Data Model
 
 ## Connections
-- [[joinCodes collection]] - `references` [EXTRACTED]
-- [[projects collection]] - `references` [EXTRACTED]
-- [[reviews subcollection]] - `references` [EXTRACTED]
-- [[tasks subcollection]] - `references` [EXTRACTED]
+- [[CAC Execution Plan]] - `references` [EXTRACTED]
+- [[joinCodes Collection]] - `references` [EXTRACTED]
+- [[projects Collection]] - `references` [EXTRACTED]
+- [[reviews Subcollection]] - `references` [EXTRACTED]
+- [[tasks Subcollection]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Feature_Sequence__Milestones
+#graphify/concept #graphify/EXTRACTED #community/Project_Context__Research

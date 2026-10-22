@@ -1,18 +1,16 @@
 ---
 source_file: "instructions.txt"
 type: "concept"
-community: "Fairness Math & Research Foundation"
+community: "Project Context & Research"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Fairness_Math__Research_Foundation
+  - community/Project_Context__Research
 ---
 
 # FairShare
 
 ## Connections
-- [[Fairness Report]] - `conceptually_related_to` [EXTRACTED]
-- [[Live Task Board]] - `conceptually_related_to` [EXTRACTED]
 - [[Social Loafing]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Fairness_Math__Research_Foundation
+#graphify/concept #graphify/EXTRACTED #community/Project_Context__Research

@@ -1,56 +1,126 @@
 {
   "colorGroups": [
     {
-      "query": "tag:#community/Feature_Sequence_&_Milestones",
+      "query": "tag:#community/Project_Context_&_Research",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/App_Shell_&_Page_Components",
+      "query": "tag:#community/App_Shell,_Home_&_Landing",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Fairness_Math_&_Research_Foundation",
+      "query": "tag:#community/Task_Board_&_Modals",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Build_Config_&_Dependencies",
+      "query": "tag:#community/Report_Charts_&_Page",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/Dashboard_&_Project_UI",
+      "query": "tag:#community/Auth,_Create_Project_&_AI",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Project_&_Join-Code_Data_Layer",
+      "query": "tag:#community/Join,_Invite_&_QR",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Auth_&_Firebase_Init",
+      "query": "tag:#community/Build_Config_&_Dependencies",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
+      "query": "tag:#community/Class_Dashboard_&_Check-ins",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/Classes_&_Teacher_Home",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/Calendar_Export",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/Fairness_Profile",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/Peer_Review_Form",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/Team_Charter",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Fairness_Math",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Peer_Assessment_Research",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/Project_Card",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
       "query": "tag:#community/Landing_Contribution_Card",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/Members_List",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -64,17 +134,45 @@
       }
     },
     {
-      "query": "tag:#community/Placeholder_Page",
+      "query": "tag:#community/Reviews_Hook",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/Vite_Config",
+      "query": "tag:#community/Fairness_Math_Tests",
       "color": {
         "a": 1,
         "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/Reviews_Tests",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/F0_Scaffold",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/F13_Polish",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Vite_Config",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
       }
     }
   ]

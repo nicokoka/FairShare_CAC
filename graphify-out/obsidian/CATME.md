@@ -1,11 +1,11 @@
 ---
 source_file: "instructions.txt"
 type: "concept"
-community: "Feature Sequence & Milestones"
+community: "Peer Assessment Research"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Feature_Sequence__Milestones
+  - community/Peer_Assessment_Research
 ---
 
 # CATME
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Peer Assessment]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Feature_Sequence__Milestones
+#graphify/concept #graphify/EXTRACTED #community/Peer_Assessment_Research
