@@ -215,6 +215,41 @@ service cloud.firestore {
                       && request.resource.data.ratings is map
                       && !(request.auth.uid in request.resource.data.ratings.keys());
       }
+
+      // Team charter (T3): a single agreement doc the team writes at the start.
+      // Any member may read it; any member may edit it while the project is
+      // active. Gated by the same project-member lookup the tasks/reviews use.
+      match /charter/{doc} {
+        function charterProject() {
+          return get(/databases/$(database)/documents/projects/$(projectId)).data;
+        }
+        function isCharterMember() {
+          return request.auth != null
+                 && request.auth.uid in charterProject().memberIds;
+        }
+        allow read: if isCharterMember();
+        allow write: if isCharterMember() && charterProject().status == 'active';
+      }
+
+      // Mid-project check-ins (T3): one doc per member (id = their uid). A member
+      // may read the whole team's pulse, but may write ONLY their own check-in,
+      // only while the project is active, with a 1–5 fairness feeling.
+      match /checkins/{checkinUid} {
+        function checkinProject() {
+          return get(/databases/$(database)/documents/projects/$(projectId)).data;
+        }
+        function isCheckinMember() {
+          return request.auth != null
+                 && request.auth.uid in checkinProject().memberIds;
+        }
+        allow read: if isCheckinMember();
+        allow write: if isCheckinMember()
+                     && checkinProject().status == 'active'
+                     && checkinUid == request.auth.uid
+                     && request.resource.data.fairnessFeeling is number
+                     && request.resource.data.fairnessFeeling >= 1
+                     && request.resource.data.fairnessFeeling <= 5;
+      }
     }
 
     // Join codes are a public lookup (a teammate needs to resolve a code to a

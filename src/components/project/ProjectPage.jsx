@@ -7,6 +7,8 @@ import LoadingScreen from '../common/LoadingScreen.jsx'
 import MembersList from './MembersList.jsx'
 import EndProjectModal from './EndProjectModal.jsx'
 import InvitePanel from './InvitePanel.jsx'
+import CharterCard from './CharterCard.jsx'
+import CheckInCard from './CheckInCard.jsx'
 import TaskBoard from '../task/TaskBoard.jsx'
 import Icon from '../ui/Icon.jsx'
 import './project-page.css'
@@ -99,6 +101,11 @@ export default function ProjectPage() {
         <MembersList members={project.members} createdBy={project.createdBy} />
 
         {!isEnded && <InvitePanel code={project.joinCode} projectName={project.name} />}
+
+        <div className="project-team-row">
+          <CharterCard projectId={project.id} locked={isEnded} />
+          <CheckInCard projectId={project.id} locked={isEnded} />
+        </div>
 
         <TaskBoard
           projectId={project.id}

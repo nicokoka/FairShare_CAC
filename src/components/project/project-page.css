@@ -319,3 +319,213 @@
   color: var(--color-text-soft);
   margin-bottom: var(--space-3);
 }
+
+/* ---- Team charter + fairness pulse (T3) -------------------------------- */
+.project-team-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.charter,
+.pulse {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+}
+
+.charter-head,
+.pulse-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3);
+}
+
+.charter-title,
+.pulse-title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-text);
+}
+
+.charter-hint {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+}
+
+.charter-list {
+  list-style: none;
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.charter-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}
+
+.charter-bullet {
+  color: var(--mint-500);
+  font-weight: 800;
+}
+
+.charter-text {
+  flex: 1;
+}
+
+.charter-remove {
+  border: none;
+  background: transparent;
+  color: var(--color-text-faint);
+  font-size: var(--text-sm);
+  padding: 0 var(--space-1);
+}
+
+.charter-remove:hover {
+  color: var(--coral-500);
+}
+
+.charter-empty,
+.pulse-stat--empty {
+  color: var(--color-text-faint);
+  font-size: var(--text-sm);
+  font-style: italic;
+}
+
+.charter-add {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.charter-input {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  background: var(--cloud);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: var(--space-2) var(--space-4);
+}
+
+.charter-add-btn {
+  padding: var(--space-2) var(--space-4);
+}
+
+.charter-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.charter-save {
+  padding: var(--space-2) var(--space-5);
+}
+
+/* ---- Fairness pulse ---- */
+.pulse-stat {
+  font-size: var(--text-sm);
+  color: var(--color-text-soft);
+}
+
+.pulse-stat strong {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-primary-strong);
+}
+
+.pulse-flag {
+  margin: 0 0 var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  background: var(--coral-200);
+  color: var(--coral-500);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.pulse-notes {
+  list-style: none;
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.pulse-note {
+  padding: var(--space-2) var(--space-3);
+  background: var(--cloud);
+  border-left: 3px solid var(--grape-200);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}
+
+.pulse-scale {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3);
+}
+
+.pulse-dot {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--grape-200);
+  background: var(--color-surface);
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--grape-700);
+  transition: transform var(--duration-fast) var(--ease-out-back), background var(--duration-fast) ease;
+}
+
+.pulse-dot--on {
+  background: var(--grape-500);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.pulse-scale-ends {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+}
+
+.pulse-note-input {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  background: var(--cloud);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  resize: vertical;
+  margin-bottom: var(--space-3);
+}
+
+.pulse-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}
+
+@media (max-width: 760px) {
+  .project-team-row {
+    grid-template-columns: 1fr;
+  }
+}
