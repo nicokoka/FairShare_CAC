@@ -21,4 +21,19 @@ export function generateJoinCode() {
   return code
 }
 
+/**
+ * Build the shareable invite link for a join code, e.g.
+ * inviteUrl('K7P2WM', 'https://fairshare.web.app') →
+ * 'https://fairshare.web.app/join/K7P2WM'. Pure so the QR panel and tests agree
+ * on exactly one URL shape. Trailing slashes on the origin are trimmed.
+ *
+ * @param {string} code
+ * @param {string} origin  typically window.location.origin
+ * @returns {string}
+ */
+export function inviteUrl(code, origin) {
+  const base = String(origin || '').replace(/\/+$/, '')
+  return `${base}/join/${encodeURIComponent(code)}`
+}
+
 export { CODE_ALPHABET, CODE_LENGTH }

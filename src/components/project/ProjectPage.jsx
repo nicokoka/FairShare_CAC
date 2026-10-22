@@ -6,6 +6,7 @@ import AppHeader from '../layout/AppHeader.jsx'
 import LoadingScreen from '../common/LoadingScreen.jsx'
 import MembersList from './MembersList.jsx'
 import EndProjectModal from './EndProjectModal.jsx'
+import InvitePanel from './InvitePanel.jsx'
 import TaskBoard from '../task/TaskBoard.jsx'
 import Icon from '../ui/Icon.jsx'
 import './project-page.css'
@@ -97,8 +98,11 @@ export default function ProjectPage() {
 
         <MembersList members={project.members} createdBy={project.createdBy} />
 
+        {!isEnded && <InvitePanel code={project.joinCode} projectName={project.name} />}
+
         <TaskBoard
           projectId={project.id}
+          projectName={project.name}
           members={project.members}
           createdBy={project.createdBy}
           locked={isEnded}

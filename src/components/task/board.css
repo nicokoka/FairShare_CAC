@@ -18,6 +18,15 @@
   color: var(--color-text);
 }
 
+/* Holds the calendar-export and add-task buttons together on the toolbar's
+   right side; wraps onto its own line on narrow screens. */
+.board-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
 /* Three columns on desktop; they stack on phones (see media query). */
 .board-columns {
   display: grid;

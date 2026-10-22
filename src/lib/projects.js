@@ -94,6 +94,45 @@ export async function lookupJoinCode(code) {
 }
 
 /**
+ * Join a project straight from a shared /join/:code link. Wraps the same lookup
+ * and self-join the modal uses, but figures out membership WITHOUT a prepared
+ * project list: it probes the project doc, which the rules let only members read.
+ * A permission-denied read therefore means "not a member yet" — so we join.
+ *
+ * Returns a status the caller maps to UI, never throwing for the expected cases:
+ *   'not-found'      — the code matches no project
+ *   'already-member' — the user can already read it; just go there
+ *   'joined'         — we added them as a new member
+ *   'ended'          — the project has ended (self-join is blocked once ended)
+ *
+ * @param {{ uid: string, displayName?: string, photoURL?: string }} user
+ * @param {string} code
+ * @returns {Promise<{ status: string, projectId?: string }>}
+ */
+export async function joinByCode(user, code) {
+  const projectId = await lookupJoinCode(code)
+  if (!projectId) return { status: 'not-found' }
+
+  // Can we already read it? Only members can — so a successful read means we're
+  // in, and a permission-denied means we still need to join.
+  try {
+    const snapshot = await getDoc(projectRef(projectId))
+    if (snapshot.exists()) return { status: 'already-member', projectId }
+  } catch (err) {
+    if (err?.code !== 'permission-denied') throw err
+  }
+
+  try {
+    await joinProject(user, projectId)
+    return { status: 'joined', projectId }
+  } catch (err) {
+    // The self-join rule only permits active projects; an ended one denies here.
+    if (err?.code === 'permission-denied') return { status: 'ended', projectId }
+    throw err
+  }
+}
+
+/**
  * End a project (F8): flip it from "active" to "ended" and stamp when. Only the
  * creator may do this (enforced by the rules). Ending locks the board — task
  * writes are denied once status is "ended" — and opens the peer-review phase.

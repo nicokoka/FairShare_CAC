@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { useTasks } from '../../hooks/useTasks.jsx'
+import { downloadCalendar, datedTaskCount } from '../../lib/calendar.js'
 import AddTaskModal from './AddTaskModal.jsx'
 import TaskColumn from './TaskColumn.jsx'
+import Icon from '../ui/Icon.jsx'
 import './board.css'
 
 /*
@@ -37,21 +39,35 @@ const COLUMNS = [
   },
 ]
 
-export default function TaskBoard({ projectId, members, createdBy, locked = false }) {
+export default function TaskBoard({ projectId, projectName, members, createdBy, locked = false }) {
   const { tasks } = useTasks(projectId)
   const [showAdd, setShowAdd] = useState(false)
+  const deadlineCount = datedTaskCount(tasks)
 
   return (
     <section className="board" aria-label="Task board">
       <div className="board-toolbar">
         <h2 className="board-heading">Task board</h2>
-        {/* When the project has ended the board is read-only, so there's no way
-            to add tasks (the rules deny it too — this just hides the button). */}
-        {!locked && (
-          <button type="button" className="btn-primary" onClick={() => setShowAdd(true)}>
-            + Add task
-          </button>
-        )}
+        <div className="board-toolbar-actions">
+          {/* Export every task that has a due date as a calendar (.ics) file the
+              whole team can import. Hidden when nothing has a deadline yet. */}
+          {deadlineCount > 0 && (
+            <button
+              type="button"
+              className="btn-ghost"
+              onClick={() => downloadCalendar(projectName, tasks)}
+            >
+              <Icon name="calendar" size={18} className="icon-inline" /> Add deadlines to calendar
+            </button>
+          )}
+          {/* When the project has ended the board is read-only, so there's no way
+              to add tasks (the rules deny it too — this just hides the button). */}
+          {!locked && (
+            <button type="button" className="btn-primary" onClick={() => setShowAdd(true)}>
+              + Add task
+            </button>
+          )}
+        </div>
       </div>
 
       <div className="board-columns">

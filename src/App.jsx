@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Landing from './components/landing/Landing.jsx'
 import Dashboard from './components/dashboard/Dashboard.jsx'
 import ProjectPage from './components/project/ProjectPage.jsx'
+import JoinByLink from './components/join/JoinByLink.jsx'
 import ProtectedRoute from './components/auth/ProtectedRoute.jsx'
 import PlaceholderPage from './components/placeholders/PlaceholderPage.jsx'
 
@@ -17,6 +18,9 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
+      {/* Shared invite link / scanned QR target. Intentionally NOT protected —
+          it handles its own sign-in so a new teammate never loses the code. */}
+      <Route path="/join/:code" element={<JoinByLink />} />
       <Route
         path="/dashboard"
         element={

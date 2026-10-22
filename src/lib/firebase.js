@@ -11,6 +11,7 @@
 import { initializeApp } from 'firebase/app'
 import { getAuth, GoogleAuthProvider } from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore'
+import { getAI, getGenerativeModel, GoogleAIBackend } from 'firebase/ai'
 
 const env = import.meta.env
 
@@ -41,3 +42,41 @@ export const db = getFirestore(app)
 
 // Reused for the Google sign-in popup.
 export const googleProvider = new GoogleAuthProvider()
+
+// ---- Optional AI summary (Firebase AI Logic → Gemini) ----------------------
+//
+// The fairness report writes its "smart summary" from pure local rules
+// (src/lib/insights.js). This hooks up an OPTIONAL extra: a Gemini model that
+// rephrases those same facts into a friendly paragraph. It's gated two ways so
+// it can never surprise the live demo:
+//   1. VITE_AI_SUMMARY must equal 'on' (otherwise the button never renders).
+//   2. Even enabled, every call is wrapped in try/catch and falls back to the
+//      rule-based text, so a disabled API or offline network just does nothing.
+//
+// It uses the GoogleAIBackend (the Gemini Developer API), which has a free tier
+// on Firebase's Spark plan — no billing, no Cloud Functions. `firebase/ai` ships
+// inside the firebase package we already depend on, so this adds no new library.
+const AI_MODEL = 'gemini-2.5-flash'
+
+/** True only when the AI summary has been explicitly turned on via env. */
+export function isAiSummaryEnabled() {
+  return env.VITE_AI_SUMMARY === 'on'
+}
+
+let cachedModel = null
+
+/**
+ * Lazily create (and cache) the Gemini model handle. Returns null if the SDK
+ * can't be initialized for any reason, so callers can treat "no AI" uniformly.
+ * @returns {import('firebase/ai').GenerativeModel | null}
+ */
+export function getAiModel() {
+  if (cachedModel) return cachedModel
+  try {
+    const ai = getAI(app, { backend: new GoogleAIBackend() })
+    cachedModel = getGenerativeModel(ai, { model: AI_MODEL })
+    return cachedModel
+  } catch {
+    return null
+  }
+}

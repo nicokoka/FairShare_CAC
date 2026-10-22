@@ -1,0 +1,144 @@
+/*
+ * Styles for the hand-built report charts (ContributionBars + RatingChart).
+ * Everything derives from the design tokens so the charts feel like part of the
+ * product, and the @media print block flattens fills for a clean paper copy.
+ */
+
+.chart {
+  margin: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---- Contribution bars -------------------------------------------------- */
+.cbars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.cbar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-2);
+}
+
+.cbar-name {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  color: var(--color-text);
+}
+
+.cbar-val {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  color: var(--color-primary-strong);
+  font-variant-numeric: tabular-nums;
+}
+
+.cbar-track {
+  height: 14px;
+  border-radius: var(--radius-pill);
+  background: var(--grape-100);
+  overflow: hidden;
+}
+
+.cbar-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--grape-500), var(--grape-600));
+  /* Animate the bar growing in when the report opens (compositor-friendly). */
+  transform-origin: left center;
+  animation: cbar-grow var(--duration-slow) var(--ease-out-soft) both;
+}
+
+@keyframes cbar-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* ---- Rating grouped bars ------------------------------------------------ */
+.rating-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rating-grid {
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.rating-axis-label {
+  fill: var(--color-text-faint);
+  font-family: var(--font-body);
+  font-size: 9px;
+  text-anchor: end;
+}
+
+.rating-name {
+  fill: var(--color-text-soft);
+  font-family: var(--font-display);
+  font-size: 11px;
+}
+
+.chart-legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.chart-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-soft);
+}
+
+.chart-legend-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* ---- Print -------------------------------------------------------------- */
+@media print {
+  .chart {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    padding: var(--space-4);
+  }
+  /* No entrance animation on paper — show the final bar immediately. */
+  .cbar-fill {
+    animation: none;
+    transform: none;
+    background: #666 !important;
+  }
+  .cbar-track {
+    background: #eee !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cbar-fill {
+    animation: none;
+    transform: none;
+  }
+}
