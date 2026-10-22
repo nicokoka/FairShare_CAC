@@ -5,6 +5,7 @@ import ProjectPage from './components/project/ProjectPage.jsx'
 import JoinByLink from './components/join/JoinByLink.jsx'
 import RoleHome from './components/home/RoleHome.jsx'
 import ProfilePage from './components/profile/ProfilePage.jsx'
+import ClassDashboard from './components/class/ClassDashboard.jsx'
 import ProtectedRoute from './components/auth/ProtectedRoute.jsx'
 import PlaceholderPage from './components/placeholders/PlaceholderPage.jsx'
 
@@ -36,6 +37,14 @@ export default function App() {
         element={
           <ProtectedRoute>
             <ProfilePage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/class/:id"
+        element={
+          <ProtectedRoute>
+            <ClassDashboard />
           </ProtectedRoute>
         }
       />

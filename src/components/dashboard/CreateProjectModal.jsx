@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom'
 import { useAuth } from '../../hooks/useAuth.jsx'
 import { createProject } from '../../lib/projects.js'
 import { createTask } from '../../lib/tasks.js'
+import { lookupClassCode } from '../../lib/classes.js'
 import { isAiSummaryEnabled } from '../../lib/firebase.js'
 import { generateTaskPlan } from '../../lib/aiPlanner.js'
 import Icon from '../ui/Icon.jsx'
@@ -23,6 +24,7 @@ const MAX_NAME_LENGTH = 60
 export default function CreateProjectModal({ onClose, onCreated }) {
   const { user } = useAuth()
   const [name, setName] = useState('')
+  const [classCode, setClassCode] = useState('')
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
   const inputRef = useRef(null)
@@ -73,7 +75,19 @@ export default function CreateProjectModal({ onClose, onCreated }) {
     setError('')
     setSubmitting(true)
     try {
-      const { id } = await createProject(user, trimmedName)
+      // Optional: attach the project to a teacher's class by code.
+      let classId = null
+      const code = classCode.trim()
+      if (code) {
+        classId = await lookupClassCode(code)
+        if (!classId) {
+          setError("That class code didn't match a class. Leave it blank to skip.")
+          setSubmitting(false)
+          return
+        }
+      }
+
+      const { id } = await createProject(user, trimmedName, { classId })
       // Create the accepted AI-suggested tasks on the fresh board. A failure on
       // any one task shouldn't block entering the project.
       const chosen = suggestions.filter((task) => task.checked)
@@ -126,6 +140,19 @@ export default function CreateProjectModal({ onClose, onCreated }) {
             onChange={(event) => setName(event.target.value)}
             placeholder="e.g. Bio Ecosystems Poster"
             maxLength={MAX_NAME_LENGTH}
+            autoComplete="off"
+          />
+
+          <label className="modal-label" htmlFor="project-class-code">
+            Class code <span className="modal-optional">(optional)</span>
+          </label>
+          <input
+            id="project-class-code"
+            className="modal-input"
+            type="text"
+            value={classCode}
+            onChange={(event) => setClassCode(event.target.value.toUpperCase().replace(/\s/g, ''))}
+            placeholder="Add it if your teacher gave you one"
             autoComplete="off"
           />
 

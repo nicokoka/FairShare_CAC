@@ -49,11 +49,16 @@ async function reserveUniqueCode() {
  * join-code lookup together in one atomic batch, so we never end up with a
  * project that has no code (or vice-versa). The creator is the first member.
  *
+ * An optional `classId` attaches the project to a teacher's class (T4), which is
+ * what lets that class's teacher see it on their dashboard. It's stored as null
+ * when omitted so every project keeps a stable, predictable shape.
+ *
  * @param {{ uid: string, displayName?: string, photoURL?: string }} user
  * @param {string} name  Project name (already trimmed by the caller)
+ * @param {{ classId?: string|null }} [options]
  * @returns {Promise<{ id: string, joinCode: string }>}
  */
-export async function createProject(user, name) {
+export async function createProject(user, name, { classId = null } = {}) {
   const joinCode = await reserveUniqueCode()
   const newProjectRef = doc(projectsCollection) // pre-generate the id
   const batch = writeBatch(db)
@@ -65,6 +70,7 @@ export async function createProject(user, name) {
     status: 'active',
     endedAt: null,
     joinCode,
+    classId: classId || null,
     memberIds: [user.uid],
     members: {
       [user.uid]: {

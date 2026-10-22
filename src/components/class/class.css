@@ -1,0 +1,231 @@
+/* Teacher class dashboard + class cards. Uses design tokens; borrows
+   .dashboard / .empty-state classes from dashboard.css. */
+
+.class-page {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.class-main {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5) var(--space-8);
+}
+
+.class-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+}
+
+.class-eyebrow {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.class-name {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-text);
+  margin: 2px 0 0;
+}
+
+.class-code-chip {
+  background: var(--grape-100);
+  border: 2px solid var(--grape-200);
+  border-radius: var(--radius-pill);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--grape-700);
+}
+
+.class-code-chip strong {
+  font-family: var(--font-display);
+  letter-spacing: 0.14em;
+}
+
+/* ---- Class cards on the teacher home ----------------------------------- */
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-4);
+}
+
+.class-card {
+  display: block;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-fast) var(--ease-out-back), box-shadow var(--duration-fast) ease;
+}
+
+.class-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.class-card-name {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.class-card-code {
+  font-size: var(--text-sm);
+  color: var(--color-text-soft);
+}
+
+.class-card-code strong {
+  font-family: var(--font-display);
+  letter-spacing: 0.14em;
+  color: var(--grape-700);
+}
+
+.class-card-go {
+  display: inline-block;
+  margin-top: var(--space-3);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+}
+
+/* ---- Project snapshot cards -------------------------------------------- */
+.class-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-4);
+}
+
+.class-project {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.class-project-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.class-project-name {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-text);
+}
+
+.class-status {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+}
+
+.class-status--active { background: var(--mint-200); color: var(--mint-500); }
+.class-status--ended { background: var(--grape-100); color: var(--grape-700); }
+
+.class-metrics {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-2);
+}
+
+.class-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+  padding: var(--space-2);
+  background: var(--cloud);
+  border-radius: var(--radius-md);
+}
+
+.class-metric-value {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-text);
+}
+
+.class-metric-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-text-faint);
+}
+
+.class-flags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.class-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--coral-500);
+  background: var(--coral-200);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+}
+
+.class-project-loading {
+  color: var(--color-text-faint);
+  font-size: var(--text-sm);
+  font-style: italic;
+}
+
+.class-project-actions {
+  margin-top: auto;
+}
+
+.class-project-note {
+  font-size: var(--text-sm);
+  color: var(--color-text-faint);
+}
+
+.class-missing {
+  max-width: 34rem;
+  margin: var(--space-8) auto;
+  padding: 0 var(--space-5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.class-missing-emoji {
+  font-size: 3rem;
+}
+
+@media (max-width: 520px) {
+  .class-metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
