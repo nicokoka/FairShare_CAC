@@ -1,0 +1,17 @@
+/*
+ * Base styling for every <Icon>. Icons are inline-aligned so they sit on the
+ * text baseline inside buttons, links and labels. They never shrink in a flex
+ * row, and the width/height attributes set by the component keep them from
+ * causing layout shift while the PNG loads.
+ */
+.icon {
+  display: inline-block;
+  vertical-align: -0.18em;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* Inline icons that sit next to text get a little breathing room after them. */
+.icon-inline {
+  margin-right: var(--space-1);
+}

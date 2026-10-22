@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "icons": {
+    "pack": "color",
+    "sizes": [16, 18, 20, 24, 40, 48, 56],
+    "color": "multicolor",
+    "assetDir": "src/assets/icons",
+    "component": "src/components/ui/Icon.jsx",
+    "items": {
+      "star": { "id": "19417", "commonName": "filled-star", "note": "decorative hero only; rating/check/close/arrows use CSS glyphs" },
+      "chart": { "id": "12818", "commonName": "bar-chart" },
+      "compass": { "id": "13730", "commonName": "compass" },
+      "search": { "id": "12773", "commonName": "search" },
+      "flag": { "id": "16885", "commonName": "finish-flag" },
+      "confetti": { "id": "33824", "commonName": "confetti" },
+      "sprout": { "id": "19656", "commonName": "sprout" },
+      "ticket": { "id": "13032", "commonName": "ticket" },
+      "rocket": { "id": "15175", "commonName": "rocket" },
+      "hourglass": { "id": "15850", "commonName": "hourglass" },
+      "print": { "id": "12785", "commonName": "print" },
+      "hand": { "id": "u63eZQTwMGCe", "commonName": "stop-gesture" },
+      "todo": { "id": "13550", "commonName": "todo-list" },
+      "construction": { "id": "15208", "commonName": "under-construction" },
+      "calendar": { "id": "12776", "commonName": "calendar" },
+      "link": { "id": "12312", "commonName": "link" },
+      "edit": { "id": "12082", "commonName": "edit" },
+      "undo": { "id": "12964", "commonName": "undo" },
+      "team": { "id": "11900", "commonName": "conference" }
+    }
+  },
+  "tokens": {
+    "accent": "--color-accent",
+    "primary": "--color-primary"
+  }
+}
