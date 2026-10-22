@@ -225,5 +225,14 @@ service cloud.firestore {
       allow create: if request.auth != null
                     && request.resource.data.projectId is string;
     }
+
+    // Per-user profile doc (role + display name/photo). A signed-in user may read
+    // any profile — names are shown in class/team lists — but may write ONLY their
+    // own. This collection is new and independent; it does not affect any of the
+    // project/task/review rules above.
+    match /users/{uid} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == uid;
+    }
   }
 }

@@ -18,9 +18,9 @@ export default function Landing() {
   const [signingIn, setSigningIn] = useState(false)
   const [error, setError] = useState('')
 
-  // Send signed-in users to their dashboard instead of showing the marketing page.
+  // Send signed-in users to their role-aware home instead of the marketing page.
   useEffect(() => {
-    if (!loading && user) navigate('/dashboard', { replace: true })
+    if (!loading && user) navigate('/home', { replace: true })
   }, [loading, user, navigate])
 
   const handleSignIn = async () => {
@@ -119,7 +119,7 @@ export default function Landing() {
         </p>
         <nav className="peek" aria-label="Preview the screens">
           <span className="peek-label">Peek ahead:</span>
-          <Link to="/dashboard">Dashboard</Link>
+          <Link to="/home">Home</Link>
           <Link to="/project/demo">Board</Link>
           <Link to="/project/demo/review">Review</Link>
           <Link to="/project/demo/report">Report</Link>

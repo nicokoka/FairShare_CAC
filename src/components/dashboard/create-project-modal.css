@@ -115,3 +115,75 @@
   from { opacity: 0; transform: translateY(12px) scale(0.98); }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
+
+/* ---- AI Project Planner (optional) ------------------------------------- */
+.planner {
+  margin-top: var(--space-4);
+}
+
+.planner-toggle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--grape-700);
+  background: var(--grape-100);
+  border: 1px dashed var(--grape-200);
+  border-radius: var(--radius-pill);
+  padding: var(--space-2) var(--space-4);
+}
+
+.planner-toggle:hover {
+  background: var(--grape-200);
+}
+
+.planner-textarea {
+  resize: vertical;
+  font-family: var(--font-body);
+}
+
+.planner-suggest {
+  margin-top: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+}
+
+.planner-list {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-height: 14rem;
+  overflow-y: auto;
+}
+
+.planner-check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: var(--cloud);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: left;
+}
+
+.planner-size {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-xs);
+  min-width: 1.4rem;
+  text-align: center;
+  padding: 2px 0;
+  border-radius: var(--radius-sm);
+  color: #fff;
+}
+
+.planner-size--S { background: var(--mint-500); }
+.planner-size--M { background: var(--grape-500); }
+.planner-size--L { background: var(--coral-500); }
+
+.planner-title {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}

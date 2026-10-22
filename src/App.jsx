@@ -3,6 +3,8 @@ import Landing from './components/landing/Landing.jsx'
 import Dashboard from './components/dashboard/Dashboard.jsx'
 import ProjectPage from './components/project/ProjectPage.jsx'
 import JoinByLink from './components/join/JoinByLink.jsx'
+import RoleHome from './components/home/RoleHome.jsx'
+import ProfilePage from './components/profile/ProfilePage.jsx'
 import ProtectedRoute from './components/auth/ProtectedRoute.jsx'
 import PlaceholderPage from './components/placeholders/PlaceholderPage.jsx'
 
@@ -21,6 +23,22 @@ export default function App() {
       {/* Shared invite link / scanned QR target. Intentionally NOT protected —
           it handles its own sign-in so a new teammate never loses the code. */}
       <Route path="/join/:code" element={<JoinByLink />} />
+      <Route
+        path="/home"
+        element={
+          <ProtectedRoute>
+            <RoleHome />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/me"
+        element={
+          <ProtectedRoute>
+            <ProfilePage />
+          </ProtectedRoute>
+        }
+      />
       <Route
         path="/dashboard"
         element={

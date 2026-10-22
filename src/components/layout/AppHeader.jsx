@@ -1,23 +1,45 @@
 import { Link } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth.jsx'
+import { useUserProfile } from '../../hooks/useUserProfile.jsx'
+import { ROLES } from '../../lib/users.js'
 import Wordmark from '../landing/Wordmark.jsx'
 import './app-header.css'
 
 /*
- * The top bar for signed-in pages: brand on the left, the current user's photo +
- * name and a sign-out button on the right. Reads everything from useAuth().
+ * The top bar for signed-in pages: brand + nav on the left, the user's photo,
+ * a role switch, and sign-out on the right. Nav and role come from the profile
+ * (useUserProfile); everything degrades gracefully if the profile isn't loaded.
  */
 export default function AppHeader() {
   const { user, signOut } = useAuth()
+  const { role, isTeacher, setRole } = useUserProfile()
 
   return (
     <header className="app-header">
-      <Link to="/dashboard" className="app-header-brand" aria-label="FairShare dashboard">
-        <Wordmark />
-      </Link>
+      <div className="app-header-left">
+        <Link to="/home" className="app-header-brand" aria-label="FairShare home">
+          <Wordmark />
+        </Link>
+        {user && (
+          <nav className="app-nav" aria-label="Main">
+            <Link to="/home" className="app-nav-link">Home</Link>
+            <Link to="/me" className="app-nav-link">Profile</Link>
+          </nav>
+        )}
+      </div>
 
       {user && (
         <div className="user-chip">
+          {role && (
+            <button
+              type="button"
+              className="role-switch"
+              onClick={() => setRole(isTeacher ? ROLES.STUDENT : ROLES.TEACHER)}
+              title="Switch role"
+            >
+              {isTeacher ? 'Teacher' : 'Student'}
+            </button>
+          )}
           <Avatar user={user} />
           <span className="user-name">{user.displayName || 'You'}</span>
           <button type="button" className="signout-btn" onClick={signOut}>
