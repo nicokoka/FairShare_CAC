@@ -34,7 +34,7 @@ export default function AppHeader() {
             <button
               type="button"
               className="role-switch"
-              onClick={() => setRole(isTeacher ? ROLES.STUDENT : ROLES.TEACHER)}
+              onClick={() => setRole(isTeacher ? ROLES.STUDENT : ROLES.TEACHER).catch(() => {})}
               title="Switch role"
             >
               {isTeacher ? 'Teacher' : 'Student'}

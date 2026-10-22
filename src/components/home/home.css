@@ -56,3 +56,10 @@
     grid-template-columns: 1fr;
   }
 }
+
+.rolepick-error {
+  margin-top: var(--space-5);
+  color: var(--coral-500);
+  font-weight: 700;
+  font-size: var(--text-sm);
+}

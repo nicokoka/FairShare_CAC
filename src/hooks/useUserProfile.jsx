@@ -49,9 +49,12 @@ export function useUserProfile() {
     return unsubscribe
   }, [uid]) // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Note: this intentionally does NOT swallow errors, so callers can surface a
+  // failure (e.g. the role picker). A denied write usually means the users/{uid}
+  // security rule hasn't been published to the live database yet.
   const setRole = (role) => {
-    if (!user) return Promise.resolve()
-    return upsertUserProfile(user, role).catch(() => {})
+    if (!user) return Promise.reject(new Error('Not signed in'))
+    return upsertUserProfile(user, role)
   }
 
   // Treat a missing/denied profile as a student so the app always has a role.

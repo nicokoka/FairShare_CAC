@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import AppHeader from '../layout/AppHeader.jsx'
 import Icon from '../ui/Icon.jsx'
 import './home.css'
@@ -10,6 +11,21 @@ import './home.css'
  * @param {{ onPick: (role: 'student'|'teacher') => void }} props
  */
 export default function RolePicker({ onPick }) {
+  const [busy, setBusy] = useState(false)
+  const [error, setError] = useState('')
+
+  const pick = async (role) => {
+    setError('')
+    setBusy(true)
+    try {
+      await onPick(role)
+      // On success the profile snapshot updates and this screen is replaced.
+    } catch {
+      setError("We couldn't save your choice. Please check your connection and try again.")
+      setBusy(false)
+    }
+  }
+
   return (
     <div className="dashboard">
       <AppHeader />
@@ -20,7 +36,12 @@ export default function RolePicker({ onPick }) {
           <p className="rolepick-sub">You can switch anytime from the top bar.</p>
 
           <div className="rolepick-grid">
-            <button type="button" className="rolepick-card" onClick={() => onPick('student')}>
+            <button
+              type="button"
+              className="rolepick-card"
+              onClick={() => pick('student')}
+              disabled={busy}
+            >
               <Icon name="team" size={52} />
               <h2 className="rolepick-h">I'm a student</h2>
               <p className="rolepick-p">
@@ -28,7 +49,12 @@ export default function RolePicker({ onPick }) {
               </p>
             </button>
 
-            <button type="button" className="rolepick-card" onClick={() => onPick('teacher')}>
+            <button
+              type="button"
+              className="rolepick-card"
+              onClick={() => pick('teacher')}
+              disabled={busy}
+            >
               <Icon name="chart" size={52} />
               <h2 className="rolepick-h">I'm a teacher</h2>
               <p className="rolepick-p">
@@ -36,6 +62,12 @@ export default function RolePicker({ onPick }) {
               </p>
             </button>
           </div>
+
+          {error && (
+            <p className="rolepick-error" role="alert">
+              {error}
+            </p>
+          )}
         </div>
       </main>
     </div>
